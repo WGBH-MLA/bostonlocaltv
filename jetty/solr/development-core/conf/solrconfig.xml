@@ -377,10 +377,10 @@
       <str name="facet.mincount">1</str>
 	<str name="echoParams">explicit</str>
      <float name="tie">0.01</float>
-  <str name="qf">id^0.8 id_t^0.8 format text^0.3</str>
-   <str name="pf">id^0.9  id_t^0.9 text^0.5</str>
+  <str name="qf">id^0.8 id_t^0.8 title_t format text^0.3</str>
+   <str name="pf">id^0.9  id_t^0.9 title_t text^0.5</str>
       <str name="fl">
-        id,text,title_t,date_t,year_facet,month_facet,medium_t,series_facet,box_facet,folder_facet,has_model_s
+          *,score
      </str>
      <str name="mm">
         2&lt;-1 5&lt;-2 6&lt;90%
@@ -813,8 +813,5 @@
     <healthcheck type="file">server-enabled</healthcheck>
     -->
   </admin>
-
-  <requestHandler name="/dataimport" class="org.apache.solr.handler.dataimport.DataImportHandler">
-  </requestHandler>
 
 </config>

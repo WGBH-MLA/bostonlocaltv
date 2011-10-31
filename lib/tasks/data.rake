@@ -3,8 +3,6 @@ namespace :data do
   task :bpl => :environment do
     require 'progressbar'
     file = ENV['file']
-    raise unless file
-
     f = File.read(file)
     f.gsub!(/(<\/?[A-Z_]+):/) { $1 }
 
@@ -44,12 +42,12 @@ namespace :data do
       end
       
       solr_doc.merge!({
-        :id => row.xpath("@RECORDID").to_s
+        :id => row.xpath("@RECORDID").to_s,
+        :title_sort => solr_doc[:title_s].try(:first),
+        :year_i => (solr_doc[:date_s].try(:first) || '')[/19\d\d/],
+        :xml_display_s => row.to_s
       })
       Blacklight.solr.add solr_doc, :add_attributes => { :commitWithin => 10000 }
-    print solr_doc.inspect
-    print "\n"
-
     end
 
     pbar.finish

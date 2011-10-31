@@ -8,18 +8,17 @@ class CatalogController < ApplicationController
   configure_blacklight do |config|
     config.default_solr_params = { 
       :qt => 'search',
-      :per_page => 10 ,
-      :fl => 'id, title_s, description_s, format_duration_s, date_s, can_number_s'
+      :per_page => 10 
     }
 
     # solr field configuration for search results/index views
     config.index.show_link = 'title_s'
-    config.index.record_display_type = 'format'
+    config.index.record_display_type = 'collection_s'
 
     # solr field configuration for document/show views
     config.show.html_title = 'title_s'
     config.show.heading = 'title_s'
-    config.show.display_type = 'format'
+    config.show.display_type = 'collection_s'
 
     # solr fields that will be treated as facets by the blacklight application
     #   The ordering of the field names is the order of the display
@@ -50,6 +49,7 @@ class CatalogController < ApplicationController
     #   The ordering of the field names is the order of the display 
     config.add_index_field 'description_s', :label => 'Description:' 
     config.add_index_field 'format_duration_s', :label => 'Duration:' 
+    config.add_index_field 'contributor_name_s', :label => 'Duration:' 
     config.add_index_field 'date_s', :label => 'Date:' 
     config.add_index_field 'can_number_s', :label => 'Can Number:'
 
@@ -95,16 +95,16 @@ class CatalogController < ApplicationController
       # Solr parameter de-referencing like $title_qf.
       # See: http://wiki.apache.org/solr/LocalParams
       field.solr_local_parameters = { 
-        :qf => 'title_s',
-        :pf => 'title_s'
+        :qf => 'title_t',
+        :pf => 'title_t'
       }
     end
     
     config.add_search_field('contributor') do |field|
       field.solr_parameters = { :'spellcheck.dictionary' => 'author' }
       field.solr_local_parameters = { 
-        :qf => 'contributor_name_s',
-        :pf => 'contributor_name_s'
+        :qf => 'contributor_name_t',
+        :pf => 'contributor_name_t'
       }
     end
     
@@ -112,8 +112,10 @@ class CatalogController < ApplicationController
     # label in pulldown is followed by the name of the SOLR field to sort by and
     # whether the sort is ascending or descending (it must be asc or desc
     # except in the relevancy case).
-    config.add_sort_field 'score desc, id asc', :label => 'relevance'
-    config.add_sort_field 'timestamp desc, title_sort asc', :label => 'recency'
+    config.add_sort_field 'score desc, title_sort asc, id asc', :label => 'relevance'
+    config.add_sort_field 'title_sort asc, id asc', :label => 'title'
+    config.add_sort_field 'year_i asc, date_s asd, title_sort asc', :label => 'year'
+    config.add_sort_field 'timestamp desc, title_sort asc', :label => 'timestamp'
 
     # If there are more than this many search results, no spelling ("did you 
     # mean") suggestion is offered.

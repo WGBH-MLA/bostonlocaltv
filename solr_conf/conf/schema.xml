@@ -264,7 +264,7 @@
 
    <dynamicField name="random*" type="random" />
 
-   <dynamicField name="*_sort" type="string" indexed="true" stored="false" multiValued="true" />
+   <dynamicField name="*_sort" type="string" indexed="true" stored="false" multiValued="false" />
    <dynamicField name="*_facet" type="string" indexed="true" stored="true" multiValued="true" />
    <dynamicField name="*_display" type="string" indexed="false" stored="true" multiValued="true" />
 
@@ -273,6 +273,10 @@
  <uniqueKey>id</uniqueKey>
  <defaultSearchField>text</defaultSearchField>
  <solrQueryParser defaultOperator="AND" />
- <copyField source="*_facet" dest="text" />
+ <copyField source="title_s" dest="title_t" />
+ <copyField source="description_s" dest="description_t" />
+ <copyField source="contributor_name_s" dest="contributor_name_t" />
+ <copyField source="date_s" dest="date_t" />
+ <copyField source="*_s" dest="text" />
 
 </schema>
