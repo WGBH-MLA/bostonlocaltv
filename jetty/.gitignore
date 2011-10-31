@@ -1,0 +1,4 @@
+solr/data/*
+solr/*/data/*
+logs/*.log
+derby.log
