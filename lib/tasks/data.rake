@@ -1,6 +1,7 @@
 namespace :data do
   desc "Load BPL data"
   task :bpl => :environment do
+    require 'progressbar'
     file = ENV['file']
     raise unless file
 
@@ -9,7 +10,10 @@ namespace :data do
 
     xml = Nokogiri::XML(f)
 
+    pbar = ProgressBar.new "indexing", xml.xpath("//xmlns:ROW", xml.namespaces).length
+
     xml.xpath("//xmlns:ROW", xml.namespaces).each do |row|
+      pbar.inc
       solr_doc = {}
 
       fields = []
@@ -48,5 +52,6 @@ namespace :data do
 
     end
 
+    pbar.finish
   end
 end

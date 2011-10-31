@@ -46,6 +46,7 @@ gem "compass", :git => 'git://github.com/chriseppstein/compass.git'
 gem "blacklight", :git => 'git://github.com/projectblacklight/blacklight.git', :branch => 'next'
 gem "jettywrapper"
 gem "devise"
+gem "progressbar"
 
 gem 'rails-footnotes', '>= 3.7', :group => :development
 gem "rsolr-footnotes"
