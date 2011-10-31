@@ -5,4 +5,12 @@ class ApplicationController < ActionController::Base
   # these methods in order to perform user specific actions. 
 
   protect_from_forgery
+
+  def default_html_head
+  end
+
+  protected
+  def layout_name
+    'application'
+  end
 end
