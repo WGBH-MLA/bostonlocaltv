@@ -1,4 +1,4 @@
-= Boston Local TV News Catalog
+# Boston Local TV News Catalog
 
 The Boston Local TV News Catalog is a Blacklight application.
 
@@ -6,9 +6,9 @@ The Boston Local TV News Catalog is a Blacklight application.
 - Blacklight (a rails engines plugin) for the User Interface
 - Solr (a java application, also ported to other languages) for the Search Engine 
 
-== Introduction and Installation Instructions
+## Introduction and Installation Instructions
 
-=== Use RVM in development (for your own sanity)
+### Use RVM in development (for your own sanity)
 
 This isn’t absolutely required, but working without RVM makes life really difficult.
 
@@ -17,10 +17,10 @@ See https://rvm.beginrescueend.com/rvm/install/ for instructions on installing a
 You probably want to use Ruby 1.9.3 with this application.
 
 ```sh
-gem install bundler
+$ gem install bundler
 ```
 
-=== Getting the application
+### Getting the application
 
 ```sh
 $ git clone git://github.com/WGBH/bostonlocaltv.git
@@ -31,7 +31,7 @@ $ rails s
 ```
 
 
-== Rake Tasks
+## Rake Tasks
 
 These rake tasks are provided by jettywrapper for managing the jetty servlet container:
 
