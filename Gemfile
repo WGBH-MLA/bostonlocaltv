@@ -43,7 +43,7 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 gem "compass", :git => 'git://github.com/chriseppstein/compass.git'
-gem "blacklight", :git => 'git://github.com/projectblacklight/blacklight.git', :branch => 'next'
+gem "blacklight", :git => 'git://github.com/projectblacklight/blacklight.git', :branch => 'develop-3.2'
 gem "jettywrapper"
 gem "devise"
 gem "progressbar"
