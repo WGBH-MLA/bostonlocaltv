@@ -42,7 +42,7 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem "compass", :git => 'git://github.com/chriseppstein/compass.git'
+gem "compass", :git => 'git://github.com/chriseppstein/compass.git', :ref => '5ac790a41924429655029fc7c5e6df9203a03a52'
 gem "blacklight", :git => 'git://github.com/projectblacklight/blacklight.git', :branch => 'develop-3.2'
 gem "jettywrapper"
 gem "devise"
