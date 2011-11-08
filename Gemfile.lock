@@ -1,20 +1,17 @@
 GIT
   remote: git://github.com/chriseppstein/compass.git
-  revision: 5ac790a41924429655029fc7c5e6df9203a03a52
-  ref: 5ac790a41924429655029fc7c5e6df9203a03a52
+  revision: ebd758a7999a74611a3d682ba72c661a83f97498
   specs:
-    compass (0.12.alpha.0.5ac790a)
+    compass (0.12.alpha.0.ebd758a)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
 
-GIT
-  remote: git://github.com/projectblacklight/blacklight.git
-  revision: f27d432548e94c2f075f1f50f24539130f53e947
-  branch: develop-3.2
+PATH
+  remote: /Volumes/Scratch/blacklight
   specs:
     blacklight (3.2.0)
-      compass (>= 0.12.alpha.0)
+      compass (>= 0.12.alpha.a)
       kaminari
       marc (~> 0.4.3)
       nokogiri (~> 1.5)
