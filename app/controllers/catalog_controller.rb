@@ -38,7 +38,18 @@ class CatalogController < ApplicationController
     # app code to actually have it echo'd back to see it.  
     config.add_facet_field 'format', :label => 'Format' 
     config.add_facet_field 'contributor_name_s', :label => 'Contributor', :limit => 15 
+    config.add_facet_field 'subject_personalities_s', :label => 'Personalities'
     config.add_facet_field 'collection_s', :label => 'Collection'
+    config.add_facet_field 'location_s', :label => 'Location'
+    config.add_facet_field 'year_i', :label => 'Date'
+    config.add_facet_field 'intended_purpose_s', :label => 'Purpose'
+    config.add_facet_field 'format_color_s', :label => 'Color'
+    config.add_facet_field 'audio_format_s', :label => 'Audio'
+    config.add_facet_field 'audio_type_s', :label => 'Audio'
+    config.add_facet_field 'cross_reference_s', :label => 'Cross Reference'
+    config.add_facet_field 'format_location_s', :label => 'Format location'
+    config.add_facet_field 'can_number_s', :label => 'Can Number'
+    config.add_facet_field 'initials_s', :label => "Initials"
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
@@ -48,17 +59,35 @@ class CatalogController < ApplicationController
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display 
     config.add_index_field 'description_s', :label => 'Description:' 
-    config.add_index_field 'format_duration_s', :label => 'Duration:' 
-    config.add_index_field 'contributor_name_s', :label => 'Duration:' 
+    config.add_index_field 'location_s', :label => 'Location:'
+    config.add_index_field 'contributor_name_role_s', :label => 'Contributor:' 
+    config.add_index_field 'subject_personalities_s', :label => 'Personalities:'
     config.add_index_field 'date_s', :label => 'Date:' 
-    config.add_index_field 'can_number_s', :label => 'Can Number:'
+    config.add_index_field 'date_created_s', :label => 'Date Created:' 
+    config.add_index_field 'intended_purpose_s', :label => 'Intended Purpose:'
+    config.add_index_field 'collection_s', :label => 'Collection:'
+
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
     config.add_show_field 'description_s', :label => 'Description:' 
+    config.add_show_field 'location_s', :label => 'Location:'
     config.add_show_field 'format_duration_s', :label => 'Duration:' 
+    config.add_show_field 'footage_length_s', :label => 'Footage length:' 
+    config.add_show_field 'contributor_name_role_s', :label => 'Contributor:' 
+    config.add_show_field 'subject_personalities_s', :label => 'Personalities:'
     config.add_show_field 'date_s', :label => 'Date:' 
+    config.add_show_field 'date_created_s', :label => 'Date Created:' 
+    config.add_show_field 'intended_purpose_s', :label => 'Intended Purpose:'
     config.add_show_field 'can_number_s', :label => 'Can Number:'
+    config.add_show_field 'format_location_s', :label => 'Location'
+    config.add_show_field 'audio_type_s', :label => 'Audio:'
+    config.add_show_field 'audio_format_s', :label => 'Audio:'
+    config.add_show_field 'cross_reference_s', :label => 'Cross Reference:'
+    config.add_show_field 'accession_num_s', :label => 'Accession Number'
+    config.add_show_field 'collection_s', :label => 'Collection:'
+    config.add_show_field 'xml_display_s'
+
     
 
     # "fielded" search configuration. Used by pulldown among other places.
