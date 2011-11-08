@@ -55,5 +55,7 @@ module Bostonlocaltv
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.application_name = "Boston Local Television News"
   end
 end
