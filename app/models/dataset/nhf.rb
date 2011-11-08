@@ -18,4 +18,8 @@ class Dataset::Nhf < Dataset::Xml
     solr_doc
   end
 
+  def records_xpath
+    "//xmlns:ROW[not(xmlns:num_of_reels/text())]"
+  end
+
 end
