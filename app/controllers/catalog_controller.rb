@@ -65,7 +65,7 @@ class CatalogController < ApplicationController
     config.add_index_field 'date_s', :label => 'Date:' 
     config.add_index_field 'date_created_s', :label => 'Date Created:' 
     config.add_index_field 'intended_purpose_s', :label => 'Intended Purpose:'
-    config.add_index_field 'collection_s', :label => 'Collection:'
+    config.add_index_field 'collection_s', :label => 'Collection:', :link => true
 
 
     # solr fields to be displayed in the show (single result) view
@@ -79,13 +79,13 @@ class CatalogController < ApplicationController
     config.add_show_field 'date_s', :label => 'Date:' 
     config.add_show_field 'date_created_s', :label => 'Date Created:' 
     config.add_show_field 'intended_purpose_s', :label => 'Intended Purpose:'
-    config.add_show_field 'can_number_s', :label => 'Can Number:'
+    config.add_show_field 'can_number_s', :label => 'Can Number:', :link => true
     config.add_show_field 'format_location_s', :label => 'Location'
     config.add_show_field 'audio_type_s', :label => 'Audio:'
     config.add_show_field 'audio_format_s', :label => 'Audio:'
     config.add_show_field 'cross_reference_s', :label => 'Cross Reference:'
     config.add_show_field 'accession_num_s', :label => 'Accession Number'
-    config.add_show_field 'collection_s', :label => 'Collection:'
+    config.add_show_field 'collection_s', :label => 'Collection:', :link => true
     config.add_show_field 'xml_display_s'
 
     
