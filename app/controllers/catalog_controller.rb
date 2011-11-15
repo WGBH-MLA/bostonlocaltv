@@ -41,7 +41,7 @@ class CatalogController < ApplicationController
     config.add_facet_field 'subject_personalities_s', :label => 'Personalities'
     config.add_facet_field 'collection_s', :label => 'Collection'
     config.add_facet_field 'location_s', :label => 'Location'
-    config.add_facet_field 'year_i', :label => 'Date'
+    config.add_facet_field 'year_i', :label => 'Date', :range => true
     config.add_facet_field 'intended_purpose_s', :label => 'Purpose'
     config.add_facet_field 'format_color_s', :label => 'Color'
     config.add_facet_field 'audio_format_s', :label => 'Audio'

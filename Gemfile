@@ -42,9 +42,11 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem "compass", :git => 'git://github.com/chriseppstein/compass.git' #, :ref => '5ac790a41924429655029fc7c5e6df9203a03a52'
-gem "blacklight", :path => '/Volumes/Scratch/blacklight' #:git => 'git://github.com/projectblacklight/blacklight.git', :branch => 'develop-3.2'
-gem "jettywrapper"
+gem "compass", ">= 0.12.alpha.1"
+gem "blacklight", :git => 'git://github.com/projectblacklight/blacklight.git'
+gem "blacklight_advanced_search", :git => "git://github.com/projectblacklight/blacklight_advanced_search.git"
+gem "blacklight_range_limit", :git => "git://github.com/projectblacklight/blacklight_range_limit.git"
+gem "jettywrapper", ">= 1.0.3"
 gem "devise"
 gem "progressbar"
 
