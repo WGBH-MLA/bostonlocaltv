@@ -2,6 +2,7 @@
 class SolrDocument 
 
   include Blacklight::Solr::Document
+  #SolrDocument.use_extension( BlacklightOaiProvider::SolrDocumentExtension )
 
   # unique_key = 'id'
   
@@ -24,10 +25,13 @@ class SolrDocument
   # and Blacklight::Solr::Document#to_semantic_values
   # Recommendation: Use field names from Dublin Core
   use_extension( Blacklight::Solr::Document::DublinCore)    
-  field_semantics.merge!(    
+  SolrDocument.field_semantics.merge!(    
                          :title => "title_s",
                          :contributor => "contributor_name_s",
                          :language => "language_facet",
                          :format => "format"
                          )
+  
+  SolrDocument.use_extension( Bostonlocaltv::Pbcore)
+  
 end

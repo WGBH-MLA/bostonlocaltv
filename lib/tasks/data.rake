@@ -4,6 +4,11 @@ namespace :data do
     file = ENV['file']
     Dataset::Bpl.new(file).process!
   end
+  
+  task :pbcore_data => :environment do
+    file = ENV['file']
+    Dataset::Bpl.new(file).process!
+  end
 
   task :nhf => :environment do
     file = ENV['file']
