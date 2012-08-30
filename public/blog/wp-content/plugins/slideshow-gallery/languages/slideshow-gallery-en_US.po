@@ -1,0 +1,808 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Slideshow Gallery plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-08 00:14+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Tribulant Software <support@tribulant.com>\n"
+"Language-Team: Tribulant Software <support@tribulant.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: SOUTH AFRICA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../slideshow-gallery-ajax.php:32
+msgid "Slides have been ordered"
+msgstr ""
+
+#: ../slideshow-gallery-plugin.php:230
+msgid "Uploads folder named \""
+msgstr ""
+
+#: ../slideshow-gallery.php:62
+msgid "Slideshow"
+msgstr ""
+
+#: ../slideshow-gallery.php:63
+msgid "Manage Slides"
+msgstr ""
+
+#: ../slideshow-gallery.php:64
+msgid "Manage Galleries"
+msgstr ""
+
+#: ../slideshow-gallery.php:65
+msgid "Configuration"
+msgstr ""
+
+#: ../slideshow-gallery.php:75
+msgid "Save Settings"
+msgstr ""
+
+#: ../slideshow-gallery.php:76
+msgid "About Us"
+msgstr ""
+
+#: ../slideshow-gallery.php:77
+msgid "General Settings"
+msgstr ""
+
+#: ../slideshow-gallery.php:78
+msgid "Links &amp; Images Overlay"
+msgstr ""
+
+#: ../slideshow-gallery.php:79
+msgid "Appearance &amp; Styles"
+msgstr ""
+
+#: ../slideshow-gallery.php:234
+msgid "Slide has been removed"
+msgstr ""
+
+#: ../slideshow-gallery.php:237
+msgid "Slide cannot be removed"
+msgstr ""
+
+#: ../slideshow-gallery.php:241
+#: ../models/galleryslides.php:63
+msgid "No slide was specified"
+msgstr ""
+
+#: ../slideshow-gallery.php:249
+msgid "Slide has been saved"
+msgstr ""
+
+#: ../slideshow-gallery.php:269
+msgid "Selected slides have been removed"
+msgstr ""
+
+#: ../slideshow-gallery.php:274
+#: ../slideshow-gallery.php:355
+msgid "No slides were selected"
+msgstr ""
+
+#: ../slideshow-gallery.php:278
+#: ../slideshow-gallery.php:359
+msgid "No action was specified"
+msgstr ""
+
+#: ../slideshow-gallery.php:299
+msgid "Gallery has been saved"
+msgstr ""
+
+#: ../slideshow-gallery.php:329
+msgid "Gallery has been removed"
+msgstr ""
+
+#: ../slideshow-gallery.php:332
+msgid "Gallery cannot be removed"
+msgstr ""
+
+#: ../slideshow-gallery.php:336
+#: ../models/galleryslides.php:62
+msgid "No gallery was specified"
+msgstr ""
+
+#: ../slideshow-gallery.php:350
+msgid "Selected galleries have been removed"
+msgstr ""
+
+#: ../slideshow-gallery.php:377
+msgid "All configuration settings have been reset to their defaults"
+msgstr ""
+
+#: ../slideshow-gallery.php:381
+msgid "Configuration settings could not be reset"
+msgstr ""
+
+#: ../slideshow-gallery.php:394
+msgid "Configuration has been saved"
+msgstr ""
+
+#: ../js/tinymce/dialog.php:29
+msgid "Insert a Slideshow Gallery"
+msgstr ""
+
+#: ../js/tinymce/dialog.php:45
+msgid "Please fill in a post ID."
+msgstr ""
+
+#: ../js/tinymce/dialog.php:59
+msgid "Please select a gallery."
+msgstr ""
+
+#: ../js/tinymce/dialog.php:91
+msgid "Images From a Post"
+msgstr ""
+
+#: ../js/tinymce/dialog.php:92
+msgid "Slides From a Gallery"
+msgstr ""
+
+#: ../js/tinymce/dialog.php:93
+msgid "All Available Slides"
+msgstr ""
+
+#: ../js/tinymce/dialog.php:97
+msgid "Post ID:"
+msgstr ""
+
+#: ../js/tinymce/dialog.php:99
+msgid "ID of the post to take images from."
+msgstr ""
+
+#: ../js/tinymce/dialog.php:105
+msgid "Gallery:"
+msgstr ""
+
+#: ../js/tinymce/dialog.php:107
+msgid "- Select Gallery -"
+msgstr ""
+
+#: ../js/tinymce/dialog.php:119
+msgid "Exclude"
+msgstr ""
+
+#: ../js/tinymce/dialog.php:121
+msgid "Comma separated IDs of attachments/slides to exclude"
+msgstr ""
+
+#: ../models/gallery.php:75
+#: ../models/slide.php:80
+msgid "Please fill in a title"
+msgstr ""
+
+#: ../models/gallery.php:77
+#: ../models/galleryslides.php:72
+#: ../models/slide.php:139
+msgid "No data was posted"
+msgstr ""
+
+#: ../models/slide.php:81
+msgid "Please fill in a description"
+msgstr ""
+
+#: ../models/slide.php:82
+msgid "Please select an image type"
+msgstr ""
+
+#: ../models/slide.php:96
+msgid "The image did not upload, please try again"
+msgstr ""
+
+#: ../models/slide.php:97
+msgid "Image could not be moved from TMP to \"wp-content/uploads/\", please check permissions"
+msgstr ""
+
+#: ../models/slide.php:105
+msgid "The image file is too large"
+msgstr ""
+
+#: ../models/slide.php:108
+msgid "The image was partially uploaded, please try again"
+msgstr ""
+
+#: ../models/slide.php:111
+msgid "No image was chosen for uploading, please choose an image"
+msgstr ""
+
+#: ../models/slide.php:114
+msgid "No TMP directory has been specified for PHP to use, please ask your hosting provider"
+msgstr ""
+
+#: ../models/slide.php:117
+msgid "Image cannot be written to disc, please ask your hosting provider"
+msgstr ""
+
+#: ../models/slide.php:123
+msgid "Please specify an image"
+msgstr ""
+
+#: ../vendors/class.paginate.php:176
+msgid "Displaying"
+msgstr ""
+
+#: ../vendors/class.paginate.php:176
+msgid "of"
+msgstr ""
+
+#: ../vendors/class.paginate.php:179
+msgid "Previous Page"
+msgstr ""
+
+#: ../vendors/class.paginate.php:187
+msgid "Page"
+msgstr ""
+
+#: ../vendors/class.paginate.php:198
+msgid "Next Page"
+msgstr ""
+
+#: ../views/admin/settings.php:16
+msgid "Configuration Settings"
+msgstr ""
+
+#: ../views/admin/galleries/index.php:6
+#: ../views/admin/slides/index.php:6
+msgid "Add New"
+msgstr ""
+
+#: ../views/admin/galleries/index.php:11
+msgid "galleries"
+msgstr ""
+
+#: ../views/admin/galleries/index.php:15
+msgid "Are you sure you wish to execute this action on the selected galleries?"
+msgstr ""
+
+#: ../views/admin/galleries/index.php:19
+#: ../views/admin/slides/loop.php:8
+msgid "- Bulk Actions -"
+msgstr ""
+
+#: ../views/admin/galleries/index.php:20
+#: ../views/admin/galleries/index.php:53
+#: ../views/admin/galleries/view.php:13
+#: ../views/admin/slides/loop.php:9
+#: ../views/admin/slides/loop.php:54
+msgid "Delete"
+msgstr ""
+
+#: ../views/admin/galleries/index.php:22
+#: ../views/admin/slides/loop.php:11
+msgid "Apply"
+msgstr ""
+
+#: ../views/admin/galleries/index.php:31
+#: ../views/admin/galleries/index.php:39
+#: ../views/admin/galleries/save.php:14
+#: ../views/admin/slides/loop.php:22
+#: ../views/admin/slides/loop.php:34
+#: ../views/admin/slides/save.php:15
+msgid "Title"
+msgstr ""
+
+#: ../views/admin/galleries/index.php:32
+#: ../views/admin/galleries/index.php:40
+msgid "Slides"
+msgstr ""
+
+#: ../views/admin/galleries/index.php:33
+#: ../views/admin/galleries/index.php:41
+#: ../views/admin/slides/loop.php:25
+#: ../views/admin/slides/loop.php:37
+msgid "Date"
+msgstr ""
+
+#: ../views/admin/galleries/index.php:51
+msgid "View"
+msgstr ""
+
+#: ../views/admin/galleries/index.php:52
+#: ../views/admin/galleries/view.php:12
+#: ../views/admin/slides/loop.php:53
+msgid "Edit"
+msgstr ""
+
+#: ../views/admin/galleries/index.php:53
+#: ../views/admin/slides/loop.php:54
+msgid "Are you sure you want to permanently remove this slide?"
+msgstr ""
+
+#: ../views/admin/galleries/index.php:71
+#: ../views/admin/slides/save.php:39
+msgid "No galleries are available."
+msgstr ""
+
+#: ../views/admin/galleries/save.php:6
+msgid "Save a Gallery"
+msgstr ""
+
+#: ../views/admin/galleries/save.php:17
+msgid "Title of this gallery for identification purposes."
+msgstr ""
+
+#: ../views/admin/galleries/save.php:25
+msgid "Save Gallery"
+msgstr ""
+
+#: ../views/admin/galleries/view.php:6
+#, php-format
+msgid "View Gallery: %s"
+msgstr ""
+
+#: ../views/admin/galleries/view.php:8
+msgid "&larr; All Galleries"
+msgstr ""
+
+#: ../views/admin/galleries/view.php:8
+msgid "All Galleries"
+msgstr ""
+
+#: ../views/admin/galleries/view.php:12
+msgid "Edit Gallery"
+msgstr ""
+
+#: ../views/admin/galleries/view.php:13
+msgid "Are you sure you want to delete this gallery?"
+msgstr ""
+
+#: ../views/admin/galleries/view.php:13
+msgid "Delete Gallery"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:4
+msgid "Auto Slide"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:6
+#: ../views/admin/metaboxes/settings-general.php:40
+#: ../views/admin/metaboxes/settings-general.php:74
+#: ../views/admin/metaboxes/settings-general.php:101
+#: ../views/admin/metaboxes/settings-linksimages.php:6
+#: ../views/admin/metaboxes/settings-styles.php:8
+#: ../views/admin/slides/loop.php:71
+#: ../views/admin/slides/save.php:107
+msgid "Yes"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:7
+#: ../views/admin/metaboxes/settings-general.php:41
+#: ../views/admin/metaboxes/settings-general.php:75
+#: ../views/admin/metaboxes/settings-general.php:102
+#: ../views/admin/metaboxes/settings-linksimages.php:7
+#: ../views/admin/metaboxes/settings-styles.php:9
+#: ../views/admin/slides/loop.php:74
+#: ../views/admin/slides/save.php:108
+msgid "No"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:8
+msgid "Should image slides automatically slide?"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:18
+msgid "Auto Speed"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:20
+#: ../views/admin/metaboxes/settings-general.php:141
+msgid "speed"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:21
+msgid "Speed for auto sliding. Lower number for shorter interval between images."
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:21
+msgid "(Default/Recommended: 10)"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:31
+msgid "Image Fading Speed"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:34
+msgid "Speed for fading of images. Lower number for quicker fading of images."
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:34
+msgid "(Default: 10, Recommended: 1-20)"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:38
+msgid "Show Image Navigation"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:42
+msgid "Show next/previous buttons on the image for navigation purposes?"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:52
+msgid "Navigation Default Opacity"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:54
+#: ../views/admin/metaboxes/settings-general.php:61
+#: ../views/admin/metaboxes/settings-general.php:134
+msgid "&#37; <!-- percentage -->"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:55
+msgid "Opacity of the next/previous buttons by default."
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:59
+msgid "Navigation Hover Opacity"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:62
+msgid "Opacity of the next/previous buttons when they are hovered."
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:72
+msgid "Show Information"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:76
+msgid "Should the information bar be shown on slides?"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:86
+msgid "Information Speed"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:89
+msgid "Speed at which the information bar will slide in and out."
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:99
+msgid "Show Thumbnails"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:103
+msgid "Should the thumbnails bar be shown for slides?"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:113
+msgid "Thumbnails Position"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:115
+msgid "Top"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:116
+msgid "Bottom"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:117
+msgid "Choose your preferred position of the thumbnails bar relative to the slideshow images."
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:121
+msgid "Thumbnail Dimensions"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:124
+msgid "x <!-- by -->"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:126
+msgid "px <!-- pixels -->"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:127
+msgid "Width and height of the thumbnails for the slides."
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:128
+msgid "You may leave the width empty (not the height) to crop proportionally."
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:132
+msgid "Thumbnail Opacity"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:135
+msgid "Default opacity of thumbnails when they are not hovered."
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:139
+msgid "Thumbnails Scroll Speed"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:142
+msgid "Speed at which the thumbnails will scroll."
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:142
+msgid "(Default:5, Recommended: 1-20)"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:146
+msgid "Thumbnail Spacing"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:148
+#: ../views/admin/metaboxes/settings-styles.php:16
+#: ../views/admin/metaboxes/settings-styles.php:23
+msgid "px"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-general.php:149
+msgid "Horizontal margin/spacing in pixels between thumbnail images."
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-linksimages.php:4
+msgid "Open Images in Thickbox Overlay"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-linksimages.php:8
+msgid "turning this on (Yes) will open image URLs (.jpg, .png, .gif, .bmp) in a Thickbox image overlay"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-styles.php:6
+msgid "Resize Images"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-styles.php:10
+msgid "Should images be resized proportionally to fit the width of the slideshow area?"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-styles.php:14
+msgid "Gallery Width"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-styles.php:17
+msgid "Width of the slideshow gallery"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-styles.php:21
+msgid "Gallery Height"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-styles.php:24
+msgid "Height of the slideshow gallery"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-styles.php:28
+msgid "Slideshow Border"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-styles.php:31
+#, php-format
+msgid "Border style/color for the entire slideshow wrapper eg. %s"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-styles.php:35
+msgid "Slideshow Background"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-styles.php:38
+#, php-format
+msgid "Background color (hexidecimal) of the entire slideshow wrapper eg. %s"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-styles.php:42
+msgid "Information Background"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-styles.php:45
+#, php-format
+msgid "Background color (hexidecimal) of the information bar eg. %s"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-styles.php:49
+msgid "Information Text Color"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-styles.php:52
+#, php-format
+msgid "Text color (hexidecimal) of the information bar content eg. %s"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-styles.php:56
+msgid "Thumbnail Active Border"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-styles.php:59
+#, php-format
+msgid "Border color (hexidecimal) for the active image thumbnail eg. %s"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-submit.php:5
+msgid "Reset all configuration settings to their default values"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-submit.php:5
+msgid "Are you sure you wish to reset all configuration settings?"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-submit.php:5
+msgid "Reset to Defaults"
+msgstr ""
+
+#: ../views/admin/metaboxes/settings-submit.php:11
+msgid "Save Configuration"
+msgstr ""
+
+#: ../views/admin/slides/index.php:11
+msgid "slides"
+msgstr ""
+
+#: ../views/admin/slides/loop.php:2
+msgid "Are you sure you wish to execute this action on the selected slides?"
+msgstr ""
+
+#: ../views/admin/slides/loop.php:5
+msgid "Order all your slides"
+msgstr ""
+
+#: ../views/admin/slides/loop.php:5
+#: ../views/admin/slides/order.php:6
+msgid "Order Slides"
+msgstr ""
+
+#: ../views/admin/slides/loop.php:20
+#: ../views/admin/slides/loop.php:32
+msgid "ID"
+msgstr ""
+
+#: ../views/admin/slides/loop.php:21
+#: ../views/admin/slides/loop.php:33
+msgid "Image"
+msgstr ""
+
+#: ../views/admin/slides/loop.php:23
+#: ../views/admin/slides/loop.php:35
+#: ../views/admin/slides/save.php:31
+msgid "Galleries"
+msgstr ""
+
+#: ../views/admin/slides/loop.php:24
+#: ../views/admin/slides/loop.php:36
+msgid "Link"
+msgstr ""
+
+#: ../views/admin/slides/loop.php:26
+#: ../views/admin/slides/loop.php:38
+msgid "Order"
+msgstr ""
+
+#: ../views/admin/slides/loop.php:66
+msgid "None"
+msgstr ""
+
+#: ../views/admin/slides/loop.php:72
+msgid "Open"
+msgstr ""
+
+#: ../views/admin/slides/loop.php:90
+#: ../views/admin/slides/order.php:55
+msgid "No slides found"
+msgstr ""
+
+#: ../views/admin/slides/order.php:9
+msgid "&larr; Manage All Slides"
+msgstr ""
+
+#: ../views/admin/slides/save.php:6
+msgid "Save a Slide"
+msgstr ""
+
+#: ../views/admin/slides/save.php:18
+msgid "title/name of your slide as it will be displayed to your users."
+msgstr ""
+
+#: ../views/admin/slides/save.php:23
+msgid "Description"
+msgstr ""
+
+#: ../views/admin/slides/save.php:26
+msgid "description of your slide as it will be displayed to your users below the title."
+msgstr ""
+
+#: ../views/admin/slides/save.php:34
+msgid "Select All"
+msgstr ""
+
+#: ../views/admin/slides/save.php:41
+msgid "Assign this slide to one or more galleries."
+msgstr ""
+
+#: ../views/admin/slides/save.php:45
+msgid "Image Type"
+msgstr ""
+
+#: ../views/admin/slides/save.php:47
+msgid "Upload File (recommended)"
+msgstr ""
+
+#: ../views/admin/slides/save.php:48
+msgid "Specify URL"
+msgstr ""
+
+#: ../views/admin/slides/save.php:50
+msgid "do you want to upload an image or specify a local/remote image URL?"
+msgstr ""
+
+#: ../views/admin/slides/save.php:60
+msgid "Choose Image"
+msgstr ""
+
+#: ../views/admin/slides/save.php:63
+msgid "choose your image file from your computer. JPG, PNG, GIF are supported."
+msgstr ""
+
+#: ../views/admin/slides/save.php:73
+msgid "Current image. Leave the field above blank to keep this image."
+msgstr ""
+
+#: ../views/admin/slides/save.php:91
+msgid "Image URL"
+msgstr ""
+
+#: ../views/admin/slides/save.php:94
+msgid "Local or remote image location eg. http://domain.com/path/to/image.jpg"
+msgstr ""
+
+#: ../views/admin/slides/save.php:105
+msgid "Use Link"
+msgstr ""
+
+#: ../views/admin/slides/save.php:109
+msgid "set this to Yes to link this slide to a link/URL of your choice."
+msgstr ""
+
+#: ../views/admin/slides/save.php:119
+msgid "Link To"
+msgstr ""
+
+#: ../views/admin/slides/save.php:122
+msgid "link/URL to go to when a user clicks the slide eg. http://www.domain.com/mypage/"
+msgstr ""
+
+#: ../views/admin/slides/save.php:126
+msgid "Link Target"
+msgstr ""
+
+#: ../views/admin/slides/save.php:128
+msgid "Current Window"
+msgstr ""
+
+#: ../views/admin/slides/save.php:129
+msgid "New/Blank Window"
+msgstr ""
+
+#: ../views/admin/slides/save.php:130
+msgid "Should this link open in the current window or a new window?"
+msgstr ""
+
+#: ../views/admin/slides/save.php:138
+msgid "Save Slide"
+msgstr ""
+
+#: ../views/default/gallery.php:61
+#: ../views/default/gallery.php:92
+msgid "Slide Left"
+msgstr ""
+
+#: ../views/default/gallery.php:65
+#: ../views/default/gallery.php:96
+msgid "Slide Right"
+msgstr ""
+
+#: ../views/default/gallery.php:74
+msgid "Previous Image"
+msgstr ""
+
+#: ../views/default/gallery.php:79
+msgid "Next Image"
+msgstr ""
+
