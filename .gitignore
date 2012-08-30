@@ -3,4 +3,5 @@ db/*.sqlite3
 log/*.log
 tmp/
 .sass-cache/
-jetty
+jetty/jetty.pid
+vendor/bundle
