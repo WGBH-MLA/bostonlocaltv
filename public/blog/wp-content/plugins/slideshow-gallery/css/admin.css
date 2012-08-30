@@ -1,0 +1,14 @@
+div.Gallery .error {
+	color: red;
+}
+
+a.thickbox img.slideshow, a.colorbox img.slideshow {
+    border: 1px #CCCCCC solid;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 2px;
+}
+
+a.thickbox:hover img.slideshow, a.colorbox:hover img.slideshow {
+    border: 1px #515151 solid;
+}
