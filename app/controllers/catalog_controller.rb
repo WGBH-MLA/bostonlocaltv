@@ -12,11 +12,12 @@ class CatalogController < ApplicationController
     }
 
     # solr field configuration for search results/index views
-    config.index.show_link = 'title_s'
+    config.index.show_link = 'title_s' 
     config.index.record_display_type = 'collection_s'
+ 
 
     # solr field configuration for document/show views
-    config.show.html_title = 'title_s'
+    config.show.html_title = 'title_s' 
     config.show.heading = 'title_s'
     config.show.display_type = 'collection_s'
 
@@ -36,12 +37,12 @@ class CatalogController < ApplicationController
     # on the solr side in the request handler itself. Request handler defaults
     # sniffing requires solr requests to be made with "echoParams=all", for
     # app code to actually have it echo'd back to see it.  
-    config.add_facet_field 'format', :label => 'Format' 
-    config.add_facet_field 'contributor_name_s', :label => 'Contributor', :limit => 15 
-    config.add_facet_field 'subject_personalities_s', :label => 'Personalities'
     config.add_facet_field 'collection_s', :label => 'Collection'
-    config.add_facet_field 'location_s', :label => 'Location'
     config.add_facet_field 'year_i', :label => 'Date', :range => true
+    config.add_facet_field 'format', :label => 'Physical Format'
+    config.add_facet_field 'contributor_name_s', :label => 'Contributor', :limit => 15
+    config.add_facet_field 'subject_personalities_s', :label => 'Personalities'
+    config.add_facet_field 'location_s', :label => 'Location'
     config.add_facet_field 'intended_purpose_s', :label => 'Purpose'
     config.add_facet_field 'format_color_s', :label => 'Color'
     config.add_facet_field 'audio_format_s', :label => 'Audio'
@@ -66,17 +67,20 @@ class CatalogController < ApplicationController
     config.add_index_field 'date_created_s', :label => 'Date Created:' 
     config.add_index_field 'intended_purpose_s', :label => 'Intended Purpose:'
     config.add_index_field 'collection_s', :label => 'Collection:', :link => true
+    
 
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
+    config.add_show_field 'date_s', :label => 'Date:'
+    config.add_show_field 'id', :label => 'Unique Identifier:'
     config.add_show_field 'description_s', :label => 'Description:' 
     config.add_show_field 'location_s', :label => 'Location:'
+    config.add_show_field 'collection_s', :label => 'Holding Institution:', :link => true
     config.add_show_field 'format_duration_s', :label => 'Duration:' 
     config.add_show_field 'footage_length_s', :label => 'Footage length:' 
     config.add_show_field 'contributor_name_role_s', :label => 'Contributor:' 
     config.add_show_field 'subject_personalities_s', :label => 'Personalities:'
-    config.add_show_field 'date_s', :label => 'Date:' 
     config.add_show_field 'date_created_s', :label => 'Date Created:' 
     config.add_show_field 'intended_purpose_s', :label => 'Intended Purpose:'
     config.add_show_field 'can_number_s', :label => 'Can Number:', :link => true
@@ -85,10 +89,7 @@ class CatalogController < ApplicationController
     config.add_show_field 'audio_format_s', :label => 'Audio:'
     config.add_show_field 'cross_reference_s', :label => 'Cross Reference:'
     config.add_show_field 'accession_num_s', :label => 'Accession Number'
-    config.add_show_field 'collection_s', :label => 'Collection:', :link => true
-    config.add_show_field 'xml_display_s'
-
-    
+    config.add_show_field 'xml_display_s' 
 
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields

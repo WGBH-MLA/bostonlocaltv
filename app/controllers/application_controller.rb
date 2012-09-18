@@ -11,6 +11,6 @@ class ApplicationController < ActionController::Base
 
   protected
   def layout_name
-    'application'
+    'bostonlocaltvnews'
   end
 end

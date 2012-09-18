@@ -12,7 +12,7 @@ module Dataset
       @file = file
     end
 
-    def content
+    def content 
       @content ||= File.read(file)
     end
 

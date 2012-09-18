@@ -1,0 +1,6 @@
+/*customized style used for Boston Local TV News project */
+ul.bullet {
+  list-style: disc outside; }
+
+ul.nobullet {
+  list-style-type: none outside; }

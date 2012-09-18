@@ -19,8 +19,8 @@ class Dataset::Bpl < Dataset::Xml
         when "SUBJECT_PERSONALITIES"  
           node.xpath("xmlns:DATA", "xml.namespaces").each do |subject|
             fields << ['subject_personalities_s', subject.text]
+         print "passing the records"
           end
-
         else 
           fields << ["#{node.name.parameterize}_s", node.text]
       end

@@ -2,9 +2,8 @@
 class SolrDocument 
 
   include Blacklight::Solr::Document
-  #SolrDocument.use_extension( BlacklightOaiProvider::SolrDocumentExtension )
 
-  # unique_key = 'id'
+   #unique_key = 'UID'
   
   # The following shows how to setup this blacklight document to display marc documents
   extension_parameters[:marc_source_field] = :marc_display
@@ -25,13 +24,10 @@ class SolrDocument
   # and Blacklight::Solr::Document#to_semantic_values
   # Recommendation: Use field names from Dublin Core
   use_extension( Blacklight::Solr::Document::DublinCore)    
-  SolrDocument.field_semantics.merge!(    
+  field_semantics.merge!(    
                          :title => "title_s",
                          :contributor => "contributor_name_s",
                          :language => "language_facet",
                          :format => "format"
                          )
-  
-  SolrDocument.use_extension( Bostonlocaltv::Pbcore)
-  
 end
