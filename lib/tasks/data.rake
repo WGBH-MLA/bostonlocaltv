@@ -5,11 +5,13 @@ namespace :data do
     Dataset::Bpl.new(file).process!
   end
   
-  task :pbcore_data => :environment do
+  desc "Load PBCore data"
+  task :pb_core => :environment do
     file = ENV['file']
-    Dataset::Bpl.new(file).process!
+    Dataset::Pb_core.new(file).process!
   end
 
+  desc "Load NHF data"
   task :nhf => :environment do
     file = ENV['file']
     Dataset::Nhf.new(file).process!
