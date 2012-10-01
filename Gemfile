@@ -24,14 +24,11 @@ end
 group :development, :test do
   gem "rspec"
   gem "rspec-rails", "~>2.6.0"
+  gem "cucumber-rails"
   gem "database_cleaner"
   gem "capybara"
   gem "aruba"
   gem "sqlite3"
-end
-
-group :test do
-  gem "cucumber-rails"
 end
 
 gem 'jquery-rails'

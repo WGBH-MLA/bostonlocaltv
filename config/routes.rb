@@ -1,9 +1,15 @@
 Bostonlocaltv::Application.routes.draw do
+  resources :items
+
+  resources :votes
+
   Blacklight.add_routes(self)
 
   root :to => "catalog#index"
 
   devise_for :users
+
+  match 'votes' => 'catalog#get_count'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

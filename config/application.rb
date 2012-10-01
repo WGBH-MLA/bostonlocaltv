@@ -51,7 +51,8 @@ module Bostonlocaltv
     config.assets.compress = !Rails.env.development?
     config.sass.line_comments = Rails.env.development?
 
-
+    #added jquery rails
+    config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'

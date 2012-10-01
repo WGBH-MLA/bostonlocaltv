@@ -1,0 +1,11 @@
+<% # main container for facets/limits menu -%>
+<% unless facet_field_names.empty? %>
+<div id="facets" class="facets">
+  <h2>Filter your results:</h2>
+  <% facet_field_names.each do |solr_fname| %>
+	  <div class="facet_limit blacklight-<%= solr_fname.parameterize %>">
+      <%= render_facet_limit(solr_fname) %>
+    </div>
+  <% end %>
+</div>
+<% end %>

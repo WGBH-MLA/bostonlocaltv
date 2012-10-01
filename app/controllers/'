@@ -158,13 +158,13 @@ class CatalogController < ApplicationController
       begin
           @vote_last = Vote.find (:last)
           @vote = Vote.new
-          #@vote.id = @vote_last.id + 1
+          @vote.id = @vote_last.id + 1
           @vote.item_id = params[:item_id]
           @vote.user_id = params[:authenticity_token]
           @vote.save
         rescue
           @vote = Vote.new
-          #@vote.id = 1
+          @vote.id = 1
           @vote.item_id = params[:item_id]
           @vote.user_id = params[:authenticity_token]
           @vote.save
@@ -172,23 +172,19 @@ class CatalogController < ApplicationController
 
       begin
           @item = Item.find (params[:item_id])
-
-      rescue
+         rescue
           @item = Item.new
-         
-          begin 
-             @item_last = Item.last
+          @item_last = Item.last
+          if (@item_last.id == nil)
+ 	     @item.id = 1
+          else
              @item.id = @item_last.id + 1
-             @item.item_id = params[:item_id]
-             @item.votes_count = 1
-             @item.save
-          rescue
- 	      @item.id = 1
-              @item.item_id = params[:item_id]
-              @item.votes_count = 1
-              @item.save
           end
-       end
+ 
+          @item.item_id = params[:item_id]
+          @item.votes_count = 1
+          @item.save
+        end
 
     @items = Item.all
 

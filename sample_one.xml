@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PBCoreCollection xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
+ <PBCoreDescriptionDocument>
+    <pbcoreAssetDate dateType="created">11/18/1973</pbcoreAssetDate>
+    <pbcoreIdentifier source="Accession_NUMBER"/>
+    <pbcoreTitle titleType="Description"/>
+    <pbcoreRelation>
+      <pbcoreRelationType>Is Part Of</pbcoreRelationType>
+      <pbcoreRelationIdentifier>WCVB</pbcoreRelationIdentifier>
+    </pbcoreRelation>
+    <pbcoreInstantiation>
+      <instantiationIdentifier source="Accession #" annotation="not in DB, but added to records during conversion to PBCore">2394.00137</instantiationIdentifier>
+      <instantiationDimensions unitsOfMeasure="feet">825</instantiationDimensions>
+      <instantiationLocation>CIF6</instantiationLocation>
+    </pbcoreInstantiation>
+  </PBCoreDescriptionDocument>
+</PBCoreCollection>
