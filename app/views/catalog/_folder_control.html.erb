@@ -11,9 +11,10 @@
 <%= hidden_field(:bookmark, :title, :value => document[document_show_link_field]) %> 
 <%= image_submit_tag("button-sm.png") %>
 <% end %>
-<% if v_count == "2" %>
-<b><i><%= v_count %> votes received</i></b>
+<% if v_count.blank? %>
+<b><i></i></b>
+<% elsif v_count == 1 %>
+<b><i><%= v_count %> vote received</i></b>
 <% else %>
-<b><i> </i></b>
+<b><i><%= v_count %> votes received</i></b>
 <% end %>
-<%= link_to 'my item', items_path %>
