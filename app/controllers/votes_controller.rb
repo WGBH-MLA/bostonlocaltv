@@ -1,8 +1,17 @@
 class VotesController < ApplicationController
+  include Blacklight::Configurable
+  include Blacklight::SolrHelper
+
+  copy_blacklight_config_from(CatalogController)
+
+  helper CatalogHelper
+
   # GET /votes
   # GET /votes.json
   def index
     @votes = Vote.all
+
+    @response, @documents = get_solr_response_for_field_values("id",session[:folder_document_ids] || [])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -40,17 +49,39 @@ class VotesController < ApplicationController
   # POST /votes
   # POST /votes.json
   def create
-    @vote = Vote.new(params[:vote])
-
-    respond_to do |format|
-      if @vote.save
-        format.html { redirect_to @vote, notice: 'Vote was successfully created.' }
-        format.json { render json: @vote, status: :created, location: @vote }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @vote.errors, status: :unprocessable_entity }
-      end
+      the_time = "the_time" + "_" + params[:vote][:item_id]
+       cookies[:"#{the_time}"] = Time.now.to_s
+       @vote = Vote.new
+       @vote.item_id = params[:vote][:item_id]
+       @vote.user_id = cookies[:"#{the_time}"]
+       item = params[:vote][:item_id]
+       uid = params[:vote][:user_id]
+ 
+      begin
+       @item = Item.find (item)
+       count = @item.votes_count
+    rescue
+       @item = Item.new
+       @item.item_id = item
+       @item.save
     end
+
+    @extant = Vote.find(:all, :conditions => ["item_id = ? AND user_id = ?", item, uid])
+
+    if (@extant.blank?)
+       respond_to do |format|
+          if @vote.save
+            format.js
+            format.json { render json: @vote, status: :created, location: @vote }
+          else
+            format.html { render action: "new" }
+            format.json { render json: @vote.errors, status: :unprocessable_entity }
+          end
+        end
+    else
+     render partial: "dvotes", locals: {:vcount => count, :item_id => item}
+    end
+
   end
 
   # PUT /votes/1

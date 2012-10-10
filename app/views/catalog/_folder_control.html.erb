@@ -1,20 +1,12 @@
 <%-   
-  # pass in local :document with a SolrDocument
+  # pass in local :document with a SolrDocument                  
   method = (item_in_folder?(document.id) ? "delete" : "put")
   label = (item_in_folder?(document.id) ? "Unselect" : "Select")
   cssClass = (item_in_folder?(document.id) ? "deleteFolder" : "addFolder")
-  v_count = (get_vote_count?(document.id))
+  the_time = "the_time" + "_" + document.id
 -%>
-
-<%= form_tag(ulr_for_options={:action => "get_count"}, options={:method => method, :class=> "#{cssClass}", "data-doc-id" => document.id, :title=>h(document[document_show_link_field])}) do %>
-<%= hidden_field_tag 'item_id', document.id %>
-<%= hidden_field(:bookmark, :title, :value => document[document_show_link_field]) %> 
-<%= image_submit_tag("button-sm.png") %>
-<% end %>
-<% if v_count.blank? %>
-<b><i></i></b>
-<% elsif v_count == 1 %>
-<b><i><%= v_count %> vote received</i></b>
-<% else %>
-<b><i><%= v_count %> votes received</i></b>
+<%= form_for( setup_vote(@vote), :remote=> true, :html=>{:class=> "#{document.id} #{cssClass}", "data-doc-id" => document.id, :title=>h(document[document_show_link_field])}) do |f| %>
+<%= f.hidden_field "item_id", :value => document.id %>
+<%= f.hidden_field "user_id", :value => cookies[:"#{the_time}"] %>
+<%= render :partial=> "votes", :locals => {:votes => @vote, :doc_id => document.id} %>
 <% end %>

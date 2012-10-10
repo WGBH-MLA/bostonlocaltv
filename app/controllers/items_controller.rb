@@ -42,7 +42,7 @@ class ItemsController < ApplicationController
   # POST /items
   # POST /items.json
   def create
-    @item = Item.new(params[:item])
+    @item = Item.new(params[:item_id])
 
     respond_to do |format|
       if @item.save
@@ -74,7 +74,7 @@ class ItemsController < ApplicationController
   # DELETE /items/1
   # DELETE /items/1.json
   def destroy
-    @item = Item.find(params[:id])
+    @item = Item.find(params[:item_id])
     @item.destroy
 
     respond_to do |format|

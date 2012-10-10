@@ -1,6 +1,28 @@
 $(document).ready(function(){
- 
-    alert('This is a pathetically simple AJAX response!');
- 
+    var count = '<%= h @item.votes_count -%>'
+    var x = 1
+
+  if(count == "")
+   {
+     x = 1;
+   }
+   else
+   {
+     x = parseInt(count) + 1;
+   }
+
+    var doc_id = '<%= h @item.item_id -%>';
+
+    document.getElementById("vote_button_" + doc_id).disabled = "disabled";
+    document.getElementById("vote_button_" + doc_id).src="http://localhost:3000/assets/button-sm-voted.png";
+
+    if (x == 1)
+    {
+      document.getElementById("votes_"+doc_id).innerHTML=  x + " vote received";
+    }
+    else
+    {
+      document.getElementById("votes_"+doc_id).innerHTML=  x + " votes received";
+    }
 });
  

@@ -1,6 +1,5 @@
 module BlacklightHelper
   include Blacklight::BlacklightHelperBehavior
-  include ItemsHelper
 
   def render_document_show_field_value args
     value = args[:value]

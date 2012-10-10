@@ -1,0 +1,22 @@
+<%-
+  # pass in local :document with a SolrDocument
+  the_time = "the_time" + "_" + doc_id
+  vote_count = get_vote?(doc_id, cookies[:"#{the_time}"])
+  v_count = get_vote_count?(doc_id)
+  count = votes
+  c_id = doc_id
+-%>
+<% if (vote_count==0) %>
+<%= image_submit_tag("button-sm.png", :id => "vote_button_#{c_id}") %>
+<% else %>
+<%= image_submit_tag("button-sm-voted.png", :disabled => "disabled", :id => "vote_button_#{c_id}", :class=>vote_count) %>
+<% end %>
+<% if v_count.blank? %>
+<div id='votes_<%=c_id %>'></div>
+<% elsif v_count == 1 %>
+<div id=votes_<%=c_id %>><i>1 vote received </i></div>
+<% else %>
+<div id=votes_<%=c_id %>><i><%= v_count %> votes received </i></div>
+<% end %>
+
+
