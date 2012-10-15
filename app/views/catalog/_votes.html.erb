@@ -7,9 +7,9 @@
   c_id = doc_id
 -%>
 <% if (vote_count==0) %>
-<%= image_submit_tag("button-sm.png", :id => "vote_button_#{c_id}") %>
+<%= image_submit_tag("button-vote-sm.png", :id => "vote_button_#{c_id}") %>
 <% else %>
-<%= image_submit_tag("button-sm-voted.png", :disabled => "disabled", :id => "vote_button_#{c_id}", :class=>vote_count) %>
+<%= image_submit_tag("button-voted-sm.png", :disabled => "disabled", :id => "vote_button_#{c_id}", :class=>vote_count) %>
 <% end %>
 <% if v_count.blank? %>
 <div id='votes_<%=c_id %>'></div>

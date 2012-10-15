@@ -1,0 +1,25 @@
+<ul class="tools">
+  <li class="share">
+<div class="addthis_toolbox addthis_default_style">
+  <a class="addthis_button_compact">Share</a>
+<span class="addthis_separator">|</span>
+  <a class="addthis_button_facebook"></a>
+  <a class="addthis_button_twitter"></a>
+  <a class="addthis_button_gmail"></a>
+</div>
+
+<script type="text/javascript">
+  var addthis_config = { ui_click: true }
+
+  $(function() {
+    addthis_config = { ui_click: true, data_track_clickback: true, data_ga_property: '<%= GOOGLE_ANALYTICS_TRACKER_ID if defined?(GOOGLE_ANALYTICS_TRACKER_ID)%>'}
+    $('<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=interactivetech"></' + 'script>').insertAfter('.addthis_button_gmail');
+
+  });
+</script>
+  </li>
+  <li class="cite">
+     <%= link_to "Cite", citation_catalog_path(:docid => document) %>
+  </li>
+</ul>
+   

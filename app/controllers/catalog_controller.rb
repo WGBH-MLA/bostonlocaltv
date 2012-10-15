@@ -152,4 +152,16 @@ class CatalogController < ApplicationController
     config.spell_max = 5
   end
 
+    def citation
+     puts "document: #{params[:docid]}  encoding:  #{params[:docid].encoding.name}"
+     doc_id = get_doc_id (params[:docid])
+     @response, @document = get_solr_response_for_doc_id (params[:docid])
+     respond_to do |format|
+     format.html 
+     end
+   end
+
+     def get_doc_id (id)
+        id.bytes.to_s
+     end
 end 

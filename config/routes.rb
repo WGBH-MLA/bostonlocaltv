@@ -10,6 +10,14 @@ Bostonlocaltv::Application.routes.draw do
 
   resources :votes
 
+  match 'catalog/citation', :as => "citation_catalog"
+
+  resources :catalog, :only => [:index, :show, :update], :constraints => { :id=>/([A-Za-z0-9]|:|-|\.)*([A-Za-z0-9]|:|-){7}/ } do
+    member do
+      get 'cite'
+    end
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
