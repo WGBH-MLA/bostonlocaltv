@@ -38,6 +38,7 @@ class CatalogController < ApplicationController
     # sniffing requires solr requests to be made with "echoParams=all", for
     # app code to actually have it echo'd back to see it.  
     config.add_facet_field 'collection_s', :label => 'Collection'
+    config.add_facet_field 'subject_s', :label => 'Subject', :limit => 5
     config.add_facet_field 'year_i', :label => 'Date', :range => true
     config.add_facet_field 'format', :label => 'Physical Format'
     config.add_facet_field 'contributor_name_s', :label => 'Contributor', :limit => 15

@@ -10,8 +10,8 @@
 /* Global */
 body 
 {
-  background: #fff asset_url('blacklight/bg-5px.jpg',image) repeat-x top left; 
-  font: 0.7em Verdana, "Lucida Grande", "Lucida Sans Unicode", "Arial Unicode MS", Arial, sans-serif; 
+  background: #d3d2d0 asset_url('blacklight/bg-5px.jpg',image) repeat-x top left; 
+  font: 12px Verdana, "Lucida Grande", "Lucida Sans Unicode", "Arial Unicode MS", Arial, sans-serif; 
   line-height: 1.4; 
   margin: 0px; 
   padding: 15px;
@@ -38,7 +38,7 @@ body
 
   #blogo
   {
-   margin-top: 47px
+   margin-top: 30px
   }
   
   #user_util_links 

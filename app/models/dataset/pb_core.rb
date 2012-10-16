@@ -55,6 +55,11 @@ class Dataset::Pb_core < Dataset::Xml
 
 	when "pbcoreDescription"
 		fields << ["description_s", node.text]
+ 
+        when "pbcoreSubject"
+		if node.values()[0] == "category"
+		   fields << ["subject_s", node.text]
+                end
 
 	when "pbcoreInstantiation"
 		node.children().each do |child|
