@@ -23,8 +23,6 @@ class Dataset::Xml < Dataset::Base
         process_record(row, solr_doc)
           solr_doc[:id] ||= row.xpath("//xmlns:record_unique_id", xmlns).to_s
           solr_doc[:title_sort] = solr_doc[:title_s].first unless solr_doc[:title_s].blank?
-          #solr_doc[:year_i] = solr_doc[:date_s].first[/19\d\d/] unless solr_doc[:date_s].blank?
-	  solr_doc[:xml_display_s] = row.to_s
         end
 
         Blacklight.solr.add solr_doc, :add_attributes => { :commitWithin => 10000 }

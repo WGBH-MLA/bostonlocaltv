@@ -24,5 +24,9 @@ module BlacklightHelper
 
     render_field_value value
   end
+
+  def document_heading
+    @document[blacklight_config.show.heading].to_s.gsub(/\[\"(.*)\"\]/, '\1') || @document.id
+  end
   
 end

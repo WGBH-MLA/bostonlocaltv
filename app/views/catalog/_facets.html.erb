@@ -3,9 +3,21 @@
 <div id="facets" class="facets">
   <h2>Filter your results:</h2>
   <% facet_field_names.each do |solr_fname| %>
-	  <div class="facet_limit blacklight-<%= solr_fname.parameterize %>">
+    <% if solr_fname == "video_s" %>
+       <div class="facet_limit blacklight-<%= solr_fname.parameterize %>">
+        <h3>Video Available</h3>
+       <ul>
+          <li>Videos will be added to the site on an on-going basis</li>
+          <li><a href="#">Video is available (0)</a></li>
+	  <li><a href="#">Video is  not available (0)</a></li>
+       </ul>
+       
+       </div>
+    <% else %>
+      <div class="facet_limit blacklight-<%= solr_fname.parameterize %>">
       <%= render_facet_limit(solr_fname) %>
-    </div>
-  <% end %>
+      </div>
+     <% end %>
+   <% end %>
 </div>
 <% end %>

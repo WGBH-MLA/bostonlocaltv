@@ -1,4 +1,4 @@
-<% @page_title = "#{document_show_html_title} - #{application_name}" %>
+<% @page_title = "- #{application_name}" %>
 <% extra_head_content << render_link_rel_alternates %>
 <% sidebar_items << render_document_sidebar_partial %>
 

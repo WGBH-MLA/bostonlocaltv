@@ -8,6 +8,10 @@ class Dataset::Pb_core < Dataset::Xml
   def process_record row, solr_doc = nil
     solr_doc ||= {}
     fields = []
+    title = false
+    date_created = false
+    collection = false
+    collection_org = " "
 
     row.xpath("*").select { |x| !x.text.blank? }.each do |node|
       case node.name
@@ -20,6 +24,7 @@ class Dataset::Pb_core < Dataset::Xml
 		   else
 		     y = parse_date node.text
 		     fields << ["year_i", y]
+	             fields << ["date_created_s", node.text]
 	           end 
 		end
         when "pbcoreIdentifier"
@@ -35,7 +40,15 @@ class Dataset::Pb_core < Dataset::Xml
 
         when "pbcoreTitle"
               if node.values()[0] == nil || node.values()[0] == "Description" || node.values()[0] == "Program"
-		 fields << ["title_s", node.text]
+                 if node.text[0] == "\""
+                    title = node.text.to_s.gsub(/\"(.*)\"/, '\1')
+                    fields <<["title_s", title]
+                 elsif node.values()[0] == "\'"
+ 		    title = node.text.to_s.gsub(/\'(.*)\'/, '\1')
+                    fields << ["title_s", title]  
+                 else
+		    fields << ["title_s", node.text]
+                 end
               elsif node.values()[0] == "Series"
 		 fields << ["collection_s", node.text]
 	      else
@@ -60,8 +73,15 @@ class Dataset::Pb_core < Dataset::Xml
 		if node.values()[0] == "category"
 		   fields << ["subject_s", node.text]
                 end
+               
+                if node.values()[0] == nil
+                   fields << ["subject_s", node.text]
+                end
 
-	when "pbcoreInstantiation"
+         when "pbcoreContributor"
+                fields << ["person_s", node.text]
+
+	 when "pbcoreInstantiation"
 		node.children().each do |child|
                  case child.name
 		    when "instantiationPhysical"
@@ -74,14 +94,45 @@ class Dataset::Pb_core < Dataset::Xml
     end
 
     fields.each do |key, value|
+      if key == 'title_s' 
+         title = true 
+      end
+
+      if key == 'date_created_s'
+         date_created = true
+      end
+
+      if key == 'collection_s'
+         collection = true
+          if collection_org == " "
+             collection_org = fields ["collection_s"]
+          end
+      end
+
       next if value.blank?
       key.gsub!('__', '_')
       solr_doc[key.to_sym] ||= []
       solr_doc[key.to_sym] <<  value.strip
     end
 
-    solr_doc
-  end
+    if title && date_created && collection
+      solr_doc
+    else
+        if collection == false
+           solr_doc['collection_s'] = collection_org 
+        end
+
+        if title == false
+           solr_doc['title_s'] = collection_org 
+        end
+
+        if date_created == false
+          solr_doc['date_created_s'] = " " 
+        end
+
+      solr_doc
+    end
+end
 
 def parse_date date
     if /^.*(?<year>\d{4}).*$/ =~ date
