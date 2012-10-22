@@ -10,8 +10,6 @@ class Dataset::Pb_core < Dataset::Xml
     fields = []
     title = false
     date_created = false
-    collection = false
-    collection_org = " "
 
     row.xpath("*").select { |x| !x.text.blank? }.each do |node|
       case node.name
@@ -102,28 +100,19 @@ class Dataset::Pb_core < Dataset::Xml
          date_created = true
       end
 
-      if key == 'collection_s'
-         collection = true
-          if collection_org == " "
-             collection_org = fields ["collection_s"]
-          end
-      end
-
       next if value.blank?
       key.gsub!('__', '_')
       solr_doc[key.to_sym] ||= []
       solr_doc[key.to_sym] <<  value.strip
     end
 
-    if title && date_created && collection
+    if title && date_created 
       solr_doc
     else
-        if collection == false
-           solr_doc['collection_s'] = collection_org 
-        end
+        puts solr_doc
 
         if title == false
-           solr_doc['title_s'] = collection_org 
+           solr_doc['title_s'] = solr_doc[:collection_s] 
         end
 
         if date_created == false
