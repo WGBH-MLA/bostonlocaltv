@@ -2,8 +2,6 @@
  *
  * Required by Blacklight
  *= require 'jquery/ui-lightness/jquery-ui-1.8.1.custom.css'
- * This is the standard blacklight theme.
- *= require 'blacklight/blacklight'
  *
  * This is a manifest file that'll automatically include all the stylesheets available in this directory
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at

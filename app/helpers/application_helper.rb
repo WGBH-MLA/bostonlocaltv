@@ -133,4 +133,9 @@ module ApplicationHelper
   def setup_edition
       return nil
   end
+ 
+  def get_wcvb_doc (doc_id)
+    @document
+  end
+
 end

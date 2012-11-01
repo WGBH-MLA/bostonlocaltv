@@ -8,8 +8,8 @@
 
 // Your basic settings for the grid.
 $total-cols         : 16            !default;
-$col-width          : 44px          !default;
-$gutter-width       : 20px          !default;
+$col-width          : 44px           !default;
+$gutter-width       : 22px           !default;
 $side-gutter-width  : $gutter-width !default;
 
 // Controls for right-to-left or bi-directional sites.
@@ -82,7 +82,7 @@ $omega-float        : opposite-position($from-direction)    !default;
 @mixin container() {
   @include pie-clearfix;
   margin: auto;
-  width: 1004px;
+  width: 1024px;
   max-width: 100%;
 }
 

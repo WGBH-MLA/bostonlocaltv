@@ -1,5 +1,9 @@
+<%-   
+  # pass in server url                  
+  server_url = "http://" + request.remote_host.to_s + ":" + request.server_port.to_s
+-%>
+
 <h3>Welcome.</h3>
-<p></p>
 <p></p>
 <p><b><&#8212; You can: </b><br/>
 <ul class="bullet">
@@ -8,21 +12,21 @@
 </ul>
 <br/>
 <b>Or, try one of these searches to get started:</b></br>
-<ul class="nobullet"><li><a href="http://localhost:3000/catalog?utf8=%E2%9C%93&q=Busing+for+school+integration&search_field=all_fields&commit=search">Busing for school integration</a></li>
-<li><a href="http://localhost:3000/catalog?utf8=%E2%9C%93&q=Demonstrations&search_field=all_fields&commit=search">Demonstrations</a></li>
-<li><a href="http://localhost:3000/catalog?utf8=%E2%9C%93&q=Gerald+R.+Ford&search_field=all_fields&utf8=%E2%9C%93&commit=search">Ford, Gerald R., 1913-2006</a></li>
-<li><a href="http://localhost:3000/catalog?utf8=%E2%9C%93&q=Ted+Kennedy&search_field=all_fields&commit=search">Kennedy, Edward M. (Edward Moore), 1932-2009</a></li>
-<li><a href="http://localhost:3000/catalog?utf8=%E2%9C%93&q=Martin+Luther+King&search_field=all_fields&commit=search">King, Martin Luther, Jr., 1929-1968</a></li>
-<li><a href="http://localhost:3000/catalog?utf8=%E2%9C%93&q=Massachusetts+politics+and+government&search_field=all_fields&utf8=%E2%9C%93&commit=search">Massachusetts -- Politics and government</a></li>
-   <li><a href="http://localhost:3000/catalog?utf8=%E2%9C%93&q=MBTA+[Massachusetts+Bay+Transportation+Authority]&search_field=all_fields&commit=search">Massachusetts Bay Transportation Authority</a></li>
-<li><a href="http://localhost:3000/catalog?utf8=%E2%9C%93&q=Richard+Nixon&search_field=all_fields&commit=search">Nixon, Richard M. (Richard Milhous), 1913-1994</a></li>
-<li><a href="http://localhost:3000/catalog?utf8=%E2%9C%93&q=organized+crime&search_field=all_fields&commit=search">Organized crime</a></li>
-<li><a href="http://localhost:3000/catalog?utf8=%E2%9C%93&q=Francis+Sargent&search_field=all_fields&commit=search">Sargent, Francis W., 1915-1998</a></li>
-<li><a href="http://localhost:3000/catalog?utf8=%E2%9C%93&q=sports&search_field=all_fields&commit=search">Sports</a></li>
-<li><a href="http://localhost:3000/catalog?utf8=%E2%9C%93&q=urban+renewal&search_field=all_fields&commit=search">Urban renewal</a></li>
-<li><a href="http://localhost:3000/catalog?utf8=%E2%9C%93&q=universities+and+colleges&search_field=all_fields&utf8=%E2%9C%93&commit=search">Universities and colleges</a></li>
-<li><a href="http://localhost:3000/catalog?utf8=%E2%9C%93&q=John+Volpe&search_field=all_fields&commit=search">Volpe, John A.</a></li>
-<li><a href="http://localhost:3000/catalog?utf8=%E2%9C%93&q=Kevin+White&search_field=all_fields&commit=search">White, Kevin H.</a></li>
+<ul class="nobullet"><li><a href="http://ml-20015338.wgbh.org:3000/catalog?utf8=%E2%9C%93&q=Busing+for+school+integration&search_field=all_fields&commit=search">Busing for school integration</a></li>
+<li><a href="http://ml-20015338.wgbh.org:3000/catalog?utf8=%E2%9C%93&q=Demonstrations&search_field=all_fields&commit=search">Demonstrations</a></li>
+<li><a href="http://ml-20015338.wgbh.org:3000/catalog?utf8=%E2%9C%93&q=Gerald+R.+Ford&search_field=all_fields&utf8=%E2%9C%93&commit=search">Ford, Gerald R., 1913-2006</a></li>
+<li><a href="http://ml-20015338.wgbh.org:3000/catalog?utf8=%E2%9C%93&q=Ted+Kennedy&search_field=all_fields&commit=search">Kennedy, Edward M. (Edward Moore), 1932-2009</a></li>
+<li><a href="http://ml-20015338.wgbh.org:3000/catalog?utf8=%E2%9C%93&q=Martin+Luther+King&search_field=all_fields&commit=search">King, Martin Luther, Jr., 1929-1968</a></li>
+<li><a href="http://ml-20015338.wgbh.org:3000/catalog?utf8=%E2%9C%93&q=Massachusetts+politics+and+government&search_field=all_fields&utf8=%E2%9C%93&commit=search">Massachusetts -- Politics and government</a></li>
+   <li><a href="http://ml-20015338.wgbh.org:3000/catalog?utf8=%E2%9C%93&q=MBTA+[Massachusetts+Bay+Transportation+Authority]&search_field=all_fields&commit=search">Massachusetts Bay Transportation Authority</a></li>
+<li><a href="http://ml-20015338.wgbh.org:3000/catalog?utf8=%E2%9C%93&q=Richard+Nixon&search_field=all_fields&commit=search">Nixon, Richard M. (Richard Milhous), 1913-1994</a></li>
+<li><a href="http://ml-20015338.wgbh.org:3000/catalog?utf8=%E2%9C%93&q=organized+crime&search_field=all_fields&commit=search">Organized crime</a></li>
+<li><a href="http://ml-20015338.wgbh.org:3000/catalog?utf8=%E2%9C%93&q=Francis+Sargent&search_field=all_fields&commit=search">Sargent, Francis W., 1915-1998</a></li>
+<li><a href="http://ml-20015338.wgbh.org:3000/catalog?utf8=%E2%9C%93&q=sports&search_field=all_fields&commit=search">Sports</a></li>
+<li><a href="http://ml-20015338.wgbh.org:3000/catalog?utf8=%E2%9C%93&q=urban+renewal&search_field=all_fields&commit=search">Urban renewal</a></li>
+<li><a href="http://ml-20015338.wgbh.org:3000/catalog?utf8=%E2%9C%93&q=universities+and+colleges&search_field=all_fields&utf8=%E2%9C%93&commit=search">Universities and colleges</a></li>
+<li><a href="http://ml-20015338.wgbh.org:3000/catalog?utf8=%E2%9C%93&q=John+Volpe&search_field=all_fields&commit=search">Volpe, John A.</a></li>
+<li><a href="http://ml-20015338.wgbh.org:3000/catalog?utf8=%E2%9C%93&q=Kevin+White&search_field=all_fields&commit=search">White, Kevin H.</a></li>
 </ul>
 <b>But wait, there’s more:</b>
 <p>We’re still working on adding subjects and facets to records in the collection, so you won’t return all the results you should for now. Bear with us and keep checking back as we add to the data on the website.</p>

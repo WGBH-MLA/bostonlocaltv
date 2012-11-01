@@ -38,20 +38,11 @@ class CatalogController < ApplicationController
     # sniffing requires solr requests to be made with "echoParams=all", for
     # app code to actually have it echo'd back to see it.  
     config.add_facet_field 'collection_s', :label => 'Collection'
-    config.add_facet_field 'subject_s', :label => 'Subject', :limit => 5
-    config.add_facet_field 'contributor_name_s', :label => 'Contributor', :limit => 15
-    config.add_facet_field 'subject_personalities_s', :label => 'Personalities'
-    config.add_facet_field 'location_s', :label => 'Location'
+    config.add_facet_field 'subject_facet_s', :label => 'Subject', :limit => 5
+    config.add_facet_field 'people_s', :label => 'People', :limit => 5
+    config.add_facet_field 'location_facet_s', :label => 'Places', :limit => 5
     config.add_facet_field 'year_i', :label => 'Date', :range => true
     config.add_facet_field 'video_s', :label => 'Video Available'
-    config.add_facet_field 'intended_purpose_s', :label => 'Purpose'
-    config.add_facet_field 'format_color_s', :label => 'Color'
-    config.add_facet_field 'audio_format_s', :label => 'Audio'
-    config.add_facet_field 'audio_type_s', :label => 'Audio'
-    config.add_facet_field 'cross_reference_s', :label => 'Cross Reference'
-    config.add_facet_field 'format_location_s', :label => 'Format location'
-    config.add_facet_field 'can_number_s', :label => 'Can Number'
-    config.add_facet_field 'initials_s', :label => "Initials"
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
@@ -61,12 +52,7 @@ class CatalogController < ApplicationController
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display 
     config.add_index_field 'description_s', :label => 'Description' 
-    config.add_index_field 'location_s', :label => 'Location:'
-    config.add_index_field 'contributor_name_role_s', :label => 'Contributor:' 
-    config.add_index_field 'subject_personalities_s', :label => 'Personalities:'
-    config.add_index_field 'date_s', :label => 'Date:' 
-    config.add_index_field 'date_created_s', :label => 'Date' 
-    config.add_index_field 'intended_purpose_s', :label => 'Intended Purpose:'
+    config.add_index_field 'date_created_s', :label => 'Date'
     config.add_index_field 'collection_s', :label => 'Collection', :link => true
     
 
@@ -75,28 +61,31 @@ class CatalogController < ApplicationController
     #   The ordering of the field names is the order of the display 
     config.add_show_field 'program_s', :label => 'Program Type'
     config.add_show_field 'date_created_s', :label => 'Date'
+    config.add_show_field 'date_estimated_s', :label => 'Date Estimated'
     config.add_show_field 'id', :label => 'Unique Identifier'
     config.add_show_field 'description_s', :label => 'Description' 
     config.add_show_field 'people_s', :label => 'Names'
     config.add_show_field 'subject_s', :label => 'Subjects'
-    config.add_show_field 'location_s', :label => 'Places'
+    config.add_show_field 'location_s', :label => 'Locations'
     config.add_show_field 'related_s', :label => 'Related Records'
     config.add_show_field 'format', :label => 'Physical format'
     config.add_show_field 'audio_type_s', :label => 'Audio Type'
+    config.add_show_field 'audio_format_s', :label => 'Audio Format'
     config.add_show_field 'audio_duration_s', :label => 'Duration'
+    config.add_show_field 'format_color_s', :label => 'Color'
+    config.add_show_field 'broadcast_date_s', :label => 'Date Broadcast'
     config.add_show_field 'collection_s', :label => 'Collection'
     config.add_show_field 'h_location_s', :label => 'Holding Institution', :link => true
     config.add_show_field 'p_location_s', :label => 'Physical Location'
-    config.add_show_field 'footage_length_s', :label => 'Footage length:' 
-    config.add_show_field 'contributor_name_role_s', :label => 'Contributor:' 
+    config.add_show_field 'footage_length_s', :label => 'Footage Length' 
+    config.add_show_field 'contributor_name_role_s', :label => 'Contributor' 
     config.add_show_field 'subject_personalities_s', :label => 'Personalities:'
-    config.add_show_field 'intended_purpose_s', :label => 'Intended Purpose:'
+    config.add_show_field 'intended_purpose_s', :label => 'Intended Purpose'
     config.add_show_field 'can_number_s', :label => 'Can Number:', :link => true
     config.add_show_field 'format_location_s', :label => 'Location'
-    config.add_show_field 'audio_type_s', :label => 'Audio:'
-    config.add_show_field 'audio_format_s', :label => 'Audio:'
-    config.add_show_field 'cross_reference_s', :label => 'Cross Reference:'
+    config.add_show_field 'cross_reference_s', :label => 'Cross Reference'
     config.add_show_field 'accession_num_s', :label => 'Accession Number'
+    config.add_show_field 'language_s', :label => 'Language'
 
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
@@ -170,4 +159,5 @@ class CatalogController < ApplicationController
      def get_doc_id (id)
         id.bytes.to_s
      end
+
 end 

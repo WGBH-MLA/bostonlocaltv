@@ -1,5 +1,9 @@
-@import "blacklight/susy_framework";
+@import "susy_framework";
 @import "compass/utilities";
+@import "compass/css3/border-radius";
+
+$search_ui_border_color: #AAAAAA;
+$search_ui_bg_color: #d3d2d0;
 
 /* Generic layout stuff */
 .hide 
@@ -24,52 +28,151 @@ body
   margin: 0px auto;
 }
 
+#collection
+{
+   color:#e4e4e4;
+   font-size:12px;
+   font-style:italic;
+}
+
+#blog
+{
+  color:#e4e4e4;
+  font-size:12px;
+  font-style:italic;
+}
+
 #hd 
 {
-  @include full;
-  @include clearfix;
-  padding: 2em 0 2em 0;
-
-
-  #logo 
+  padding: 0px 60px 0px 60px;
+  height: 122px;
+  width: inherit;
+ 
+  #logo_left
   {
-    margin: 0 auto 0 47px;
-  }
-
-  #blogo
-  {
-   margin-top: 30px
+   width: 122px;
+   height: 122px;
+   float: left;
   }
   
-  #user_util_links 
-  { 
-    text-align: right;
-    @include columns(12,24);
-    @include omega(24);
+  #logo_right
+  {
+   width: 700px;
+   height: 122px;
+   float: left;
+
+.bostontvnews-logo {
+   float: left;
+  }
+ 
+  .top-dates-logo {
+   float: left;
   }
 }
+}
+
+#top_search
+{
+    font-size:120%;
+    text-align:right;
+    margin-top:13px;
+    margin-bottom: 12px;
+    float: right;
+    width: 350px;
+    height: 22px;
+}
+  
+.q_field {
+  position: relative;
+  margin-left: 30px;
+  margin-right: 0px;
+  width: 350px;
+  padding-bottom: 2px;
+  height: 22px;
+  float: left;
+  color: #e4e4e4;
+
+  .fq {
+    width: 150px;
+    padding-right: 20px;
+    padding_bottom: 5px;
+    font-size: 10pt;
+    color: #666;
+    line-height: 1.25em;
+    font-family: georgia;
+    font-style: italic;
+    background-color: #FFF;
+    
+  }
+
+  .submit {
+    position: relative;
+    top: 5px;
+    right: 19px;
+    width: 14px;
+    height: 14px;
+   }
+  } 
+  
+  #search_context_collection
+  {
+    width: 150px;
+    height: 22px;
+    float: right;
+  }
+ 
 
 #bd 
 {
-  @include full;
+  @include container;
   @include clearfix;
   margin-bottom: 2em;
+  padding: 20px 40px 0px 40px;
 
   #main 
   {
-    @include prefix(1,24);
-    @include columns(18,24);
-    @include omega(24);
+   display: inline;
+   float: right;
+   margin-right: 0;
+   padding-left: 20px;
+   padding-top: 25px;
+   width: 684px;
   }
 
   #sidebar 
   {
-    @include columns(5,24);
-    @include clearfix;
-    
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+
+   #search .submit
+   {
+      position: relative;
+      top: 25px;
+      right: 40px;
+      width: 14px;
+      height: 14px;
+      
+   }
+    .q
+    {
+     float: left;
+     width: 260px;
+     padding-left: 5px;
+     padding-right: 20px;
+     margin-top: 20px;
+     color: #838383;
+     line-height: 1.25em;
+     background-color: #FFF;
+     font-family: georgia;
+     font-style: italic;
+     font-size: 10pt;
+    }
+
     p 
     { 
-      padding-top: 2em;
+      padding-top: 20px;
     }
   }
 }

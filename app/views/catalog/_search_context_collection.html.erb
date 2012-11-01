@@ -1,0 +1,4 @@
+  <div id="search_context_collection">
+      <%= radio_button_tag 'search_context', 'all', @search_context == 'all' || @search_context.nil? %><%= label_tag 'search_context_all', 'collections' %>
+      <%= radio_button_tag 'search_context', @document %><%= label_tag 'blog' %>
+  </div>
