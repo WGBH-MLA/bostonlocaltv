@@ -69,24 +69,65 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 
 #container {
 	float: left;
-	margin: 0 -300px 0 0;
-	width: 100%;
+	width: 450px;
 }
 #content {
-	margin: 0 320px 0 10px;
 	background: #fff;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	box-shadow: 2px 2px 4px #bbb;
+	width: 450px;
 }
+
+
 #primary,
 #secondary {
-	float: right;
+	float: left;
 	overflow: hidden;
 /*  width: 220px;*/
-    width: 300px;
+    width: 540px;
+}
+
+#search_home
+{
+      width: 220px;
+      float: left;
+      margin-left: 20px;
+}
+#search
+{
+	background-color: #FFF;
+	padding: 25px 20px 20px 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        box-shadow: 2px 2px 4px #bbb;
+}
+#voting_status
+{
+       float: left;
+       padding: 10px 20px 10px 20px ;
+       margin-top: 20px;
+       background-color: #FFF;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        box-shadow: 2px 2px 4px #bbb;
+}
+
+#text
+{
+  float: right;
+}
+
+#features_home
+{
+	width: 270px;
+	float: right;
 }
 #secondary {
 	clear: right;
@@ -592,7 +633,8 @@ div.menu li {
 	margin: 25px 44px 48px 44px;
 }
 .hentry.home-page-feature {
-    margin-left: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
     height: 289px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -799,7 +841,7 @@ body.page .edit-link {
 }
 
 #feature-text {
-    padding: 20px 10px 0 724px;
+    padding: 30px 10px 0 724px;
 }
 #feature-text p {
     font-size: 15px;

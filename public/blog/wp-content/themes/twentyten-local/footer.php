@@ -18,7 +18,7 @@
 			<div id="footer-nav" role="navigation">
 				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'footer-menu' ) ); ?>
 			</div>
-			<p id="copyright">&copy; 2011 WGBH</p>
+			<p id="copyright">&copy; 2012 WGBH</p>
 			<div id="partner-logos">
                 <!-- <img src="<?php echo get_stylesheet_directory_uri() ?>/images/bostonln_footer_berkman.jpg" width="940" height="110"> -->
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/images/logo-wgbh.png" width="94" height="83">
