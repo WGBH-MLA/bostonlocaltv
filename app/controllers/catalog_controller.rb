@@ -52,7 +52,8 @@ class CatalogController < ApplicationController
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display 
     config.add_index_field 'description_s', :label => 'Description' 
-    config.add_index_field 'date_created_s', :label => 'Date'
+    config.add_index_field 'date_created_s', :label => 'Date Created'
+    config.add_index_field 'date_estimated_s', :label => 'Date Estimated'
     config.add_index_field 'collection_s', :label => 'Collection', :link => true
     
 
@@ -60,9 +61,9 @@ class CatalogController < ApplicationController
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
     config.add_show_field 'program_s', :label => 'Program Type'
-    config.add_show_field 'date_created_s', :label => 'Date'
+    config.add_show_field 'date_created_s', :label => 'Date Created'
     config.add_show_field 'date_estimated_s', :label => 'Date Estimated'
-    config.add_show_field 'id', :label => 'Unique Identifier'
+    config.add_show_field 'id', :label => 'ID number'
     config.add_show_field 'description_s', :label => 'Description' 
     config.add_show_field 'people_s', :label => 'Names'
     config.add_show_field 'subject_s', :label => 'Subjects'

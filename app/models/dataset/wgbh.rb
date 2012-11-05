@@ -98,7 +98,7 @@ class Dataset::Wgbh < Dataset::Xml
 		    when "instantiationPhysical"
 			fields << ["format", child.text]
 		    when "instantiationColors"
-		        fields << ["format_color_s", "color"]
+		        fields << ["format_color_s", "Color"]
 		    when "instantiationDuration"
 			fields << ["audio_duration_s", "  "]
  		   end
@@ -169,7 +169,7 @@ def get_wgbh_solr_doc (fields, solr_doc)
       solr_doc ['format'] = " "
      end
      if color == false
-        solr_doc ['format_color_s'] = "color"
+        solr_doc ['format_color_s'] = "Color"
      end
      if duration == false
         solr_doc ['audio_duration_s'] = " "
