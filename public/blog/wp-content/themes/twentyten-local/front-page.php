@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="banner feature-container">
     <?php
         global $post;
-        $myposts = get_posts(array('post_parent' => 634, 'post_type' => 'page'));
+        $myposts = get_posts(array('post_parent' => 1264, 'post_type' => 'page'));
         foreach ( $myposts as $post ) :
             setup_postdata($post);
     ?>
@@ -23,15 +23,15 @@ get_header(); ?>
         -->
         <?php the_content(); ?>
         <div id="feature-text">
-            <p><b>Explore collections &mdash;&gt; Vote!</b><br />Welcome to the Boston TV News Digital Library. Explore our collections from WHDH, WCVB, The Ten O'Clock News, and CCTV. You can add information and vote for the records you would like to see.</p>
-            <a href="/collections">Browse collections</a>
+            <p><b>Explore collections &mdash;&gt; Vote!</b><br />Welcome to the Boston TV News Digital Library.  Explore the CCTV, Ten O’Clock News, WHDH and WCVB Collections.  You can add information and vote for the records you would like to be digitized.</p>
+           </br> <a href="/collections"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/button-browse-h.png"></a>
         </div>
     </div>
     <?php endforeach; ?>
 </div>
 
 <div id="container">
-<div id="content" class="narrowcolumn">
+<div id="content">
 
 <?php
   $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -68,18 +68,36 @@ get_header(); ?>
 ?>
 
 </div>
-	</div>
 </div>
+	</div>
 
 <div id="secondary" class="widget-area" role="complementary">
-    <ul class="xoxo">
-        <li>
-            <h3>Home Page Feature One</h3>
-        </li>
-        <li>
-            <h3>Home Page Feature Two</h3>
-        </li>
-    </ul>
+<div id="search_home">
+ <div id="search">
+  <form accept-charset="UTF-8" action="/catalog" method="get">
+<div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <h2 class="search_title">Search collections:</h2>
+    <input class="q" id="q" name="q" placeholder="search" type="text" />
+     <input id="search_field" name="search_field" type="hidden" value="all_fields" />
+
+     <input alt="search" class="submit" src="/assets/magnifying_glass.gif" type="image" />
+</form>
+  <hr/>
+<h2>Browse collections</h2>
+</div>
+<div id="voting_status"> this is going to be fun.</div>
+</div>
+
+<div id="features_home">
+<ul class="xoxo">
+<li>
+<h3>Home Page Feature One</h3>
+</li>
+<li>
+<h3>Home Page Feature Two</h3>
+</li>
+</ul>
+</div>
 </div>
 
 <?php get_footer(); ?>
