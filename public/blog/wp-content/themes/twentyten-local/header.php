@@ -9,7 +9,18 @@
  * @since Twenty Ten 1.0
  */
 ?><!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
 <html <?php language_attributes(); ?>>
+<!--<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php
@@ -101,7 +112,21 @@
 			  <?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
 				<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentyten' ); ?>"><?php _e( 'Skip to content', 'twentyten' ); ?></a></div>
 				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
-				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+ <div id='cssmenu'>
+    <ul>
+       <li class='active '><a href='http://lsboslocal.wgbh.org:8080/'><span>Home</span></a></li>
+       <li class='has-sub '><a><span>Collections</span></a>
+        <ul>
+	<li> <a href="http://lsboslocal.wgbh.org:8080/CCTV">CCTV</a></li>
+         <li><a href='http://lsboslocal.wgbh.org:8080/wgbh'><span>The Ten O'Clock News</span></a></li>
+         <li><a href='http://lsboslocal.wgbh.org:8080/wcvb'><span>WCVB Collection</span></a></li>
+         <li> <a href="http://lsboslocal.wgbh.org:8080/whdh">WHDH</a></li>
+        </ul>
+       </li>
+       <li class='catalog'><a href='http://lsboslocal.wgbh.org:8080/catalog'><span>Browse</span></a></li>
+       <li class='blog'><a href='http://lsboslocal.wgbh.org:8080/blog'><span>Blog</span></a></li>
+    </ul>
+   </div>
 			</div><!-- #access -->
 
 		</div><!-- #masthead -->
