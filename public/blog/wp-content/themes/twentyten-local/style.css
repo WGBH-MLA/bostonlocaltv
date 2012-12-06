@@ -680,11 +680,7 @@ div.menu li {
     border-radius: 5px;
 }
 .home .sticky {
-	background: #f2f7fc;
-	border-top: 4px solid #000;
-	margin-left: -20px;
-	margin-right: -20px;
-	padding: 18px 20px;
+	margin: 25px 44px 48px;
 }
 .single .hentry {
 	margin: 0 44px 36px 44px;

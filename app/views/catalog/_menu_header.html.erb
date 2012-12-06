@@ -1,7 +1,17 @@
-	<div id="access" role="navigation">
-<div class="menu-header"><ul id="menu-header" class="menu"><li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175"><a href="http://bostonlocaltv.org/about/">Home</a></li>
-<li id="menu-item-174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-174"><a href="http://bostonlocaltv.org/resources/">Collections</a></li>
-<li id="menu-item-1261" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1261"><a href="http://bostonlocaltv.org/browse">Browse</a></li>
-<li id="menu-item-176" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-176"><a href="http://bostonlocaltv.org/">Blog</a></li>
-</ul></div>	
+<div id="access" role="navigation">
+   <div id='cssmenu'>
+    <ul>
+       <li class='active '><a href='http://bostonlocaltv.org/'><span>Home</span></a></li>
+       <li class='has-sub '><a href='#'><span>Collections</span></a>
+        <ul>
+	<li> <%= link_to "CCTV", cctv_collection_path %></li>
+         <li><a href='wgbh'><span>The Ten O'Clock News</span></a></li>
+         <li><a href='wcvb'><span>WCVB Collection</span></a></li>
+         <li> <%= link_to "WHDH", whdh_collection_path %></li>
+        </ul>
+       </li>
+       <li class='catalog'><a href='catalog'><span>Browse</span></a></li>
+       <li class='blog'><a href='/blog'><span>Blog</span></a></li>
+    </ul>
+   </div>
 </div>

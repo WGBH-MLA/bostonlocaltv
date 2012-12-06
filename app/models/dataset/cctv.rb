@@ -193,7 +193,6 @@ def get_cctv_solr_doc (fields, solr_doc)
 	solr_doc ['description_s'] = " "
      end
 
-     puts solr_doc
      solr_doc
 
   end

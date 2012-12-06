@@ -12,14 +12,14 @@
 @import "compass/layout/grid-background";
 @import "compass/css3/gradient";
 @import "compass/css3/border-radius";
-@import "compass/utilities/text/replacement";
+@import "compass/typography/text/replacement";
 
 /* Import this to maintain the old YUI font styles */
 @import "partials/layout";
 @import "partials/formatting";
+@import "partials/facets";
 @import "partials/header";
 @import "partials/catalog";
-@import "partials/facets";
 @import "partials/folder";
 @import "partials/search_history";
 @import "partials/print";
@@ -66,15 +66,13 @@ $constraint_bg_color: #E2EDFE;
 $constraint_border_color: #C4DAFE !default;
 $constraint_border_active_color: #FFD27A !default;
 
-/* dialog that pops up when you pick more on facets */
-$facet_extended_button_bg_color: #F6F6F6 !default;
-$facet_extended_button_border_color: #CCC !default;
-$facet_extended_disabled_button_bg_color: #E2EDFE !default;
-$facet_extended_disabled_border_color: #C4DAFE !default;
-$facet_extended_button_hover_bg_color: #DADADA !default;
 
-
-$facet_extended_button_hover_border_color: #999 !default;
-$facet_extended_button_hover_color: #212121 !default;
-
-
+@import "partials/_catalog";
+@import "partials/_folder";
+@import "partials/_formatting";
+@import "partials/_header";
+@import "partials/_facets";
+@import "partials/_layout";
+@import "partials/_print";
+@import "partials/_search_history";
+@import "partials/_susy_framework";

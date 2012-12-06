@@ -28,13 +28,14 @@ $field_name_color: #888;
 
 #document
 {
-	margin-top:1em;
-
+    margin-top:0em;
+    padding: 10px 20px;
 
   h1
   {
     margin:0;
     padding:0 0 1em;
+    float: left;
   }
 }
 
@@ -78,7 +79,7 @@ $field_name_color: #888;
   }
 }
 
-#search
+#search_td
 {
 	font-size:120%;
 	text-align:right;
@@ -220,6 +221,13 @@ $field_name_color: #888;
     display:inline;
     color: #e5553c;
   }
+}
+
+.yui-u
+{
+	float: left;
+	margin-bottom:0.5em;
+	margin-left: 1em;
 }
 
 
@@ -368,5 +376,11 @@ span.page a,span.page.current
 	margin-right:0.2em;
 	padding:0.2em 0.5em;
 	text-decoration:none;
+}
+
+#tools
+{
+    float: right;
+    margin-right: 10px;
 }
 

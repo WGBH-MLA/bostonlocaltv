@@ -1,0 +1,21 @@
+<div id='voting_status'> 
+<% @votes=get_top_votes?() %> 
+
+<ul id="tabs">
+<br>
+    <li><a href="#tab1"><strong style="font-size: 120%;">Most votes </strong></a><br>    
+    <li><a href="#tab2"><strong style="font-size: 120%;">Most visits</strong></a><br>
+    </li>
+</ul>
+<br>
+<div id="tab1"><h2>First</h2><br>
+<% for vote in @votes %> 
+<div class="votes">
+<strong><%= vote.votes_count %> vote: </strong> 
+<% v_id = vote.item_id %>
+<%= get_doc_title(v_id) %>
+<a href="/catalog/<%= vote.item_id %>">view</a>
+</div>
+<% end %>
+
+</div>

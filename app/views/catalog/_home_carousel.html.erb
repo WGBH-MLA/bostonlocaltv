@@ -1,0 +1,90 @@
+<div id="feature-container">
+<div id="collections">
+ <div class="slides_container">
+ <div class="slide">
+    <a href="/wgbh">
+      <%= image_tag("sigimage-10oclock-van.jpg", :size => "684x300", :alt => "The Ten O'Clock News") %>
+    </a>
+       <div class="caption" style="bottom:0" >
+       <a href="/wgbh" style="color: #FFF;"><h3>The Ten O'Clock News | 7992 items</h3>
+    <p>
+    WGBH’s in-depth nightly news program aired from 1974 to 1991.   
+    </p>
+	</a>
+       </div> 
+   </div>
+    <div class="slide">
+ 
+      <a href="/CCTV">
+      <%= image_tag("sigimage-cctv-drummers.jpg", :size => "684x300", :alt => "CCTV") %>
+      </a>
+     <div class="caption">
+    <a href="/CCTV" style="color: #FFF;"><h3>CCTV | 7191 items</h3>
+     <p>
+     Since 1988, Cambridge Community Television has produced a variety of relevant programs about people and topics of local and national interest.
+    </p>
+    </a>
+     </div>
+   </div>
+    <div class="slide">
+   <a href="/wcvb">
+     <%= image_tag("sigimage-wcvb-bruins.jpg", :size => "684x300", :alt => "WCVB News Collection")%>
+   </a>
+    <div class="caption">
+   <a href="/wcvb" style="color: #FFF;"><h3>WCVB | 10542 items</h3>
+   <p>
+   The WCVB-TV Collection at Northeast Historic Film contains over 4 million feet of daily coverage and specials filmed between 1972 and 1979.
+   </p>
+   </a>
+     </div>
+   </div>
+   <div class="slide">   <a href="/WHDH" style="font-color: #FFF;">
+      <%= image_tag("sigimage-whdh-crowd.jpg", :size => "684x300", :alt => "WHDH") %>
+     </a>
+     <div class="caption">
+    <a href="/WHDH" style="color: #FFF;"><h3>WHDH | 23414 items</h3>
+    <p>
+    The WHDH Collection at the Boston Public Library consists of some 2 million feet of news film footage recorded by WHDH from 1961 to 1972.
+    </p>
+	</a>
+     </div>
+   </div>
+</div>
+</div>
+  <%= render :partial => "home_feature_text" %> 
+</div>
+ <script>
+                $(function(){
+                        $('#collections').slides({
+                                preload: true,
+                                preloadImage: 'blacklight/loading.gif',
+                                play: 15000,
+                                pause: 5500,
+                                hoverPause: true,
+                                animationStart: function(current){
+                                        $('.caption').animate({
+                                                bottom:-35
+                                        },200);
+                                        if (window.console && console.log) {
+                                                // return of current slide number
+                                                console.log('animationStart on slide: ', current);
+                                        };
+                                },
+                                animationComplete: function(current){
+                                        $('.caption').animate({
+                                                bottom:0
+                                        },400);
+                                        if (window.console && console.log) {
+                                                // return of current slide number
+                                                console.log('animationComplete on slide: ', current);
+                                        };
+                                },
+                                slidesLoaded: function() {
+                                        $('.caption').animate({
+                                                bottom:0
+                                        },400);
+                                }
+                        });
+                });
+</script>
+ 

@@ -1,4 +1,7 @@
 module ApplicationHelper
+    require 'open-uri'
+    require 'pp'
+
    def setup_vote(vote)
      vote = Vote.new
    end
@@ -136,6 +139,49 @@ module ApplicationHelper
  
   def get_wcvb_doc (doc_id)
     @document
+  end
+
+
+  def widont(text)
+    text.gsub(/([^\s])\s+([^\s]+)\s*$/, '\1&nbsp;\2')
+  end
+
+  def render_wordpress_page_content slug
+    Wordpress::Page.find(slug).content.html_safe # rescue nil
+  end
+
+  def render_google_analytics_code
+    render :partial => 'layouts/google_analytics', :locals => { :tracker_id => GOOGLE_ANALYTICS_TRACKER_ID } if defined?(GOOGLE_ANALYTICS_TRACKER_ID)
+  end
+
+  def render_votes_visits_code
+    render :partial => 'layouts/votes_visits'
+  end
+
+  def render_comment_metadata_information comment
+    if comment.metadata[:begin] && comment.metadata[:end] && comment.metadata[:begin] != comment.metadata[:end]
+      return "[Timecode #{comment.metadata[:begin]}-#{comment.metadata[:end]}]"
+    end
+
+    if comment.metadata[:begin]
+      return "[Timecode #{comment.metadata[:begin]}]"
+    end
+
+    if comment.metadata[:crop]
+      return "[Crop]"
+    end
+  end
+
+
+  def get_blog_page
+  
+      results = []
+
+      open ('http://bostonlocaltv.org') do |f|
+        f.each_line {|line| results << line}
+      end
+
+      results
   end
 
 end

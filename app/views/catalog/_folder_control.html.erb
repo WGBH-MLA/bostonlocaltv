@@ -1,3 +1,9 @@
+<% content_for :blog_stylesheets do %>
+#cssmenu > ul > li.catalog a {
+   color: #D3D2D0;
+   }
+
+<% end %>
 <%-   
   # pass in local :document with a SolrDocument                  
   method = (item_in_folder?(document.id) ? "delete" : "put")
@@ -8,5 +14,6 @@
 <%= form_for( setup_vote(@vote), :remote=> true, :html=>{:class=> "#{document.id} #{cssClass}", "data-doc-id" => document.id, :title=>h(document[document_show_link_field])}) do |f| %>
 <%= f.hidden_field "item_id", :value => document.id %>
 <%= f.hidden_field "user_id", :value => cookies[:"#{the_time}"] %>
+<%= f.hidden_field "title", :value => document[:title_t] %>
 <%= render :partial=> "votes", :locals => {:votes => @vote, :doc_id => document.id} %>
 <% end %>

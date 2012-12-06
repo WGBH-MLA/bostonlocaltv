@@ -91,6 +91,7 @@ def get_wcvb_solr_doc (fields, solr_doc)
    dimensions = false
    format = false
    description = false
+   wcvb_title = false
 
     fields.each do |key, value|
      if key == 'date_created_s'
@@ -104,6 +105,9 @@ def get_wcvb_solr_doc (fields, solr_doc)
      end
      if key == 'description_s'
          description = true
+     end
+     if key == 'title_s'
+         wcvb_title = true
      end
 
       next if value.blank?
@@ -124,8 +128,10 @@ def get_wcvb_solr_doc (fields, solr_doc)
      if description == false
         solr_doc [:description_s] = " "
      end
+     if wcvb_title == false
+	solr_doc [:title_s] = "WCVB"
+     end
 
-     puts solr_doc
      solr_doc
 
   end

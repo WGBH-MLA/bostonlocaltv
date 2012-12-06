@@ -1,0 +1,148 @@
+/* IE 7 Adjustments */
+* html #hd .yui-g .yui-u {margin-top: -5em;}
+* html #hd .yui-g .first {margin-top: 2em;}
+* html #search {left: -1.8em;}
+
+* html #cssmenu ul li {*display: inline; }
+
+* html #cssmenu ul li #active a { color: red; }
+
+* html #cssmenu{ height:37px; display:block; padding:0; margin:20px 0 25px 40px;   border-radius:5px; } 
+
+* html #cssmenu  ul {list-style:inside none; padding:0; margin:0;} 
+
+* html #cssmenu ul li {list-style:inside none; padding:0; margin:0; float:left; display:block; position:relative;} 
+
+* html #cssmenu ul li a{ outline:none; display:block; position:relative; padding:5px 20px; font:italic 170% Georgia,"Bits
+tream Charter",serif; text-align:center; text-decoration:none; } 
+* html #cssmenu ul li:first-child a{border-radius:5px 0 0 5px;} 
+
+* html #cssmenu ul li a:after{ content:''; position:absolute; border-right:1px solid; top:5px; bottom:5px; right:-2px; z-index:99; } 
+z-
+* html #cssmenu ul li.has-sub:hover a:after{top:5px; bottom:5px;} 
+* html #cssmenu ul li.has-sub a:before{ content:''; position:absolute; top:15px; right:4px; border:5px solid transparent; border-top:5px solid #333333; } 
+* html #cssmenu ul li.has-sub:hover a:before{top:15px;} 
+* html #cssmenu ul li.has-sub:hover a{ color: #333333; border-color:#D3D2D0; background-color: #FFF; padding-bottom:5px; padding-top:5px; z-index:999; }
+* html #cssmenu ul li.has-sub:hover ul, #cssmenu ul li.has-sub:hover div{*display:block;} 
+* html #cssmenu ul li.has-sub a:hover{border-color:#D3D2D0;} 
+* html #cssmenu ul li ul, #cssmenu ul li div{ display:none; width:auto; position:absolute; top:34px; padding:10px 0; background:#FFF; border-radius: 0 0 5px 5px; z-index:999; }
+* html #cssmenu ul li ul{width:140px;} 
+* html #cssmenu ul li ul li{display:block; list-style:inside none; padding:0; margin:0; position:relative;} 
+* html #cssmenu ul li ul li a{ outline:none; display:inline; position:relative; margin:0; padding:8px 20px; font:10pt Georgia, "Bitstream Charter",serif; color:#333333; text-decoration:none; width:100px; background: none repeat scroll 0 0 #FFF;}
+
+* html #cssmenu, #cssmenu ul li ul li a:hover{ 
+   color:#E5553C;
+    }
+* html #cssmenu{border-color:#D3D2D0;} 
+* html #cssmenu ul li a{} 
+* html #cssmenu ul li a:after{border-color:#a2a2a2;} 
+* html #cssmenu ul li a:hover{ color:#E5553C;} 
+* html #cssmenu ul li.has-sub ul li a { color: #333333; }
+* html #cssmenu ul li.has-sub ul li a:hover { color: #E5553C; }
+
+* html #home_primary, #home_secondary{ width: 510px;}
+
+* html #features_home { width: 290px;}
+
+* html #features_home .feature li img { width:290px;}
+
+* html #features_home p { width: 290px;}
+
+
+* html .slides_container {
+        width:684px;
+        overflow:hidden;
+        position:relative;
+        display:none;
+}
+
+/*
+        Each slide
+        Important:
+        Set the width of your slides
+        If height not specified height will be set by the slide content
+        Set to display block
+*/
+
+* html .slides_container div.slide {
+        width:684px;
+        height:300px;
+        display:block;
+}
+
+* html #collections .next,#collections .prev {
+        position:absolute;
+        top:310px;
+        width:24px;
+        height:43px;
+        display:block;
+        z-index:101;
+        display: none;
+}
+
+* html #collections .next {
+        left:963px;
+        display: none;
+}
+
+/*
+        Pagination
+*/
+
+* html .slides_pagination {
+        margin:0px auto 0;
+        width:100px;
+        border-color: #FFF;
+        background-color: #FFF; 
+        float: right;
+}
+
+* html .slides_pagination li {
+        float:left;
+        margin:0 1px;
+        list-style:none;
+}
+
+* html .slides_pagination li a {
+        display:block;
+        width:12px;
+        height:12px;
+        padding-top:12px;
+        background-image:url(images/pagination.png);
+        background-position:0 0;
+        float:left;
+        overflow:hidden;
+}
+
+* html .slides_pagination li.current a {
+        background-position:0 -12px;
+}
+
+* html .caption {
+        z-index:500;
+        position:absolute;
+        display: inline;
+        bottom:-35px;
+        left:0;
+        height:77px;
+        padding:5px 20px 0 20px;
+        background:#000;
+        background:rgba(0,0,0,.5);
+        width:648px;
+        font-size:1.3em;
+        line-height:1.33;
+        color:#fff;
+        border-top:1px solid #000;
+        text-shadow:none;
+}
+
+/*
+        Anchors
+*/
+
+* html .caption p
+{
+        line-height: 18px;
+}
+
+

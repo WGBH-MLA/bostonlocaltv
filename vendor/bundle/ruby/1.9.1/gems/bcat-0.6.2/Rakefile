@@ -1,0 +1,83 @@
+require 'date'
+task :default => :test
+
+ROOTDIR = File.expand_path('..', __FILE__).sub(/#{Dir.pwd}(?=\/)/, '.')
+LIBDIR  = "#{ROOTDIR}/lib"
+BINDIR  = "#{ROOTDIR}/bin"
+
+task :environment do
+  $:.unshift ROOTDIR if !$:.include?(ROOTDIR)
+  $:.unshift LIBDIR  if !$:.include?(LIBDIR)
+  ENV['RUBYLIB'] = $LOAD_PATH.join(':')
+  ENV['PATH'] = "#{BINDIR}:#{ENV['PATH']}"
+end
+
+desc 'Run tests'
+task :test => :environment do
+  $LOAD_PATH.unshift "#{ROOTDIR}/test"
+  Dir['test/test_*.rb'].each { |f| require(f) }
+end
+
+def source_version
+  @source_version ||= `ruby -Ilib -rbcat -e 'puts Bcat::VERSION'`.chomp
+end
+
+require 'rubygems'
+$spec = eval(File.read('bcat.gemspec'))
+
+desc "Build gem package"
+task :package => 'bcat.gemspec' do
+  sh "gem build bcat.gemspec"
+end
+
+desc 'Build the manual'
+task :man do
+  ENV['RONN_MANUAL']  = "Bcat #{source_version}"
+  ENV['RONN_ORGANIZATION'] = "Ryan Tomayko"
+  sh "ronn -stoc -w -r5 man/*.ronn"
+end
+
+desc 'Publish to github pages'
+task :pages => :man do
+  puts '----------------------------------------------'
+  puts 'Rebuilding pages ...'
+  verbose(false) {
+    rm_rf 'pages'
+    push_url = `git remote show origin`.grep(/Push.*URL/).first[/git@.*/]
+    sh "
+      set -e
+      git fetch -q origin
+      rev=$(git rev-parse origin/gh-pages)
+      git clone -q -b gh-pages . pages
+      cd pages
+      git reset --hard $rev
+      rm -f *.html
+      cp -rp ../man/*.html ../man/index.* ./
+      git add -u *.html index.*
+      git commit -m 'rebuild manual'
+      git push #{push_url} gh-pages
+    ", :verbose => false
+  }
+end
+
+file 'bcat.gemspec' => FileList['{lib,test,bin}/**','Rakefile'] do |f|
+  # read spec file and split out manifest section
+  spec = File.read(f.name)
+  head, manifest, tail = spec.split("  # = MANIFEST =\n")
+  # replace version and date
+  head.sub!(/\.version = '.*'/, ".version = '#{source_version}'")
+  head.sub!(/\.date = '.*'/, ".date = '#{Date.today.to_s}'")
+  # determine file list from git ls-files
+  files = `git ls-files`.
+    split("\n").
+    sort.
+    reject{ |file| file =~ /^\./ }.
+    reject { |file| file =~ /^doc/ }.
+    map{ |file| "    #{file}" }.
+    join("\n")
+  # piece file back together and write...
+  manifest = "  s.files = %w[\n#{files}\n  ]\n"
+  spec = [head,manifest,tail].join("  # = MANIFEST =\n")
+  File.open(f.name, 'w') { |io| io.write(spec) }
+  puts "updated #{f.name}"
+end

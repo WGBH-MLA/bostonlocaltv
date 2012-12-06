@@ -135,8 +135,6 @@ class Dataset::Whdh < Dataset::Xml
 
      end
 
-       puts "date estimated: " + date_estimated.to_s
-
         get_whdh_solr_doc fields, solr_doc, date_estimated
      
        
@@ -239,15 +237,11 @@ def get_whdh_solr_doc (fields, solr_doc, date_estimated)
      end
 
       if date_estimated == true
-	 puts " value of date: " 
-	 puts  solr_doc[:date_created_s]
 	 solr_doc[:date_created_s] = ""
-	 puts solr_doc[:date_created_s]
       else
 	 solr_doc[:date_estimated_s] = ""
       end
 
-     puts solr_doc 
      solr_doc
 
   end 

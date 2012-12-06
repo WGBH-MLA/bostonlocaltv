@@ -1,0 +1,29 @@
+= rsolr-footnotes
+
+This gem provides a rails-footnote (https://github.com/josevalim/rails-footnotes) pane that displays request/response information from RSolr (https://github.com/mwmitchell/rsolr) queries.
+
+Preliminary testing has only been performed in Blacklight (http://projectblacklight.org), but should presumably work with any Rails application that uses RSolr.
+
+= Installation
+
+=== Rails 3.x
+  
+  gem "rails-footnotes", ">= 3.7", :group => :development
+  gem "rsolr-footnotes", :group => :development
+
+
+== Contributing to rsolr-footnotes
+ 
+* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
+* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
+* Fork the project
+* Start a feature/bugfix branch
+* Commit and push until you are happy with your contribution
+* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
+* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+
+== Copyright
+
+Copyright (c) 2011 Chris Beer. See LICENSE.txt for
+further details.
+

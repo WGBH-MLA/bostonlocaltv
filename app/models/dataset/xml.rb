@@ -1,3 +1,6 @@
+require 'open-uri'
+require 'nokogiri'
+
 class Dataset::Xml < Dataset::Base
   def xml
     @xml ||= Nokogiri::XML(content)

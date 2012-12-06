@@ -114,17 +114,17 @@
 				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
  <div id='cssmenu'>
     <ul>
-       <li class='active '><a href='http://lsboslocal.wgbh.org:8080/'><span>Home</span></a></li>
+       <li class='active '><a href='http://bostonlocaltv.org/'><span>Home</span></a></li>
        <li class='has-sub '><a><span>Collections</span></a>
         <ul>
-	<li> <a href="http://lsboslocal.wgbh.org:8080/CCTV">CCTV</a></li>
-         <li><a href='http://lsboslocal.wgbh.org:8080/wgbh'><span>The Ten O'Clock News</span></a></li>
-         <li><a href='http://lsboslocal.wgbh.org:8080/wcvb'><span>WCVB Collection</span></a></li>
-         <li> <a href="http://lsboslocal.wgbh.org:8080/whdh">WHDH</a></li>
+	<li> <a href="/CCTV">CCTV</a></li>
+         <li><a href='/wgbh'><span>The Ten O'Clock News</span></a></li>
+         <li><a href='/wcvb'><span>WCVB Collection</span></a></li>
+         <li> <a href="/WHDH">WHDH</a></li>
         </ul>
        </li>
-       <li class='catalog'><a href='http://lsboslocal.wgbh.org:8080/catalog'><span>Browse</span></a></li>
-       <li class='blog'><a href='http://lsboslocal.wgbh.org:8080/blog'><span>Blog</span></a></li>
+       <li class='catalog'><a href='/catalog'><span>Browse</span></a></li>
+       <li class='blog'><a href='/blog'><span>Blog</span></a></li>
     </ul>
    </div>
 			</div><!-- #access -->

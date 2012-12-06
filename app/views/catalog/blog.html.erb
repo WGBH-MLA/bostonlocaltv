@@ -1,0 +1,23 @@
+<% content_for :blog do %>
+<div id="blog">
+  <%= link_to 'See all >', blog_path, :class => 'see_all' %>
+  <h2>From the blog</h2>
+  <% Wordpress.get_recent_posts(:count => 3).each do |post| %>
+    <div class="post">
+      <div class="byline">
+        <div class="thumbnail">
+          <%= image_tag post.thumbnail, :alt => '' if post.thumbnail %>
+        </div>
+        <div class="author">By <%= post.author_name %></div>
+        <div class="date"><%= l post.date.to_date, :format => :long %></div>
+    </div>
+    <div class="body">
+    <h3><%= link_to post.title.html_safe, post.url %></h3>
+    <div><%= post.excerpt.html_safe %></div>
+  </div>
+  </div>
+    <% end rescue nil %>
+</div>
+
+<% end %>
+

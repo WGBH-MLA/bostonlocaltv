@@ -1,7 +1,42 @@
+/*
+Theme Name: Twenty Ten Boston TV News Edition
+Theme URI: http://wordpress.org/
+Description: The 2010 theme for WordPress is stylish, customizable, simple, and readable -- make it yours with a custom menu, header image, and background. Twenty Ten supports six widgetized areas (two in the sidebar, four in the footer) and featured images (thumbnails for gallery posts and custom header images for posts and pages). It includes stylesheets for print and the admin Visual Editor, special styles for posts in the "Asides" and "Gallery" categories, and has an optional one-column page template that removes the sidebar.
+Author: the WordPress team (and Mike)
+Version: 1.2
+License: GNU General Public License
+License URI: license.txt
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu
+*/
+
 
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+	color: #242424;
+	min-width: 1024px;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal;
+}
 ol, ul {
 	list-style: none;
 }
@@ -32,30 +67,179 @@ LAYOUT: Two columns
 DESCRIPTION: Two-column fixed layout with one sidebar right of content
 */
 
-#container {
+#home_container {
+        float: left;
+        width: 492px;
+}
+#collections_container{
 	float: left;
-	margin: 0 -300px 0 0;
-	width: 100%;
+	width: 684px;
 }
 #content {
-	margin: 0 320px 0 10px;
 	background: #fff;
 	border: 1px solid #ccc;
-	border-radius: 5px;
+	border-radius: 10px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	box-shadow: 2px 2px 4px #bbb;
+	width: 684px;
+}
+
+#home_content
+{
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        box-shadow: 2px 2px 4px #bbb;
+        width: auto;
+        padding-top: 35px;
+
+
+.body
+  {
+     padding-top: 20px;
+     color: #333333;
+     font-size: 14px;
+     line-height: 21px;
+  }
 }
 #primary,
 #secondary {
 	float: right;
 	overflow: hidden;
-/*  width: 220px;*/
-    width: 300px;
+	width: 300px;
+}
+
+#home_primary,
+#home_secondary
+{
+	width: 532px;
+        float: left;
+}
+
+
+#collections_primary
+{
+	float: right;
+	overflow: hidden;
+	width: 300px;
+	margin-top:40px;
+}
+
+#search_home
+{
+      width: 172px;
+      float: left;
+      margin-left: 20px;
+}
+
+#inner_search
+{
+        background-color: #FFF;
+        padding: 25px 20px 20px 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        box-shadow: 2px 2px 4px #bbb;
+
+
+.search
+{
+   font-weight: normal;
+   padding-bottom: 10px;
+   font-style: italic;
+   font-size: 140%;
+}
+
+.search_hr
+{
+   height: 1px;
+   clear: both;
+   background-color: #E7E7E7;
+   margin-top: 30px;
+   margin-bottom: 0px;
+}
+
+.q
+{
+     width: 137px;
+     font-size: 110%;
+     font-style: italic;
+     padding-right:14px;
+}
+
+ .submit
+{
+   position:relative;
+   height: 14px;
+   width: 14px;
+   right: -120px;
+   top: -20px;
+}
+
+ h2 { font-size: 120%; 
+      font-style: italic; }
+}
+#voting_status
+{
+       float: left;
+       padding: 10px 20px 10px 20px ;
+       margin-top: 20px;
+       background-color: #FFF;
+       border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        box-shadow: 2px 2px 4px #bbb;
+}
+.votes
+{
+   margin: 5px 0px;
+   font-size: 120%
+}
+#text
+{
+  float: right;
+}
+
+#features_home
+{
+	width: 320px;
+	margin-left: 20px;
+	float: right;
 }
 #secondary {
 	clear: right;
 }
+
+#features_home .feature
+{
+    margin-left: 0px;
+    padding: 0px;
+    width: auto; 
+}
+
+#features_home .feature li img
+{
+   border-radius: 10px 10px 0px 0px;
+   background-color: #FFF;
+   opacity: 0.8;
+}
+
+#features_home p
+{
+   padding: 5px 20px 30px 20px;
+   background-color: #FFF;
+   border-radius: 0 0 10px 10px;
+   -moz-border-radius: 0 0 10px 10px;
+   -webkit-border-radius: 0 0 10px 10px;
+   box-shadow: 2px 2px 4px #bbb;
+   width: 280px;
+   margin-top: -5px;
+}
+
 #footer {
 	clear: both;
 	width: 100%;
@@ -67,9 +251,14 @@ DESCRIPTION: One centered column with no sidebar
 */
 
 .one-column #content {
-	margin: 0 auto 5px 64px;
-	padding: 20px 44px;
+	margin: 0px;
+	padding: 0px;
 	width: 684px;
+}
+
+.wgbh_image {
+       margin: 0px 0 0;
+       padding: 0px;
 }
 
 /*
@@ -131,6 +320,24 @@ code {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
+h2.entry-title
+   {
+	color: #000000;
+        font-size: 150%;
+        font-weight: bold;
+        line-height: 1.3em;
+        margin-bottom: 0;
+   }
+
+div.entry-meta {
+        color: #888;
+        font-size: 100%;
+}
+
+div.entry-summary {
+	color: #888;
+	font-size: 120%;
+}
 
 /* =Structure
 -------------------------------------------------------------- */
@@ -182,8 +389,9 @@ div.menu,
 
 /* Main global 'theme' and typographic styles */
 body {
-    background: #d3d2d0 url(images/bg-5px.jpg) repeat-x;
+    background: #d3d2d0 url(blacklight/bg-5px.jpg) repeat-x;
 }
+
 body,
 input,
 textarea {
@@ -202,10 +410,6 @@ hr {
 /* Text elements */
 p {
 	margin-bottom: 18px;
-}
-ul {
-	list-style: disc;
-	margin: 0 0 18px 1.5em;
 }
 ol {
 	list-style: decimal;
@@ -284,18 +488,11 @@ sup {
 sub {
 	top: .5ex;
 }
-input[type="text"],
-textarea {
-	background: #f9f9f9;
-	border: 1px solid #ccc;
-	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
-	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
-	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
-	padding: 2px;
-}
+
 a:link, a:visited {
 	color: #e5553c;
 	text-decoration: none;
+	border-bottom: 0px dotted #AAAAAA;
 }
 /*a:visited {
     color: #743399;
@@ -303,7 +500,8 @@ a:link, a:visited {
 */
 a:active,
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 0px dotted #AAAAAA;
 }
 
 /* Text meant only for screen readers */
@@ -348,6 +546,10 @@ a:hover {
 /*  border-bottom: 1px solid #000;*/
 	display: block;
 	float: left;
+}
+
+#header-images {
+    height: 122px;
 }
 
 #bostvnews-logo {
@@ -442,7 +644,7 @@ div.menu li {
 #access ul ul :hover > a {
 /*  background: #333;*/
 /*  color: #fff;*/
-	text-decoration: underline;
+	text-decoration: none;
 }
 #footer-nav ul li:hover > ul,
 #access ul li:hover > ul {
@@ -459,8 +661,8 @@ div.menu li {
 }
 #footer-nav ul li.current_page_item > a,
 #access ul li.current_page_item > a {
-/*	color: #ffcc99;*/
-	color: #242424;
+/*  color: #ffcc99;*/
+    color: #242424;
 }
 
 * html #access ul li.current_page_item a,
@@ -550,7 +752,18 @@ div.menu li {
 	background: #f2f7fc;
 }
 .hentry {
-	margin: 25px 44px 48px 44px;
+	margin: 25px 44px 48px;
+}
+.collections_hentry {
+	margin: 25px 0px 48px;
+}
+
+.hentry.home-page-feature {
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 289px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 .home .sticky {
 	background: #f2f7fc;
@@ -611,10 +824,19 @@ div.menu li {
 .entry-utility abbr:hover {
 	border-bottom: 1px dotted #666;
 }
+.home .entry-utility {
+    display: none;
+}
 .entry-content,
 .entry-summary {
 	clear: both;
-	padding: 12px 0 0 0;
+	padding: 12px 0px 0px 0px;
+}
+
+.collections_entry-content
+{
+     clear: both;
+     padding: 12px 44px 0;
 }
 #content .entry-summary p:last-child {
 	margin-bottom: 12px;
@@ -732,6 +954,31 @@ body.page .edit-link {
 }
 #content .video-player {
 	padding: 0;
+}
+
+/* home page slideshow 
+ * Some styling is overridden in the plugin's CSS
+ */
+.slideshow {
+	font-family: Georgia, "Bitstream Charter", serif;
+    color: #ebeaea;
+}
+.slideshow h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.slidehow p {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#feature-text {
+    padding: 70px 10px 40px 724px;
+}
+#feature-text p {
+    font-size: 15px;
+    line-height: 21px;
+    color: #333333;
 }
 
 
@@ -915,7 +1162,7 @@ img.aligncenter {
 }
 .navigation a:active,
 .navigation a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 .nav-previous {
 	float: left;
@@ -938,6 +1185,9 @@ img.aligncenter {
 }
 #nav-below {
 	margin: -18px 44px 0 44px;
+}
+.home #nav-below {
+    display: none;
 }
 
 
@@ -1161,13 +1411,17 @@ h3#reply-title {
 	border-bottom: 3px solid #4a433b;
 	margin-bottom: 10px;
 }
+
+.widget-title ul li {
+	margin-bottom: 5px;
+}
 .widget-area a:link,
 .widget-area a:visited {
 	text-decoration: none;
 }
 .widget-area a:active,
 .widget-area a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 .widget-area .entry-meta {
 	font-size: 11px;
@@ -1226,6 +1480,11 @@ h3#reply-title {
 	margin-left: 1.3em;
 	padding: 0;
 }
+
+#main .widget-area ul li {
+	padding-top: 5px;
+}
+
 #primary {
 }
 #secondary {
@@ -1289,7 +1548,7 @@ h3#reply-title {
 	text-decoration: none;
 }
 #site-generator a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 img#wpstats {
 	display: block;
@@ -1355,6 +1614,7 @@ code {
 	.entry-title {
 		font-size: 21pt;
 	}
+
 	#access,
 	#branding img,
 	#respond,
@@ -1365,7 +1625,7 @@ code {
 	.widget-area {
 		display: none !important;
 	}
-	#container,
+	#home_container,
 	#header,
 	#footer {
 		margin: 0;
@@ -1404,4 +1664,3 @@ code {
 		border: none;
 	}
 }
-

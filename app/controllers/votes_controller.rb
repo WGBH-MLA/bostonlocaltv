@@ -54,6 +54,7 @@ class VotesController < ApplicationController
        @vote = Vote.new
        @vote.item_id = params[:vote][:item_id]
        @vote.user_id = cookies[:"#{the_time}"]
+       @vote.title = params[:vote][:title]
        item = params[:vote][:item_id]
        uid = params[:vote][:user_id]
  

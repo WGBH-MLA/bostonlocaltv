@@ -1,0 +1,24 @@
+#inner_search .q {
+    width: 118px;
+}
+
+#sidebar #side_search .q
+{
+  display: inline;
+  width: 230px;
+}
+
+#side_search hr
+{
+   width: 250px;
+   display: inline;
+}
+
+#sidebar #side_search .submit
+   {
+      display:inline;
+      position: relative;
+      top: -10px;
+
+   }
+

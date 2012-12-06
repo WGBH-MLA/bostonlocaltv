@@ -22,4 +22,27 @@ module ItemsHelper
           0
         end
      end
+
+   def get_top_votes?()
+        begin
+           @extant = Vote.find_by_sql("select item_id, votes_count from items order by votes_count desc limit 5;")
+           @extant
+          rescue
+           nil
+        end
+   end
+
+   def  get_doc_title (doc_id)
+	begin
+            @vote = Vote.find_by_item_id!(doc_id)
+	    title = @vote.title
+            title = title.gsub(/\"(.*)\"/, '\1')
+	    title = title.gsub(/\[(.*)\]/, '\1')
+            title
+          rescue
+            nil
+        end
+   end
+
+   
 end

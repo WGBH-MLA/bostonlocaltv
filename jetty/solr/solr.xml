@@ -29,6 +29,7 @@
     If 'null' (or absent), cores will not be manageable via REST
   -->
   <cores adminPath="/admin/cores">
+    <core name="production" instanceDir="production-core" />
     <core name="development" instanceDir="development-core" />
     <core name="test" instanceDir="test-core" />
   </cores>

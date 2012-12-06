@@ -141,8 +141,7 @@ class CatalogController < ApplicationController
     # except in the relevancy case).
     config.add_sort_field 'score desc, title_sort asc, id asc', :label => 'relevance'
     config.add_sort_field 'title_sort asc, id asc', :label => 'title'
-    config.add_sort_field 'year_i asc, date_s asd, title_sort asc', :label => 'year'
-    config.add_sort_field 'timestamp desc, title_sort asc', :label => 'timestamp'
+    config.add_sort_field 'year_i asc, date_s asc, title_sort asc', :label => 'year'
 
     # If there are more than this many search results, no spelling ("did you 
     # mean") suggestion is offered.
@@ -150,7 +149,7 @@ class CatalogController < ApplicationController
   end
 
     def citation
-     doc_id = get_doc_id (params[:docid])
+     #doc_id = get_doc_id (params[:docid])
      @response, @document = get_solr_response_for_doc_id (params[:docid])
      respond_to do |format|
      format.html 

@@ -1,0 +1,46 @@
+#inner_search .q {
+    width: 118px;
+}
+
+#sidebar #side_search .q
+{
+  display: inline;
+  width: 230px;
+}
+
+#side_search hr
+{
+   width: 250px;
+   display: inline;
+}
+
+#sidebar #side_search .submit
+   {
+      display:inline;
+      position: relative;
+      top: -10px;
+
+   }
+.caption 
+{
+   z-index:500;
+        position:absolute;
+        left:0;
+        padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+        background:#000;
+        background:rgba(0,0,0,.5);
+        width:648px;
+        font-size:1.3em;
+        line-height:1.33;
+        color:#fff;
+        border-top:1px solid #000;
+        text-shadow:none;   
+}
+
+#tabs #li {
+ display: inline;
+ margin: 0 1px 0 0;
+ font-size: 12px;
+} 

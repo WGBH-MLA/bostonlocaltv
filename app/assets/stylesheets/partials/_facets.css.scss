@@ -1,3 +1,5 @@
+@import "susy_framework";
+@import "compass/utilities";
 @import "compass/css3/border-radius";
 
 $facet_extended_button_bg_color: #F6F6F6;
@@ -11,16 +13,16 @@ $facet_extended_button_hover_border_color: #999;
 $facet_extended_button_hover_color: #212121;
 $dotted_border_color: #CCC;
 
-#facets
-{
+#sidebar  #facets
+ {
     font-size:100%;
-    padding:20px 0px 0px 0px;
+    padding:20px 0px 0px 20px;
 
 
   h2
   {
     color:#555;
-    font-weight:500;
+    font-weight:700;
   }
 
   h3
@@ -52,6 +54,7 @@ $dotted_border_color: #CCC;
       text-align:right;
     }
   }
+
 
   span.selected
   {
@@ -97,7 +100,7 @@ $dotted_border_color: #CCC;
 
   .sort_options .az, .sort_options .numeric, .next_page,.prev_page
   {
-    background: $facet_extended_button_bg_color;
+    background: #F6F6F6;
     border:1px solid $facet_extended_button_border_color;
     display:inline-block;
     font-weight:700;

@@ -30,14 +30,28 @@ ul.folderTools
   }
 }
 
+div .tools
+{
+  width: 175px;
+}
+
 ul.tools
 {
   margin:0;
   padding:0;
 
-  li
+  li.share
   {
     display:inline;
-    margin:0 10px;
+    margin:0 0 10px;
+    float: left;
+  }
+ 
+  li.cite
+  {
+    display:inline;
+    float: right;
+    margin-left: -300px;
   }
 }
+

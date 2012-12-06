@@ -11,6 +11,7 @@ class Dataset::Wgbh < Dataset::Xml
     title = false
     date_created = false
     people = " "
+    physical_format = ""
 
     row.xpath("*").select { |x| !x.text.blank? }.each do |node|
       case node.name
@@ -96,9 +97,11 @@ class Dataset::Wgbh < Dataset::Xml
 		node.children().each do |child|
                  case child.name
 		    when "instantiationPhysical"
-			fields << ["format", child.text]
-		    when "instantiationColors"
-		        fields << ["format_color_s", "Color"]
+ 			if (physical_format.empty?)
+                           physical_format = child.text
+                        else
+                           physical_format = physical_format + ", " + child.text
+                        end
 		    when "instantiationDuration"
 			fields << ["audio_duration_s", "  "]
  		   end
@@ -113,10 +116,10 @@ class Dataset::Wgbh < Dataset::Xml
 
      end
 
- 	  get_wgbh_solr_doc fields, solr_doc
+ 	  get_wgbh_solr_doc fields, solr_doc, physical_format
     end
 
-def get_wgbh_solr_doc (fields, solr_doc)
+def get_wgbh_solr_doc (fields, solr_doc, physical_format)
    date_created = false
    contributor = false
    format = false
@@ -125,6 +128,7 @@ def get_wgbh_solr_doc (fields, solr_doc)
    purpose = false
    location = false
    subject = false
+   wgbh_title = false
 
     fields.each do |key, value|
      if key == 'date_created_s'
@@ -141,7 +145,6 @@ def get_wgbh_solr_doc (fields, solr_doc)
      end
      if key == 'audio_duration_s'
          duration = true
-	puts "duration: " + duration.to_s
      end
      if key == 'intended_purpose_s'
          purpose = true
@@ -151,6 +154,9 @@ def get_wgbh_solr_doc (fields, solr_doc)
      end
      if key == 'subject_s'
          subject = true
+     end
+     if key == 'title_s'
+         wgbh_title = true
      end
 
       next if value.blank?
@@ -166,7 +172,7 @@ def get_wgbh_solr_doc (fields, solr_doc)
       solr_doc ['contributor_name_role_s'] = " "
      end
      if format == false
-      solr_doc ['format'] = " "
+      solr_doc ['format'] = physical_format 
      end
      if color == false
         solr_doc ['format_color_s'] = "Color"
@@ -183,9 +189,11 @@ def get_wgbh_solr_doc (fields, solr_doc)
      if subject == false
         solr_doc ['subject_s'] = " "
      end
+     if wgbh_title == false
+        solr_doc ['title_s'] = "Ten O'Clock News"
+     end
 
     solr_doc ['audio_duration_s'] = " "
-     puts solr_doc
      solr_doc
 
   end

@@ -3,7 +3,7 @@
 @import "compass/css3/border-radius";
 
 $search_ui_border_color: #AAAAAA;
-$search_ui_bg_color: #d3d2d0;
+$search_ui_bg_color: #FFF;
 
 /* Generic layout stuff */
 .hide 
@@ -22,10 +22,9 @@ body
 }
 
 /* Header Container Layout */
-#page 
+#page_home
 { 
   @include container;
-  margin: 0px auto;
 }
 
 #collection
@@ -42,7 +41,7 @@ body
   font-style:italic;
 }
 
-#hd 
+#hd_home
 {
   padding: 0px 60px 0px 60px;
   height: 122px;
@@ -107,8 +106,8 @@ body
 
   .submit {
     position: relative;
-    top: 5px;
-    right: 19px;
+    top: 24px;
+    right: 10px;
     width: 14px;
     height: 14px;
    }
@@ -122,35 +121,50 @@ body
   }
  
 
-#bd 
+#bd_prod
 {
   @include container;
   @include clearfix;
   margin-bottom: 2em;
-  padding: 20px 40px 0px 40px;
+  padding: 0px 0px 25px 0px;
 
   #main 
   {
    display: inline;
    float: right;
-   margin-right: 0;
    padding-left: 20px;
-   padding-top: 25px;
-   width: 684px;
-  }
+   width: 704px;
+   margin-bottom: 20px;
+
+   #main_container
+    {
+         background-color: $search_ui_bg_color;
+    }
+  
+ }
 
   #sidebar 
   {
     width: 300px;
     float: left;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
+    background-color: $search_ui_bg_color;
 
-   #search .submit
+   #side_search
+    {
+     font-size:120%;
+     text-align:right;
+     margin-bottom: 12px;
+     float: left;
+     width: auto; 
+     padding: 0 0 0 20px;
+   }
+
+   #side_search .submit
    {
       position: relative;
-      top: 25px;
-      right: 40px;
+      top: 40px;
+      right: 19px;
       width: 14px;
       height: 14px;
       
@@ -160,8 +174,8 @@ body
      float: left;
      width: 260px;
      padding-left: 5px;
-     padding-right: 20px;
-     margin-top: 20px;
+     padding-right: 14px;
+     margin-top: 35px;
      color: #838383;
      line-height: 1.25em;
      background-color: #FFF;
@@ -173,8 +187,26 @@ body
     p 
     { 
       padding-top: 20px;
+      padding-left: 20px;
     }
   }
+}
+
+#feature-container {
+   width: 1024px;
+   margin-bottom: 20px;
+ }
+
+#collections
+{
+  width: 684px;
+  float: left;
+  background: white;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 2px 2px 4px #BBB;
 }
 
 #ft {
@@ -182,4 +214,14 @@ body
   @include clearfix;
 }
 
+.post
+   {
+     padding: 0px 44px 30px 44px;
+   }
+.meta
+  {
+    font-size: 100%;
+    line-height: 21px;
+    color: #888;
+}
 

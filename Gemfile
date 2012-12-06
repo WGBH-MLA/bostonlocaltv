@@ -15,11 +15,12 @@ gem 'sass-rails',   '~> 3.1.4'
 # in production environments by default.
 group :assets do
 #  gem 'sass-rails',   '~> 3.1.4'
-  gem 'coffee-rails', '~> 3.1.1'
-  gem 'uglifier', '>= 1.0.3'
   gem 'execjs'
   gem 'therubyracer'
 end
+
+gem 'coffee-rails', '~> 3.1.1'
+gem 'uglifier', '>= 1.0.3'
 
 group :development, :test do
   gem "rspec"
@@ -55,3 +56,4 @@ gem "progressbar"
 
 gem 'rails-footnotes', '>= 3.7', :group => :development
 gem "rsolr-footnotes"
+

@@ -74,18 +74,46 @@ get_header(); ?>
 <div id="secondary" class="widget-area" role="complementary">
 <div id="search_home">
  <div id="search">
-  <form accept-charset="UTF-8" action="/catalog" method="get">
+  <form accept-charset="UTF-8" action="http://lsboslocal.wgbh.org:8080/catalog" method="get">
 <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
-  <h2 class="search_title">Search collections:</h2>
+    <h2 class="search">Search Collections:</h2>
     <input class="q" id="q" name="q" placeholder="search" type="text" />
-     <input id="search_field" name="search_field" type="hidden" value="all_fields" />
-
-     <input alt="search" class="submit" src="/assets/magnifying_glass.gif" type="image" />
+    <input id="search_field" name="search_field" type="hidden" value="all_fields" />
+    <input alt="search" class="submit" src="/assets/magnifying_glass.gif" type="image" />
 </form>
-  <hr/>
-<h2>Browse collections</h2>
+  <hr class="search_hr"/>
+<h2 class="search">Browse collections</h2>
 </div>
-<div id="voting_status"> this is going to be fun.</div>
+
+<?php 
+$con = mysql_connect ("localhost", "bostonlocal", "B05^oNtv");
+
+if (!$con)
+ {
+	die('Count not connect: ' . mysql_error());
+ }
+
+mysql_select_db ("bostonlocal_app", $con);
+
+$sql = "select votes_count, item_id from items order by votes_count desc limit 5;";
+
+$result = mysql_query ($sql, $con);
+
+     echo "<div id='voting_status'>Most votes ";
+
+while ($row = mysql_fetch_array ($result))
+  {
+     echo "<div>";
+     echo $row['votes_count'] . " votes: " .  " Title:  to come " . "<a href='http://lsboslocal.wgbh.org:8080/catalog/" . $row['item_id']. "'>view </a>";
+     echo "</div>";
+  }
+
+      echo "</div>";
+ 
+mysql_close($con);
+
+?>
+
 </div>
 
 <div id="features_home">

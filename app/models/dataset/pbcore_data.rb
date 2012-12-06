@@ -9,7 +9,6 @@ class Dataset::PbcoreData < Dataset::Xml
     fields = []
     row.xpath("*").select { |x| !x.text.blank? }.each do |node|
       foo = ["#{node.name.parameterize}_s", node.text]
-      puts foo
       fields << foo
       #fields << ["#{node.name.parameterize}_s", node.text]
     end

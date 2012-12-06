@@ -1,0 +1,40 @@
+<% @votes=get_top_votes?() %>
+<% @visits = get_top_visits?() %>
+
+<div id="voting_status">
+ <ul id="tabs" style="padding:0px;">
+        <br>
+        <li><a href="#tab1">Most votes</a>
+        <li><a href="#tab2">Most views</a><br>
+        </li>
+ </ul>
+
+        <div id="tab1">
+          <% for vote in @votes %>
+		<div class="votes">
+		<strong><%= vote.votes_count %> vote: </strong>
+		<% v_id = vote.item_id %>
+		<%= get_doc_title(v_id) %>
+		<a href="/catalog/<%= vote.item_id %>">view</a>
+		</div>
+	  <% end %>
+        <br>
+        </div>
+ 
+        <div id="tab2">            
+           <% for visit in @visits %>
+	     <div class="votes">
+		<strong><%= visit.visits %> visits: </strong>
+		<%= visit.title.gsub(/\"(.*)\"/, '\1').gsub(/\[(.*)\]/, '\1') %>
+		<a href="/catalog/<%=visit.item_id%>">view</a>
+		</div>
+	   <% end %>
+           <br>
+        </div>
+
+    <br>
+
+</div>
+
+
+

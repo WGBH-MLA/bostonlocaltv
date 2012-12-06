@@ -1,0 +1,177 @@
+package configuration for libffi
+cflags: -I/usr/lib64/libffi-3.0.5/include  
+ldflags: 
+libs: -lffi  
+
+have_library: checking for ffi_call() in -lffi... -------------------- yes
+
+"gcc -o conftest -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -I/usr/lib64/libffi-3.0.5/include   conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic      -lffi   -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"gcc -o conftest -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -I/usr/lib64/libffi-3.0.5/include   conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic      -lffi   -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static -lffi  -lffi   -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { void ((*volatile p)()); p = (void ((*)()))ffi_call; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ffi_prep_closure()... -------------------- yes
+
+"gcc -o conftest -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -I/usr/lib64/libffi-3.0.5/include   conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic     -lffi  -lffi   -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static -lffi  -lffi   -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ffi_prep_closure’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ffi_prep_closure; return 0; }
+/* end */
+
+"gcc -o conftest -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -I/usr/lib64/libffi-3.0.5/include   conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic     -lffi  -lffi   -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static -lffi  -lffi   -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: warning: implicit declaration of function ‘ffi_prep_closure’
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ffi_prep_closure(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ffi_raw_call()... -------------------- yes
+
+"gcc -o conftest -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -I/usr/lib64/libffi-3.0.5/include   conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic     -lffi  -lffi   -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static -lffi  -lffi   -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ffi_raw_call’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ffi_raw_call; return 0; }
+/* end */
+
+"gcc -o conftest -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -I/usr/lib64/libffi-3.0.5/include   conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic     -lffi  -lffi   -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static -lffi  -lffi   -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: warning: implicit declaration of function ‘ffi_raw_call’
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ffi_raw_call(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ffi_prep_raw_closure()... -------------------- yes
+
+"gcc -o conftest -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -I/usr/lib64/libffi-3.0.5/include   conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic     -lffi  -lffi   -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static -lffi  -lffi   -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ffi_prep_raw_closure’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ffi_prep_raw_closure; return 0; }
+/* end */
+
+"gcc -o conftest -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -I/usr/lib64/libffi-3.0.5/include   conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic     -lffi  -lffi   -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static -lffi  -lffi   -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: warning: implicit declaration of function ‘ffi_prep_raw_closure’
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ffi_prep_raw_closure(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_blocking_region()... -------------------- yes
+
+"gcc -o conftest -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -I/usr/lib64/libffi-3.0.5/include   conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic     -lffi  -lffi   -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static -lffi  -lffi   -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ruby_native_thread_p()... -------------------- yes
+
+"gcc -o conftest -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -I/usr/lib64/libffi-3.0.5/include   conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic     -lffi  -lffi   -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static -lffi  -lffi   -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ruby_native_thread_p; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_call_with_gvl()... -------------------- yes
+
+"gcc -o conftest -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -I/usr/lib64/libffi-3.0.5/include   conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic     -lffi  -lffi   -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static -lffi  -lffi   -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘rb_thread_call_with_gvl’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_with_gvl; return 0; }
+/* end */
+
+"gcc -o conftest -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -I/usr/lib64/libffi-3.0.5/include   conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic     -lffi  -lffi   -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static -lffi  -lffi   -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: warning: implicit declaration of function ‘rb_thread_call_with_gvl’
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { rb_thread_call_with_gvl(); return 0; }
+/* end */
+
+--------------------
+

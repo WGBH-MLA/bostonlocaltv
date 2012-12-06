@@ -14,9 +14,10 @@
 //= require 'blacklight_range_limit/range_limit_slider'
 //= require 'blacklight_range_limit/range_limit_distro_facets'
 //
-//= require jquery_ujs
 // Required by Blacklight
 //= require jquery-ui
 //= require blacklight/blacklight
 //
+//= require 'slides.min.jquery.js'
+//= require 'annotations.js'
 //= require_tree .

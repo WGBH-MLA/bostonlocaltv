@@ -10,6 +10,7 @@ namespace :jetty do
     FileList['solr_conf/*'].each do |f|  
       cp_r("#{f}", 'jetty/solr/development-core/', :verbose => true)
       cp_r("#{f}", 'jetty/solr/test-core/', :verbose => true)
+      cp_r("#{f}", 'jetty/solr/production-core/', :verbose => true)
     end
   end
 

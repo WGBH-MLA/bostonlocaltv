@@ -1,0 +1,30 @@
+<% content_for :blog_stylesheets do %>
+  #bd_prod #sidebar {display: none;}
+
+  #bd_prod #main {
+    display: inline;
+    float: right;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-top: 25px;
+    width: 1024px;
+    }
+
+ #cssmenu > ul > li.blog a {
+   color: #D3D2D0;
+   }
+
+<% end %>
+
+<% 
+     results = [] 
+     results = get_blog_page
+  
+     60.upto(294) do |x|
+
+%>
+<%=  results [x].html_safe %>
+
+<%
+     end
+%>

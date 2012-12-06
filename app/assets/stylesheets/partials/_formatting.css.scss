@@ -10,7 +10,6 @@ a:hover
 
 a:link,a:visited,a:active
 {
-	border-bottom:1px dotted #aaa;
 	color:#2e4f81;
 	text-decoration:none;
 }
@@ -88,12 +87,14 @@ h1
 
 #facets h2
 {
-	font-size:123.1%;
+	font-size:120%;
 }
 
 #main h3
 {
-	font-size:100%;
+	font-weight:700;
+	font-size:150%;
+	line-height: 21px;
 }
 
 hr
@@ -110,7 +111,7 @@ input
 
 input[type=text],input[type=password],textarea
 {
-	width:11.9em;
+	width:130px;
 }
 
 label

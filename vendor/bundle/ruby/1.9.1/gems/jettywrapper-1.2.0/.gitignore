@@ -1,0 +1,11 @@
+*.gem
+*.sw[po]
+.bundle
+Gemfile.lock
+pkg/*
+coverage
+coverage.data
+*~
+.yardoc
+doc
+tmp/
