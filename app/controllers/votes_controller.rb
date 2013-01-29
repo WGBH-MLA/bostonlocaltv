@@ -59,11 +59,18 @@ class VotesController < ApplicationController
        uid = params[:vote][:user_id]
  
       begin
-       @item = Item.find (item)
-       count = @item.votes_count
+#        @item = Item.find (item)
+		@item = Item.find_by_item_id(item)
+
+        # FIXME: counter_cache on items table crapped out. Mabye due to trying to use item_id as id field.
+        # This hack is bullshit but we need the votes working pronto.
+        @votes = Vote.find_by_sql("select count(item_id) as votes_count from votes where item_id='#{item}'")
+        @item.votes_count = @votes[0].votes_count + 1 
+		count = @item.votes_count
     rescue
        @item = Item.new
        @item.item_id = item
+       @item.votes_count=1
        @item.save
     end
 

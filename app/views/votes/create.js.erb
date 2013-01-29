@@ -1,29 +1,16 @@
-$(document).ready(function(){
-    var count = '<%= h @item.votes_count -%>'
-    var x = 1
-    var host_button = "http://bostonlocaltv.org/assets/button-voted-sm.png"
+$(document).ready(function(){  
+  // NOTE: before, the js incremented the count. We don't want to do that anymore, we want to give
+  // the JS the right value from the get-go.
+  var count = parseInt('<%= h @item.votes_count -%>'),
+      doc_id = '<%= h @item.item_id -%>',
+      votesText = count + ((count > 1) ? ' votes' : ' vote') + ' received'
 
-  if(count == "")
-   {
-     x = 1;
-   }
-   else
-   {
-     x = parseInt(count) + 1;
-   }
+  $('#vote_button_' + doc_id)
+    .attr({
+      disabled: 'disabled',
+      src: "http://bostonlocaltv.org/assets/button-voted-sm.png"
+    });
 
-    var doc_id = '<%= h @item.item_id -%>';
-
-    document.getElementById("vote_button_" + doc_id).disabled = "disabled";
-    document.getElementById("vote_button_" + doc_id).src=host_button;
-
-    if (x == 1)
-    {
-      document.getElementById("votes_"+doc_id).innerHTML=  x + " vote received";
-    }
-    else
-    {
-      document.getElementById("votes_"+doc_id).innerHTML=  x + " votes received";
-    }
+  $('#votes_' + doc_id).html(votesText)
 });
  
