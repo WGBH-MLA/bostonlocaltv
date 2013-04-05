@@ -59,7 +59,7 @@ class Dataset::Wcvb < Dataset::Xml
 		case child.name
 		 when "pbcoreRelationIdentifier"
 			   source = child.text.downcase
-			if source.eql? "wcvb" 
+			if source.eql? "wcvb collection" 
 			     fields << ["collection_s", child.text] 
 		       end
 		   end
