@@ -27,8 +27,8 @@ class Dataset::Wcvb < Dataset::Xml
 	           end 
 		end
         when "pbcoreIdentifier"
-             b_v = "Accession_NUMBER"
-              
+             #b_v = "Accession_NUMBER"
+              b_v = "UID"
 	     if node.values()[0] == b_v 
 		wcvb_id = node.text
                  if wcvb_id.include? '.'

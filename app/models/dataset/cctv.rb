@@ -31,7 +31,7 @@ class Dataset::Cctv < Dataset::Xml
                    fields << ['broadcast_date_s', node.text]
 		end
         when "pbcoreIdentifier"
-             c_v = "id_program"
+             c_v = "id_program_prime"
 
 	     if node.values()[0] == c_v
 		fields << ["id", node.text]

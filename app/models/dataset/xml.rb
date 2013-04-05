@@ -11,7 +11,7 @@ class Dataset::Xml < Dataset::Base
   end
 
   def rec_element 
-      "PBCoreDescriptionDocument"
+      "pbcoreDescriptionDocument"
   end
 
   def records
