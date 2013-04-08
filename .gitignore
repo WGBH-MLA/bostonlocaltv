@@ -4,6 +4,7 @@ log/*.log
 tmp/
 .sass-cache/
 jetty
+vendor/bundle/
 
 #Ignore other files that are not needed.
 doc/
