@@ -29,12 +29,6 @@ namespace :data do
       Dataset::Cctv.new(file).process!
   end
 
-  desc "Load PB Core data"
-  task :pb_core => :environment do
-      file = ENV['file']
-      Dataset::Pb_core.new(file).process!
-  end
-
   desc "Load NHF data"
   task :nhf => :environment do
     file = ENV['file']
