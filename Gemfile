@@ -23,14 +23,16 @@ gem 'coffee-rails', '~> 3.1.1'
 gem 'uglifier', '>= 1.0.3'
 
 group :development, :test do
+  # hmm.. home many of these should be in :test group only?
   gem "rspec"
   gem "rspec-rails", "~>2.6.0"
-  gem "cucumber-rails"
   gem "database_cleaner"
   gem "capybara"
   gem "aruba"
   gem "sqlite3"
 end
+
+gem "cucumber-rails", :group => :test
 
 gem 'jquery-rails'
 
@@ -47,9 +49,17 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 gem "compass", ">= 0.12.alpha.1"
-gem "blacklight", :git => 'git://github.com/projectblacklight/blacklight.git'
-gem "blacklight_advanced_search", :git => "git://github.com/projectblacklight/blacklight_advanced_search.git"
-gem "blacklight_range_limit", :git => "git://github.com/projectblacklight/blacklight_range_limit.git"
+
+# blacklight gems pinned to semantic versions; cbeer's recommendations
+gem 'blacklight', '3.2.1'
+gem 'blacklight_advanced_search', '1.2.1'
+gem 'blacklight_range_limit', '1.2.0'
+
+# FIXME! Blacklight 3.2.1 incompatible w/ kaminari 0.14.0
+# see https://github.com/projectblacklight/blacklight/issues/460
+# Pin to < 0.14.0 until blacklight is upgraded.
+gem 'kaminari', '~>0.13.0'
+
 gem "jettywrapper", ">= 1.0.3"
 gem "devise"
 gem "progressbar"
