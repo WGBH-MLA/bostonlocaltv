@@ -30,6 +30,7 @@ group :development, :test do
   gem "capybara"
   gem "aruba"
   gem "sqlite3"
+  gem "debugger"
 end
 
 gem "cucumber-rails", :group => :test
