@@ -10,6 +10,8 @@ class ApplicationController < ActionController::Base
   end
 
   protected
+
+  # Overrides Blacklight::Controller#layout_name
   def layout_name
     'bostonlocaltvnews'
   end

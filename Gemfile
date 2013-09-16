@@ -22,19 +22,21 @@ end
 gem 'coffee-rails', '~> 3.1.1'
 gem 'uglifier', '>= 1.0.3'
 
-group :development, :test do
-  # hmm.. home many of these should be in :test group only?
-  gem "rspec"
-  gem "rspec-rails", "~>2.6.0"
+group :test do
   gem "database_cleaner"
   gem "capybara"
   gem "aruba"
-  gem "sqlite3"
 end
 
-gem "cucumber-rails", :group => :test
+group :development, :test do
+  gem "rspec-rails", "~>2.6.0"
+  gem "sqlite3"
+  gem "debugger"
+end
 
-gem 'jquery-rails'
+gem 'guard-rspec', :group => :development
+
+gem 'jquery-rails', '~>2.2.1'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

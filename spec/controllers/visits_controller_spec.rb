@@ -27,37 +27,6 @@ describe VisitsController do
     {}
   end
 
-  describe "GET index" do
-    it "assigns all visits as @visits" do
-      visit = Visit.create! valid_attributes
-      get :index
-      assigns(:visits).should eq([visit])
-    end
-  end
-
-  describe "GET show" do
-    it "assigns the requested visit as @visit" do
-      visit = Visit.create! valid_attributes
-      get :show, :id => visit.id.to_s
-      assigns(:visit).should eq(visit)
-    end
-  end
-
-  describe "GET new" do
-    it "assigns a new visit as @visit" do
-      get :new
-      assigns(:visit).should be_a_new(Visit)
-    end
-  end
-
-  describe "GET edit" do
-    it "assigns the requested visit as @visit" do
-      visit = Visit.create! valid_attributes
-      get :edit, :id => visit.id.to_s
-      assigns(:visit).should eq(visit)
-    end
-  end
-
   describe "POST create" do
     describe "with valid params" do
       it "creates a new Visit" do
@@ -92,65 +61,6 @@ describe VisitsController do
         post :create, :visit => {}
         response.should render_template("new")
       end
-    end
-  end
-
-  describe "PUT update" do
-    describe "with valid params" do
-      it "updates the requested visit" do
-        visit = Visit.create! valid_attributes
-        # Assuming there are no other visits in the database, this
-        # specifies that the Visit created on the previous line
-        # receives the :update_attributes message with whatever params are
-        # submitted in the request.
-        Visit.any_instance.should_receive(:update_attributes).with({'these' => 'params'})
-        put :update, :id => visit.id, :visit => {'these' => 'params'}
-      end
-
-      it "assigns the requested visit as @visit" do
-        visit = Visit.create! valid_attributes
-        put :update, :id => visit.id, :visit => valid_attributes
-        assigns(:visit).should eq(visit)
-      end
-
-      it "redirects to the visit" do
-        visit = Visit.create! valid_attributes
-        put :update, :id => visit.id, :visit => valid_attributes
-        response.should redirect_to(visit)
-      end
-    end
-
-    describe "with invalid params" do
-      it "assigns the visit as @visit" do
-        visit = Visit.create! valid_attributes
-        # Trigger the behavior that occurs when invalid params are submitted
-        Visit.any_instance.stub(:save).and_return(false)
-        put :update, :id => visit.id.to_s, :visit => {}
-        assigns(:visit).should eq(visit)
-      end
-
-      it "re-renders the 'edit' template" do
-        visit = Visit.create! valid_attributes
-        # Trigger the behavior that occurs when invalid params are submitted
-        Visit.any_instance.stub(:save).and_return(false)
-        put :update, :id => visit.id.to_s, :visit => {}
-        response.should render_template("edit")
-      end
-    end
-  end
-
-  describe "DELETE destroy" do
-    it "destroys the requested visit" do
-      visit = Visit.create! valid_attributes
-      expect {
-        delete :destroy, :id => visit.id.to_s
-      }.to change(Visit, :count).by(-1)
-    end
-
-    it "redirects to the visits list" do
-      visit = Visit.create! valid_attributes
-      delete :destroy, :id => visit.id.to_s
-      response.should redirect_to(visits_url)
     end
   end
 
