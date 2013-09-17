@@ -47,7 +47,7 @@ module Bostonlocaltv
 
     # Enable the asset pipeline
     config.assets.enabled = true    
-    config.sass.load_paths << "#{Gem.loaded_specs['compass'].full_gem_path}/frameworks/compass/stylesheets"
+    #config.sass.load_paths << "#{Gem.loaded_specs['compass'].full_gem_path}/frameworks/compass/stylesheets"
 
     # Default SASS Configuration, check out https://github.com/rails/sass-rails for details
     config.assets.compress = !Rails.env.development?
