@@ -1,5 +1,9 @@
-default:
+default: &default
   jetty_port: 8983
   java_opts:
     - "-XX:MaxPermSize=128m" 
     - "-Xmx256m"
+
+production:
+  <<: *default
+  jetty_port: 8181
