@@ -32,6 +32,7 @@ group :development, :test do
   gem "rspec-rails", "~>2.6.0"
   gem "sqlite3"
   gem "debugger"
+  gem "meta_request"
 end
 
 gem 'guard-rspec', :group => :development
