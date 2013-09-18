@@ -1,3 +1,9 @@
+<% if document.has? "image_s" %>
+  <div class="index-image-container">
+    <img src="<%= render_document_show_field_value :document => document, :field => "image_s" %>" />
+  </div>
+<% end %>
+
 <%# default partial to display solr document fields in catalog index view -%>
 <dl class="defList">
   
