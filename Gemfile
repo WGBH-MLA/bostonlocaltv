@@ -66,6 +66,8 @@ gem "jettywrapper", ">= 1.0.3"
 gem "devise"
 gem "progressbar"
 
+gem 'activeadmin'
+
 gem 'rails-footnotes', '>= 3.7', :group => :development
 gem "rsolr-footnotes"
 

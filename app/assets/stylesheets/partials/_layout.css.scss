@@ -56,17 +56,27 @@ body
   
   #logo_right
   {
-   width: 700px;
+   width: 900px;
    height: 122px;
    float: left;
+   position: relative;
 
-.bostontvnews-logo {
-   float: left;
-  }
+   .bostontvnews-logo {
+     float: left;
+    }
  
-  .top-dates-logo {
-   float: left;
-  }
+    .top-dates-logo {
+     float: left;
+    }
+    #user_info {
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: #fff;
+      a {
+        color: #fff;
+      }
+    }
 }
 }
 

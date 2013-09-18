@@ -39,14 +39,22 @@
          <%= image_tag 'blacklight/top-dates.jpg', :class=>'top-dates-logo', :size=>'122x122', :alt=>'1960 -- 2000' %>
          </div>
          <div id="logo_right">
-         <%= render :partial=>'top_search_form' %>
+         <%= render :partial=>'catalog/top_search_form' %>
          <%= image_tag 'blacklight/bostontvnews-logo.png', :class=>'bostontvnews-logo', :size=>'674x75' %>
+         <div id="user_info">
+           <% if current_user %>
+             <p>Welcome back&nbsp;&nbsp;<%= current_user.email %><br />
+             <a href="/cart">Cart</a>&nbsp;|&nbsp;<a href="/orders">Your orders</a></p>
+           <% else %>
+             <a href="/users/sign_in">Sign in</a>
+           <% end %>
+         </div>
         </div>
         <div class="clear-both"/>
         </div>
       </div>
 
-      <%= render :partial=>'menu_header' %>
+      <%= render :partial=>'catalog/menu_header' %>
 
       <div id="bd_prod">
 
@@ -58,13 +66,13 @@
         </div>
      
         <div id="sidebar">
-          <%= render :partial=> 'side_search_form' %>
+          <%= render :partial=> 'catalog/side_search_form' %>
          <%= sidebar_items.join('').html_safe %>
         </div>
 
         <div class="clear-both"/>
         </div>
-       <%= render :partial=>'footer' %>
+       <%= render :partial=>'catalog/footer' %>
         </div>
    <%= render_votes_visits_code %>
    <%= render_google_analytics_code %>

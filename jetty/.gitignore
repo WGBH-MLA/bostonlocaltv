@@ -1,8 +1,0 @@
-solr/data/*
-solr/*/data/*
-logs/*.log
-derby.log
-
-# other files to ignore
-jetty.pid
-jettywrapper.log

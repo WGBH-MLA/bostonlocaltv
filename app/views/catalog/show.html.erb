@@ -8,10 +8,10 @@
 <div id="document" class="<%= render_document_class %>">
   <div id="doc_<%= @document.id.to_s.parameterize %>">
 
-     <%= render_document_heading.html_safe %>
+     <h1><%= @document[:title_s].first.to_s %></h1>
 
     <% # bookmark/folder functions -%>
-    <%= render_show_doc_actions @document %>        
+    <%#= render_show_doc_actions @document %>        
 
          <%# record is visited; information is saved -%> 
           <% title = @document[:title_s].to_s %>
@@ -21,9 +21,12 @@
     <div class="tools">
         <%= render :partial => 'show_tools', :locals => {:document => @document} %>
         <%= render :partial => 'cite_path', :locals => {:document => @document} %>
-
-   
     </div>
+    <br />
+    <% if current_user %>
+      <% cart = current_user.shopping_carts.user_open_cart(current_user).last %>
+      <a href="#" class="add_to_cart" data-itemid="<%= @document[:id] %>" data-cartid="<%= cart.id unless cart.nil?  %>" data-userid="<%= current_user.id %>">Add to cart</a>
+    <% end %>
     <div class="document">
       <%= render_document_partial @document, :show %>
     </div>

@@ -19,5 +19,5 @@
 //= require blacklight/blacklight
 //
 //= require 'slides.min.jquery.js'
-//= require 'annotations.js'
+
 //= require_tree .

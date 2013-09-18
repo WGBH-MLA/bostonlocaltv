@@ -1,0 +1,6 @@
+<h2>Your current cart</h2>
+<ul class="cart_items">
+  <% @cart.shopping_cart_items.each do |item| %>
+    <li><a href="/catalog/<%= item.solr_document_id %>"><%= item.solr_document_id %></a></li>
+  <% end %>
+</ul>
