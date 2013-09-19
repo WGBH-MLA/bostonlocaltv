@@ -13,9 +13,7 @@
        
        </div>
     <% else %>
-      <div class="facet_limit blacklight-<%= solr_fname.parameterize %>">
       <%= render_facet_partials([solr_fname]) %>
-      </div>
      <% end %>
    <% end %>
 </div>

@@ -71,7 +71,7 @@ body
     #user_info {
       position: absolute;
       right: 0;
-      top: 0;
+      top: 5px;
       color: #fff;
       text-align: right;
       p {
@@ -142,18 +142,40 @@ body
   margin-bottom: 2em;
   padding: 0px 0px 25px 0px;
 
-  #main 
-  {
+  #main {
    display: inline;
    float: right;
    padding-left: 20px;
    width: 704px;
    margin-bottom: 20px;
    padding-top: 0px;
-   #main_container
-    {
-         background-color: $search_ui_bg_color;
+   #main_container {
+    background-color: $search_ui_bg_color;
+    #sortAndPerPage label {
+      color: #777;
     }
+    #startOverLink {
+      padding: 0px 10px;
+    }
+    .page_links span.current {
+      color: #333;
+    }
+    #browse_content {
+      padding: 15px;
+      border: 1px solid #e5e5e5;
+    }
+    #tabs {
+      .ui-tabs-nav {
+        background: transparent;
+        border:none;
+        border-bottom: 1px solid #999;
+        border-radius: 0px;
+        .ui-state-active {
+          border-color: #666;
+        }
+      }
+    }
+  }
   
  }
 
@@ -164,6 +186,40 @@ body
     margin-top: 0px;
     background-color: $search_ui_bg_color;
     border: 1px solid #e5e5e5;
+    #facets {
+      padding: 20px;
+      box-sizing: border-box;
+      h2 {
+        font-size: 20px;
+        padding: 5px 0px;
+      }
+      .facet_limit {
+        padding: 5px 0px;
+        h3 {
+          color: #e5553c;
+          font-size: 15px;
+          background: #efefef;
+          padding: 5px;
+        }
+        h3.twiddle:before {
+         content: url(/assets/arrow_right.png); 
+         padding-right: 5px;
+        }
+        h3.twiddle-open:before {
+          content: url(/assets/arrow_down.png);
+          padding-right: 5px;
+        }
+        ul {
+          margin-left: 25px;
+          li {
+            list-style: disc;
+          }
+          .more_facets_link {
+            list-style:none;
+          }
+        }
+      }
+    }
    #side_search
     {
      font-size:120%;
@@ -171,17 +227,19 @@ body
      margin-bottom: 12px;
      float: left;
      width: auto; 
-     padding: 0 0 0 20px;
+     padding: 20px 20px 0px 20px;
+     box-sizing: border-box;
+     position: relative;
+     height: 45px;
    }
 
    #side_search .submit
    {
-      position: relative;
-      top: 40px;
-      right: 19px;
-      width: 14px;
-      height: 14px;
-      
+    position: absolute;
+    top: 24px;
+    right: 29px;
+    width: 14px;
+    height: 14px;
    }
     .q
     {
@@ -189,7 +247,7 @@ body
      width: 260px;
      padding-left: 5px;
      padding-right: 14px;
-     margin-top: 35px;
+     margin-top: 0px;
      color: #838383;
      line-height: 1.25em;
      background-color: #FFF;
