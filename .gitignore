@@ -4,6 +4,10 @@ log/*.log
 tmp/
 .sass-cache/
 
+# ignore jetty
+jetty/
+
+# ignore gems installed with `bundle install --deployment`
 vendor/bundle/
 
 #Ignore other files that are not needed.
