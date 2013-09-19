@@ -7,8 +7,18 @@
 <%# this should be in a partial -%>
 <div id="document" class="<%= render_document_class %>">
   <div id="doc_<%= @document.id.to_s.parameterize %>">
-
-     <h1><%= @document[:title_s].first.to_s %></h1>
+    <div class="docHeader">
+      <h2 class="docTitle"><%= @document[:title_s].first.to_s %></h2>
+      <hr />
+      <div class="tools">
+          <%= render :partial => 'show_tools', :locals => {:document => @document} %>
+          <%#= render :partial => 'cite_path', :locals => {:document => @document} %>
+      </div>
+      <% if current_user && @document[:video_s].nil? %>
+        <% cart = current_user.shopping_carts.user_open_cart(current_user).last %>
+        <button href="#" class="add_to_cart" data-itemid="<%= @document[:id] %>" data-cartid="<%= cart.id unless cart.nil?  %>" data-userid="<%= current_user.id %>">Add to cart</button>
+      <% end %>
+    </div>
 
     <% # bookmark/folder functions -%>
     <%#= render_show_doc_actions @document %>        
@@ -18,15 +28,6 @@
           <% doc_id = @document.id %>
           <% save_visit(title, doc_id) %>
 
-    <div class="tools">
-        <%= render :partial => 'show_tools', :locals => {:document => @document} %>
-        <%= render :partial => 'cite_path', :locals => {:document => @document} %>
-    </div>
-    <br />
-    <% if current_user %>
-      <% cart = current_user.shopping_carts.user_open_cart(current_user).last %>
-      <a href="#" class="add_to_cart" data-itemid="<%= @document[:id] %>" data-cartid="<%= cart.id unless cart.nil?  %>" data-userid="<%= current_user.id %>">Add to cart</a>
-    <% end %>
     <div class="document">
       <%= render_document_partial @document, :show %>
     </div>

@@ -7,7 +7,8 @@ $ ->
     $.ajax
       url: '/submit_cart'
       success: (data) ->
-        console.log data
+        $('.cart_items').after('<p>Your request has been sent!</p>')
+        $('.cart_items').remove()
       error: (a, b, c) ->
         console.log a
         console.log b
@@ -31,7 +32,7 @@ $ ->
               [solr_document_id: item]
         success: (data) ->
           console.log(data)
-          thing.after('<span>Added to cart!</span>')
+          thing.after('<span style="position: absolute;right: 0;">Added to cart!</span>')
           thing.remove()
     else
       $.ajax
@@ -45,6 +46,6 @@ $ ->
               [solr_document_id: item]
         success: (data) ->
           console.log(data)
-          thing.after('<span>Added to cart!</span>')
+          thing.after('<span style="position: absolute;right: 0;">Added to cart!</span>')
           thing.remove()
         

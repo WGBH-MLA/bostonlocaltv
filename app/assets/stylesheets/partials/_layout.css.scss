@@ -43,7 +43,7 @@ body
 
 #hd_home
 {
-  padding: 0px 60px 0px 60px;
+  padding: 0px;
   height: 122px;
   width: inherit;
  
@@ -73,8 +73,12 @@ body
       right: 0;
       top: 0;
       color: #fff;
+      text-align: right;
+      p {
+        font-size: 13px;
+      }
       a {
-        color: #fff;
+        color: #e5553c;
       }
     }
 }
@@ -145,7 +149,7 @@ body
    padding-left: 20px;
    width: 704px;
    margin-bottom: 20px;
-
+   padding-top: 0px;
    #main_container
     {
          background-color: $search_ui_bg_color;
@@ -155,11 +159,11 @@ body
 
   #sidebar 
   {
-    width: 300px;
+    width: 298px;
     float: left;
-    margin-top: 40px;
+    margin-top: 0px;
     background-color: $search_ui_bg_color;
-
+    border: 1px solid #e5e5e5;
    #side_search
     {
      font-size:120%;
@@ -233,5 +237,55 @@ body
     font-size: 100%;
     line-height: 21px;
     color: #888;
+}
+
+#documents {
+  .document {
+    padding: 10px 0px;
+    .documentHeader {
+      width: 100%;
+    }
+    .docContent {
+      clear:both;
+      overflow:hidden;
+      .index-image-container {
+        width: 30%;
+        margin-right: 10px;
+        img {
+          width: 100%;
+        }
+      }
+      .docDetails {
+        width: 100%;
+        margin-left: 1em;
+        dd {
+          margin-left: 0px;
+        }
+      }
+      .hasImage {
+        width: 65%;
+        margin-left: 33%;
+      }
+    }
+  }
+}
+
+#document {
+  border: 1px solid #e5e5e5;
+  .docHeader {
+    position: relative;
+    .docTitle {
+      font-size: 24px;
+      line-height: 33px;
+      margin-bottom: 5px;
+    }
+    .tools {
+      
+    }
+    .add_to_cart {
+      position: absolute;
+      right: 0;
+    }
+  }
 }
 
