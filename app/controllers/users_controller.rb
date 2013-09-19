@@ -10,4 +10,14 @@ class UsersController < ApplicationController
     @carts_closed = ShoppingCart.has_items(current_user).closed
   end
   
+  def submit_cart
+    @cart = ShoppingCart.user_open_cart(current_user).last
+    @cart.status = 'submitted'
+    if @cart.save
+      render json: @cart
+    else
+      render json: @cart.errors, status: :unprocessable_entity
+    end
+  end
+  
 end

@@ -2,6 +2,17 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 $ ->
+  $('body').on "click", "#submit_cart", (e) ->
+    e.preventDefault()
+    $.ajax
+      url: '/submit_cart'
+      success: (data) ->
+        console.log data
+      error: (a, b, c) ->
+        console.log a
+        console.log b
+        console.log c
+        
   $( "#tabs" ).tabs()
   $('body').on "click", ".add_to_cart", (e) ->
     e.preventDefault()

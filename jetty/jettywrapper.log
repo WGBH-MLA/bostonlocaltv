@@ -1,1436 +1,928 @@
-2013-09-18 11:26:29.532::INFO:  Logging to STDERR via org.mortbay.log.StdErrLog
-2013-09-18 11:26:29.633::INFO:  jetty-6.1.3
-2013-09-18 11:26:29.761::INFO:  Extract jar:file:/Users/Shared/web-applications/bostonlocaltv/jetty/webapps/solr.war!/ to /var/folders/kk/9rqxswkx0b54nbklfbqqlz1h0000gn/T/Jetty_0_0_0_0_8983_solr.war__solr__k1kf17/webapp
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
+2013-09-19 09:51:44.649::INFO:  Logging to STDERR via org.mortbay.log.StdErrLog
+2013-09-19 09:51:44.852::INFO:  jetty-6.1.3
+2013-09-19 09:51:44.917::INFO:  Extract jar:file:/Users/Shared/web-applications/bostonlocaltv/jetty/webapps/solr.war!/ to /var/folders/b9/q1xkrp6x245dxmlz7vhf53csd6w7pb/T/Jetty_0_0_0_0_8983_solr.war__solr__k1kf17/webapp
+Sep 19, 2013 9:51:45 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
 INFO: JNDI not configured for solr (NoInitialContextEx)
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
+Sep 19, 2013 9:51:45 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
 INFO: using system property solr.solr.home: /Users/Shared/web-applications/bostonlocaltv/jetty/solr
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.SolrResourceLoader <init>
+Sep 19, 2013 9:51:45 AM org.apache.solr.core.SolrResourceLoader <init>
 INFO: Solr home set to '/Users/Shared/web-applications/bostonlocaltv/jetty/solr/'
-Sep 18, 2013 11:26:30 AM org.apache.solr.servlet.SolrDispatchFilter init
+Sep 19, 2013 9:51:45 AM org.apache.solr.servlet.SolrDispatchFilter init
 INFO: SolrDispatchFilter.init()
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
+Sep 19, 2013 9:51:45 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
 INFO: JNDI not configured for solr (NoInitialContextEx)
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
+Sep 19, 2013 9:51:45 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
 INFO: using system property solr.solr.home: /Users/Shared/web-applications/bostonlocaltv/jetty/solr
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.CoreContainer$Initializer initialize
+Sep 19, 2013 9:51:45 AM org.apache.solr.core.CoreContainer$Initializer initialize
 INFO: looking for solr.xml: /Users/Shared/web-applications/bostonlocaltv/jetty/solr/solr.xml
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
+Sep 19, 2013 9:51:45 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
 INFO: JNDI not configured for solr (NoInitialContextEx)
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
+Sep 19, 2013 9:51:45 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
 INFO: using system property solr.solr.home: /Users/Shared/web-applications/bostonlocaltv/jetty/solr
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.SolrResourceLoader <init>
+Sep 19, 2013 9:51:45 AM org.apache.solr.core.SolrResourceLoader <init>
 INFO: Solr home set to '/Users/Shared/web-applications/bostonlocaltv/jetty/solr/'
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.SolrResourceLoader <init>
+Sep 19, 2013 9:51:45 AM org.apache.solr.core.SolrResourceLoader <init>
 INFO: Solr home set to '/Users/Shared/web-applications/bostonlocaltv/jetty/solr/production-core/'
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.SolrConfig <init>
+Sep 19, 2013 9:51:45 AM org.apache.solr.core.SolrConfig <init>
 INFO: Loaded SolrConfig: solrconfig.xml
-Sep 18, 2013 11:26:30 AM org.apache.solr.schema.IndexSchema readSchema
+Sep 19, 2013 9:51:45 AM org.apache.solr.schema.IndexSchema readSchema
 INFO: Reading Solr Schema
-Sep 18, 2013 11:26:30 AM org.apache.solr.schema.IndexSchema readSchema
+Sep 19, 2013 9:51:45 AM org.apache.solr.schema.IndexSchema readSchema
 INFO: Schema name=salt
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:45 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created string: org.apache.solr.schema.StrField
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:45 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created boolean: org.apache.solr.schema.BoolField
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:45 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created integer: org.apache.solr.schema.IntField
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:45 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created long: org.apache.solr.schema.LongField
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:45 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created float: org.apache.solr.schema.FloatField
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:45 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created double: org.apache.solr.schema.DoubleField
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:45 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created sint: org.apache.solr.schema.SortableIntField
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:45 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created slong: org.apache.solr.schema.SortableLongField
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:45 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created sfloat: org.apache.solr.schema.SortableFloatField
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:45 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created sdouble: org.apache.solr.schema.SortableDoubleField
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:45 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created date: org.apache.solr.schema.DateField
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:45 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created random: org.apache.solr.schema.RandomSortField
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:45 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:45 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created text_ws: org.apache.solr.schema.TextField
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:45 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.SynonymFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.StopFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WordDelimiterFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.EnglishPorterFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.RemoveDuplicatesTokenFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.StopFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WordDelimiterFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.EnglishPorterFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.RemoveDuplicatesTokenFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created text: org.apache.solr.schema.TextField
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.SynonymFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.StopFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WordDelimiterFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.EnglishPorterFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.RemoveDuplicatesTokenFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created textTight: org.apache.solr.schema.TextField
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.KeywordTokenizerFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.TrimFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.PatternReplaceFilterFactory
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created alphaOnlySort: org.apache.solr.schema.TextField
-Sep 18, 2013 11:26:30 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created ignored: org.apache.solr.schema.StrField
-Sep 18, 2013 11:26:30 AM org.apache.solr.schema.IndexSchema readSchema
+Sep 19, 2013 9:51:46 AM org.apache.solr.schema.IndexSchema readSchema
 INFO: default search field is text
-Sep 18, 2013 11:26:30 AM org.apache.solr.schema.IndexSchema readSchema
+Sep 19, 2013 9:51:46 AM org.apache.solr.schema.IndexSchema readSchema
 INFO: query parser default operator is AND
-Sep 18, 2013 11:26:30 AM org.apache.solr.schema.IndexSchema readSchema
+Sep 19, 2013 9:51:46 AM org.apache.solr.schema.IndexSchema readSchema
 INFO: unique key field: id
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.SolrCore <init>
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore <init>
 INFO: [production] Opening new SolrCore at /Users/Shared/web-applications/bostonlocaltv/jetty/solr/production-core/, dataDir=/Users/Shared/web-applications/bostonlocaltv/jetty/solr/production-core/data/
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.JmxMonitoredMap <init>
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.JmxMonitoredMap <init>
 INFO: No JMX servers found, not exposing Solr information with JMX.
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.SolrCore initListeners
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore initListeners
 INFO: [production] Added SolrEventListener: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.SolrCore initListeners
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore initListeners
 INFO: [production] Added SolrEventListener: org.apache.solr.core.QuerySenderListener{queries=[{q=fast_warm,start=0,rows=10}, {q=static firstSearcher warming query from solrconfig.xml}]}
-Sep 18, 2013 11:26:30 AM org.apache.solr.request.XSLTResponseWriter init
+Sep 19, 2013 9:51:46 AM org.apache.solr.request.XSLTResponseWriter init
 INFO: xsltCacheLifetimeSeconds=5
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created standard: solr.SearchHandler
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created search: solr.SearchHandler
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created public_search: solr.SearchHandler
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created fulltext: solr.SearchHandler
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created document: solr.SearchHandler
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created dismax: solr.SearchHandler
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created partitioned: solr.SearchHandler
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /spellCheckCompRH: solr.SearchHandler
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: adding lazy requestHandler: solr.SearchHandler
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /elevate: solr.SearchHandler
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /update: solr.XmlUpdateRequestHandler
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /analysis: solr.AnalysisRequestHandler
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: adding lazy requestHandler: solr.CSVRequestHandler
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /update/csv: solr.CSVRequestHandler
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /admin/ping: PingRequestHandler
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /debug/dump: solr.DumpRequestHandler
-Sep 18, 2013 11:26:30 AM org.apache.solr.search.SolrIndexSearcher <init>
-INFO: Opening Searcher@3d5b89c main
-Sep 18, 2013 11:26:30 AM org.apache.solr.update.DirectUpdateHandler2$CommitTracker <init>
+Sep 19, 2013 9:51:46 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@11d13272 main
+Sep 19, 2013 9:51:46 AM org.apache.solr.update.DirectUpdateHandler2$CommitTracker <init>
 INFO: AutoCommit: disabled
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SpellCheckComponent inform
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SpellCheckComponent inform
 INFO: Initializing spell checkers
-Sep 18, 2013 11:26:30 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
+Sep 19, 2013 9:51:46 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
 INFO: Using WhitespaceAnalzyer for dictionary: default
-Sep 18, 2013 11:26:30 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
+Sep 19, 2013 9:51:46 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
 INFO: Using WhitespaceAnalzyer for dictionary: jarowinkler
-Sep 18, 2013 11:26:30 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
+Sep 19, 2013 9:51:46 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
 INFO: Using WhitespaceAnalzyer for dictionary: file
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SpellCheckComponent inform
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SpellCheckComponent inform
 WARNING: No queryConverter defined, using default converter
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.QueryElevationComponent inform
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.QueryElevationComponent inform
 INFO: Loading QueryElevation from: /Users/Shared/web-applications/bostonlocaltv/jetty/solr/production-core/conf/elevate.xml
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5d352367
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@4ba76eff
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@5d684e26
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@6ae2d0b2
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@50f38cf0
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@25aa0a15
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5d352367
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@4ba76eff
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@5d684e26
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@6ae2d0b2
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@50f38cf0
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@25aa0a15
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5d352367
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@4ba76eff
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@5d684e26
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@6ae2d0b2
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@50f38cf0
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@25aa0a15
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5d352367
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@4ba76eff
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@5d684e26
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@6ae2d0b2
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@50f38cf0
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@25aa0a15
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5d352367
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@4ba76eff
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@5d684e26
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@6ae2d0b2
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@50f38cf0
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@25aa0a15
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5d352367
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@4ba76eff
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@5d684e26
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@6ae2d0b2
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@50f38cf0
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@25aa0a15
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5d352367
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@4ba76eff
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@5d684e26
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@6ae2d0b2
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@50f38cf0
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@25aa0a15
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5d352367
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@4ba76eff
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@5d684e26
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@6ae2d0b2
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@50f38cf0
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.SpellCheckComponent@3e7bfc04
-Sep 18, 2013 11:26:30 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@25aa0a15
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.QuerySenderListener newSearcher
-INFO: QuerySenderListener sending requests to Searcher@3d5b89c main
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.CoreContainer register
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@7f60c4b0
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@2a114025
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@528a52b6
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@773c550f
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@19f488f1
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@54a9387
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@7f60c4b0
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@2a114025
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@528a52b6
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@773c550f
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@19f488f1
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@54a9387
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@7f60c4b0
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@2a114025
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@528a52b6
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@773c550f
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@19f488f1
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@54a9387
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@7f60c4b0
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@2a114025
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@528a52b6
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@773c550f
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@19f488f1
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@54a9387
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@7f60c4b0
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@2a114025
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@528a52b6
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@773c550f
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@19f488f1
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@54a9387
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@7f60c4b0
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@2a114025
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@528a52b6
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@773c550f
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@19f488f1
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@54a9387
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@7f60c4b0
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@2a114025
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@528a52b6
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@773c550f
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@19f488f1
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@54a9387
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@7f60c4b0
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@2a114025
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@528a52b6
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@773c550f
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@19f488f1
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.SpellCheckComponent@631b86c7
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@54a9387
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@11d13272 main
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.CoreContainer register
 INFO: registering core: production
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.SolrResourceLoader <init>
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrResourceLoader <init>
 INFO: Solr home set to '/Users/Shared/web-applications/bostonlocaltv/jetty/solr/development-core/'
-Sep 18, 2013 11:26:30 AM org.apache.solr.core.SolrCore execute
-INFO: [production] webapp=null path=null params={start=0&event=firstSearcher&q=fast_warm&rows=10} hits=0 status=0 QTime=46 
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrCore execute
-INFO: [production] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+query+from+solrconfig.xml} hits=0 status=0 QTime=33 
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.QuerySenderListener newSearcher
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore execute
+INFO: [production] webapp=null path=null params={start=0&event=firstSearcher&q=fast_warm&rows=10} hits=0 status=0 QTime=52 
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore execute
+INFO: [production] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+query+from+solrconfig.xml} hits=0 status=0 QTime=52 
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.QuerySenderListener newSearcher
 INFO: QuerySenderListener done.
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
 INFO: Loading spell index for spellchecker: default
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
 INFO: Loading spell index for spellchecker: jarowinkler
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
 INFO: Loading spell index for spellchecker: file
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrCore registerSearcher
-INFO: [production] Registered new searcher Searcher@3d5b89c main
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrConfig <init>
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [production] Registered new searcher Searcher@11d13272 main
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrConfig <init>
 INFO: Loaded SolrConfig: solrconfig.xml
-Sep 18, 2013 11:26:31 AM org.apache.solr.schema.IndexSchema readSchema
+Sep 19, 2013 9:51:46 AM org.apache.solr.schema.IndexSchema readSchema
 INFO: Reading Solr Schema
-Sep 18, 2013 11:26:31 AM org.apache.solr.schema.IndexSchema readSchema
+Sep 19, 2013 9:51:46 AM org.apache.solr.schema.IndexSchema readSchema
 INFO: Schema name=salt
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created string: org.apache.solr.schema.StrField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created boolean: org.apache.solr.schema.BoolField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created integer: org.apache.solr.schema.IntField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created long: org.apache.solr.schema.LongField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created float: org.apache.solr.schema.FloatField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created double: org.apache.solr.schema.DoubleField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created sint: org.apache.solr.schema.SortableIntField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created slong: org.apache.solr.schema.SortableLongField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created sfloat: org.apache.solr.schema.SortableFloatField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created sdouble: org.apache.solr.schema.SortableDoubleField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created date: org.apache.solr.schema.DateField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created random: org.apache.solr.schema.RandomSortField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created text_ws: org.apache.solr.schema.TextField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.SynonymFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.StopFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WordDelimiterFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.EnglishPorterFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.RemoveDuplicatesTokenFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.StopFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WordDelimiterFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.EnglishPorterFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.RemoveDuplicatesTokenFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created text: org.apache.solr.schema.TextField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.SynonymFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.StopFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WordDelimiterFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.EnglishPorterFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.RemoveDuplicatesTokenFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created textTight: org.apache.solr.schema.TextField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.KeywordTokenizerFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.TrimFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.PatternReplaceFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created alphaOnlySort: org.apache.solr.schema.TextField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created ignored: org.apache.solr.schema.StrField
-Sep 18, 2013 11:26:31 AM org.apache.solr.schema.IndexSchema readSchema
+Sep 19, 2013 9:51:46 AM org.apache.solr.schema.IndexSchema readSchema
 INFO: default search field is text
-Sep 18, 2013 11:26:31 AM org.apache.solr.schema.IndexSchema readSchema
+Sep 19, 2013 9:51:46 AM org.apache.solr.schema.IndexSchema readSchema
 INFO: query parser default operator is AND
-Sep 18, 2013 11:26:31 AM org.apache.solr.schema.IndexSchema readSchema
+Sep 19, 2013 9:51:46 AM org.apache.solr.schema.IndexSchema readSchema
 INFO: unique key field: id
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrCore <init>
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore <init>
 INFO: [development] Opening new SolrCore at /Users/Shared/web-applications/bostonlocaltv/jetty/solr/development-core/, dataDir=/Users/Shared/web-applications/bostonlocaltv/jetty/solr/development-core/data/
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.JmxMonitoredMap <init>
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.JmxMonitoredMap <init>
 INFO: No JMX servers found, not exposing Solr information with JMX.
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrCore initListeners
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore initListeners
 INFO: [development] Added SolrEventListener: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrCore initListeners
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore initListeners
 INFO: [development] Added SolrEventListener: org.apache.solr.core.QuerySenderListener{queries=[{q=fast_warm,start=0,rows=10}, {q=static firstSearcher warming query from solrconfig.xml}]}
-Sep 18, 2013 11:26:31 AM org.apache.solr.request.XSLTResponseWriter init
+Sep 19, 2013 9:51:46 AM org.apache.solr.request.XSLTResponseWriter init
 INFO: xsltCacheLifetimeSeconds=5
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created standard: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created search: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created public_search: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created fulltext: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created document: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created dismax: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created partitioned: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /spellCheckCompRH: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: adding lazy requestHandler: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /elevate: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /update: solr.XmlUpdateRequestHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /analysis: solr.AnalysisRequestHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: adding lazy requestHandler: solr.CSVRequestHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /update/csv: solr.CSVRequestHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /admin/ping: PingRequestHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /debug/dump: solr.DumpRequestHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.search.SolrIndexSearcher <init>
-INFO: Opening Searcher@1bb0889a main
-Sep 18, 2013 11:26:31 AM org.apache.solr.update.DirectUpdateHandler2$CommitTracker <init>
+Sep 19, 2013 9:51:46 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@529c176c main
+Sep 19, 2013 9:51:46 AM org.apache.solr.update.DirectUpdateHandler2$CommitTracker <init>
 INFO: AutoCommit: disabled
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SpellCheckComponent inform
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SpellCheckComponent inform
 INFO: Initializing spell checkers
-Sep 18, 2013 11:26:31 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
+Sep 19, 2013 9:51:46 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
 INFO: Using WhitespaceAnalzyer for dictionary: default
-Sep 18, 2013 11:26:31 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
+Sep 19, 2013 9:51:46 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
 INFO: Using WhitespaceAnalzyer for dictionary: jarowinkler
-Sep 18, 2013 11:26:31 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
+Sep 19, 2013 9:51:46 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
 INFO: Using WhitespaceAnalzyer for dictionary: file
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SpellCheckComponent inform
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SpellCheckComponent inform
 WARNING: No queryConverter defined, using default converter
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.QueryElevationComponent inform
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.QueryElevationComponent inform
 INFO: Loading QueryElevation from: /Users/Shared/web-applications/bostonlocaltv/jetty/solr/development-core/conf/elevate.xml
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5d85fe0c
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@7e9f5cc
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@11082823
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@2e831a91
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@21453d72
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@48c5186e
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5d85fe0c
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@7e9f5cc
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@11082823
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@2e831a91
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@21453d72
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@48c5186e
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5d85fe0c
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@7e9f5cc
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@11082823
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@2e831a91
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@21453d72
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@48c5186e
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5d85fe0c
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@7e9f5cc
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@11082823
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@2e831a91
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@21453d72
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@48c5186e
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5d85fe0c
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@7e9f5cc
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@11082823
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@2e831a91
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@21453d72
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@48c5186e
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5d85fe0c
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@7e9f5cc
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@11082823
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@2e831a91
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@21453d72
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@48c5186e
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5d85fe0c
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@7e9f5cc
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@11082823
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@2e831a91
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@21453d72
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@48c5186e
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5d85fe0c
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@7e9f5cc
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@11082823
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@2e831a91
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@21453d72
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.SpellCheckComponent@3c70315
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@48c5186e
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.QuerySenderListener newSearcher
-INFO: QuerySenderListener sending requests to Searcher@1bb0889a main
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.CoreContainer register
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@6482d603
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@49b09282
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@6762ba99
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@2c8c7d6
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@4bb7b407
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@98c5e67
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@6482d603
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@49b09282
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@6762ba99
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@2c8c7d6
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@4bb7b407
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@98c5e67
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@6482d603
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@49b09282
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@6762ba99
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@2c8c7d6
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@4bb7b407
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@98c5e67
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@6482d603
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@49b09282
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@6762ba99
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@2c8c7d6
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@4bb7b407
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@98c5e67
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@6482d603
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@49b09282
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@6762ba99
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@2c8c7d6
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@4bb7b407
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@98c5e67
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@6482d603
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@49b09282
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@6762ba99
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@2c8c7d6
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@4bb7b407
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@98c5e67
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@6482d603
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@49b09282
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@6762ba99
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@2c8c7d6
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@4bb7b407
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@98c5e67
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@6482d603
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@49b09282
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@6762ba99
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@2c8c7d6
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@4bb7b407
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.SpellCheckComponent@5e89c116
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@98c5e67
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@529c176c main
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.CoreContainer register
 INFO: registering core: development
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrResourceLoader <init>
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrResourceLoader <init>
 INFO: Solr home set to '/Users/Shared/web-applications/bostonlocaltv/jetty/solr/test-core/'
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=null path=null params={start=0&event=firstSearcher&q=fast_warm&rows=10} hits=0 status=0 QTime=9 
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+query+from+solrconfig.xml} hits=0 status=0 QTime=25 
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.QuerySenderListener newSearcher
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=null path=null params={start=0&event=firstSearcher&q=fast_warm&rows=10} hits=0 status=0 QTime=4 
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+query+from+solrconfig.xml} hits=0 status=0 QTime=20 
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.QuerySenderListener newSearcher
 INFO: QuerySenderListener done.
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
 INFO: Loading spell index for spellchecker: default
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
 INFO: Loading spell index for spellchecker: jarowinkler
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
 INFO: Loading spell index for spellchecker: file
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrCore registerSearcher
-INFO: [development] Registered new searcher Searcher@1bb0889a main
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrConfig <init>
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@529c176c main
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrConfig <init>
 INFO: Loaded SolrConfig: solrconfig.xml
-Sep 18, 2013 11:26:31 AM org.apache.solr.schema.IndexSchema readSchema
+Sep 19, 2013 9:51:46 AM org.apache.solr.schema.IndexSchema readSchema
 INFO: Reading Solr Schema
-Sep 18, 2013 11:26:31 AM org.apache.solr.schema.IndexSchema readSchema
+Sep 19, 2013 9:51:46 AM org.apache.solr.schema.IndexSchema readSchema
 INFO: Schema name=salt
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created string: org.apache.solr.schema.StrField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created boolean: org.apache.solr.schema.BoolField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created integer: org.apache.solr.schema.IntField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created long: org.apache.solr.schema.LongField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created float: org.apache.solr.schema.FloatField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created double: org.apache.solr.schema.DoubleField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created sint: org.apache.solr.schema.SortableIntField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created slong: org.apache.solr.schema.SortableLongField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created sfloat: org.apache.solr.schema.SortableFloatField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created sdouble: org.apache.solr.schema.SortableDoubleField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created date: org.apache.solr.schema.DateField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created random: org.apache.solr.schema.RandomSortField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created text_ws: org.apache.solr.schema.TextField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.SynonymFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.StopFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WordDelimiterFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.EnglishPorterFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.RemoveDuplicatesTokenFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.StopFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WordDelimiterFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.EnglishPorterFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.RemoveDuplicatesTokenFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created text: org.apache.solr.schema.TextField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.SynonymFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.StopFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.WordDelimiterFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.EnglishPorterFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.RemoveDuplicatesTokenFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created textTight: org.apache.solr.schema.TextField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.KeywordTokenizerFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.TrimFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created null: org.apache.solr.analysis.PatternReplaceFilterFactory
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created alphaOnlySort: org.apache.solr.schema.TextField
-Sep 18, 2013 11:26:31 AM org.apache.solr.util.plugin.AbstractPluginLoader load
+Sep 19, 2013 9:51:46 AM org.apache.solr.util.plugin.AbstractPluginLoader load
 INFO: created ignored: org.apache.solr.schema.StrField
-Sep 18, 2013 11:26:31 AM org.apache.solr.schema.IndexSchema readSchema
+Sep 19, 2013 9:51:46 AM org.apache.solr.schema.IndexSchema readSchema
 INFO: default search field is text
-Sep 18, 2013 11:26:31 AM org.apache.solr.schema.IndexSchema readSchema
+Sep 19, 2013 9:51:46 AM org.apache.solr.schema.IndexSchema readSchema
 INFO: query parser default operator is AND
-Sep 18, 2013 11:26:31 AM org.apache.solr.schema.IndexSchema readSchema
+Sep 19, 2013 9:51:46 AM org.apache.solr.schema.IndexSchema readSchema
 INFO: unique key field: id
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrCore <init>
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore <init>
 INFO: [test] Opening new SolrCore at /Users/Shared/web-applications/bostonlocaltv/jetty/solr/test-core/, dataDir=/Users/Shared/web-applications/bostonlocaltv/jetty/solr/test-core/data/
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.JmxMonitoredMap <init>
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.JmxMonitoredMap <init>
 INFO: No JMX servers found, not exposing Solr information with JMX.
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrCore initListeners
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore initListeners
 INFO: [test] Added SolrEventListener: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrCore initListeners
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore initListeners
 INFO: [test] Added SolrEventListener: org.apache.solr.core.QuerySenderListener{queries=[{q=fast_warm,start=0,rows=10}, {q=static firstSearcher warming query from solrconfig.xml}]}
-Sep 18, 2013 11:26:31 AM org.apache.solr.request.XSLTResponseWriter init
+Sep 19, 2013 9:51:46 AM org.apache.solr.request.XSLTResponseWriter init
 INFO: xsltCacheLifetimeSeconds=5
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created standard: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created search: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created public_search: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created fulltext: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created document: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created dismax: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created partitioned: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /spellCheckCompRH: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: adding lazy requestHandler: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /elevate: solr.SearchHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /update: solr.XmlUpdateRequestHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /analysis: solr.AnalysisRequestHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: adding lazy requestHandler: solr.CSVRequestHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /update/csv: solr.CSVRequestHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /admin/ping: PingRequestHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /debug/dump: solr.DumpRequestHandler
-Sep 18, 2013 11:26:31 AM org.apache.solr.search.SolrIndexSearcher <init>
-INFO: Opening Searcher@3fcac3fa main
-Sep 18, 2013 11:26:31 AM org.apache.solr.update.DirectUpdateHandler2$CommitTracker <init>
+Sep 19, 2013 9:51:46 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@6ae2d0b2 main
+Sep 19, 2013 9:51:46 AM org.apache.solr.update.DirectUpdateHandler2$CommitTracker <init>
 INFO: AutoCommit: disabled
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SpellCheckComponent inform
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SpellCheckComponent inform
 INFO: Initializing spell checkers
-Sep 18, 2013 11:26:31 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
+Sep 19, 2013 9:51:46 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
 INFO: Using WhitespaceAnalzyer for dictionary: default
-Sep 18, 2013 11:26:31 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
+Sep 19, 2013 9:51:46 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
 INFO: Using WhitespaceAnalzyer for dictionary: jarowinkler
-Sep 18, 2013 11:26:31 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
+Sep 19, 2013 9:51:46 AM org.apache.solr.spelling.AbstractLuceneSpellChecker init
 INFO: Using WhitespaceAnalzyer for dictionary: file
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SpellCheckComponent inform
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SpellCheckComponent inform
 WARNING: No queryConverter defined, using default converter
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.QueryElevationComponent inform
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.QueryElevationComponent inform
 INFO: Loading QueryElevation from: /Users/Shared/web-applications/bostonlocaltv/jetty/solr/test-core/conf/elevate.xml
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5675b3ee
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@4977fa9a
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@63e5ba24
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@7f1fc4b8
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@7eac4d3b
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@62029d75
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5675b3ee
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@4977fa9a
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@63e5ba24
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@7f1fc4b8
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@7eac4d3b
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@62029d75
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5675b3ee
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@4977fa9a
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@63e5ba24
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@7f1fc4b8
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@7eac4d3b
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@62029d75
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5675b3ee
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@4977fa9a
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@63e5ba24
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@7f1fc4b8
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@7eac4d3b
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@62029d75
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5675b3ee
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@4977fa9a
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@63e5ba24
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@7f1fc4b8
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@7eac4d3b
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@62029d75
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5675b3ee
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@4977fa9a
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@63e5ba24
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@7f1fc4b8
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@7eac4d3b
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@62029d75
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5675b3ee
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@4977fa9a
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@63e5ba24
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@7f1fc4b8
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@7eac4d3b
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@62029d75
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@5675b3ee
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@4977fa9a
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@63e5ba24
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@7f1fc4b8
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@7eac4d3b
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  component:org.apache.solr.handler.component.SpellCheckComponent@19af9e98
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SearchHandler inform
-INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@62029d75
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.QuerySenderListener newSearcher
-INFO: QuerySenderListener sending requests to Searcher@3fcac3fa main
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.CoreContainer register
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@3e7bfc04
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@3dde8aa8
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@5d613b53
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@1a7df60a
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@43a4181c
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@4a2af8f5
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@3e7bfc04
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@3dde8aa8
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@5d613b53
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@1a7df60a
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@43a4181c
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@4a2af8f5
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@3e7bfc04
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@3dde8aa8
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@5d613b53
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@1a7df60a
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@43a4181c
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@4a2af8f5
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@3e7bfc04
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@3dde8aa8
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@5d613b53
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@1a7df60a
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@43a4181c
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@4a2af8f5
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@3e7bfc04
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@3dde8aa8
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@5d613b53
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@1a7df60a
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@43a4181c
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@4a2af8f5
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@3e7bfc04
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@3dde8aa8
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@5d613b53
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@1a7df60a
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@43a4181c
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@4a2af8f5
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@3e7bfc04
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@3dde8aa8
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@5d613b53
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@1a7df60a
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@43a4181c
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@4a2af8f5
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@3e7bfc04
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@3dde8aa8
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@5d613b53
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@1a7df60a
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.StatsComponent@43a4181c
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.SpellCheckComponent@4b3ec2dd
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@4a2af8f5
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@6ae2d0b2 main
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.CoreContainer register
 INFO: registering core: test
-Sep 18, 2013 11:26:31 AM org.apache.solr.servlet.SolrDispatchFilter init
+Sep 19, 2013 9:51:46 AM org.apache.solr.servlet.SolrDispatchFilter init
 INFO: user.dir=/Users/Shared/web-applications/bostonlocaltv/jetty
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrCore execute
-INFO: [test] webapp=null path=null params={start=0&event=firstSearcher&q=fast_warm&rows=10} hits=0 status=0 QTime=3 
-Sep 18, 2013 11:26:31 AM org.apache.solr.servlet.SolrDispatchFilter init
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore execute
+INFO: [test] webapp=null path=null params={start=0&event=firstSearcher&q=fast_warm&rows=10} hits=0 status=0 QTime=2 
+Sep 19, 2013 9:51:46 AM org.apache.solr.servlet.SolrDispatchFilter init
 INFO: SolrDispatchFilter.init() done
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrCore execute
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore execute
 INFO: [test] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+query+from+solrconfig.xml} hits=0 status=0 QTime=1 
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.QuerySenderListener newSearcher
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.QuerySenderListener newSearcher
 INFO: QuerySenderListener done.
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
 INFO: Loading spell index for spellchecker: default
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
 INFO: Loading spell index for spellchecker: jarowinkler
-Sep 18, 2013 11:26:31 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
+Sep 19, 2013 9:51:46 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
 INFO: Loading spell index for spellchecker: file
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrCore registerSearcher
-INFO: [test] Registered new searcher Searcher@3fcac3fa main
-Sep 18, 2013 11:26:31 AM org.apache.solr.servlet.SolrServlet init
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [test] Registered new searcher Searcher@6ae2d0b2 main
+Sep 19, 2013 9:51:46 AM org.apache.solr.servlet.SolrServlet init
 INFO: SolrServlet.init()
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
 INFO: JNDI not configured for solr (NoInitialContextEx)
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
 INFO: using system property solr.solr.home: /Users/Shared/web-applications/bostonlocaltv/jetty/solr
-Sep 18, 2013 11:26:31 AM org.apache.solr.servlet.SolrServlet init
+Sep 19, 2013 9:51:46 AM org.apache.solr.servlet.SolrServlet init
 INFO: SolrServlet.init() done
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
 INFO: JNDI not configured for solr (NoInitialContextEx)
-Sep 18, 2013 11:26:31 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
+Sep 19, 2013 9:51:46 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
 INFO: using system property solr.solr.home: /Users/Shared/web-applications/bostonlocaltv/jetty/solr
-Sep 18, 2013 11:26:31 AM org.apache.solr.servlet.SolrUpdateServlet init
+Sep 19, 2013 9:51:46 AM org.apache.solr.servlet.SolrUpdateServlet init
 INFO: SolrUpdateServlet.init() done
-2013-09-18 11:26:31.390::INFO:  Started SocketConnector @ 0.0.0.0:8983
-Sep 18, 2013 11:28:03 AM org.apache.solr.request.UnInvertedField uninvert
-INFO: UnInverted multi-valued field {field=collection_s,memSize=4786,tindexSize=48,time=15,phase1=15,nTerms=7,bigTerms=5,termInstances=0,uses=0}
-Sep 18, 2013 11:28:03 AM org.apache.solr.request.UnInvertedField uninvert
-INFO: UnInverted multi-valued field {field=subject_facet_s,memSize=363322,tindexSize=464,time=66,phase1=63,nTerms=976,bigTerms=0,termInstances=43789,uses=0}
-Sep 18, 2013 11:28:03 AM org.apache.solr.request.UnInvertedField uninvert
-INFO: UnInverted multi-valued field {field=people_s,memSize=335231,tindexSize=162,time=20,phase1=18,nTerms=347,bigTerms=0,termInstances=8070,uses=0}
-Sep 18, 2013 11:28:03 AM org.apache.solr.request.UnInvertedField uninvert
-INFO: UnInverted multi-valued field {field=location_facet_s,memSize=335104,tindexSize=140,time=15,phase1=13,nTerms=339,bigTerms=0,termInstances=10295,uses=0}
-Sep 18, 2013 11:28:03 AM org.apache.solr.request.UnInvertedField uninvert
+2013-09-19 09:51:46.996::INFO:  Started SocketConnector @ 0.0.0.0:8983
+Sep 19, 2013 10:08:01 AM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=collection_s,memSize=4786,tindexSize=48,time=16,phase1=16,nTerms=7,bigTerms=5,termInstances=0,uses=0}
+Sep 19, 2013 10:08:01 AM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=subject_facet_s,memSize=363322,tindexSize=464,time=86,phase1=83,nTerms=976,bigTerms=0,termInstances=43789,uses=0}
+Sep 19, 2013 10:08:01 AM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=people_s,memSize=335231,tindexSize=162,time=18,phase1=18,nTerms=347,bigTerms=0,termInstances=8070,uses=0}
+Sep 19, 2013 10:08:01 AM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=location_facet_s,memSize=335104,tindexSize=140,time=22,phase1=22,nTerms=339,bigTerms=0,termInstances=10295,uses=0}
+Sep 19, 2013 10:08:01 AM org.apache.solr.request.UnInvertedField uninvert
 INFO: UnInverted multi-valued field {field=video_s,memSize=4224,tindexSize=32,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-Sep 18, 2013 11:28:03 AM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=sports&f.people_s.facet.limit=6&wt=ruby&rows=10&f.location_facet_s.facet.limit=6&q=sports&stats.field=year_i&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1180 status=0 QTime=354 
-Sep 18, 2013 11:28:09 AM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=sports&f.people_s.facet.limit=6&wt=ruby&rows=0&f.location_facet_s.facet.limit=6&facet.query=year_i:[1952+TO+1954]&facet.query=year_i:[1955+TO+1959]&facet.query=year_i:[1960+TO+1964]&facet.query=year_i:[1965+TO+1969]&facet.query=year_i:[1970+TO+1974]&facet.query=year_i:[1975+TO+1979]&facet.query=year_i:[1980+TO+1984]&facet.query=year_i:[1985+TO+1989]&facet.query=year_i:[1990+TO+1994]&facet.query=year_i:[1995+TO+1999]&facet.query=year_i:[2000+TO+2004]&facet.query=year_i:[2005+TO+2008]&q=sports&stats.field=year_i&f.subject_facet_s.facet.limit=6&qt=search} hits=1180 status=0 QTime=59 
-Sep 18, 2013 11:28:10 AM org.apache.solr.request.UnInvertedField uninvert
-INFO: UnInverted multi-valued field {field=collection_facet,memSize=4224,tindexSize=32,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-Sep 18, 2013 11:28:10 AM org.apache.solr.request.UnInvertedField uninvert
+Sep 19, 2013 10:08:01 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={f.location_facet_s.facet.limit=6&sort=score+desc,+title_sort+asc,+id+asc&stats=true&stats.field=year_i&f.people_s.facet.limit=6&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&wt=ruby&qt=search&rows=10} hits=51511 status=0 QTime=644 
+Sep 19, 2013 10:08:09 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={f.location_facet_s.facet.limit=6&sort=score+desc,+title_sort+asc,+id+asc&facet.query=year_i:[969+TO+999]&facet.query=year_i:[1000+TO+1999]&facet.query=year_i:[2000+TO+2999]&facet.query=year_i:[3000+TO+3999]&facet.query=year_i:[4000+TO+4999]&facet.query=year_i:[5000+TO+5999]&facet.query=year_i:[6000+TO+6999]&facet.query=year_i:[7000+TO+7999]&facet.query=year_i:[8000+TO+8999]&facet.query=year_i:[9000+TO+9689]&stats=true&stats.field=year_i&f.people_s.facet.limit=6&f.subject_facet_s.facet.limit=6&wt=ruby&qt=search&rows=0} hits=51511 status=0 QTime=39 
+Sep 19, 2013 10:08:11 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Gerald+R.+Ford&f.people_s.facet.limit=6&wt=ruby&rows=10&f.location_facet_s.facet.limit=6&q=Gerald+R.+Ford&stats.field=year_i&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=20 status=0 QTime=49 
+Sep 19, 2013 10:08:17 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Gerald+R.+Ford&f.people_s.facet.limit=6&wt=ruby&rows=0&f.location_facet_s.facet.limit=6&facet.query=year_i:[1967+TO+1967]&facet.query=year_i:[1968+TO+1969]&facet.query=year_i:[1970+TO+1971]&facet.query=year_i:[1972+TO+1973]&facet.query=year_i:[1974+TO+1975]&facet.query=year_i:[1976+TO+1977]&facet.query=year_i:[1978+TO+1979]&facet.query=year_i:[1980+TO+1981]&facet.query=year_i:[1982+TO+1983]&facet.query=year_i:[1984+TO+1984]&q=Gerald+R.+Ford&stats.field=year_i&f.subject_facet_s.facet.limit=6&qt=search} hits=20 status=0 QTime=18 
+Sep 19, 2013 10:08:20 AM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=collection_facet,memSize=4224,tindexSize=32,time=4,phase1=4,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+Sep 19, 2013 10:08:20 AM org.apache.solr.request.UnInvertedField uninvert
 INFO: UnInverted multi-valued field {field=technology_facet,memSize=4224,tindexSize=32,time=1,phase1=1,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-Sep 18, 2013 11:28:10 AM org.apache.solr.request.UnInvertedField uninvert
-INFO: UnInverted multi-valued field {field=person_facet,memSize=4224,tindexSize=32,time=1,phase1=1,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-Sep 18, 2013 11:28:10 AM org.apache.solr.request.UnInvertedField uninvert
-INFO: UnInverted multi-valued field {field=city_facet,memSize=4224,tindexSize=32,time=1,phase1=1,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-Sep 18, 2013 11:28:10 AM org.apache.solr.request.UnInvertedField uninvert
-INFO: UnInverted multi-valued field {field=organization_facet,memSize=4224,tindexSize=32,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-Sep 18, 2013 11:28:10 AM org.apache.solr.request.UnInvertedField uninvert
+Sep 19, 2013 10:08:20 AM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=person_facet,memSize=4224,tindexSize=32,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+Sep 19, 2013 10:08:20 AM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=city_facet,memSize=4224,tindexSize=32,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+Sep 19, 2013 10:08:20 AM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=organization_facet,memSize=4224,tindexSize=32,time=1,phase1=1,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+Sep 19, 2013 10:08:20 AM org.apache.solr.request.UnInvertedField uninvert
 INFO: UnInverted multi-valued field {field=company_facet,memSize=4224,tindexSize=32,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-Sep 18, 2013 11:28:10 AM org.apache.solr.request.UnInvertedField uninvert
-INFO: UnInverted multi-valued field {field=year_facet,memSize=4224,tindexSize=32,time=1,phase1=1,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-Sep 18, 2013 11:28:10 AM org.apache.solr.request.UnInvertedField uninvert
+Sep 19, 2013 10:08:20 AM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=year_facet,memSize=4224,tindexSize=32,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+Sep 19, 2013 10:08:20 AM org.apache.solr.request.UnInvertedField uninvert
 INFO: UnInverted multi-valued field {field=state_facet,memSize=4224,tindexSize=32,time=1,phase1=1,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-Sep 18, 2013 11:28:10 AM org.apache.solr.request.UnInvertedField uninvert
+Sep 19, 2013 10:08:20 AM org.apache.solr.request.UnInvertedField uninvert
 INFO: UnInverted multi-valued field {field=series_facet,memSize=4224,tindexSize=32,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-Sep 18, 2013 11:28:10 AM org.apache.solr.request.UnInvertedField uninvert
-INFO: UnInverted multi-valued field {field=box_facet,memSize=4224,tindexSize=32,time=1,phase1=1,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-Sep 18, 2013 11:28:10 AM org.apache.solr.request.UnInvertedField uninvert
-INFO: UnInverted multi-valued field {field=folder_facet,memSize=4224,tindexSize=32,time=2,phase1=2,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-Sep 18, 2013 11:28:10 AM org.apache.solr.request.UnInvertedField uninvert
+Sep 19, 2013 10:08:20 AM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=box_facet,memSize=4224,tindexSize=32,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+Sep 19, 2013 10:08:20 AM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=folder_facet,memSize=4224,tindexSize=32,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+Sep 19, 2013 10:08:20 AM org.apache.solr.request.UnInvertedField uninvert
 INFO: UnInverted multi-valued field {field=donor_tags_facet,memSize=4224,tindexSize=32,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-Sep 18, 2013 11:28:10 AM org.apache.solr.request.UnInvertedField uninvert
-INFO: UnInverted multi-valued field {field=archivist_tags_facet,memSize=4224,tindexSize=32,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-Sep 18, 2013 11:28:10 AM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=2394_00695&wt=ruby&qt=document} hits=1 status=0 QTime=12 
-Sep 18, 2013 11:28:10 AM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=sports&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=sports&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1180 status=0 QTime=16 
-Sep 18, 2013 11:33:15 AM org.apache.solr.common.SolrException log
-SEVERE: java.lang.NullPointerException
-	at java.io.StringReader.<init>(StringReader.java:33)
-	at org.apache.lucene.queryParser.QueryParser.parse(QueryParser.java:197)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParserPlugin.java:78)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:131)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:89)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:174)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:131)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1316)
-	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:338)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:241)
-	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1089)
-	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:365)
-	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
-	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:712)
-	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:211)
-	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
-	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:139)
-	at org.mortbay.jetty.Server.handle(Server.java:285)
-	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:502)
-	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:821)
-	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:513)
-	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:208)
-	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:378)
-	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:226)
-	at org.mortbay.thread.BoundedThreadPool$PoolThread.run(BoundedThreadPool.java:442)
-
-Sep 18, 2013 11:33:15 AM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=2394_00695&wt=ruby} status=500 QTime=2 
-Sep 18, 2013 11:33:15 AM org.apache.solr.common.SolrException log
-SEVERE: java.lang.NullPointerException
-	at java.io.StringReader.<init>(StringReader.java:33)
-	at org.apache.lucene.queryParser.QueryParser.parse(QueryParser.java:197)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParserPlugin.java:78)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:131)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:89)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:174)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:131)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1316)
-	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:338)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:241)
-	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1089)
-	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:365)
-	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
-	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:712)
-	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:211)
-	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
-	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:139)
-	at org.mortbay.jetty.Server.handle(Server.java:285)
-	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:502)
-	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:821)
-	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:513)
-	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:208)
-	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:378)
-	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:226)
-	at org.mortbay.thread.BoundedThreadPool$PoolThread.run(BoundedThreadPool.java:442)
-
-Sep 18, 2013 11:33:33 AM org.apache.solr.common.SolrException log
-SEVERE: java.lang.NullPointerException
-	at java.io.StringReader.<init>(StringReader.java:33)
-	at org.apache.lucene.queryParser.QueryParser.parse(QueryParser.java:197)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParserPlugin.java:78)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:131)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:89)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:174)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:131)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1316)
-	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:338)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:241)
-	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1089)
-	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:365)
-	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
-	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:712)
-	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:211)
-	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
-	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:139)
-	at org.mortbay.jetty.Server.handle(Server.java:285)
-	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:502)
-	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:821)
-	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:513)
-	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:208)
-	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:378)
-	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:226)
-	at org.mortbay.thread.BoundedThreadPool$PoolThread.run(BoundedThreadPool.java:442)
-
-Sep 18, 2013 11:33:33 AM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=2394_00695&wt=ruby} status=500 QTime=1 
-Sep 18, 2013 11:33:33 AM org.apache.solr.common.SolrException log
-SEVERE: java.lang.NullPointerException
-	at java.io.StringReader.<init>(StringReader.java:33)
-	at org.apache.lucene.queryParser.QueryParser.parse(QueryParser.java:197)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParserPlugin.java:78)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:131)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:89)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:174)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:131)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1316)
-	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:338)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:241)
-	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1089)
-	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:365)
-	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
-	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:712)
-	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:211)
-	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
-	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:139)
-	at org.mortbay.jetty.Server.handle(Server.java:285)
-	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:502)
-	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:821)
-	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:513)
-	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:208)
-	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:378)
-	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:226)
-	at org.mortbay.thread.BoundedThreadPool$PoolThread.run(BoundedThreadPool.java:442)
-
-Sep 18, 2013 11:33:38 AM org.apache.solr.common.SolrException log
-SEVERE: java.lang.NullPointerException
-	at java.io.StringReader.<init>(StringReader.java:33)
-	at org.apache.lucene.queryParser.QueryParser.parse(QueryParser.java:197)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParserPlugin.java:78)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:131)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:89)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:174)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:131)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1316)
-	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:338)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:241)
-	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1089)
-	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:365)
-	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
-	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:712)
-	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:211)
-	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
-	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:139)
-	at org.mortbay.jetty.Server.handle(Server.java:285)
-	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:502)
-	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:821)
-	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:513)
-	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:208)
-	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:378)
-	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:226)
-	at org.mortbay.thread.BoundedThreadPool$PoolThread.run(BoundedThreadPool.java:442)
-
-Sep 18, 2013 11:33:38 AM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={wt=ruby} status=500 QTime=1 
-Sep 18, 2013 11:33:38 AM org.apache.solr.common.SolrException log
-SEVERE: java.lang.NullPointerException
-	at java.io.StringReader.<init>(StringReader.java:33)
-	at org.apache.lucene.queryParser.QueryParser.parse(QueryParser.java:197)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParserPlugin.java:78)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:131)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:89)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:174)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:131)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1316)
-	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:338)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:241)
-	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1089)
-	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:365)
-	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
-	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:712)
-	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:211)
-	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
-	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:139)
-	at org.mortbay.jetty.Server.handle(Server.java:285)
-	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:502)
-	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:821)
-	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:513)
-	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:208)
-	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:378)
-	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:226)
-	at org.mortbay.thread.BoundedThreadPool$PoolThread.run(BoundedThreadPool.java:442)
-
-Sep 18, 2013 11:33:40 AM org.apache.solr.common.SolrException log
-SEVERE: java.lang.NullPointerException
-	at java.io.StringReader.<init>(StringReader.java:33)
-	at org.apache.lucene.queryParser.QueryParser.parse(QueryParser.java:197)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParserPlugin.java:78)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:131)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:89)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:174)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:131)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1316)
-	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:338)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:241)
-	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1089)
-	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:365)
-	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
-	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:712)
-	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:211)
-	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
-	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:139)
-	at org.mortbay.jetty.Server.handle(Server.java:285)
-	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:502)
-	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:821)
-	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:513)
-	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:208)
-	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:378)
-	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:226)
-	at org.mortbay.thread.BoundedThreadPool$PoolThread.run(BoundedThreadPool.java:442)
-
-Sep 18, 2013 11:33:40 AM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={wt=xml} status=500 QTime=0 
-Sep 18, 2013 11:33:40 AM org.apache.solr.common.SolrException log
-SEVERE: java.lang.NullPointerException
-	at java.io.StringReader.<init>(StringReader.java:33)
-	at org.apache.lucene.queryParser.QueryParser.parse(QueryParser.java:197)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParserPlugin.java:78)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:131)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:89)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:174)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:131)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1316)
-	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:338)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:241)
-	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1089)
-	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:365)
-	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
-	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:712)
-	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:211)
-	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
-	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:139)
-	at org.mortbay.jetty.Server.handle(Server.java:285)
-	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:502)
-	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:821)
-	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:513)
-	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:208)
-	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:378)
-	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:226)
-	at org.mortbay.thread.BoundedThreadPool$PoolThread.run(BoundedThreadPool.java:442)
-
-Sep 18, 2013 11:34:13 AM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={explainOther=&fl=*,score&indent=on&start=0&q=id%3D2394_00695&hl.fl=&qt=standard&wt=standard&fq=&version=2.2&rows=10} hits=0 status=0 QTime=26 
-Sep 18, 2013 11:34:28 AM org.apache.solr.common.SolrException log
-SEVERE: java.lang.NullPointerException
-	at java.io.StringReader.<init>(StringReader.java:33)
-	at org.apache.lucene.queryParser.QueryParser.parse(QueryParser.java:197)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParserPlugin.java:78)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:131)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:89)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:174)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:131)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1316)
-	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:338)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:241)
-	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1089)
-	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:365)
-	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
-	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:712)
-	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:211)
-	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
-	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:139)
-	at org.mortbay.jetty.Server.handle(Server.java:285)
-	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:502)
-	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:821)
-	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:513)
-	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:208)
-	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:378)
-	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:226)
-	at org.mortbay.thread.BoundedThreadPool$PoolThread.run(BoundedThreadPool.java:442)
-
-Sep 18, 2013 11:34:28 AM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={explainOther=&fl=*,score&indent=on&start=0&q2394_00695=&hl.fl=&qt=standard&wt=standard&fq=&version=2.2&rows=10} status=500 QTime=1 
-Sep 18, 2013 11:34:28 AM org.apache.solr.common.SolrException log
-SEVERE: java.lang.NullPointerException
-	at java.io.StringReader.<init>(StringReader.java:33)
-	at org.apache.lucene.queryParser.QueryParser.parse(QueryParser.java:197)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParserPlugin.java:78)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:131)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:89)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:174)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:131)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1316)
-	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:338)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:241)
-	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1089)
-	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:365)
-	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
-	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:712)
-	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:211)
-	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
-	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:139)
-	at org.mortbay.jetty.Server.handle(Server.java:285)
-	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:502)
-	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:821)
-	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:513)
-	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:208)
-	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:378)
-	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:226)
-	at org.mortbay.thread.BoundedThreadPool$PoolThread.run(BoundedThreadPool.java:442)
-
-Sep 18, 2013 11:35:48 AM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=2394_00695&wt=ruby&qt=document} hits=1 status=0 QTime=4 
-Sep 18, 2013 11:35:48 AM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=sports&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=sports&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1180 status=0 QTime=13 
-Sep 18, 2013 12:06:53 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=2394_00695&wt=ruby&qt=document} hits=1 status=0 QTime=3 
-Sep 18, 2013 12:06:53 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=sports&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=sports&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1180 status=0 QTime=10 
-Sep 18, 2013 1:59:37 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={f.location_facet_s.facet.limit=6&sort=score+desc,+title_sort+asc,+id+asc&stats=true&stats.field=year_i&f.people_s.facet.limit=6&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&wt=ruby&qt=search&rows=10} hits=51511 status=0 QTime=128 
-Sep 18, 2013 1:59:41 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={f.location_facet_s.facet.limit=6&sort=score+desc,+title_sort+asc,+id+asc&facet.query=year_i:[969+TO+999]&facet.query=year_i:[1000+TO+1999]&facet.query=year_i:[2000+TO+2999]&facet.query=year_i:[3000+TO+3999]&facet.query=year_i:[4000+TO+4999]&facet.query=year_i:[5000+TO+5999]&facet.query=year_i:[6000+TO+6999]&facet.query=year_i:[7000+TO+7999]&facet.query=year_i:[8000+TO+8999]&facet.query=year_i:[9000+TO+9689]&stats=true&stats.field=year_i&f.people_s.facet.limit=6&f.subject_facet_s.facet.limit=6&wt=ruby&qt=search&rows=0} hits=51511 status=0 QTime=22 
-Sep 18, 2013 1:59:42 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=10&f.location_facet_s.facet.limit=6&q=Demonstrations&stats.field=year_i&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=34 
-Sep 18, 2013 1:59:48 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=0&f.location_facet_s.facet.limit=6&facet.query=year_i:[1069+TO+1099]&facet.query=year_i:[1100+TO+1199]&facet.query=year_i:[1200+TO+1299]&facet.query=year_i:[1300+TO+1399]&facet.query=year_i:[1400+TO+1499]&facet.query=year_i:[1500+TO+1599]&facet.query=year_i:[1600+TO+1699]&facet.query=year_i:[1700+TO+1799]&facet.query=year_i:[1800+TO+1899]&facet.query=year_i:[1900+TO+1999]&facet.query=year_i:[2000+TO+2008]&q=Demonstrations&stats.field=year_i&f.subject_facet_s.facet.limit=6&qt=search} hits=1375 status=0 QTime=10 
-Sep 18, 2013 1:59:58 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=4 
-Sep 18, 2013 1:59:58 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=11 
-Sep 18, 2013 2:03:11 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=4 
-Sep 18, 2013 2:03:11 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=10 
-Sep 18, 2013 2:03:58 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=4 
-Sep 18, 2013 2:03:58 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=10 
-Sep 18, 2013 2:04:53 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=4 
-Sep 18, 2013 2:04:53 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=10 
-Sep 18, 2013 2:05:04 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=4 
-Sep 18, 2013 2:05:04 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=10 
-Sep 18, 2013 2:05:21 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=4 
-Sep 18, 2013 2:05:21 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=10 
-Sep 18, 2013 2:07:48 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=4 
-Sep 18, 2013 2:07:48 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=11 
-Sep 18, 2013 2:08:24 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=3 
-Sep 18, 2013 2:08:24 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=10 
-Sep 18, 2013 2:13:25 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=3 
-Sep 18, 2013 2:13:25 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=8 
-Sep 18, 2013 2:13:52 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 2:13:52 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=8 
-Sep 18, 2013 2:14:03 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=3 
-Sep 18, 2013 2:14:03 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=8 
-Sep 18, 2013 2:16:51 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 2:16:51 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=7 
-Sep 18, 2013 2:16:59 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 2:16:59 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=8 
-Sep 18, 2013 2:17:10 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 2:17:10 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=7 
-Sep 18, 2013 2:17:21 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 2:17:21 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=8 
-Sep 18, 2013 2:18:01 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 2:18:01 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=10 
-Sep 18, 2013 2:19:05 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 2:19:05 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=10 
-Sep 18, 2013 2:24:53 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 2:24:53 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=7 
-Sep 18, 2013 2:25:29 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=3 
-Sep 18, 2013 2:25:29 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=9 
-Sep 18, 2013 2:26:46 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 2:26:46 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=7 
-Sep 18, 2013 2:26:48 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 2:26:48 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=7 
-Sep 18, 2013 2:27:59 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=3 
-Sep 18, 2013 2:27:59 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=7 
-Sep 18, 2013 2:30:26 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 2:30:26 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=7 
-Sep 18, 2013 2:31:36 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 2:31:36 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=7 
-Sep 18, 2013 2:32:15 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_QBG6QONYOW4NSYX&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 2:32:15 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=7 
-Sep 18, 2013 2:33:34 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=10&f.location_facet_s.facet.limit=6&q=Demonstrations&stats.field=year_i&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=11 
-Sep 18, 2013 2:33:51 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=10&f.location_facet_s.facet.limit=6&q=Demonstrations&stats.field=year_i&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=9 
-Sep 18, 2013 2:33:56 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=0&f.location_facet_s.facet.limit=6&facet.query=year_i:[1069+TO+1099]&facet.query=year_i:[1100+TO+1199]&facet.query=year_i:[1200+TO+1299]&facet.query=year_i:[1300+TO+1399]&facet.query=year_i:[1400+TO+1499]&facet.query=year_i:[1500+TO+1599]&facet.query=year_i:[1600+TO+1699]&facet.query=year_i:[1700+TO+1799]&facet.query=year_i:[1800+TO+1899]&facet.query=year_i:[1900+TO+1999]&facet.query=year_i:[2000+TO+2008]&q=Demonstrations&stats.field=year_i&f.subject_facet_s.facet.limit=6&qt=search} hits=1375 status=0 QTime=4 
-Sep 18, 2013 2:33:58 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_I16EEZNEAZIEVDH&wt=ruby&qt=document} hits=1 status=0 QTime=3 
-Sep 18, 2013 2:33:58 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=2&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=10 
-Sep 18, 2013 2:33:58 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=4&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=7 
-Sep 18, 2013 2:34:37 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=10&f.location_facet_s.facet.limit=6&q=Demonstrations&stats.field=year_i&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=7 
-Sep 18, 2013 2:34:42 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=0&f.location_facet_s.facet.limit=6&facet.query=year_i:[1069+TO+1099]&facet.query=year_i:[1100+TO+1199]&facet.query=year_i:[1200+TO+1299]&facet.query=year_i:[1300+TO+1399]&facet.query=year_i:[1400+TO+1499]&facet.query=year_i:[1500+TO+1599]&facet.query=year_i:[1600+TO+1699]&facet.query=year_i:[1700+TO+1799]&facet.query=year_i:[1800+TO+1899]&facet.query=year_i:[1900+TO+1999]&facet.query=year_i:[2000+TO+2008]&q=Demonstrations&stats.field=year_i&f.subject_facet_s.facet.limit=6&qt=search} hits=1375 status=0 QTime=5 
-Sep 18, 2013 2:34:47 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_2ANIW8A1781D56Y&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 2:34:47 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=8&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=5 
-Sep 18, 2013 2:34:47 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=10&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=9 
-Sep 18, 2013 3:38:05 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=2394_00695&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 3:38:05 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=8&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=6 
-Sep 18, 2013 3:38:05 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=10&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=5 
-Sep 18, 2013 3:46:33 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_5MKDAABMSPESPP5&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 3:46:33 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=9&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=5 
-Sep 18, 2013 3:46:33 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=11&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=7 
-Sep 18, 2013 3:48:02 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_5MKDAABMSPESPP5&wt=ruby&qt=document} hits=1 status=0 QTime=1 
-Sep 18, 2013 3:48:02 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=9&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=5 
-Sep 18, 2013 3:48:02 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=11&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=5 
-Sep 18, 2013 3:48:18 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_5MKDAABMSPESPP5&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 3:48:18 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=9&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=5 
-Sep 18, 2013 3:48:18 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=11&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=5 
-Sep 18, 2013 3:56:08 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_5MKDAABMSPESPP5&wt=ruby&qt=document} hits=1 status=0 QTime=1 
-Sep 18, 2013 3:56:08 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=9&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=6 
-Sep 18, 2013 3:56:08 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=11&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=6 
-Sep 18, 2013 3:56:24 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_5MKDAABMSPESPP5&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 3:56:24 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=9&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=9 
-Sep 18, 2013 3:56:24 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=11&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=6 
-Sep 18, 2013 3:56:33 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_5MKDAABMSPESPP5&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 3:56:33 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=9&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=6 
-Sep 18, 2013 3:56:33 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=11&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=6 
-Sep 18, 2013 3:56:52 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_5MKDAABMSPESPP5&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 3:56:52 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=9&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=5 
-Sep 18, 2013 3:56:52 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=11&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=6 
-Sep 18, 2013 4:02:10 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_5MKDAABMSPESPP5&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 4:02:10 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=9&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=7 
-Sep 18, 2013 4:02:10 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=11&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=5 
-Sep 18, 2013 4:29:02 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_5MKDAABMSPESPP5&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 4:29:02 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=9&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=5 
-Sep 18, 2013 4:29:02 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=11&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=6 
-Sep 18, 2013 4:31:08 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_5MKDAABMSPESPP5&wt=ruby&qt=document} hits=1 status=0 QTime=1 
-Sep 18, 2013 4:31:08 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=9&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=6 
-Sep 18, 2013 4:31:08 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=11&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=5 
-Sep 18, 2013 4:31:34 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_5MKDAABMSPESPP5&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 4:31:34 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=9&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=5 
-Sep 18, 2013 4:31:34 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=11&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=6 
-Sep 18, 2013 4:32:52 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={id=BPL_5MKDAABMSPESPP5&wt=ruby&qt=document} hits=1 status=0 QTime=2 
-Sep 18, 2013 4:32:52 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=9&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=6 
-Sep 18, 2013 4:32:52 PM org.apache.solr.core.SolrCore execute
-INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Demonstrations&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=11&stats.field=year_i&q=Demonstrations&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=1375 status=0 QTime=6 
+Sep 19, 2013 10:08:20 AM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=archivist_tags_facet,memSize=4224,tindexSize=32,time=1,phase1=1,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+Sep 19, 2013 10:08:20 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={id=BPL_CBCOB6UAH5L0GO4&wt=ruby&qt=document} hits=1 status=0 QTime=14 
+Sep 19, 2013 10:08:20 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=Gerald+R.+Ford&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=1&stats.field=year_i&q=Gerald+R.+Ford&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=20 status=0 QTime=8 
+Sep 19, 2013 10:13:10 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=ford&f.people_s.facet.limit=6&wt=ruby&rows=10&f.location_facet_s.facet.limit=6&q=ford&stats.field=year_i&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=85 status=0 QTime=16 
+Sep 19, 2013 10:13:17 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=ford&f.people_s.facet.limit=6&wt=ruby&rows=0&f.location_facet_s.facet.limit=6&facet.query=year_i:[1967+TO+1969]&facet.query=year_i:[1970+TO+1974]&facet.query=year_i:[1975+TO+1979]&facet.query=year_i:[1980+TO+1984]&facet.query=year_i:[1985+TO+1989]&facet.query=year_i:[1990+TO+1994]&facet.query=year_i:[1995+TO+1999]&facet.query=year_i:[2000+TO+2004]&q=ford&stats.field=year_i&f.subject_facet_s.facet.limit=6&qt=search} hits=85 status=0 QTime=10 
+Sep 19, 2013 10:13:21 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={id=2394_09526&wt=ruby&qt=document} hits=1 status=0 QTime=4 
+Sep 19, 2013 10:13:21 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=ford&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=2&stats.field=year_i&q=ford&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=85 status=0 QTime=8 
+Sep 19, 2013 10:13:21 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=ford&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=4&stats.field=year_i&q=ford&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=85 status=0 QTime=9 
+Sep 19, 2013 10:16:40 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={id=2394_09526&wt=ruby&qt=document} hits=1 status=0 QTime=4 
+Sep 19, 2013 10:16:40 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=ford&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=2&stats.field=year_i&q=ford&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=85 status=0 QTime=8 
+Sep 19, 2013 10:16:40 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={sort=score+desc,+title_sort+asc,+id+asc&stats=true&spellcheck.q=ford&f.people_s.facet.limit=6&wt=ruby&rows=1&f.location_facet_s.facet.limit=6&fl=*&start=4&stats.field=year_i&q=ford&f.subject_facet_s.facet.limit=6&facet.field=collection_s&facet.field=subject_facet_s&facet.field=people_s&facet.field=location_facet_s&facet.field=year_i&facet.field=video_s&qt=search} hits=85 status=0 QTime=8 

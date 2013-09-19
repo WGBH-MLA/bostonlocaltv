@@ -1,8 +1,5 @@
 Bostonlocaltv::Application.routes.draw do
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
-
   resources :shopping_carts, :only => [:create, :update, :destroy, :show] do
     resources :shopping_cart_items, :only => [:create, :destroy]
   end
@@ -16,10 +13,12 @@ Bostonlocaltv::Application.routes.draw do
   root :to => "catalog#home"
 
   devise_for :users
+  devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   
   match 'orders' => 'users#orders'
   match 'cart' => 'users#cart'
+  match 'submit_cart' => 'users#submit_cart'
 
   resources :items
 
