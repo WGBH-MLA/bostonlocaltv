@@ -11,16 +11,6 @@ $search_ui_bg_color: #FFF;
   display:none
 }
 
-/* Global */
-body 
-{
-  background: #d3d2d0 asset_url('blacklight/bg-5px.jpg',image) repeat-x top left; 
-  font: 12px Verdana, "Lucida Grande", "Lucida Sans Unicode", "Arial Unicode MS", Arial, sans-serif; 
-  line-height: 1.4; 
-  margin: 0px; 
-  padding: 15px;
-}
-
 /* Header Container Layout */
 #page_home
 { 
@@ -40,6 +30,7 @@ body
   font-size:12px;
   font-style:italic;
 }
+
 
 #hd_home
 {
@@ -108,7 +99,7 @@ body
   .fq {
     width: 150px;
     padding-right: 20px;
-    padding_bottom: 5px;
+    padding-bottom: 5px;
     font-size: 10pt;
     color: #666;
     line-height: 1.25em;
@@ -151,6 +142,8 @@ body
    padding-top: 0px;
    #main_container {
     background-color: $search_ui_bg_color;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
     #sortAndPerPage label {
       color: #777;
     }
@@ -161,8 +154,7 @@ body
       color: #333;
     }
     #browse_content {
-      padding: 15px;
-      border: 1px solid #e5e5e5;
+//      padding: 15px;
     }
     #tabs {
       .ui-tabs-nav {

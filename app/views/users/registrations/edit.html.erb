@@ -1,0 +1,37 @@
+<h2>Edit your account</h2>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="form-input"><%= f.label :email %>
+  <%= f.email_field :email, :autofocus => true %></div>
+  
+  <div class="form-input"><%= f.label :first_name %>
+  <%= f.text_field :first_name %></div>
+  
+  <div class="form-input"><%= f.label :last_name %>
+  <%= f.text_field :last_name %></div>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="form-input"><%= f.label :password %>
+  <%= f.password_field :password, :autocomplete => "off" %><br />
+  <i>(leave blank if you don't want to change it)</i></div>
+
+  <div class="form-input"><%= f.label :password_confirmation %>
+  <%= f.password_field :password_confirmation %></div>
+
+  <div class="form-input"><%= f.label :current_password %>
+  <%= f.password_field :current_password %><br />
+  <i>(we need your current password to confirm your changes)</i></div>
+
+  <div class="form-input form-submit"><%= f.submit "Update" %></div>
+<% end %>
+
+<h3>Cancel my account</h3>
+
+<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete %></p>
+
+<%= link_to "Back", :back %>
