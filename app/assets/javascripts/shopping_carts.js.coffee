@@ -9,6 +9,7 @@ $ ->
       success: (data) ->
         $('.cart_items').after('<p>Your request has been sent!</p>')
         $('.cart_items').remove()
+        $('#submit_cart').attr('disabled', 'disabled')
       error: (a, b, c) ->
         console.log a
         console.log b
@@ -20,6 +21,7 @@ $ ->
     user = $(this).data('userid')
     item = $(this).data('itemid')
     cart = $(this).data('cartid')
+    title = $(this).data('title')
     thing = $(this)
     if cart
       $.ajax
@@ -29,7 +31,7 @@ $ ->
         data: 
           shopping_cart:
             shopping_cart_items_attributes:
-              [solr_document_id: item]
+              [solr_document_id: item, title: title]
         success: (data) ->
           console.log(data)
           thing.after('<span style="position: absolute;right: 0;">Added to cart!</span>')
@@ -43,7 +45,7 @@ $ ->
           shopping_cart:
             user_id: user
             shopping_cart_items_attributes:
-              [solr_document_id: item]
+              [solr_document_id: item, title: title]
         success: (data) ->
           console.log(data)
           thing.after('<span style="position: absolute;right: 0;">Added to cart!</span>')

@@ -1,3 +1,26 @@
 // Place all the styles related to the ShoppingCarts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+input[type=submit], button[type=submit] {
+  height: 25px;
+  background: #f4583d;
+  border: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.4em;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    background: darken(#f4583d, 5%);
+  }
+  &:disabled, &:disabled:active {
+    background: lighten(#f4583d, 20%);
+    cursor:default;
+  }
+}
+.order_item {
+  background: #e5e5e5;
+  padding: 10px;
+  margin-bottom: 10px;
+}

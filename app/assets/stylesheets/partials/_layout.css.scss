@@ -255,10 +255,17 @@ $search_ui_bg_color: #FFF;
     }
   }
 }
-
+.blacklight-catalog-home #bd_prod #main #main_container {
+  padding: 0;
+  background: transparent;
+  overflow:hidden;
+  border:none;
+}
 #feature-container {
    width: 1024px;
    margin-bottom: 20px;
+   background: #fff;
+   border: 1px solid #e5e5e5;
  }
 
 #collections
@@ -321,7 +328,6 @@ $search_ui_bg_color: #FFF;
 }
 
 #document {
-  border: 1px solid #e5e5e5;
   .docHeader {
     position: relative;
     .docTitle {

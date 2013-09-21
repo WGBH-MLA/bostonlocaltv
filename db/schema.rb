@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130920122300) do
+ActiveRecord::Schema.define(:version => 20130920165349) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -84,6 +84,9 @@ ActiveRecord::Schema.define(:version => 20130920122300) do
     t.string   "solr_document_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "title"
+    t.string   "status"
+    t.boolean  "completed",        :default => false
   end
 
   add_index "shopping_cart_items", ["shopping_cart_id"], :name => "index_shopping_cart_items_on_shopping_cart_id"

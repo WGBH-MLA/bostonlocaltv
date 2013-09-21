@@ -9,35 +9,37 @@ body {
   padding: 0px 15px;
 }
 
-p, ol, ul, td, strong, em {
+p, ol, ul, td {
   font-size: 1.3em;
   line-height: 1.4em;
 }
 strong {
+  font-size: inherit;
   font-weight: bold;
 }
 em {
+  font-size: inherit;
   font-style: italic;
 }
 h1 {
   font-size: 2.6em;
-  line-height: 3em;
+  line-height: 1.3em;
 }
 h2 {
   font-size: 2.2em;
-  line-height: 2.5em;
+  line-height: 1.3em;
 }
 h3 {
   font-size: 1.8em;
-  line-height: 2.2em;
+  line-height: 1.3em;
 }
 h4 {
   font-size: 1.6em;
-  line-height: 1.8em;
+  line-height: 1.3em;
 }
 h5 {
   font-size: 1.4em;
-  line-height: 1.6em;
+  line-height: 1.3em;
 }
 
 pre {

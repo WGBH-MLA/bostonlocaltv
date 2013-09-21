@@ -1,48 +1,39 @@
+
 <div id="home_container">
-<div id="home_content">
- <% Wordpress.get_recent_posts(:count => 3).each do |post| %>
-    <div class="post">
-      <h3><a href="<%= post.url %>"><%= post.title.html_safe %></a></h3>
+  <div id="home_content">
+    <% Wordpress.get_recent_posts(:count => 3).each do |post| %>
+      <div class="post">
+        <h3><a href="<%= post.url %>"><%= post.title.html_safe %></a></h3>
         <div class="thumbnail">
           <%= image_tag post.thumbnail, :alt => '' if post.thumbnail %>
         </div>
         <div class="meta">
-        Posted on <a href="<%=post.url %>"><%= l post.date.to_date, :format => :long %></a> 
-	By <a href="/blog/author/<%= post.author_slug %>"><%= post.author_name %></a></div>
-    <div class="body">
-    <div><%= post.excerpt.html_safe %></div>
-  </div>
-  </div>
+          Posted on <a href="<%=post.url %>"><%= l post.date.to_date, :format => :long %></a> 
+          By <a href="/blog/author/<%= post.author_slug %>"><%= post.author_name %></a></div>
+        <div class="body">
+          <%= post.excerpt.html_safe %>
+        </div>
+      </div>
     <% end rescue nil %>
-
-</div>
-</div>
-<div id="home_secondary">
-
-<%= render :partial=>'home_search_form' %>
-<%= render :partial=>'most_visits' %>
-
+  </div>
 </div>
 
 <div id="features_home">
-<div>
-<ul class="feature">
-<li>
-<%= image_tag("blacklight/Janine4.jpeg", :size => "320x202", :alt => "girls little league") %>
-<p>About a month ago I pulled a few stories from the WCVB collection to digitize. One of those chosen was “Girl Little League Player” from May 24th, 1974. ... <a href="/blog/2012/05/girls-little-league/">more></a></p>
-</li>
-</ul>
+  <div>
+    <ul class="feature">
+      <li>
+      <%= image_tag("blacklight/Janine4.jpeg", :size => "320x202", :alt => "girls little league") %>
+      <p>About a month ago I pulled a few stories from the WCVB collection to digitize. One of those chosen was “Girl Little League Player” from May 24th, 1974. ... <a href="/blog/2012/05/girls-little-league/">more></a></p>
+      </li>
+    </ul>
+  </div>
+  
+  <div>
+    <ul class="feature">
+      <li>
+      <%= image_tag("blacklight/bill_mckibben.png", :size => "320x202", :alt => "Bill Mckibben Speaks at Cambridge Earth Day") %>
+      <p>There’s been a lot of debate and discussion over the Keystone Pipeline, a system that would transport crude oil from Canada to the United States for processing. Supporters of the project claim that it will create jobs and secure a nearby source of oil, while opponents cite environmental issues like an increase in greenhouse gases and the possibility of water pollution. ... <a href="blog/2012/03/bill-mckibben-speaks-at-cambridge-earth-day-1990/">more></a></p>
+      </li>
+    </ul>
+  </div>
 </div>
-
-<div>
-<ul class="feature">
-<li>
-<%= image_tag("blacklight/bill_mckibben.png", :size => "320x202", :alt => "Bill Mckibben Speaks at Cambridge Earth Day") %>
-<p>There’s been a lot of debate and discussion over the Keystone Pipeline, a system that would transport crude oil from Canada to the United States for processing. Supporters of the project claim that it will create jobs and secure a nearby source of oil, while opponents cite environmental issues like an increase in greenhouse gases and the possibility of water pollution. ... <a href="blog/2012/03/bill-mckibben-speaks-at-cambridge-earth-day-1990/">more></a></p>
-</li>
-</ul>
-</div>
-</div>
-
-</div>
-

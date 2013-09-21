@@ -16,7 +16,7 @@
       </div>
       <% if current_user && @document[:video_s].nil? %>
         <% cart = current_user.shopping_carts.user_open_cart(current_user).last %>
-        <button href="#" class="add_to_cart" data-itemid="<%= @document[:id] %>" data-cartid="<%= cart.id unless cart.nil?  %>" data-userid="<%= current_user.id %>">Add to cart</button>
+        <button href="#" class="add_to_cart" data-itemid="<%= @document[:id] %>" data-cartid="<%= cart.id unless cart.nil?  %>" data-userid="<%= current_user.id %>" data-title="<%= @document[:title_s].first.to_s %>">Add to cart</button>
       <% end %>
     </div>
 
