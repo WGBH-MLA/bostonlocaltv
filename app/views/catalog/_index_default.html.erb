@@ -1,11 +1,19 @@
-<%# default partial to display solr document fields in catalog index view -%>
-<dl class="defList">
-  
-  <% index_fields.each do |solr_fname, field| -%>
-    <% if document.has? solr_fname %>
-	    <dt class="blacklight-<%= solr_fname.parameterize %>"><%= render_index_field_label :field => solr_fname %></dt>
-	    <dd class="blacklight-<%= solr_fname.parameterize %>"><%= render_index_field_value :document => document, :field => solr_fname %></dd>
-    <% end -%>
-  <% end -%>
+<div class="docContent">
+  <% if document.has? "image_s" %>
+    <div class="index-image-container yui-u">
+      <a href="/catalog/<%= document['id'] %>"><img src="<%= render_document_show_field_value :document => document, :field => "image_s" %>" /></a>
+    </div>
+  <% end %>
 
-</dl>
+  <%# default partial to display solr document fields in catalog index view -%>
+  <div class="docDetails <%= (document.has? "image_s") ? 'hasImage' : '' %>">
+  
+    <% index_fields.each do |solr_fname, field| -%>
+      <% if document.has? solr_fname %>
+  	    <p><span class="blacklight-<%= solr_fname.parameterize %>"><strong><%= render_index_field_label :field => solr_fname %>: </strong></span>
+  	    <span class="blacklight-<%= solr_fname.parameterize %>"><%= render_index_field_value :document => document, :field => solr_fname %></span></p>
+      <% end -%>
+    <% end -%>
+
+  </div>
+</div>

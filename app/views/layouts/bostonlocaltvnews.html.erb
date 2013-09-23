@@ -26,12 +26,7 @@
    <!--[if IE 8]><link rel="stylesheet" href="/stylesheets/compiled/ie8.css" type="text/css" media="screen,projection" /><![endif]-->
    <!--[if IE 9]><link rel="stylesheet" href="/stylesheets/compiled/ie9.css" type="text/css" media="screen,projection" /><![endif]-->
   </head>
-
-   <% if params[:q].to_s.empty? and params[:f].to_s.empty? and params[:id].nil? %>
-    <body onload="$('input#q').focus();" class="<%= render_body_class.html_safe %>">
-  <% else %>
-    <body class="<%= render_body_class.html_safe %>">
-  <% end %>
+  <body class="<%= render_body_class.html_safe %>">
 
     <div id="page_home">
       <div id="hd_home">
@@ -41,6 +36,14 @@
          <div id="logo_right">
          <%= render :partial=>'catalog/top_search_form' %>
          <%= image_tag 'blacklight/bostontvnews-logo.png', :class=>'bostontvnews-logo', :size=>'674x75' %>
+         <div id="user_info">
+           <% if current_user %>
+             <p>Welcome back&nbsp;&nbsp;<a href="/users/edit"><%= current_user.full_name %></a><br />
+             <a href="/cart">Cart</a>&nbsp;|&nbsp;<a href="/orders">Your orders</a></p>
+           <% else %>
+             <a href="/users/sign_in">Log in</a> | <a href="/users/sign_up">Sign up</a>
+           <% end %>
+         </div>
         </div>
         <div class="clear-both"/>
         </div>

@@ -2,19 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#tabs{ list-style:none; margin:3px 0; padding:0; } 
-
-#tabs li{ display:inline; margin:0px 1px 0 0; } 
-
-#tabs li a
- { padding:0px; text-decoration:none; 
-   font-size:100%; } 
-
-#tabs li a:hover{ background:#3399cc; color:#f0f0f0; } 
-
-#tabs li a.selected
-{  
-   font-weight: 700; color:#333; cursor:default; text-decoration: underline;  }
+//#tabs{ list-style:none; margin:3px 0; padding:0; } 
+//
+//#tabs li{ display:inline; margin:0px 1px 0 0; } 
+//
+//#tabs li a
+// { padding:0px; text-decoration:none; 
+//   font-size:100%; } 
+//
+//#tabs li a:hover{ background:#3399cc; color:#f0f0f0; } 
+//
+//#tabs li a.selected
+//{  
+//   font-weight: 700; color:#333; cursor:default; text-decoration: underline;  }
 
 /*used to be part of news.css. customized style used for Boston Local TV News project */
 
@@ -47,8 +47,8 @@
 #cssmenu ul li.has-sub:hover > a{ color: #333333; border-color:#D3D2D0; background-color: #FFF; padding-bottom:5px; padding-top:5px; z-index:999; } 
 #cssmenu ul li.has-sub:hover > ul, #cssmenu ul li.has-sub:hover > div{display:block;} 
 #cssmenu ul li.has-sub > a:hover{border-color:#D3D2D0;} 
-#cssmenu ul li > ul, #cssmenu ul li > div{ display:none; width:auto; position:absolute; top:34px; padding:10px 0; background:#FFF; border-radius:0 0 5px 5px; z-index:999; } 
-#cssmenu ul li > ul{width:140px;} 
+#cssmenu ul li > ul, #cssmenu ul li > div{ display:none; width:auto; position:absolute; top:13px; left: -34px; padding:10px 0; background:#FFF; border-radius:0 0 5px 5px; z-index:999; } 
+#cssmenu ul li > ul{width:148px;} 
 #cssmenu ul li > ul li{display:block; list-style:inside none; padding:0; margin:0; position:relative;} 
 #cssmenu ul li > ul li a{ outline:none; display:block; position:relative; margin:0; padding:8px 20px; font:10pt Georgia,"Bitstream Charter",serif; color:#333333; text-decoration:none; width:100px; background: none repeat scroll 0 0 #FFF;} 
 
@@ -175,16 +175,6 @@
 {
 	line-height: 18px;
 	margin-bottom: 0px;
-}
-
-a:link,a:visited {
-	color:#FFF;
-	text-decoration:none;
-}
-
-a:hover,a:active {
-	color:#E5553C;
-	text-decoration:none;
 }
 
 /*to overwrite the style in the library file */

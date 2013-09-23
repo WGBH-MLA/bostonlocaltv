@@ -32,6 +32,7 @@ group :development, :test do
   gem "rspec-rails", "~>2.6.0"
   gem "sqlite3"
   gem "debugger"
+  gem "meta_request"
 end
 
 gem 'guard-rspec', :group => :development
@@ -65,6 +66,8 @@ gem 'kaminari', '~>0.13.0'
 gem "jettywrapper", ">= 1.0.3"
 gem "devise"
 gem "progressbar"
+
+gem 'activeadmin'
 
 gem 'rails-footnotes', '>= 3.7', :group => :development
 gem "rsolr-footnotes"

@@ -4,27 +4,10 @@ log/*.log
 tmp/
 .sass-cache/
 
-# jetty -- ignore all except the config
-# Jetty is a little snafu here becuase:
-# 1) First, jetty/solr/development-core/* and jetty/solr/test-core/* were pulled
-#	in as a solr-only checkout of jetty.
-# 2) Then, the conf was copied to jetty/solr/production-core/*
-# 3) But then 'jetty' directory was added to .gitignore before jetty/solr/production-core/conf/*
-#	was committed, so it has never been tracked, afaik.
-# 4) And finally, the rake tasks that are supposed to result in a working jetty config
-#	do not work; results in java errors. 
-#  
-# TODO: Rake tasks should result in a working jetty config. Until then, storing
-# working configs as part of repo.
-jetty/*
-!jetty/solr
-!jetty/development-core
-!jetty/solr/development-core/conf/*
-!jetty/production-core
-!jetty/solr/production-core/conf/*
-!jetty/solr/test-core
-!jetty/solr/test-core/conf/*
+# ignore jetty
+jetty/
 
+# ignore gems installed with `bundle install --deployment`
 vendor/bundle/
 
 #Ignore other files that are not needed.

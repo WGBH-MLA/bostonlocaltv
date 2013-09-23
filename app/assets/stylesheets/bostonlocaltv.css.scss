@@ -15,15 +15,6 @@
 @import "compass/typography/text/replacement";
 
 /* Import this to maintain the old YUI font styles */
-@import "partials/layout";
-@import "partials/formatting";
-@import "partials/facets";
-@import "partials/header";
-@import "partials/catalog";
-@import "partials/folder";
-@import "partials/search_history";
-@import "partials/print";
-
 
 /* IE 6 Adjustments */
 * html #hd .yui-g .yui-u {margin-top: -5em;}
@@ -67,6 +58,7 @@ $constraint_border_color: #C4DAFE !default;
 $constraint_border_active_color: #FFD27A !default;
 
 
+
 @import "partials/_catalog";
 @import "partials/_folder";
 @import "partials/_formatting";
@@ -76,3 +68,4 @@ $constraint_border_active_color: #FFD27A !default;
 @import "partials/_print";
 @import "partials/_search_history";
 @import "partials/_susy_framework";
+@import 'shopping_carts'

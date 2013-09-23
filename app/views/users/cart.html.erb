@@ -1,0 +1,13 @@
+<h3>Requested items for digitization</h3>
+<% if !@cart.nil? %>
+  <ol class="cart_items">
+      <% @cart.shopping_cart_items.each do |item| %>
+        <li><a href="/catalog/<%= item.solr_document_id %>"><%= item.title %></a></li>
+      <% end %>
+  </ol>
+  <br />
+  <button id="submit_cart" type="submit">Submit request</button>
+<% else %>
+  <p>Your cart is currently empty</p>
+  <button id="submit_cart" type="submit" disabled>Submit request</button>
+<% end %>

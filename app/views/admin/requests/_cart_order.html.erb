@@ -1,0 +1,27 @@
+<div class="order-details">
+  <h4>Requested by: <%= @request.user.full_name %></h4>
+  <a href="mailto:<%= @request.user.email  %>">Send user email</a>
+  <br />
+  <br />
+  <strong>Requested items</strong>
+  <ol>
+    <%= form_for(@request, :url=>{:action=>'update'}, :remote => true) do |f| %>
+      <% f.fields_for :shopping_cart_items do |item| %>
+      <li>
+        <%= item.label :solr_document_id, "Solr ID" %>
+        <%= item.text_field :solr_document_id, :class => 'no_edit', :readonly => true %><br />
+        <%= item.label :title, "Solr Title" %>
+        <%= item.text_field :title, :class => 'no_edit', :readonly => true %><br />
+        <%= item.label :status %>
+        <%= item.text_field :status %><br />
+        <%= item.label :completed %>
+        <%= item.check_box :completed %>
+      </li>
+      <% end %>
+    <% end %>
+  </ol>
+  <button id="mark_complete" data-id="<%= @request.id %>">Mark order complete</button><!-- &nbsp;|&nbsp; -->
+  <!-- <button id="mark_reject">Mark Rejected</button> -->
+</div>
+<br />
+<a href="/admin/requests">Back</a>
