@@ -9,7 +9,7 @@ describe "shopping_carts/edit.html.erb" do
     ))
   end
 
-  it "renders the edit shopping_cart form" do
+  pending "renders the edit shopping_cart form" do
     render
 
     # Run the generator again with the --webrat flag if you want to use webrat matchers
