@@ -1,0 +1,19 @@
+<div class="order-details">
+  <h4>Requested by: <%= @request.user.full_name %></h4>
+  <a href="mailto:<%= @request.user.email  %>">Send user email</a>
+  <br />
+  <br />
+  <strong>Requested items</strong>
+  <ol>
+    <% @request.shopping_cart_items.each do |item| %>
+    <li>
+      Solr ID: <%= item.solr_document_id %><br />
+      Title: <%= item.title %><br />
+      Status: <%= item.status %><br />
+      Completed: <%= item.completed %>
+    </li>
+    <% end %>
+  </ol>
+</div>
+<br />
+<a href="/admin/requests">Back</a>

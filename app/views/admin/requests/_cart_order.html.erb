@@ -1,11 +1,11 @@
 <div class="order-details">
-  <h4>Ordered by: <%= @shopping_cart.user.full_name %></h4>
-  <a href="mailto:<%= @shopping_cart.user.email  %>">Send user email</a>
+  <h4>Requested by: <%= @request.user.full_name %></h4>
+  <a href="mailto:<%= @request.user.email  %>">Send user email</a>
   <br />
   <br />
-  <strong>Request items</strong>
+  <strong>Requested items</strong>
   <ol>
-    <%= form_for(@shopping_cart, :url=>{:action=>'update'}, :remote => true) do |f| %>
+    <%= form_for(@request, :url=>{:action=>'update'}, :remote => true) do |f| %>
       <% f.fields_for :shopping_cart_items do |item| %>
       <li>
         <%= item.label :solr_document_id, "Solr ID" %>
@@ -20,8 +20,8 @@
       <% end %>
     <% end %>
   </ol>
-  <button id="mark_complete" data-id="<%= @shopping_cart.id %>">Mark order complete</button><!-- &nbsp;|&nbsp; -->
+  <button id="mark_complete" data-id="<%= @request.id %>">Mark order complete</button><!-- &nbsp;|&nbsp; -->
   <!-- <button id="mark_reject">Mark Rejected</button> -->
 </div>
 <br />
-<a href="/admin/shopping_carts">Back</a>
+<a href="/admin/requests">Back</a>

@@ -8,7 +8,7 @@ $(function() {
     id = $(this).data('id');
     console.log(id)
     $.ajax({
-      url: '/admin/shopping_carts/' + id,
+      url: '/admin/requests/' + id,
         dataType: 'json',
         type: 'put',
         data: {
@@ -19,7 +19,7 @@ $(function() {
         },
         success: function(data) {
           console.log(data);
-          window.location = '/admin/shopping_carts'
+          window.location = '/admin/requests'
         }
     });
   });
