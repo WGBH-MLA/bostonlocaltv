@@ -57,8 +57,10 @@ $constraint_bg_color: #E2EDFE;
 $constraint_border_color: #C4DAFE !default;
 $constraint_border_active_color: #FFD27A !default;
 
+/* Links and things */
+$red_link: #f4583d;
 
-
+/* Include all the partials */
 @import "partials/_catalog";
 @import "partials/_folder";
 @import "partials/_formatting";

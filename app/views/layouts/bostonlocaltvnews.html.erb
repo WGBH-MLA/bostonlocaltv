@@ -8,9 +8,8 @@
     <link href="<%= opensearch_catalog_path(:format => 'xml', :only_path => false) %>" title="<%= application_name%>" type="application/opensearchdescription+xml" rel="search"/>
   <%= favicon_link_tag asset_path('favicon.ico') %>
   <%= stylesheet_link_tag  "bostonlocaltv" %>
-  <%= stylesheet_link_tag  "view" %>
-  <%= stylesheet_link_tag  "wp" %>
-  <link rel="stylesheet" href="/stylesheets/jquery/ui-lightness/jquery-ui-1.8.1.custom.css" type="text/css" media="screen,projection" />
+  <%#= stylesheet_link_tag  "wp" %>
+  
 <%= stylesheet_link_tag  "blacklight_range_limit/blacklight_range_limit", :media => 'all' %>
 <%= stylesheet_link_tag  "blacklight_advanced_search", :media => 'all' %>
   <style type="text/css"><%= yield :blog_stylesheets %></style>

@@ -1,184 +1,125 @@
-// Place all the styles related to the votes controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-//#tabs{ list-style:none; margin:3px 0; padding:0; } 
-//
-//#tabs li{ display:inline; margin:0px 1px 0 0; } 
-//
-//#tabs li a
-// { padding:0px; text-decoration:none; 
-//   font-size:100%; } 
-//
-//#tabs li a:hover{ background:#3399cc; color:#f0f0f0; } 
-//
-//#tabs li a.selected
-//{  
-//   font-weight: 700; color:#333; cursor:default; text-decoration: underline;  }
-
-/*used to be part of news.css. customized style used for Boston Local TV News project */
-
-#main ul.bullet
-{
-        list-style:disc outside;
-	font-size: 120%;
-	padding-left: 15px;
-	margin: 0 0 18px 21px;
-}
-
-
-#main ul.nobullet
-{
-	    font-size: 120%;
-            list-style-type:none outside;
-	    margin: 0 0 18px 21px;
-}
-
 /* menu nav at the top of the page*/
-#cssmenu{ height:37px; display:block; padding:0; margin:20px 0 25px 40px;   border-radius:5px; } 
-#cssmenu > ul {list-style:inside none; padding:0; margin:0;} 
-#cssmenu > ul > li {list-style:inside none; padding:0; margin:0; float:left; display:block; position:relative;} 
-#cssmenu > ul > li > a{ outline:none; display:block; position:relative; padding:5px 20px; font:italic 170% Georgia,"Bitstream Charter",serif; text-align:center; text-decoration:none; } 
-#cssmenu > ul > li:first-child > a{border-radius:5px 0 0 5px;} 
-#cssmenu > ul > li > a:after{ content:''; position:absolute; border-right:1px solid; top:5px; bottom:5px; right:-2px; z-index:99; } 
-#cssmenu ul li.has-sub:hover > a:after{top:5px; bottom:5px;} 
-#cssmenu > ul > li.has-sub > a:before{ content:''; position:absolute; top:15px; right:4px; border:5px solid transparent; border-top:5px solid #333333; } 
-#cssmenu > ul > li.has-sub:hover > a:before{top:15px;} 
-#cssmenu ul li.has-sub:hover > a{ color: #333333; border-color:#D3D2D0; background-color: #FFF; padding-bottom:5px; padding-top:5px; z-index:999; } 
-#cssmenu ul li.has-sub:hover > ul, #cssmenu ul li.has-sub:hover > div{display:block;} 
-#cssmenu ul li.has-sub > a:hover{border-color:#D3D2D0;} 
-#cssmenu ul li > ul, #cssmenu ul li > div{ display:none; width:auto; position:absolute; top:13px; left: -34px; padding:10px 0; background:#FFF; border-radius:0 0 5px 5px; z-index:999; } 
-#cssmenu ul li > ul{width:148px;} 
-#cssmenu ul li > ul li{display:block; list-style:inside none; padding:0; margin:0; position:relative;} 
-#cssmenu ul li > ul li a{ outline:none; display:block; position:relative; margin:0; padding:8px 20px; font:10pt Georgia,"Bitstream Charter",serif; color:#333333; text-decoration:none; width:100px; background: none repeat scroll 0 0 #FFF;} 
-
+#cssmenu{
+  float:left; 
+  height:33px; 
+  display:block; 
+  padding:0; 
+  margin:15px 0;
+} 
+#cssmenu > ul {
+  list-style:inside none; 
+  padding:0; 
+  margin:0;
+} 
+#cssmenu > ul > li {
+  list-style:inside none; 
+  padding:0; margin:0; 
+  float:left; 
+  display:block; 
+  position:relative;
+} 
+#cssmenu > ul > li > a{ 
+  outline:none; 
+  display:block; 
+  position:relative; 
+  padding:5px 20px; 
+  font-size: 20px;
+  font-family: serif; 
+  text-decoration:none; 
+  color: #555353;
+} 
+#cssmenu > ul > li:first-child > a{
+  padding-left: 0px;
+} 
+#cssmenu > ul > li > a:after{ 
+  content:''; 
+  position:absolute; 
+  border-right:1px solid; 
+  top:5px; 
+  bottom:5px; 
+  right:-2px; 
+  z-index:99; 
+} 
+#cssmenu ul li.has-sub:hover > a:after{
+  top:5px; 
+  bottom:5px;
+} 
+#cssmenu > ul > li.has-sub > a:before{ 
+  content:''; 
+  position:absolute; 
+  top:15px; 
+  right:4px; 
+  border:5px solid transparent; 
+  border-top:5px solid #333333; 
+} 
+#cssmenu > ul > li.has-sub:hover > a:before{
+  top:15px;
+} 
+#cssmenu ul li.has-sub:hover > a{ 
+  color: #333333; 
+  border-color:#D3D2D0; 
+  background-color: #FFF; 
+  padding-bottom:5px; 
+  padding-top:5px; 
+  z-index:999; 
+} 
+#cssmenu ul li.has-sub:hover > ul, #cssmenu ul li.has-sub:hover > div{
+  display:block;
+} 
+#cssmenu ul li.has-sub > a:hover{
+  border-color:#D3D2D0;
+} 
+#cssmenu ul li > ul, #cssmenu ul li > div{ 
+  display:none; 
+  width:auto; 
+  position:absolute; 
+  top:13px; 
+  left: -34px; 
+  padding:10px 0; 
+  background:#FFF; 
+  border-radius:0 0 5px 5px; 
+  z-index:999; 
+} 
+#cssmenu ul li > ul{
+  width:148px;
+} 
+#cssmenu ul li > ul li{
+  display:block; 
+  list-style:inside none; 
+  padding:0; 
+  margin:0; 
+  position:relative;
+} 
+#cssmenu ul li > ul li a{ 
+  outline:none; 
+  display:block; 
+  position:relative; 
+  margin:0; 
+  padding:8px 20px; 
+  color:#333333; 
+  text-decoration:none; 
+  width:100px; 
+  background: none repeat scroll 0 0 #FFF;
+} 
+#cssmenu ul li.active a {
+  color: #000;
+}
 #cssmenu, #cssmenu > ul > li > ul > li a:hover{ 
    color:#E5553C;
     } 
-#cssmenu{border-color:#D3D2D0;} 
+#cssmenu{
+  border-color:#D3D2D0;
+} 
 #cssmenu > ul > li > a{} 
-#cssmenu > ul > li > a:after{border-color:#a2a2a2;} 
-#cssmenu > ul > li > a:hover{ color:#E5553C;} 
-#cssmenu > ul > li.has-sub > ul > li a { color: #333333; }
-#cssmenu > ul > li.has-sub > ul > li a:hover { color: #E5553C; }
-/*
-	Slideshow
-*/
-
-
-/*
-	Slides container
-	Important:
-	Set the width of your slides container
-	Set to display none, prevents content flash
-*/
-
-.slides_container {
-	width:684px;
-	overflow:hidden;
-	position:relative;
-	display:none;
+#cssmenu > ul > li > a:after{
+  border-color:#a2a2a2;
+} 
+#cssmenu > ul > li > a:hover{ 
+  color:#E5553C;
+} 
+#cssmenu > ul > li.has-sub > ul > li a { 
+  color: #333333; 
 }
-
-/*
-	Each slide
-	Important:
-	Set the width of your slides
-	If height not specified height will be set by the slide content
-	Set to display block
-*/
-
-.slides_container div.slide {
-	width:684px;
-	height:300px;
-	display:block;
+#cssmenu > ul > li.has-sub > ul > li a:hover { 
+  color: #E5553C; 
 }
-
-
-/*
-	Next/prev buttons
-*/
-
-#collections .next,#collections .prev {
-	position:absolute;
-	top:310px;
-	width:24px;
-	height:43px;
-	display:block;
-	z-index:101;
-	display: none;
-}
-
-#collections .next {
-	left:963px;
-        display: none;
-}
-
-/*
-	Pagination
-*/
-
-.slides_pagination {
-	margin:0px auto 0;
-	width:100px;
-	border-color: #FFF;
-	background-color: #FFF; 
-	float: right;
-}
-
-.slides_pagination li {
-	float:left;
-	margin:0 1px;
-	list-style:none;
-}
-
-.slides_pagination li a {
-	display:block;
-	width:12px;
-	height:0;
-	padding-top:12px;
-        background-image:url(pagination.png);
-	background-position:0 0;
-	float:left;
-	overflow:hidden;
-}
-
-.slides_pagination li.current a {
-	background-position:0 -12px;
-}
-
-/*
-	Caption
-*/
-
-.caption {
-	z-index:500;
-	position:absolute;
-	bottom:-35px;
-	left:0;
-	padding:5px 20px;
-	background:#000;
-	background:rgba(0,0,0,.5);
-	width:648px;
-	font-size:1.3em;
-	line-height:1.33;
-	color:#fff;
-	border-top:1px solid #000;
-	text-shadow:none;
-}
-
-/*
-	Anchors
-*/
-
-.caption p
-{
-	line-height: 18px;
-	margin-bottom: 0px;
-}
-
-/*to overwrite the style in the library file */
-.ui-widget-header .ui-icon {background-image: url(ui-icons_ffffff_256x240.png); }
-
-
-
