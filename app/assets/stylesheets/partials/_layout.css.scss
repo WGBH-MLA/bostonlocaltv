@@ -447,6 +447,7 @@ body.blacklight-catalog-home #sidebar {
     border-radius: 0px;
     margin-bottom: 20px;
     box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.4);
+    border-top: 1px solid #ddd;
     ul.ui-tabs-nav{   
       position:absolute;   
       top:0; 
@@ -497,7 +498,7 @@ body.blacklight-catalog-home #sidebar {
         }
         &.ui-state-hover {
           a {
-            background: darken(#f2f2f2, 20%);
+            background: #fff;
           }
         }
         span {
@@ -509,7 +510,7 @@ body.blacklight-catalog-home #sidebar {
     }/* end ui-tabs-nav */
     .ui-tabs-panel {   
       width:684px; 
-      height:292px;   
+      height:294px;   
       background:#999; 
       position:relative;  
       overflow:hidden;  
