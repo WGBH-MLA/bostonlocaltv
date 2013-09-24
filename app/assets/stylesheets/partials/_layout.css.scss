@@ -650,6 +650,7 @@ body.blacklight-catalog-home {
       font-size: 24px;
       line-height: 33px;
       margin-bottom: 5px;
+      font-family: serif;
     }
     .tools {
       
@@ -685,6 +686,35 @@ body.blacklight-catalog-home {
     a {
       outline : none;
     }
+  }
+}
+
+body.blacklight-registrations, body.blacklight-sessions {
+  h2 {
+    border-bottom: 2px solid #999;
+  }
+  form#user_edit, form#user_new {
+    input[type=email], input[type=text], input[type=password] {
+      height: 25px;
+      font-size: 12px;
+      width: 230px;
+      &:focus {
+        outline: none;
+      }
+    }
+    input[type=submit] {
+      margin-left: 245px;
+      width: 230px;
+    }
+    .password_hide {
+      display:none;
+    }
+    .show_password {
+      margin-left: 245px;
+    }
+  }
+  hr {
+    background-color: #e5e5e5;
   }
 }
 

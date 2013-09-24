@@ -19,6 +19,10 @@ input[type=submit], button[type=submit] {
     cursor:default;
   }
 }
+input.no_style, button.no_style {
+  background: transparent;
+  font-size: 12px;
+} 
 .order_item {
   background: #e5e5e5;
   padding: 10px;

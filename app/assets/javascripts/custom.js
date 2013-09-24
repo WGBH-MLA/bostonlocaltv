@@ -4,6 +4,11 @@
   });
 	$("#featured").tabs({fx:{opacity: "toggle"}});
   $('.msg-bar').delay(3000).fadeOut('fast');
+  $('body').on("click", '.show_password', function(e) {
+    e.preventDefault();
+    $('.password_hide').show();
+    $(this).hide();
+  });
 });
 
 
