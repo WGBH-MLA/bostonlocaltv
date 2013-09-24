@@ -12,7 +12,23 @@
     <% if document.has? solr_fname %>
       <% if render_index_field_value(:document => document, :field => solr_fname) != ' ' %>
   	    <dt class="blacklight-<%= solr_fname.parameterize %>"><%= render_document_show_field_label :field => solr_fname %></dt>
-  	    <dd class="blacklight-<%= solr_fname.parameterize %>"><%= render_document_show_field_value :document => document, :field => solr_fname %></dd>
+        <% if solr_fname == 'subject_s' %>
+  	      <dd class="blacklight-<%= solr_fname.parameterize %>">
+            <% document[:subject_s].each_with_index do |subject, idx| %>
+              <%= link_to "#{subject.to_s}", "/catalog?f%5Bsubject_facet_s%5D%5B%5D=#{subject.to_s}&results_view=true&search_field=all_fields&utf8=✓" %>
+              <%= ", " unless (idx + 1) == document[:subject_s].length %>
+            <% end %>
+          </dd>
+        <% elsif solr_fname == 'people_s' %>
+  	      <dd class="blacklight-<%= solr_fname.parameterize %>">
+            <% document[:people_s].each_with_index do |name, idx| %>
+              <%= link_to "#{name.to_s}", "/catalog?f%5Bpeople_s%5D%5B%5D=#{name.to_s}&results_view=true&search_field=all_fields&utf8=✓" %>
+              <%= ", " unless (idx + 1) == document[:people_s].length %>
+            <% end %>
+          </dd>
+        <% else %>
+          <dd class="blacklight-<%= solr_fname.parameterize %>"><%= render_document_show_field_value :document => document, :field => solr_fname %></dd>
+        <% end %>
       <% end %>
     <% end -%>
   <% end -%>
