@@ -17,7 +17,7 @@
   <div id="tabs-2">
     <% @carts_pending.each do |cart| %>
       <div class="order_item">
-        <h3>Request #<%= cart.id %></h3>
+        <h3>Request #<%= cart.id %><span class="item-date"><%= cart.submit_date %></span></h3>
         <ol>
           <% cart.shopping_cart_items.each do |item| %>
             <li>
@@ -33,7 +33,7 @@
     <% end %>
   </div>
   <div id="tabs-3">
-    <%= "Nothing to show" unless @carts_closed.length > 0 %>
+    <%= "<p class='empty_cart'>No closed orders</p>".html_safe unless @carts_closed.length > 0 %>
     <% @carts_closed.each do |cart| %>
       <div class="order_item">
         <h3>Request #<%= cart.id %></h3>

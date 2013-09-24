@@ -222,9 +222,10 @@ $search_ui_bg_color: #FFF;
       color: #fff;
       text-align: right;
       p {
-        font-size: 13px;
+        font-size: 14px;
       }
       a {
+        font-size: 14px;
         color: #e5553c;
       }
     }
@@ -304,6 +305,18 @@ body.blacklight-catalog-home #sidebar {
     padding: 0;
     background: transparent;
     border:none;
+    .msg-bar {
+      font-size: 13px;
+      text-align: center;
+      height: 25px;  
+      padding-top: 12px;
+      &.ui-state-highlight {
+        background: rgba(235, 235, 192, 0.61);
+      }
+      &.ui-state-error {
+        background: rgba(235, 192, 194, 0.61);
+      }
+    }
     #sortAndPerPage label {
       color: #777;
     }
@@ -320,10 +333,18 @@ body.blacklight-catalog-home #sidebar {
       .ui-tabs-nav {
         background: transparent;
         border:none;
-        border-bottom: 1px solid #999;
+        border-bottom: 1px solid #ddd;
         border-radius: 0px;
+        margin: 10px 0 0 0;
+        .ui-state-default {
+          display: inline-block;
+          a {
+            outline: none;
+          }
+        }
         .ui-state-active {
-          border-color: #666;
+          background: #e5e5e5;
+          padding: 10px;
         }
       }
     }
@@ -632,9 +653,36 @@ body.blacklight-catalog-home {
     .tools {
       
     }
-    .add_to_cart {
+    .add_to_cart, .add_to_cart_no_user, .in_cart {
       position: absolute;
       right: 0;
+    }
+    #dialog {
+      display:none;
+    }
+  }
+}
+.ui-dialog {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  box-shadow: 2px 4px 8px rgba(0,0,0,.5);
+  .ui-dialog-titlebar {
+    background: #ddd;
+    font-size: 13px;
+    padding: 7px;
+    position: relative;
+    .ui-dialog-title {
+      font-size: 16px;
+    }
+    .ui-dialog-titlebar-close {
+      position: absolute;
+      right: 5;
+    }
+  }
+  #dialog {
+    padding: 10px;
+    a {
+      outline : none;
     }
   }
 }

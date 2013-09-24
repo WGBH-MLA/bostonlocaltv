@@ -23,4 +23,14 @@ input[type=submit], button[type=submit] {
   background: #e5e5e5;
   padding: 10px;
   margin-bottom: 10px;
+  .item-date {
+    float: right;
+    font-size: 11px;
+  }
+}
+.empty_cart {
+  text-align: center;
+  padding: 70px;
+  background: #e5e5e5;
+  font-size: 28px;
 }

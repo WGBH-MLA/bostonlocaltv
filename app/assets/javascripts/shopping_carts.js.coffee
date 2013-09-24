@@ -11,11 +11,26 @@ $ ->
         $('.cart_items').remove()
         $('#submit_cart').attr('disabled', 'disabled')
       error: (a, b, c) ->
-        console.log a
-        console.log b
-        console.log c
+        alert('Sorry there was an error, please try again')
+  
+  $('body').on "click", '.remove-cart-item', (e) ->
+    e.preventDefault()
+    item = $(this).data('id')
+    cart = $(this).data('cart')
+    $.ajax
+      url: '/shopping_carts/'+cart+'/shopping_cart_items/'+item
+      dataType: 'json'
+      type: 'delete'
+      success: (data) ->
+        $('.cart_list_item-'+item).remove()
+        if $('.cart_list_item').length == 0
+          $('#submit_cart').attr('disabled', 'disabled')
         
   $( "#tabs" ).tabs()
+  $('body').on "click", '.add_to_cart_no_user', (e) ->
+    e.preventDefault();
+    $( "#dialog" ).dialog({ position: { my: "center top", at: "center top", of: "#bd_prod" } })
+
   $('body').on "click", ".add_to_cart", (e) ->
     e.preventDefault()
     user = $(this).data('userid')

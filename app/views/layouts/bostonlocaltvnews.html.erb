@@ -38,7 +38,7 @@
          <div id="user_info">
            <% if current_user %>
              <p>Welcome back&nbsp;&nbsp;<a href="/users/edit"><%= current_user.full_name %></a><br />
-             <a href="/cart">Cart</a>&nbsp;|&nbsp;<a href="/orders">Your orders</a></p>
+             <a href="/cart">Cart</a> <span class="cart_count">(<%= current_user.cart_items_count(current_user) %>)</span>&nbsp;|&nbsp;<a href="/orders">Your orders</a></p>
            <% else %>
              <a href="/users/sign_in">Log in</a> | <a href="/users/sign_up">Sign up</a>
            <% end %>
@@ -54,7 +54,7 @@
 
         <div id="main">
         <div id="main_container">
-         <%= render :partial=>'/flash_msg' %>
+         <%= render :partial=>'layouts/flash_msg' %>
          <%= content_for?(:content) ? yield(:content) : yield %>
          </div>
         </div>

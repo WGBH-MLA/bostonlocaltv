@@ -14,9 +14,19 @@
           <%= render :partial => 'show_tools', :locals => {:document => @document} %>
           <%#= render :partial => 'cite_path', :locals => {:document => @document} %>
       </div>
-      <% if current_user && @document[:video_s].nil? %>
-        <% cart = current_user.shopping_carts.user_open_cart(current_user).last %>
-        <button href="#" class="add_to_cart" data-itemid="<%= @document[:id] %>" data-cartid="<%= cart.id unless cart.nil?  %>" data-userid="<%= current_user.id %>" data-title="<%= @document[:title_s].first.to_s %>">Add to cart</button>
+      <% if current_user && @document[:video_s].nil? &&  %>
+        <% cart_items = ShoppingCart.user_open_cart(current_user).last.shopping_cart_items.map{|item| item.solr_document_id} %>
+        <% if cart_items.include? @document.id %>
+        <span class="in_cart">Already in your cart</span>
+        <% else %>
+          <% cart = current_user.shopping_carts.user_open_cart(current_user).last %>
+          <button class="add_to_cart" data-itemid="<%= @document[:id] %>" data-cartid="<%= cart.id unless cart.nil?  %>" data-userid="<%= current_user.id %>" data-title="<%= @document[:title_s].first.to_s %>">Add to cart</button>
+        <% end %>
+      <% else %>
+        <button class="add_to_cart_no_user" >Add to cart</button>
+        <div id="dialog" title="User Access Error">
+          <p>You must be signed in to add items to your cart.<br /><br /><a href="/users/sign_in">Sign in here</a> or <a href="/users/sign_up">Sign up here</a></p>
+        </div>
       <% end %>
     </div>
 

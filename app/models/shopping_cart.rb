@@ -5,9 +5,10 @@ class ShoppingCart < ActiveRecord::Base
   scope :has_items, lambda { |user|
         joins(:shopping_cart_items)
         .where('shopping_carts.user_id = ?', user.id)
-        .select('shopping_carts.id, shopping_carts.status')
+        .select('shopping_carts.id, shopping_carts.status, shopping_carts.updated_at')
         .group('shopping_carts.id')
         .having('count(shopping_cart_items.id) > 0')
+        .order('shopping_carts.updated_at DESC')
       }
   
   scope :user_open_cart, lambda { |user| 
@@ -21,6 +22,10 @@ class ShoppingCart < ActiveRecord::Base
   accepts_nested_attributes_for :shopping_cart_items
   
   validates_presence_of :user_id, :on => :create, :message => "can't be blank"
+  
+  def submit_date
+    self.updated_at.to_formatted_s(:long)
+  end
   
   def has_items?
     if self.shopping_cart_items.length > 0
