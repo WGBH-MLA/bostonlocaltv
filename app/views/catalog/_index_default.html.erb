@@ -7,11 +7,13 @@
 
   <%# default partial to display solr document fields in catalog index view -%>
   <div class="docDetails <%= (document.has? "image_s") ? 'hasImage' : '' %>">
-  
+    
     <% index_fields.each do |solr_fname, field| -%>
       <% if document.has? solr_fname %>
-  	    <p><span class="blacklight-<%= solr_fname.parameterize %>"><strong><%= render_index_field_label :field => solr_fname %>: </strong></span>
-  	    <span class="blacklight-<%= solr_fname.parameterize %>"><%= render_index_field_value :document => document, :field => solr_fname %></span></p>
+        <% if render_index_field_value(:document => document, :field => solr_fname) != ' ' %>
+          <p><span class="blacklight-<%= solr_fname.parameterize %>"><strong><%= render_index_field_label :field => solr_fname %>: </strong></span>
+          <span class="blacklight-<%= solr_fname.parameterize %>"><%= render_index_field_value :document => document, :field => solr_fname %></span></p>
+        <% end %>
       <% end -%>
     <% end -%>
 
