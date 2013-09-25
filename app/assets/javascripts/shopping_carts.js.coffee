@@ -13,6 +13,23 @@ $ ->
       error: (a, b, c) ->
         alert('Sorry there was an error, please try again')
   
+  $('body').on "click", '.empty-cart', (e) ->
+    e.preventDefault()
+    cart = $(this).data('cart')
+    conf = window.confirm("Are you sure you want to delete all your cart items?")
+    console.log conf
+    if conf == true
+      $.ajax
+        url: '/shopping_carts/'+cart+'/empty'
+        dataType: 'json'
+        type: 'get'
+        data: form_submit: true
+        success: (data) ->
+          $('.cart_items').find('li').remove();
+          $('.cart_items').after('<p class="cart_empty">Your cart is currently empty</p>')
+    else
+      return false
+  
   $('body').on "click", '.remove-cart-item', (e) ->
     e.preventDefault()
     item = $(this).data('id')

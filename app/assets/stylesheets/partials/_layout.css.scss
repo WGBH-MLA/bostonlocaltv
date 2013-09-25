@@ -617,6 +617,9 @@ body.blacklight-catalog-home {
     padding: 10px 0px;
     .documentHeader {
       width: 100%;
+      h3.index_title {
+        font-size: 24px;
+      }
     }
     .docContent {
       clear:both;
@@ -631,6 +634,9 @@ body.blacklight-catalog-home {
       .docDetails {
         width: 100%;
         margin-left: 1em;
+        span {
+          font-size: 13px;
+        }
         dd {
           margin-left: 0px;
         }

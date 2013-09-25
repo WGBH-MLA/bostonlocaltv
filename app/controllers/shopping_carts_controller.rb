@@ -4,17 +4,17 @@ class ShoppingCartsController < ApplicationController
   
   # GET /shopping_carts/1
   # GET /shopping_carts/1.json
-  def show
-    @shopping_cart = ShoppingCart.find(params[:id])
-    if @shopping_cart.user_id == current_user.id
-      respond_to do |format|
-        format.html # show.html.erb
-        format.json { render json: @shopping_cart }
-      end
-    else
-      redirect_to '/'
-    end
-  end
+  # def show
+#     @shopping_cart = ShoppingCart.find(params[:id])
+#     if @shopping_cart.user_id == current_user.id
+#       respond_to do |format|
+#         format.html # show.html.erb
+#         format.json { render json: @shopping_cart }
+#       end
+#     else
+#       redirect_to '/'
+#     end
+#   end
 
   # POST /shopping_carts
   # POST /shopping_carts.json
@@ -57,6 +57,19 @@ class ShoppingCartsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to shopping_carts_url }
       format.json { head :ok }
+    end
+  end
+  
+  def empty
+    @cart = ShoppingCart.find(params[:shopping_cart_id])
+    if params[:form_submit] == 'true'
+      if @cart.shopping_cart_items.delete_all
+        render json: @cart
+      else
+        render json: @cart.errors, status: :unprocessable_entity
+      end
+    else
+      render json: @cart.errors, status: :unprocessable_entity
     end
   end
   

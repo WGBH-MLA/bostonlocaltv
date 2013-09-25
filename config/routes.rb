@@ -1,6 +1,7 @@
 Bostonlocaltv::Application.routes.draw do
 
-  resources :shopping_carts, :only => [:create, :update, :destroy, :show] do
+  resources :shopping_carts, :only => [:create, :update, :destroy] do
+    get 'empty'
     resources :shopping_cart_items, :only => [:create, :update, :destroy]
   end
 
