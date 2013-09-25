@@ -2,7 +2,7 @@ class ShoppingCartItem < ActiveRecord::Base
   #include Blacklight::Catalog
   belongs_to :shopping_cart
   
-  #validates_presence_of :shopping_cart, :on => :create, :message => "can't be blank"
+  validates_presence_of :shopping_cart_id, :on => :create, :message => "can't be blank"
   validates_presence_of :solr_document_id, :on => :create, :message => "can't be blank"
   
   attr_accessible :shopping_cart_id, :solr_document_id, :title, :status, :completed

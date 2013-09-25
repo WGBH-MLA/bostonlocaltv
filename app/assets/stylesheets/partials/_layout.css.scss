@@ -648,7 +648,16 @@ body.blacklight-catalog-home {
     }
   }
 }
-
+body.blacklight-catalog-show {
+  #bd_prod {
+    #sidebar {
+      display:none;
+    }
+    #main {
+      width: 1024px;
+    }
+  }
+}
 #document {
   .docHeader {
     position: relative;
@@ -667,6 +676,24 @@ body.blacklight-catalog-home {
     }
     #dialog {
       display:none;
+    }
+  }
+  .document {
+    #video_player_container {
+      width: 66%;
+      float:left;
+      border: 1px solid #ddd;
+    }
+    .defList {
+      width: 33%;
+      float: right;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 1em;
+      clear: none;
+      dd {
+        width: 76%;
+      }
     }
   }
 }

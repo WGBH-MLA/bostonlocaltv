@@ -5,9 +5,16 @@
 	    <source src="<%= render_document_show_field_value :document => document, :field => "video_s" %>" type="video/mp4" />
 	  </video>
 	</div>
+<% else %>
+<div id="video_player_container">
+  <video class="video-js vjs-default-skin" data-setup='{ "controls": true, "autoplay": false, "preload": "auto" }' id="videoplayer" width="100%" height="400px">
+    <source src="/assets/test.mp4" type="video/mp4" />
+  </video>
+</div>
 <% end %>
 
 <dl class="defList">
+  <h3>Video Metadata</h3>
   <% linked_facets = ['subject_s', 'people_s', 'location_s'] %>
   <% document_show_fields.each do |solr_fname, field| -%>
     <% if document.has? solr_fname %>
