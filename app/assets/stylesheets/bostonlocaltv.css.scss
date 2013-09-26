@@ -61,6 +61,10 @@ $constraint_border_active_color: #FFD27A !default;
 $red_link: #f4583d;
 
 /* Include all the partials */
+@import 'bootstrap';
+@import 'bootstrap-responsive';
+@import 'blacklight/blacklight';
+
 @import "partials/_catalog";
 @import "partials/_folder";
 @import "partials/_formatting";
@@ -69,5 +73,4 @@ $red_link: #f4583d;
 @import "partials/_layout";
 @import "partials/_print";
 @import "partials/_search_history";
-@import "partials/_susy_framework";
 @import 'shopping_carts'

@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.1'
+gem 'rails', '3.2.14'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -9,18 +9,19 @@ gem 'mysql2'
 
 
 ## Needs to be outside :assets otherwise production mode breaks
-gem 'sass-rails',   '~> 3.1.4'
+##Don't need after Rails 3.1
+#gem 'sass-rails',   '~> 3.1.4'
+gem 'bootstrap-sass'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-#  gem 'sass-rails',   '~> 3.1.4'
   gem 'execjs'
   gem 'therubyracer'
 end
 
-gem 'coffee-rails', '~> 3.1.1'
-gem 'uglifier', '>= 1.0.3'
+gem 'coffee-rails'
+gem 'uglifier'
 
 group :test do
   gem "database_cleaner"
@@ -54,22 +55,22 @@ gem 'jquery-rails', '~>2.2.1'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem "compass", ">= 0.12.alpha.1"
+gem "compass"
 
 # blacklight gems pinned to semantic versions; cbeer's recommendations
-gem 'blacklight', '3.2.1'
-gem 'blacklight_advanced_search', '1.2.1'
-gem 'blacklight_range_limit', '1.2.0'
+gem 'blacklight', ">= 4.4.1"
+gem 'blacklight_advanced_search'
+gem 'blacklight_range_limit'
 
 # FIXME! Blacklight 3.2.1 incompatible w/ kaminari 0.14.0
 # see https://github.com/projectblacklight/blacklight/issues/460
 # Pin to < 0.14.0 until blacklight is upgraded.
-gem 'kaminari', '~>0.13.0'
+gem 'kaminari'
 
 gem "jettywrapper", ">= 1.0.3"
 gem "devise"
 gem "progressbar"
-
+gem 'unicode'
 gem 'activeadmin'
 
 gem 'rails-footnotes', '>= 3.7', :group => :development

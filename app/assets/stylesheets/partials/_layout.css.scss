@@ -40,7 +40,7 @@ $search_ui_bg_color: #FFF;
   width: 100%;
   border-bottom: 2px solid #ddd;
   height:50px;
-  margin-bottom:20px;
+  margin-bottom: 25px;
   #cssmenu{
     float:left; 
     height:33px; 
@@ -360,35 +360,38 @@ body.blacklight-catalog-home #sidebar {
     background-color: $search_ui_bg_color;
     border: 1px solid #e5e5e5;
     #facets {
-      padding: 20px;
+      padding: 10px;
       box-sizing: border-box;
       h2 {
         font-size: 20px;
-        padding: 5px 0px;
+        margin-top:0;
       }
       .facet_limit {
         padding: 5px 0px;
-        h3 {
+        h5 {
           color: #e5553c;
           font-size: 15px;
           background: #efefef;
           padding: 5px;
+          margin: 3px 0px;
         }
-        h3.twiddle:before {
+        h5.twiddle:before {
          content: url(/assets/arrow_right.png); 
          padding-right: 5px;
         }
-        h3.twiddle-open:before {
+        h5.twiddle-open:before {
           content: url(/assets/arrow_down.png);
           padding-right: 5px;
         }
         ul {
           margin-left: 25px;
+          border:none;
           li {
             list-style: disc;
           }
           .more_facets_link {
             list-style:none;
+            display:none;
           }
         }
       }
@@ -627,6 +630,7 @@ body.blacklight-catalog-home {
       .index-image-container {
         width: 30%;
         margin-right: 10px;
+        float: left;
         img {
           width: 100%;
         }
@@ -658,7 +662,15 @@ body.blacklight-catalog-show {
     }
   }
 }
+.thumbnail {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
 #document {
+  hr {
+    margin: 10px 0px;
+  }
   .docHeader {
     position: relative;
     .docTitle {
@@ -668,17 +680,28 @@ body.blacklight-catalog-show {
       font-family: serif;
     }
     .tools {
-      
-    }
-    .add_to_cart, .add_to_cart_no_user, .in_cart {
-      position: absolute;
-      right: 0;
+      width: 100%;
+      padding: 8px 0px 8px 0px;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 10px;
+      border-top: 1px solid #eee;
+      .tools-list {
+        float:left;
+      }
+      .add_to_cart, .add_to_cart_no_user, .in_cart {
+        position: absolute;
+        right: 0;
+        font-size: 14px;
+      }
     }
     #dialog {
       display:none;
     }
   }
   .document {
+    overflow: hidden;
     #video_player_container {
       width: 66%;
       float:left;
