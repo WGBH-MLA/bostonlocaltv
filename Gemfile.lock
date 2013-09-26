@@ -41,6 +41,7 @@ GEM
       activesupport (= 3.1.1)
     activesupport (3.1.1)
       multi_json (~> 1.0)
+    addressable (2.3.5)
     arbre (1.0.1)
       activesupport (>= 3.0.0)
     arel (2.2.3)
@@ -161,6 +162,8 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
       railties (>= 3.0.0)
+    launchy (2.3.0)
+      addressable (~> 2.3)
     libv8 (3.16.14.3)
     listen (0.7.3)
     logger (1.2.8)
@@ -308,6 +311,7 @@ DEPENDENCIES
   jettywrapper (>= 1.0.3)
   jquery-rails (~> 2.2.1)
   kaminari (~> 0.13.0)
+  launchy
   meta_request
   mysql2
   progressbar

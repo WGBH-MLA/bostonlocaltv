@@ -15,21 +15,11 @@
 
 <dl class="defList">
   <h3>Video Metadata</h3>
-  <% linked_facets = ['subject_s', 'people_s', 'location_s'] %>
   <% document_show_fields.each do |solr_fname, field| -%>
     <% if document.has? solr_fname %>
       <% if render_index_field_value(:document => document, :field => solr_fname) != ' ' %>
   	    <dt class="blacklight-<%= solr_fname.parameterize %>"><%= render_document_show_field_label :field => solr_fname %></dt>
-        <% if linked_facets.include? solr_fname %>
-  	      <dd class="blacklight-<%= solr_fname.parameterize %>">
-            <% document[:"#{solr_fname}"].each_with_index do |item, idx| %>
-              <%= link_to "#{item.to_s}", "/catalog?f%5B#{solr_fname}%5D%5B%5D=#{item.to_s}&results_view=true&search_field=all_fields&utf8=✓" %>
-              <%= ", " unless (idx + 1) == document[:"#{solr_fname}"].length %>
-            <% end %>
-          </dd>
-        <% else %>
-          <dd class="blacklight-<%= solr_fname.parameterize %>"><%= render_document_show_field_value :document => document, :field => solr_fname %></dd>
-        <% end %>
+        <dd class="blacklight-<%= solr_fname.parameterize %>"><%= render_document_show_field_value :document => document, :field => solr_fname %></dd>
       <% end %>
     <% end -%>
   <% end -%>

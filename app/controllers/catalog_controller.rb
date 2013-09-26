@@ -61,13 +61,12 @@ class CatalogController < ApplicationController
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
     config.add_show_field 'program_s', :label => 'Program Type'
-    config.add_show_field 'date_created_s', :label => 'Date Created'
+    config.add_show_field 'date_created_s', :label => 'Date Created', :custom => '(estimated)'
     config.add_show_field 'date_estimated_s', :label => 'Date Estimated'
     config.add_show_field 'id', :label => 'ID number'
     config.add_show_field 'description_s', :label => 'Description' 
-    config.add_show_field 'people_s', :label => 'Names'
-    config.add_show_field 'subject_s', :label => 'Subjects'
-    config.add_show_field 'location_s', :label => 'Locations'
+    config.add_show_field 'subject_s', :label => 'Subjects', :link => true
+    config.add_show_field 'location_s', :label => 'Locations', :link => true
     config.add_show_field 'related_s', :label => 'Related Records'
     config.add_show_field 'format', :label => 'Physical format'
     config.add_show_field 'audio_type_s', :label => 'Audio Type'
@@ -75,13 +74,14 @@ class CatalogController < ApplicationController
     config.add_show_field 'audio_duration_s', :label => 'Duration'
     config.add_show_field 'format_color_s', :label => 'Color'
     config.add_show_field 'broadcast_date_s', :label => 'Date Broadcast'
-    config.add_show_field 'collection_s', :label => 'Collection'
+    config.add_show_field 'collection_s', :label => 'Collection', :link => true
     config.add_show_field 'h_location_s', :label => 'Holding Institution', :link => true
     config.add_show_field 'p_location_s', :label => 'Physical Location'
     config.add_show_field 'footage_length_s', :label => 'Footage Length' 
+    config.add_show_field 'credit_s', :label => 'Credit'
     config.add_show_field 'contributor_name_role_s', :label => 'Contributor' 
     config.add_show_field 'subject_personalities_s', :label => 'Personalities:'
-    config.add_show_field 'intended_purpose_s', :label => 'Intended Purpose'
+    config.add_show_field 'intended_purpose_s', :label => 'Type or Purpose'
     config.add_show_field 'can_number_s', :label => 'Can Number:', :link => true
     config.add_show_field 'format_location_s', :label => 'Location'
     config.add_show_field 'cross_reference_s', :label => 'Cross Reference'

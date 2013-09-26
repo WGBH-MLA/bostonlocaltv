@@ -25,6 +25,7 @@ gem 'uglifier', '>= 1.0.3'
 group :test do
   gem "database_cleaner"
   gem "capybara"
+  gem 'launchy'
   gem "factory_girl_rails", "~> 4.0"
   gem 'faker'
   gem "aruba"
