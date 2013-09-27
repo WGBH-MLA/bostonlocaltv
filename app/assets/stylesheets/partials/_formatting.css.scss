@@ -7,6 +7,7 @@ body {
   padding-top: 0px;
   margin: 0px; 
   padding: 0px 15px;
+  margin: 0px;
 }
 
 p, ol, ul, td {
@@ -20,6 +21,9 @@ strong {
 em {
   font-size: inherit;
   font-style: italic;
+}
+h1, h2, h3, h4 {
+  font-family: serif;
 }
 h1 {
   font-size: 2.6em;
