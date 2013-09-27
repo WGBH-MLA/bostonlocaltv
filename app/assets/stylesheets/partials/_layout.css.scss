@@ -282,7 +282,7 @@ $search_ui_bg_color: #FFF;
     float: right;
   }
 
-body.blacklight-catalog-home #sidebar {
+body.blacklight-catalog-home #sidebar, body.blacklight-collections #sidebar {
   display:none;
 } 
 
@@ -741,6 +741,49 @@ body.blacklight-catalog-show {
     padding: 10px;
     a {
       outline : none;
+    }
+  }
+}
+body.blacklight-collections {
+  #bd_prod {
+    #main {
+      width: 1024px;
+      background: transparent;
+      padding: 0;
+      border: none;
+      #collections_container {
+        width: 684px;
+        float:left;
+        background: #fff;
+        padding: 10px;
+        border: 1px solid #ddd;
+        #tools {
+          margin-bottom: 10px;
+          border-top: 2px solid #333;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+        .wgbh_image {
+          margin-bottom: 10px;
+        }
+      }
+      #collections_primary {
+        width: 300px;
+        float:right;
+        background: transparent;
+        margin-top: 31px;
+        .widget-title {
+          margin-bottom:0;
+        }
+        hr {
+          height: 2px; 
+          margin-top: 0px; 
+          margin-bottom:0px;
+        }
+        ul {
+          margin: 5px 0px 5px 15px;
+        }
+      }
     }
   }
 }
