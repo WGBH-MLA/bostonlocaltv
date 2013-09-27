@@ -615,6 +615,33 @@ body.blacklight-catalog-home {
   @include clearfix;
 }
 
+#browse_content {
+  ul.bullet {
+    list-style: disc;
+  }
+  .topic-list {
+    width: 100%;
+    overflow:hidden;
+    li {
+      a {
+        padding: 5px;
+        margin: 5px;
+        background-color: #F0F0F0;
+        float: left;
+        border: 1px solid #ddd;
+        -webkit-transition:background-color .2s linear;    
+           -moz-transition:background-color .2s linear ;
+             -o-transition:background-color .2s linear ;
+                transition:background-color .2s linear ; 
+        &:hover {
+          text-decoration: none;
+          background-color: #E0E0E0;
+        }
+      }
+    }
+  }
+}
+
 #documents {
   .document {
     padding: 10px 0px;
