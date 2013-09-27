@@ -1,9 +1,9 @@
 Bostonlocaltv::Application.routes.draw do
 
-  resources :shopping_carts, :only => [:create, :update, :destroy] do
-    get 'empty'
-    resources :shopping_cart_items, :only => [:create, :update, :destroy]
-  end
+  # resources :shopping_carts, :only => [:create, :update, :destroy] do
+#     get 'empty'
+#     resources :shopping_cart_items, :only => [:create, :update, :destroy]
+#   end
 
   resources :collections
 
@@ -17,9 +17,9 @@ Bostonlocaltv::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   
-  match 'orders' => 'users#orders'
-  match 'cart' => 'users#cart'
-  match 'submit_cart' => 'users#submit_cart'
+  # match 'orders' => 'users#orders'
+#   match 'cart' => 'users#cart'
+#   match 'submit_cart' => 'users#submit_cart'
 
   resources :items
 
