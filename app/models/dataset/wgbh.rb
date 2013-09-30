@@ -168,15 +168,7 @@ class Dataset::Wgbh < Dataset::Xml
       solr_doc[key.to_sym] ||= []
       solr_doc[key.to_sym] <<  value.strip
     end
-
-    if date_created == false
-      solr_doc ['date_created_s'] = " "
-    end
-    
-    if contributor == false
-      solr_doc ['contributor_name_role_s'] = " "
-    end
-  
+ 
     if format == false
       solr_doc ['format'] = physical_format
     end
@@ -185,27 +177,10 @@ class Dataset::Wgbh < Dataset::Xml
       solr_doc ['format_color_s'] = "Color"
     end
   
-    if duration == false
-      solr_doc ['audio_duration_s'] = " "
-    end
-  
-    if purpose == false
-      solr_doc ['intended_purpose_s'] = " "
-    end
-  
-    if location == false
-      solr_doc ['location_s'] = " "
-    end
-  
-    if subject == false
-      solr_doc ['subject_s'] = " "
-    end
-  
     if wgbh_title == false
       solr_doc ['title_s'] = "Ten O'Clock News"
     end
 
-    solr_doc ['audio_duration_s'] = " "
     solr_doc
   end
 

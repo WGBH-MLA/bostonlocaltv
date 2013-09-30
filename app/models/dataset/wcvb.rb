@@ -10,7 +10,6 @@ class Dataset::Wcvb < Dataset::Xml
     fields = []
     title = false
     date_created = false
-    people = " "
 
     row.xpath("*").select { |x| !x.text.blank? }.each do |node|
       case node.name
@@ -124,20 +123,8 @@ class Dataset::Wcvb < Dataset::Xml
       solr_doc[key.to_sym] <<  value.strip
     end
 
-    if date_created == false
-      solr_doc [:date_created_s] = " "
-    end
-
-    if dimensions == false
-      solr_doc [:footage_length_s] = " "
-    end
-
     if format == false
 	   solr_doc [:format] = "Film:16mm"
-    end
-
-    if description == false
-      solr_doc [:description_s] = " "
     end
 
     if wcvb_title == false

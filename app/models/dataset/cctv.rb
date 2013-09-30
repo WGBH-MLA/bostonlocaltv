@@ -173,28 +173,6 @@ class Dataset::Cctv < Dataset::Xml
       solr_doc[key.to_sym] <<  value.strip
     end
 
-    if date_created == false
-      solr_doc ['date_created_s'] = " "
-    end
-    if date_broadcast == false
-      solr_doc ['broadcast_date_s'] = " "
-    end
-    if contributor == false
-      solr_doc ['contributor_name_role_s'] = " "
-    end
-    if color == false
-      solr_doc ['format_color_s'] = " "
-    end
-    if subject == false
-      solr_doc ['subject_s'] = " "
-    end
-    if language == false
-      solr_doc ['language_s'] = " "
-    end
-    if description == false
-	   solr_doc ['description_s'] = " "
-    end
-
     solr_doc
 
   end

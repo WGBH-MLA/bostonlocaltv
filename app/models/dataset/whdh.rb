@@ -199,49 +199,12 @@ class Dataset::Whdh < Dataset::Xml
       solr_doc[key.to_sym] <<  value.strip
     end
 
-    if date_created == false
-      solr_doc ['date_created_s'] = " "
-    end
-    if audio_format == false
-      solr_doc ['audio_format_s'] = " "
-    end
-    if audio_type == false
-      solr_doc ['audio_type_s'] = " "
-    end
-    if contributor == false
-      solr_doc ['contributor_name_role_s'] = " "
-    end
-    if  cross_reference == false
-      solr_doc ['cross_reference_s'] = " "
-    end
-    if dimensions == false
-      solr_doc ['footage_length_s'] = " "
-    end
-    if color == false
-      solr_doc ['format_color_s'] = " "
-    end
-    if duration == false
-      solr_doc ['audio_duration_s'] = " "
-    end
-    if purpose == false
-      solr_doc ['intended_purpose_s'] = " "
-    end
-    if location == false
-      solr_doc ['location_s'] = " "
-    end
-    if subject == false
-      solr_doc ['subject_s'] = " "
-    end
-    if description == false
-      solr_doc ['description_s']= " "
-    end
-
     if date_estimated == true
       solr_doc[:date_created_s] = ""
     else
       solr_doc[:date_estimated_s] = ""
     end
-
+    
     solr_doc
 
   end
