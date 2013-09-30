@@ -63,7 +63,6 @@ class CatalogController < ApplicationController
     config.add_show_field 'program_s', :label => 'Program Type'
     config.add_show_field 'date_created_s', :label => 'Date Created', :custom => '(estimated)'
     config.add_show_field 'date_estimated_s', :label => 'Date Estimated'
-    config.add_show_field 'id', :label => 'ID number'
     config.add_show_field 'description_s', :label => 'Description' 
     config.add_show_field 'subject_s', :label => 'Subjects', :link => true
     config.add_show_field 'location_s', :label => 'Locations', :link => true
