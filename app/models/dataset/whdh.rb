@@ -1,6 +1,6 @@
 class Dataset::Whdh < Dataset::Xml
   def content
-    super.gsub(/(<\/?[A-Za-z0-9_]+):/) { $1 } 
+    super.gsub(/(<\/?[A-Za-z0-9_]+):/) { $1 }
   end
 
   protected
@@ -18,7 +18,7 @@ class Dataset::Whdh < Dataset::Xml
       when "pbcoreAssetDate"	
         v = "created"
         if (node.values()[0] == v)
-          if node.text.eql? "" 
+          if node.text.eql? ""
             created_year = "1970"
             fields << ["year_i", created_year]
           else
@@ -26,14 +26,15 @@ class Dataset::Whdh < Dataset::Xml
             fields << ["year_i", y]
             fields << ["date_created_s", node.text]
             fields << ["date_estimated_s", node.text]
-          end 
+          end
         end
 
       when "pbcoreIdentifier"
-        a_v = "UID"
-
-        if node.values()[0] == a_v 
+        if node.values()[0] == "UID"
           fields << ["id", node.text]
+        elsif node.values()[0] == "Digital_Filename"
+          fields << ["video_s", "#{node.text}.mp4"]
+          fields << ["image_s", "#{node.text}_thumbnail.jpg"]
         else
           fields << ["#{node.name.parameterize}_s", node.text]
         end
@@ -45,7 +46,7 @@ class Dataset::Whdh < Dataset::Xml
             fields <<["title_s", title]
           elsif node.values()[0] == "\'"
             title = node.text.to_s.gsub(/\'(.*)\'/, '\1')
-            fields << ["title_s", title]  
+            fields << ["title_s", title]
           else
             fields << ["title_s", node.text]
           end
@@ -58,7 +59,7 @@ class Dataset::Whdh < Dataset::Xml
           case child.name
           when "pbcoreRelationIdentifier"
             source = child.text.downcase
-            if source.eql? "whdh" 
+            if source.eql? "whdh"
               fields << ["collection_s", child.text]
             else
               fields << ["cross_reference_s", child.text]
@@ -92,7 +93,7 @@ class Dataset::Whdh < Dataset::Xml
             fields << ["people_s", child.text]
             people = child.text
           when "contributorRole"
-            contributor_name_role = people + ", " + child.text 
+            contributor_name_role = people + ", " + child.text
             fields << ["contributor_name_role_s", contributor_name_role]
           end
         end
@@ -122,7 +123,7 @@ class Dataset::Whdh < Dataset::Xml
           when "instantiationDuration"
             fields << ["audio_duration_s", child.text]
           end
-        end  
+        end
 
       when "pbcoreAssetType"
         fields << ["intended_purpose_s", node.text]	
@@ -130,7 +131,7 @@ class Dataset::Whdh < Dataset::Xml
       when "pbcoreAnnotation"
         date_estimated = true
 
-      else 
+      else
         fields << ["#{node.name.parameterize}_s", node.text]
       end
     end
@@ -159,7 +160,7 @@ class Dataset::Whdh < Dataset::Xml
         date_created = true
       end
       if key == 'audio_format_s'
-        audio_format = true 	 
+        audio_format = true 	
       end
       if key == 'audio_type_s'
         audio_type = true
@@ -167,7 +168,7 @@ class Dataset::Whdh < Dataset::Xml
       if key == 'contributor_name_role_s'
         contributor = true
       end
-      if key == 'cross_reference_s'  
+      if key == 'cross_reference_s'
         cross_reference = true
       end
       if key == 'footage_length_s'
@@ -201,34 +202,34 @@ class Dataset::Whdh < Dataset::Xml
     if date_created == false
       solr_doc ['date_created_s'] = " "
     end
-    if audio_format == false 
+    if audio_format == false
       solr_doc ['audio_format_s'] = " "
     end
-    if audio_type == false 
+    if audio_type == false
       solr_doc ['audio_type_s'] = " "
     end
-    if contributor == false 
+    if contributor == false
       solr_doc ['contributor_name_role_s'] = " "
     end
-    if  cross_reference == false 
-      solr_doc ['cross_reference_s'] = " " 
+    if  cross_reference == false
+      solr_doc ['cross_reference_s'] = " "
     end
-    if dimensions == false 
-      solr_doc ['footage_length_s'] = " " 
+    if dimensions == false
+      solr_doc ['footage_length_s'] = " "
     end
-    if color == false 
+    if color == false
       solr_doc ['format_color_s'] = " "
     end
-    if duration == false 
+    if duration == false
       solr_doc ['audio_duration_s'] = " "
     end
-    if purpose == false 
+    if purpose == false
       solr_doc ['intended_purpose_s'] = " "
     end
-    if location == false 
+    if location == false
       solr_doc ['location_s'] = " "
     end
-    if subject == false 
+    if subject == false
       solr_doc ['subject_s'] = " "
     end
     if description == false
@@ -243,7 +244,7 @@ class Dataset::Whdh < Dataset::Xml
 
     solr_doc
 
-  end 
+  end
 
   def parse_date date
     if /^.*(?<year>\d{4}).*$/ =~ date

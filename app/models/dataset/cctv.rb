@@ -33,10 +33,11 @@ class Dataset::Cctv < Dataset::Xml
         end
 
       when "pbcoreIdentifier"
-        c_v = "id_program_prime"
-
-        if node.values()[0] == c_v
+        if node.values()[0] == "id_program_prime"
           fields << ["id", node.text]
+        elsif node.values()[0] == "Digital_Filename"
+          fields << ["video_s", "#{node.text}.mp4"]
+          fields << ["image_s", "#{node.text}_thumbnail.jpg"]
         else
           fields << ["#{node.name.parameterize}_s", node.text]
         end

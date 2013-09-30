@@ -28,14 +28,16 @@ class Dataset::Wcvb < Dataset::Xml
         end
 
       when "pbcoreIdentifier"
-        #b_v = "Accession_NUMBER"
-        b_v = "UID"
-        if node.values()[0] == b_v
+        # the IDs for WCVB records are in <pbcoreIdentifier source="Accession #">
+        if !node.values()[0].scan("Accession").empty?
           wcvb_id = node.text
           if wcvb_id.include? '.'
             wcvb_id.sub!('.', '_')
           end
           fields << ["id", wcvb_id]
+        elsif node.values()[0] == "Digital_Filename"
+          fields << ["video_s", "#{node.text}.mp4"]
+          fields << ["image_s", "#{node.text}_thumbnail.jpeg"]
         else
           fields << ["#{node.name.parameterize}_s", node.text]
         end

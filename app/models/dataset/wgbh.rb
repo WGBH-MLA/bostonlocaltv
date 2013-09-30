@@ -29,10 +29,11 @@ class Dataset::Wgbh < Dataset::Xml
         end
       
       when "pbcoreIdentifier"
-        a_v = "UID"
-
-        if node.values()[0] == a_v
+        if node.values()[0] == "UID"
           fields << ["id", node.text]
+        elsif node.values()[0] == "Digital_Filename"
+          fields << ["video_s", "#{node.text}.mp4"]
+          fields << ["image_s", "#{node.text}_thumbnail.jpg"]
         else
           fields << ["#{node.name.parameterize}_s", node.text]
         end
