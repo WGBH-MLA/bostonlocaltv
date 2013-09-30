@@ -9,12 +9,9 @@ module Dataset
       before_process_record { progress_bar.inc }
       after_process { progress_bar.finish }
     end
-
-    module InstanceMethods
       
-      def progress_bar title = "processing", out = STDERR 
-        @progress_bar ||= ProgressBar.new title, records.length, out
-      end
+    def progress_bar title = "processing", out = STDERR 
+      @progress_bar ||= ProgressBar.new title, records.length, out
     end
   end
 end
