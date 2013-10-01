@@ -776,6 +776,19 @@ body.blacklight-catalog-show {
     }
   }
 }
+#sortAndPerPage {
+  height: 24px;
+  .video_only {
+    display:inline-block;
+    margin-left: 15px;
+    width: 135px;
+    input#non_video {
+      float:left;
+      margin-right:5px;
+    }
+  }
+}
+
 body.blacklight-collections {
   #bd_prod {
     #main {

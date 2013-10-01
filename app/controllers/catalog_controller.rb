@@ -8,7 +8,8 @@ class CatalogController < ApplicationController
   configure_blacklight do |config|
     config.default_solr_params = { 
       :qt => 'search',
-      :per_page => 10
+      :per_page => 10,
+      :fq => ['video_s:[* TO *]']
     }
 
     # solr field configuration for search results/index views
@@ -37,10 +38,10 @@ class CatalogController < ApplicationController
     # sniffing requires solr requests to be made with "echoParams=all", for
     # app code to actually have it echo'd back to see it.  
     
-    config.add_facet_field 'video_s_query', :label => 'Videos', :query => {
-      :has_video => { :label => 'Has Video', :fq => "video_s:[* TO *]"},
-      :has_no_video => {:label => 'No Video', :fq => '-video_s:[* TO *]'}
-    } 
+    # config.add_facet_field 'video_s_query', :label => 'Videos', :query => {
+    #   :has_video => { :label => 'Has Video', :fq => "video_s:[* TO *]"},
+    #   :has_no_video => {:label => 'No Video', :fq => '-video_s:[* TO *]'}
+    # } 
     config.add_facet_field 'collection_s', :label => 'Collection'
     #config.add_facet_field 'subject_facet_s', :label => 'Subject', :limit => 5
     #config.add_facet_field 'people_s', :label => 'People', :limit => 5
@@ -154,7 +155,13 @@ class CatalogController < ApplicationController
   end
   
   def index
-    (@response, @document_list) = get_search_results
+    logger.debug "PARAMS:::"
+    logger.debug params.inspect
+    if params[:non_video] && params[:non_video] == 'yes'
+      (@response, @document_list) = get_nonvideo_search_results
+    else
+      (@response, @document_list) = get_search_results
+    end
     @filters = params[:f] || []
   
     respond_to do |format|
@@ -188,8 +195,19 @@ class CatalogController < ApplicationController
      end
    end
 
-     def get_doc_id (id)
-        id.bytes.to_s
-     end
-
+   def get_doc_id (id)
+      id.bytes.to_s
+   end
+   
+   def get_nonvideo_search_results
+     solr_params = {
+       :q => params[:q],
+       :per_page => params[:per_page] ||= 10,
+       :fq => '' 
+     }
+     solr_response = find(blacklight_config.qt, self.solr_search_params().merge(solr_params) )
+     document_list = solr_response.docs.collect{|doc| SolrDocument.new(doc, solr_response) }
+     [solr_response,document_list]
+   end
+    
 end 

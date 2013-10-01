@@ -9,6 +9,12 @@
     $('.password_hide').show();
     $(this).hide();
   });
+  
+  $('form input#non_video').change(function() {
+    var values = $(this).closest('form').serialize()
+    console.log(values)
+    $(this).closest('form').submit()
+  })
 });
 
 
