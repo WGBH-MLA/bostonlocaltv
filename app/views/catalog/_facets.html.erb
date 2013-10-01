@@ -3,16 +3,7 @@
 <div id="facets" class="facets">
   <h2>Filter your results:</h2>
   <% facet_field_names.each do |solr_fname| %>
-    <% if solr_fname == "video_s" %>
-      <div class="facet_limit blacklight-<%= solr_fname.parameterize %>">
-        <h5>Video Available</h5>
-        <ul>
-          <li><a href="#">Video is available (0)</a></li>
-        </ul>
-      </div>
-    <% else %>
-      <%= render_facet_partials([solr_fname]) %>
-     <% end %>
+    <%= render_facet_partials([solr_fname]) %>
    <% end %>
 </div>
 <% end %>

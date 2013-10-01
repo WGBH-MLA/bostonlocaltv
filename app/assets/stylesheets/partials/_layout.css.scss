@@ -37,7 +37,7 @@ $search_ui_bg_color: #FFF;
 
 /* Menu Bar */
 #access {
-  width: 100%;
+  width: 1024px;
   border-bottom: 2px solid #ddd;
   height:50px;
   margin-bottom: 25px;
@@ -288,8 +288,9 @@ body.blacklight-catalog-home #sidebar, body.blacklight-collections #sidebar {
 
 #bd_prod
 {
-  @include container;
+//  @include container;
   @include clearfix;
+  width: 1024px;
   overflow: visible;
   #main {
     float: right;
@@ -297,6 +298,7 @@ body.blacklight-catalog-home #sidebar, body.blacklight-collections #sidebar {
     background: #fff;
     padding: 10px;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
     border: 1px solid #ddd;
    #main_container {
     background-color: $search_ui_bg_color;
@@ -362,6 +364,7 @@ body.blacklight-catalog-home #sidebar, body.blacklight-collections #sidebar {
     #facets {
       padding: 10px;
       box-sizing: border-box;
+      -moz-box-sizing: border-box;
       h2 {
         font-size: 20px;
         margin-top:0;
@@ -405,6 +408,7 @@ body.blacklight-catalog-home #sidebar, body.blacklight-collections #sidebar {
      width: auto; 
      padding: 20px 20px 0px 20px;
      box-sizing: border-box;
+     -moz-box-sizing: border-box;
      position: relative;
      height: 45px;
    }
@@ -478,6 +482,7 @@ body.blacklight-catalog-home #sidebar, body.blacklight-collections #sidebar {
           outline:none;  
           width: 100%;
           box-sizing: border-box;
+          -moz-box-sizing: border-box;
           padding: 28px;
           &:hover {
             background:darken(#f2f2f2, 15%);
@@ -852,6 +857,7 @@ body.blacklight-registrations, body.blacklight-sessions {
   width: 100%;
   clear:both;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   border: 1px solid #aaa;
   #colophon {
     margin-top: -1px;

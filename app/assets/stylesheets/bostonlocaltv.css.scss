@@ -62,7 +62,7 @@ $red_link: #f4583d;
 
 /* Include all the partials */
 @import 'bootstrap';
-@import 'bootstrap-responsive';
+//@import 'bootstrap-responsive';
 @import 'blacklight/blacklight';
 
 @import "partials/_catalog";

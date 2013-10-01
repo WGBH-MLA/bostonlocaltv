@@ -4,17 +4,16 @@ require 'blacklight/catalog'
 class CatalogController < ApplicationController  
 
   include Blacklight::Catalog
-
+  
   configure_blacklight do |config|
     config.default_solr_params = { 
       :qt => 'search',
-      :per_page => 10 
+      :per_page => 10
     }
 
     # solr field configuration for search results/index views
     config.index.show_link = 'title_s' 
     config.index.record_display_type = 'collection_s'
- 
 
     # solr field configuration for document/show views
     config.show.html_title = 'title_s' 
@@ -37,17 +36,24 @@ class CatalogController < ApplicationController
     # on the solr side in the request handler itself. Request handler defaults
     # sniffing requires solr requests to be made with "echoParams=all", for
     # app code to actually have it echo'd back to see it.  
+    
+    config.add_facet_field 'video_s_query', :label => 'Videos', :query => {
+      :has_video => { :label => 'Has Video', :fq => "video_s:[* TO *]"},
+      :has_no_video => {:label => 'No Video', :fq => '-video_s:[* TO *]'}
+    } 
     config.add_facet_field 'collection_s', :label => 'Collection'
     #config.add_facet_field 'subject_facet_s', :label => 'Subject', :limit => 5
     #config.add_facet_field 'people_s', :label => 'People', :limit => 5
     config.add_facet_field 'location_facet_s', :label => 'Places', :limit => 5
     config.add_facet_field 'year_i', :label => 'Date', :range => true
-    config.add_facet_field 'video_s', :label => 'Video Available'
+      
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
     # handler defaults, or have no facets.
-    config.default_solr_params[:'facet.field'] = config.facet_fields.keys
+    #config.default_solr_params[:'facet.field'] = config.facet_fields.keys
+    
+    config.add_facet_fields_to_solr_request!
 
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display 
@@ -61,7 +67,7 @@ class CatalogController < ApplicationController
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
     config.add_show_field 'program_s', :label => 'Program Type'
-    config.add_show_field 'date_created_s', :label => 'Date Created', :custom => '(estimated)'
+    config.add_show_field 'date_created_s', :label => 'Date Created'# , :custom => '(estimated)'
     config.add_show_field 'date_estimated_s', :label => 'Date Estimated'
     config.add_show_field 'id', :label => 'ID number'
     config.add_show_field 'description_s', :label => 'Description' 
@@ -146,6 +152,33 @@ class CatalogController < ApplicationController
     # If there are more than this many search results, no spelling ("did you 
     # mean") suggestion is offered.
     config.spell_max = 5
+  end
+  
+  def index
+    (@response, @document_list) = get_search_results
+    @filters = params[:f] || []
+  
+    respond_to do |format|
+      format.html { 
+        extra_head_content << view_context.auto_discovery_link_tag(:rss, url_for(params.merge(:format => 'rss')), :title => t('blacklight.search.rss_feed') )
+        extra_head_content << view_context.auto_discovery_link_tag(:atom, url_for(params.merge(:format => 'atom')), :title => t('blacklight.search.atom_feed') )
+        save_current_search_params
+      }
+      format.rss  { render :layout => false }
+      format.atom { render :layout => false }
+
+    
+      format.json do
+        facet = facets_from_request.as_json.each do |f|
+          f["label"] = facet_configuration_for_field(f["name"]).label
+          f["items"] = f["items"].as_json.each do |i|
+            i['label'] ||= i['value']
+          end
+        end 
+
+        render json: {response: {docs: @document_list, facets: facet, pages: pagination_info(@response)}}
+      end
+    end
   end
 
     def citation
