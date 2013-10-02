@@ -155,8 +155,6 @@ class CatalogController < ApplicationController
   end
   
   def index
-    logger.debug "PARAMS:::"
-    logger.debug params.inspect
     if params[:non_video] && params[:non_video] == 'yes'
       (@response, @document_list) = get_nonvideo_search_results
     else
@@ -199,13 +197,14 @@ class CatalogController < ApplicationController
       id.bytes.to_s
    end
    
-   def get_nonvideo_search_results
-     solr_params = {
-       :q => params[:q],
-       :per_page => params[:per_page] ||= 10,
-       :fq => '' 
-     }
-     solr_response = find(blacklight_config.qt, self.solr_search_params().merge(solr_params) )
+   def get_nonvideo_search_results(user_params = params || {})     
+     solr_params = self.solr_search_params(user_params)
+     solr_params[:fq] = solr_params[:fq].drop(1)
+     solr_params[:qt] ||= blacklight_config.qt
+     path = blacklight_config.solr_path
+     res = blacklight_solr.send_and_receive(path, :params=>solr_params)
+     solr_response = Blacklight::SolrResponse.new(force_to_utf8(res), solr_params)
+     Rails.logger.debug("Solr query: #{solr_params.inspect}")
      document_list = solr_response.docs.collect{|doc| SolrDocument.new(doc, solr_response) }
      [solr_response,document_list]
    end
