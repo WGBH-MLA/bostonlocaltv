@@ -9,7 +9,7 @@
         <% else %>
           <%= check_box_tag(:non_video, 'yes', false) %>
         <% end %>
-       <%= label_tag(:non_video, "Show Non-Video") %>
+       <%= label_tag(:non_video, "Include non-video assets") %>
        <%= search_as_hidden_fields(:omit_keys => [:utf8, :non_video]).html_safe %> 
      <% end %>
    </div>
