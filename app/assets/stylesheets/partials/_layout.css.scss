@@ -695,6 +695,21 @@ body.blacklight-catalog-show {
 //    #main {
 //      width: 1024px;
 //    }
+    #main {
+      #document {
+        .no_video {
+          position: relative;
+          p {
+            position: absolute;
+            top: 43%;
+            text-align: center;
+            width: 100%;
+            color: #fff;
+            font-size: 20px;
+          }
+        }
+      }
+    }
   }
 }
 .thumbnail {

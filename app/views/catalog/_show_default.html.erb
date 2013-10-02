@@ -5,6 +5,11 @@
 	    <source src="http://mlamedia01.wgbh.org/bostonlocaltv/<%= render_document_show_field_value :document => document, :field => "video_s" %>" type="video/mp4" />
 	  </video>
 	</div>
+<% else %>
+  <div class="no_video">
+    <img src="/assets/blank_video.jpg" alt="video must be requested from the vault">
+    <p class="">This asset hasn't been digitized yet. To find out more about its availability, contact us as <a href="mailto:bostonlocaltv@wgbh.org">bostonlocaltv@wgbh.org</a></p>
+  </div>
 <% end %>
 
 
