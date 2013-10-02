@@ -59,14 +59,15 @@ class CatalogController < ApplicationController
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display 
     config.add_index_field 'description_s', :label => 'Description' 
+    config.add_index_field 'collection_s', :label => 'Collection', :link => true
     config.add_index_field 'date_created_s', :label => 'Date Created'
     config.add_index_field 'date_estimated_s', :label => 'Date Estimated'
-    config.add_index_field 'collection_s', :label => 'Collection', :link => true
     
 
 
     # solr fields to be displayed in the show (single result) view
-    #   The ordering of the field names is the order of the display 
+    #   The ordering of the field names is the order of the display
+    config.add_show_field 'collection_s', :label => 'Collection', :link => true
     config.add_show_field 'program_s', :label => 'Program Type'
     config.add_show_field 'date_created_s', :label => 'Date Created'# , :custom => '(estimated)'
     config.add_show_field 'date_estimated_s', :label => 'Date Estimated'
@@ -80,7 +81,6 @@ class CatalogController < ApplicationController
     config.add_show_field 'audio_duration_s', :label => 'Duration'
     config.add_show_field 'format_color_s', :label => 'Color'
     config.add_show_field 'broadcast_date_s', :label => 'Date Broadcast'
-    config.add_show_field 'collection_s', :label => 'Collection', :link => true
     config.add_show_field 'h_location_s', :label => 'Holding Institution', :link => true
     config.add_show_field 'p_location_s', :label => 'Physical Location'
     config.add_show_field 'footage_length_s', :label => 'Footage Length' 

@@ -7,14 +7,14 @@
 	</div>
 <% end %>
 
-<dl class="defList">
-  <!-- <h3>Video Metadata</h3> -->
-  <% document_show_fields.each do |solr_fname, field| -%>
-    <% if document.has? solr_fname %>
-      <% if render_index_field_value(:document => document, :field => solr_fname) != ' ' %>
-  	    <dt class="blacklight-<%= solr_fname.parameterize %>"><%= render_document_show_field_label :field => solr_fname %></dt>
-        <dd class="blacklight-<%= solr_fname.parameterize %>"><%= render_document_show_field_value :document => document, :field => solr_fname %></dd>
-      <% end %>
+
+<div class="field_list">
+  <span class="field_name">Description:</span>
+  <span class="field_value">
+    <% if document.has? 'description_s' %>
+      <%= render_document_show_field_value :document => document, :field => 'description_s' %>
+    <% else -%>
+      <em>No description currently available.</em>
     <% end -%>
-  <% end -%>
-</dl>
+  </span>
+</div>

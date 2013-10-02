@@ -1,1 +1,12 @@
-<h3>Sidebar items TBD</h3>
+<table class="field_list">
+  <tbody>
+    <% document_show_fields.each do |solr_fname, field| -%>
+      <% if document.has?(solr_fname) && (solr_fname != 'description_s') %>
+        <tr>
+          <td class="field_name"><%= render_document_show_field_label :field => solr_fname %></td>
+          <td><%= render_document_show_field_value :document => document, :field => solr_fname %></td>
+        </tr>
+      <% end -%>
+    <% end -%>
+  </tbody>
+</table>

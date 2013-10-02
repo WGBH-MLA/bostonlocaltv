@@ -1,0 +1,31 @@
+// For simple two-column tables to display
+// nicely aligned field/value lists.
+
+
+.field_list {
+
+  .field_row {
+    margin: 0 0 5px 0;
+  }
+
+  .field_name {
+    font-weight: bold;
+  }
+
+  .field_name, .field_value {
+    line-height: 1.4em;
+  }
+}
+
+
+table.field_list {
+
+  border: none;
+  border-collapse: collapse;
+
+  td {
+    // td border getting set somewhere upstream. Remove if/when that's no longer the case.
+    border: none;
+    vertical-align: top;
+  }
+}

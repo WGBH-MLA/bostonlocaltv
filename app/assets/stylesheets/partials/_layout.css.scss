@@ -647,43 +647,46 @@ body.blacklight-catalog-home {
   }
 }
 
+
 #documents {
   .document {
     padding: 10px 0px;
-    .documentHeader {
-      width: 100%;
-      h3.index_title {
-        font-size: 24px;
-      }
-    }
-    .docContent {
-      clear:both;
-      overflow:hidden;
-      .index-image-container {
-        width: 30%;
-        margin-right: 10px;
-        float: left;
-        img {
-          width: 100%;
-        }
-      }
-      .docDetails {
-        width: 100%;
-        margin-left: 1em;
-        span {
-          font-size: 13px;
-        }
-        dd {
-          margin-left: 0px;
-        }
-      }
-      .hasImage {
-        width: 65%;
-        margin-left: 33%;
-      }
-    }
+    // .documentHeader {
+    //   width: 100%;
+    //   h3.index_title {
+    //     font-size: 24px;
+    //   }
+    // }
+    // .docContent {
+    //   clear:both;
+    //   overflow:hidden;
+    //   .index-image-container {
+    //     width: 30%;
+    //     margin-right: 10px;
+    //     float: left;
+    //     img {
+    //       width: 100%;
+    //     }
+    //   }
+      // .docDetails {
+      //   width: 100%;
+      //   margin-left: 1em;
+      //   // span {
+      //   //   font-size: 13px;
+      //   // }
+      //   dd {
+      //     margin-left: 0px;
+      //   }
+      // }
+      // .hasImage {
+      //   width: 65%;
+      //   margin-left: 33%;
+      // }
+    // }
   }
 }
+
+
 body.blacklight-catalog-show {
   #bd_prod {
 //    #sidebar {
@@ -703,53 +706,14 @@ body.blacklight-catalog-show {
   hr {
     margin: 10px 0px;
   }
-  .docHeader {
+  .header {
     position: relative;
-    .docTitle {
-      font-size: 24px;
-      line-height: 33px;
-      margin-bottom: 5px;
-      font-family: serif;
-    }
-    .tools {
-      width: 100%;
-      padding: 8px 0px 8px 0px;
-      position: relative;
-      overflow: hidden;
-      border-bottom: 1px solid #eee;
-      margin-bottom: 10px;
-      border-top: 1px solid #eee;
-      .tools-list {
-        float:left;
-      }
-      .add_to_cart, .add_to_cart_no_user, .in_cart {
-        position: absolute;
-        right: 0;
-        font-size: 14px;
-      }
-    }
     #dialog {
       display:none;
     }
   }
   .document {
     overflow: hidden;
-    //#video_player_container {
-//      width: 66%;
-//      float:left;
-//      border: 1px solid #ddd;
-//    }
-//    .defList {
-//      width: 33%;
-//      float: right;
-//      box-sizing: border-box;
-//      margin: 0;
-//      padding: 1em;
-//      clear: none;
-//      dd {
-//        width: 76%;
-//      }
-//    }
   }
 }
 .ui-dialog {
