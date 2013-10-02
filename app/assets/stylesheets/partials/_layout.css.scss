@@ -389,8 +389,12 @@ body.blacklight-catalog-home #sidebar, body.blacklight-collections #sidebar {
         ul {
           margin-left: 25px;
           border:none;
+          font-size: inherit;
           li {
             list-style: disc;
+            a {
+              font-size: 1.3em;
+            }
           }
           .more_facets_link {
             list-style:none;
@@ -627,6 +631,7 @@ body.blacklight-catalog-home {
   .topic-list {
     width: 100%;
     overflow:hidden;
+    font-size:inherit;
     li {
       a {
         padding: 5px;
@@ -634,6 +639,7 @@ body.blacklight-catalog-home {
         background-color: #F0F0F0;
         float: left;
         border: 1px solid #ddd;
+        font-size: 1.3em;
         -webkit-transition:background-color .2s linear;    
            -moz-transition:background-color .2s linear ;
              -o-transition:background-color .2s linear ;
