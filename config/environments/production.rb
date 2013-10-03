@@ -18,7 +18,7 @@ Bostonlocaltv::Application.configure do
   config.assets.precompile += ['bostonlocaltv.css', 'active_admin.css', 'video-js.min.css']
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = true
+  config.assets.compile = false
 
   # Generate digests for assets URLs
   config.assets.digest = true
