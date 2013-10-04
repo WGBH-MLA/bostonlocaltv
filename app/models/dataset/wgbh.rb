@@ -32,8 +32,8 @@ class Dataset::Wgbh < Dataset::Xml
         if node.values()[0] == "UID"
           fields << ["id", node.text]
         elsif node.values()[0] == "Digital_Filename"
-          fields << ["video_s", "wgbh/videos/#{node.text}.mp4"]
-          fields << ["image_s", "wgbh/images/#{node.text}_thumbnail.jpg"]
+          fields << ["video_s", "wgbh/videos/#{node.text.strip}.mp4"]
+          fields << ["image_s", "wgbh/images/#{node.text.strip}_thumbnail.jpg"]
         else
           fields << ["#{node.name.parameterize}_s", node.text]
         end

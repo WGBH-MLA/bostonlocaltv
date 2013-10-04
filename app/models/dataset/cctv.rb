@@ -36,8 +36,8 @@ class Dataset::Cctv < Dataset::Xml
         if node.values()[0] == "id_program_prime"
           fields << ["id", node.text]
         elsif node.values()[0] == "Digital_Filename"
-          fields << ["video_s", "cctv/videos/#{node.text}.mp4"]
-          fields << ["image_s", "cctv/images/#{node.text}_thumbnail.jpg"]
+          fields << ["video_s", "cctv/videos/#{node.text.strip}.mp4"]
+          fields << ["image_s", "cctv/images/#{node.text.strip}_thumbnail.jpg"]
         else
           fields << ["#{node.name.parameterize}_s", node.text]
         end
