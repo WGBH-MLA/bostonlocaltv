@@ -15,4 +15,8 @@
 // Required by Blacklight
 //= require jquery-ui
 //= require blacklight/blacklight
+
+//= require video
+//= require video-config
+
 //= require_tree .

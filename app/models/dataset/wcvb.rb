@@ -35,8 +35,8 @@ class Dataset::Wcvb < Dataset::Xml
           end
           fields << ["id", wcvb_id]
         elsif node.values()[0] == "Digital_Filename"
-          fields << ["video_s", "wcvb/videos/#{node.text}.mp4"]
-          fields << ["image_s", "wcvb/images/#{node.text}_thumbnail.jpg"]
+          fields << ["video_s", "wcvb/videos/#{node.text.strip}.mp4"]
+          fields << ["image_s", "wcvb/images/#{node.text.strip}_thumbnail.jpg"]
         else
           fields << ["#{node.name.parameterize}_s", node.text]
         end
