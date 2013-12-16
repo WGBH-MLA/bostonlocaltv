@@ -4,6 +4,8 @@ log/*.log
 tmp/
 .sass-cache/
 
+public/assets
+
 # ignore jetty
 jetty/
 
