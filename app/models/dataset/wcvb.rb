@@ -31,7 +31,7 @@ class Dataset::Wcvb < Dataset::Xml
         if !node.values()[0].scan("Accession").empty?
           wcvb_id = node.text
           if wcvb_id.include? '.'
-            wcvb_id.sub!('.', '_')
+            wcvb_id.gsub!('.', '_')
           end
           fields << ["id", wcvb_id]
         elsif node.values()[0] == "Digital_Filename"
