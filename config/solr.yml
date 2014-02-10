@@ -16,5 +16,4 @@ development:
   url: http://localhost:8983/solr/development
 test: &test
   url: http://localhost:8983/solr/test
-cucumber:
-  <<: *test
+  

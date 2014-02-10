@@ -5,3 +5,8 @@
 require File.expand_path('../config/application', __FILE__)
 
 Bostonlocaltv::Application.load_tasks
+
+desc "Run Travis"
+task :ci => ["dev:ci"]
+Rake::Task[:default].prerequisites.clear
+task :default => [:ci]

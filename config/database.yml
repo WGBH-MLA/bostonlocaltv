@@ -25,7 +25,3 @@ production:
   password: B05^oNtv
   pool: 5
   timeout: 5000
-  
-
-cucumber:
-  <<: *test
