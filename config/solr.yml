@@ -13,7 +13,7 @@
 production:
   url: http://lsboslocal.wgbh.org:8181/solr/production
 development:
-  url: http://localhost:8983/solr/development
+  url: http://localhost:8983/solr/blacklight-core
 test: &test
-  url: http://localhost:8983/solr/test
+  url: http://localhost:8983/solr/blacklight-core
   
