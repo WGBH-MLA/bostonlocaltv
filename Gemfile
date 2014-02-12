@@ -1,9 +1,9 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.14'
+gem 'rails', '~> 3.2.16'
 
 gem 'activeadmin'
-gem 'blacklight', '=4.4.1'
+gem 'blacklight', '~>4.6.3'
 gem 'blacklight_advanced_search'
 gem 'blacklight_range_limit'
 gem 'bootstrap-sass'
@@ -12,7 +12,7 @@ gem 'compass'
 gem 'devise'
 gem 'guard-rspec', :group => :development
 gem 'jettywrapper', '>= 1.0.3'
-gem 'jquery-rails', '~>2.2.1'
+gem 'jquery-rails'
 gem 'kaminari'
 gem 'mysql2'
 gem 'progressbar'
@@ -32,7 +32,7 @@ group :test do
 end
 
 group :development, :test do
-  gem 'rspec-rails', '~>2.6.0'
+  gem 'rspec-rails'
   gem 'sqlite3'
   gem 'debugger'
   gem 'meta_request'
