@@ -1,20 +1,19 @@
 namespace :jetty do
 
-  desc "config"
-  task :config => :environment do
-    Rake::Task["jetty:config_solr"].invoke
+  desc "Unpack a clean version of blacklight-jetty"
+  task :clean do
+    Jettywrapper.url = "https://github.com/projectblacklight/blacklight-jetty/archive/v4.6.0.zip"
+    Jettywrapper.clean
   end
 
-  desc "Copies the contents of solr_conf into the Solr development-core and test-core of Testing Server" 
-  task :config_solr do
-    FileList['solr_conf/*'].each do |f|  
-      cp_r("#{f}", 'jetty/solr/development-core/', :verbose => true)
-      cp_r("#{f}", 'jetty/solr/test-core/', :verbose => true)
-      cp_r("#{f}", 'jetty/solr/production-core/', :verbose => true)
+  desc "Copy our solr configuration into the jetty instance"
+  task :config => :environment do
+    FileList["solr_conf/conf/*"].each do |f|  
+      cp("#{f}", "jetty/solr/blacklight-core/conf/", :verbose => true)
     end
   end
 
-  desc "Copies the default SOLR config files and starts up the jetty server"
-  task :load => [:config, :start]
+  desc "Starts up a new solr instance with our configuration"
+  task :load => [:stop, :clean, :config, :start]
 
 end

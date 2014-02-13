@@ -10,30 +10,30 @@ gem 'bootstrap-sass'
 gem 'coffee-rails'
 gem 'compass'
 gem 'devise'
-gem 'guard-rspec', :group => :development
-gem 'jettywrapper', '>= 1.0.3'
 gem 'jquery-rails'
 gem 'kaminari'
 gem 'mysql2'
 gem 'progressbar'
-gem 'rails-footnotes', '>= 3.7', :group => :development
 gem 'rsolr-footnotes'
 gem 'therubyracer'
 gem 'uglifier'
 gem 'unicode'
 
 group :test do
-  gem 'database_cleaner'
+  gem 'aruba'
   gem 'capybara'
-  gem 'launchy'
+  gem 'database_cleaner'
   gem 'factory_girl_rails', '~> 4.0'
   gem 'faker'
-  gem 'aruba'
+  gem 'launchy'
 end
 
 group :development, :test do
+  gem 'debugger'
+  gem 'guard-rspec'
+  gem 'jettywrapper'
+  gem 'meta_request'
+  gem 'rails-footnotes', '>= 3.7'
   gem 'rspec-rails'
   gem 'sqlite3'
-  gem 'debugger'
-  gem 'meta_request'
 end

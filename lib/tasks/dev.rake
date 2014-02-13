@@ -1,6 +1,6 @@
 namespace :dev do
 
   desc "Run continuous integration tests"
-  task :ci => ["db:migrate", "spec"]
+  task :ci => ["jetty:load", "db:migrate", "spec"]
 
 end
