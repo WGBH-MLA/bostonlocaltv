@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140224194547) do
+ActiveRecord::Schema.define(:version => 20140224223554) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -70,13 +70,6 @@ ActiveRecord::Schema.define(:version => 20140224194547) do
     t.datetime "updated_at",    :null => false
   end
 
-  create_table "items", :force => true do |t|
-    t.string   "item_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "votes_count"
-  end
-
   create_table "searches", :force => true do |t|
     t.text     "query_params"
     t.integer  "user_id"
@@ -114,21 +107,5 @@ ActiveRecord::Schema.define(:version => 20140224194547) do
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
-
-  create_table "visits", :force => true do |t|
-    t.string   "item_id"
-    t.string   "title"
-    t.integer  "visits"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "votes", :force => true do |t|
-    t.string   "item_id"
-    t.string   "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "title"
-  end
 
 end
