@@ -22,16 +22,6 @@ class User < ActiveRecord::Base
   def full_name
     "#{self.first_name} #{self.last_name}"
   end
-  
-  def cart_items_count(user)
-    cart = ShoppingCart.user_open_cart(user).last
-    if cart
-      count = cart.shopping_cart_items.length
-      count 
-    else
-      "0"
-    end
-  end
 
   # Method added by Blacklight; Blacklight uses #to_s on your
   # user class to get a user-displayable login/identifier for
