@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140219180034) do
+ActiveRecord::Schema.define(:version => 20140224194547) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -86,29 +86,6 @@ ActiveRecord::Schema.define(:version => 20140219180034) do
   end
 
   add_index "searches", ["user_id"], :name => "index_searches_on_user_id"
-
-  create_table "shopping_cart_items", :force => true do |t|
-    t.integer  "shopping_cart_id"
-    t.string   "solr_document_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "title"
-    t.string   "status"
-    t.boolean  "completed",        :default => false
-  end
-
-  add_index "shopping_cart_items", ["shopping_cart_id"], :name => "index_shopping_cart_items_on_shopping_cart_id"
-  add_index "shopping_cart_items", ["solr_document_id"], :name => "index_shopping_cart_items_on_solr_document_id"
-
-  create_table "shopping_carts", :force => true do |t|
-    t.integer  "user_id"
-    t.boolean  "settled",    :default => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "status",     :default => "open"
-  end
-
-  add_index "shopping_carts", ["user_id"], :name => "index_shopping_carts_on_user_id"
 
   create_table "user_items", :force => true do |t|
     t.integer  "user_id"
