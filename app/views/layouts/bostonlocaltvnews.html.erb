@@ -33,7 +33,7 @@
          <%= image_tag 'blacklight/bostontvnews-logo.png', :class=>'bostontvnews-logo', :size=>'674x75' %>
          <div id="user_info">
            <% if current_user %>
-             <p>Welcome back&nbsp;&nbsp;<a href="/users/edit"><%= current_user.full_name %></a><br />
+             <p>Welcome back&nbsp;&nbsp;<a href="/users/edit"><%= current_user.full_name %></a><br /><%= link_to "(logout)", destroy_user_session_path, method: :delete %>
              <!-- <a href="/cart">Cart</a> <span class="cart_count">(<%= current_user.cart_items_count(current_user) %>)</span>&nbsp;|&nbsp;<a href="/orders">Your orders</a></p> -->
            <% else %>
              <a href="/users/sign_in">Log in</a> | <a href="/users/sign_up">Sign up</a>
