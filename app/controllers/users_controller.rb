@@ -1,4 +1,10 @@
 class UsersController < ApplicationController
+
+  before_filter :authenticate_user!
+
+  def show
+    @user = current_user
+  end
   
   def cart
     @cart = ShoppingCart.user_open_cart(current_user).last

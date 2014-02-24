@@ -41,4 +41,7 @@ Bostonlocaltv::Application.routes.draw do
     end
   end
 
+
+  get 'dashboard', to: 'users#show'
+
 end
