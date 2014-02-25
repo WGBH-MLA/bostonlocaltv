@@ -8,5 +8,6 @@ Bostonlocaltv::Application.load_tasks
 
 desc "Run Travis"
 task :ci => ["dev:ci"]
-Rake::Task[:default].prerequisites.clear
+
+Rake::Task[:default].prerequisites.clear if Rake::Task.task_defined?(:default)
 task :default => [:ci]
