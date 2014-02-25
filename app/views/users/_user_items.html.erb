@@ -1,0 +1,16 @@
+<h1>My Items</h1>
+
+
+<% if @user_items.nil? %>
+  <em>you currently don't have any items selected.</em>
+<% else %>
+  <table>
+    <% @user_items.each do |user_item| %>
+      <tr>
+        <td><%= link_to_document user_item.solr_document %></td>
+        <td><%= user_item.status %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
+  

@@ -27,31 +27,3 @@
 // .active_admin       applies to any Active Admin namespace
 // .admin_namespace    applies to the admin namespace (eg: /admin)
 // .other_namespace    applies to a custom namespace named other (eg: /other)
-.active_admin {
-  form.edit_shopping_cart {
-    width: 70%;
-    li {
-      margin: 10px 0px;
-      padding: 10px 0px;
-      background: #e5e5e5;
-    }
-    label {
-      width: 10%;
-      text-align:right;
-      display:inline-block;
-    }
-    input[type=text] {
-      width: 55%;
-    }
-    input.no_edit, input.no_edit:focus {
-      border:none;
-      box-shadow:none;
-      background: #e5e5e5;
-    }
-  }
-  .blank_slate {
-    a {
-      display:none;
-    }
-  }
-}
