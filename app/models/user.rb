@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :shopping_carts
+  has_many :user_items
   
 
   # Setup accessible (or protected) attributes for your model
@@ -20,16 +20,6 @@ class User < ActiveRecord::Base
 
   def full_name
     "#{self.first_name} #{self.last_name}"
-  end
-  
-  def cart_items_count(user)
-    cart = ShoppingCart.user_open_cart(user).last
-    if cart
-      count = cart.shopping_cart_items.length
-      count 
-    else
-      "0"
-    end
   end
 
   # Method added by Blacklight; Blacklight uses #to_s on your

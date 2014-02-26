@@ -1,13 +1,6 @@
 Bostonlocaltv::Application.routes.draw do
 
-  # resources :shopping_carts, :only => [:create, :update, :destroy] do
-#     get 'empty'
-#     resources :shopping_cart_items, :only => [:create, :update, :destroy]
-#   end
-
   resources :collections
-
-  resources :visits
 
   Blacklight.add_routes(self)
 
@@ -16,14 +9,7 @@ Bostonlocaltv::Application.routes.draw do
   devise_for :users
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  
-  # match 'orders' => 'users#orders'
-#   match 'cart' => 'users#cart'
-#   match 'submit_cart' => 'users#submit_cart'
 
-  resources :items
-
-  resources :votes
 
   match 'catalog/citation', :as => "citation_catalog"
  
@@ -40,5 +26,8 @@ Bostonlocaltv::Application.routes.draw do
       get 'cite'
     end
   end
+
+
+  get 'dashboard', to: 'users#show'
 
 end
