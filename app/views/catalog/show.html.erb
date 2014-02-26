@@ -24,7 +24,6 @@
          <%# record is visited; information is saved -%> 
           <% title = @document[:title_s].to_s %>
           <% doc_id = @document.id %>
-          <% save_visit(title, doc_id) %>
 
     <div class="document">
       <%= render_document_partial @document, :show %>

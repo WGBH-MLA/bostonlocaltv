@@ -1,10 +1,6 @@
 module ApplicationHelper
     require 'open-uri'
     require 'pp'
-
-   def setup_vote(vote)
-     vote = Vote.new
-   end
         
    def export_as_chicago_citation_txt (document)
     text = ''
@@ -32,8 +28,6 @@ module ApplicationHelper
     text.html_safe
 
   end
-
-
 
   def export_as_mla_citation_txt (document)
     text = ''
@@ -95,7 +89,6 @@ module ApplicationHelper
     return nil if text.try(:strip).blank?
     clean_end_punctuation(text.strip) + "."
   end
-
   
   def mla_citation_title(text)
     no_upcase = ["a","an","and","but","by","for","it","of","the","to","with"]
@@ -154,10 +147,6 @@ module ApplicationHelper
     render :partial => 'layouts/google_analytics', :locals => { :tracker_id => GOOGLE_ANALYTICS_TRACKER_ID } if defined?(GOOGLE_ANALYTICS_TRACKER_ID)
   end
 
-  def render_votes_visits_code
-    render :partial => 'layouts/votes_visits'
-  end
-
   def render_comment_metadata_information comment
     if comment.metadata[:begin] && comment.metadata[:end] && comment.metadata[:begin] != comment.metadata[:end]
       return "[Timecode #{comment.metadata[:begin]}-#{comment.metadata[:end]}]"
@@ -171,7 +160,6 @@ module ApplicationHelper
       return "[Crop]"
     end
   end
-
 
   def get_blog_page
   
