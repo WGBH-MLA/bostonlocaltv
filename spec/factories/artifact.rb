@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :user_item do
+  factory :artifact do
     user
     solr_document_id "BPL_0O36FFSOSYHZTQQ"
   end
