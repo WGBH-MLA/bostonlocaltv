@@ -14,13 +14,16 @@ class Artifact < ActiveRecord::Base
     after_transition :on => :request do |artifact, transition|
       raise ArgumentError, "Specify a user" unless transition.args.first
       user = transition.args.first
+      artifact.users << user
       Rails.logger.info('REQUESTED')
       AdminMailer.request_notification_email(user, artifact).deliver
     end
 
     after_transition :on => :approve do |artifact, transition| 
       Rails.logger.info('APPROVE')
-      # do stuff
+      artifact.users.each do |user| 
+        UserMailer.digitization_approval_email(user, artifact).deliver
+      end
     end
 
     after_transition :on => :deny do |artifact, transition| 
