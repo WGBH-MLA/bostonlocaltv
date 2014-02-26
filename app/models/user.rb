@@ -7,6 +7,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :user_items
+  has_one :user_artifact
+  has_many :artifacts, :through => :user_artifacts
   
 
   # Setup accessible (or protected) attributes for your model
