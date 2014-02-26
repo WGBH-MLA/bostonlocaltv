@@ -1,7 +1,6 @@
 class Artifact < ActiveRecord::Base
-
-  has_many :users, :through => :user_artifacts
-  has_many :user_artifacts
+  has_many :artifact_subscriptions
+  has_many :users, :through => :artifact_subscriptions
   
   attr_accessible :solr_document_id
 
