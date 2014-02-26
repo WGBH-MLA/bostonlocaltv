@@ -11,9 +11,11 @@ class Artifact < ActiveRecord::Base
     event :digitize do;   transition :approved => :digitizing; end
     event :available do;  transition :digitizing => :available; end
 
-    after_transition :on => :request do |artifact, transition| 
+    after_transition :on => :request do |artifact, transition|
+      raise ArgumentError, "Specify a user" unless transition.args.first
+      user = transition.args.first
       Rails.logger.info('REQUESTED')
-      # do stuff
+      AdminMailer.request_notification_email(user, artifact).deliver
     end
 
     after_transition :on => :approve do |artifact, transition| 
@@ -35,5 +37,9 @@ class Artifact < ActiveRecord::Base
       Rails.logger.info('AVAILABLE')
       # do stuff
     end
+  end
+
+  def to_s
+    "ID#{id}: artifact information - TBD"
   end
 end
