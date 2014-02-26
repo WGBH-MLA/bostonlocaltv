@@ -1,4 +1,7 @@
 class Artifact < ActiveRecord::Base
+  
+  attr_accessible :solr_document_id
+
   state_machine :initial => :archived do
     event :request do;    transition :archived => :requested; end
     event :approve do;    transition :requested => :approved; end
