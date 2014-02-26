@@ -45,4 +45,13 @@ class Artifact < ActiveRecord::Base
   def to_s
     "ID#{id}: artifact information - TBD"
   end
+
+  def request_digitization(user)
+    if state == 'archived'
+      request!(user)
+    else
+      users << user
+    end
+  end
+
 end
