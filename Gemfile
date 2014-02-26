@@ -18,6 +18,7 @@ gem 'rsolr-footnotes'
 gem 'therubyracer'
 gem 'uglifier'
 gem 'unicode'
+gem 'state_machine'
 
 group :test do
   gem 'aruba'
