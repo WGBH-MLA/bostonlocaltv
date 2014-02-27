@@ -4,11 +4,10 @@ class Artifact < ActiveRecord::Base
   
   attr_accessible :solr_document_id
 
-  state_machine :initial => :archived do
-    event :request do;    transition :archived => :requested; end
-    event :approve do;    transition :requested => :approved; end
+  state_machine :initial => :initiated do
+    event :request do;    transition :initiated => :requested; end
+    event :digitize do;   transition :requested => :digitizing; end
     event :deny do;       transition :requested => :denied; end
-    event :digitize do;   transition :approved => :digitizing; end
     event :available do;  transition :digitizing => :available; end
 
     after_transition :on => :request do |artifact, transition|
@@ -19,8 +18,8 @@ class Artifact < ActiveRecord::Base
       AdminMailer.request_notification_email(user, artifact).deliver
     end
 
-    after_transition :on => :approve do |artifact, transition| 
-      Rails.logger.info('APPROVE')
+    after_transition :on => :digitize do |artifact, transition| 
+      Rails.logger.info('DIGITIZING')
       artifact.users.each do |user| 
         UserMailer.digitization_approval_email(user, artifact).deliver
       end
@@ -31,14 +30,9 @@ class Artifact < ActiveRecord::Base
       # do stuff
     end
 
-    after_transition :on => :digitize do |artifact, transition| 
-      Rails.logger.info('DIGITIZING')
-      # do stuff
-    end
-
-    after_transition :on => :available do |artifact, transition| 
-      Rails.logger.info('AVAILABLE')
-      # do stuff
+    after_transition :on => :published do |artifact, transition| 
+      Rails.logger.info('PUBLISHED')
+      # do stuff - means we have metadata, ingested into solr and moved it into media server
     end
   end
 
@@ -47,7 +41,7 @@ class Artifact < ActiveRecord::Base
   end
 
   def request_digitization(user)
-    if state == 'archived'
+    if state == 'initiated'
       request!(user)
     else
       users << user

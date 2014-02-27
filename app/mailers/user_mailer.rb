@@ -3,6 +3,6 @@ class UserMailer < ActionMailer::Base
 
   def digitization_approval_email(user, artifact)
   	@user, @artifact = user, artifact
-  	mail(to: @user.email, subject: 'Your Digitization Request Was Approved')
+  	mail(to: @user.email, subject: 'Your Digitization Request Is Approved!')
   end
 end
