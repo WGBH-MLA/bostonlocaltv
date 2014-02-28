@@ -7,11 +7,9 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :user_items
-  has_many :artifact_subscriptions
   has_many :artifact_logs
-  has_many :artifacts, :through => :artifact_subscriptions
-
   has_many :sponsorships
+  has_many :artifacts, :through => :sponsorships
 
   has_many :sponsored_artifacts, :through => :sponsorships, 
     :conditions => {'sponsorships.confirmed' => true},

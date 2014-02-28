@@ -8,7 +8,8 @@ class ArtifactLog < ActiveRecord::Base
       :artifact => artifact, 
       :event => options[:event], 
       :from => options[:from], 
-      :to => options[:to]
+      :to => options[:to],
+      :description => options[:description]
     )
   end
 end

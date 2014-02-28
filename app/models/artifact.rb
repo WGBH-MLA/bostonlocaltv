@@ -1,8 +1,9 @@
 class Artifact < ActiveRecord::Base
   has_many :artifact_subscriptions
   has_many :artifact_logs
-  has_many :users, :through => :artifact_subscriptions
   has_many :sponsorships
+  has_many :users, :through => :sponsorships
+
   has_many :sponsors, :through => :sponsorships, 
     :conditions => {'sponsorships.confirmed' => true},
     :source => :user
@@ -34,14 +35,13 @@ class Artifact < ActiveRecord::Base
 
     after_transition :on => :withdraw do |artifact, transition|
       user = transition.args.first
-      # artifact.users << user
+      artifact.withdraw_user(user)
       Rails.logger.info('WITHDRAWN')
       # AdminMailer.request_notification_email(user, artifact).deliver
     end
 
     after_transition :on => :request do |artifact, transition|
       user = transition.args.first
-      artifact.users << user
       artifact.potential_sponsors << user
       Rails.logger.info('REQUESTED')
       AdminMailer.request_notification_email(user, artifact).deliver
@@ -71,24 +71,38 @@ class Artifact < ActiveRecord::Base
   end
 
   def to_s
-    "ID#{id}: artifact information - TBD"
+    "ID#{id}: SOLR_ID"
   end
 
   def withdraw_request(user)
-    # if more than 1 user left, log withdrawal, remove them from potential sponsors
-    # if they're the only sponsor, trigger artifact withdrawal, move back to 'initiated'
+    binding.pry
+    if sponsorships.size == 1
+      withdraw!(user)
+    else
+      withdraw_user(user)
+      ArtifactLog.record(user, self, {
+        event: 'withdraw',
+        from: 'requested',
+        to: 'requested',
+        description: 'User withdrew sponsorship (sponsors still available)'
+      })
+    end
+  end
+
+  def withdraw_user(user, options={})
+    sponsorships.where(:user_id => user).first.delete
   end
 
   def request_digitization(user)
     if state == 'initiated'
       request!(user)
     else
-      users << user
       potential_sponsors << user
       ArtifactLog.record(user, self, {
         event: 'request',
         from: 'requested',
-        to: 'requested'
+        to: 'requested',
+        description: 'User requested digitization on previously requested artifact'
       })
     end
   end
