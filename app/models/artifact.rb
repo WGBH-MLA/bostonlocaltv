@@ -75,7 +75,6 @@ class Artifact < ActiveRecord::Base
   end
 
   def withdraw_request(user)
-    binding.pry
     if sponsorships.size == 1
       withdraw!(user)
     else
