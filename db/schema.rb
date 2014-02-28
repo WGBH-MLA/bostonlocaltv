@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140228035934) do
+ActiveRecord::Schema.define(:version => 20140228163403) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -108,8 +108,9 @@ ActiveRecord::Schema.define(:version => 20140228035934) do
   create_table "sponsorships", :force => true do |t|
     t.integer  "artifact_id"
     t.integer  "user_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+    t.boolean  "confirmed",   :default => false
   end
 
   create_table "user_items", :force => true do |t|
