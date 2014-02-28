@@ -8,7 +8,11 @@ class User < ActiveRecord::Base
 
   has_many :user_items
   has_many :artifact_subscriptions
+  has_many :artifact_logs
   has_many :artifacts, :through => :artifact_subscriptions
+
+  has_many :sponsorships
+  has_many :sponsored_artifacts, :through => :sponsorships, :source => :artifact
   
 
   # Setup accessible (or protected) attributes for your model
