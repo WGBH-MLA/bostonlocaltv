@@ -7,7 +7,18 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :user_items
+  has_many :artifact_logs
+  has_many :sponsorships
+  has_many :artifacts, :through => :sponsorships
+
+  has_many :sponsored_artifacts, :through => :sponsorships, 
+    :conditions => {'sponsorships.confirmed' => true},
+    :source => :artifact
   
+  has_many :potentially_sponsored_artifacts, :through => :sponsorships, 
+    :conditions => {'sponsorships.confirmed' => false},
+    :source => :artifact
+
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, :first_name, :last_name
