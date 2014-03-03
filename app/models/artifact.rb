@@ -1,5 +1,4 @@
 class Artifact < ActiveRecord::Base
-  has_many :artifact_subscriptions
   has_many :artifact_logs
   has_many :sponsorships
   has_many :users, :through => :sponsorships
