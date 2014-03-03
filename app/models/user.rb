@@ -33,6 +33,10 @@ class User < ActiveRecord::Base
     "#{self.first_name} #{self.last_name}"
   end
 
+  def requested_artifact?(solr_document_id)
+    !!artifacts.find_by_solr_document_id(solr_document_id)
+  end
+
   # Method added by Blacklight; Blacklight uses #to_s on your
   # user class to get a user-displayable login/identifier for
   # the account. 
