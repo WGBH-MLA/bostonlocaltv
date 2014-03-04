@@ -38,3 +38,9 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'sqlite3'
 end
+
+group :development do 
+  gem 'capistrano', '~> 2', :require => false # Cap 3 doesn't yet have all the kinks worked out
+  gem 'capistrano-multistage', :require => false
+  gem 'capistrano-gitflow', :require => false
+end
