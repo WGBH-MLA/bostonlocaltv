@@ -27,7 +27,9 @@ Bostonlocaltv::Application.routes.draw do
     end
   end
 
-
+  
+  resources :digitizations
+  
   get 'dashboard', to: 'users#show'
 
 end

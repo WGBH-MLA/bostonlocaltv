@@ -1,13 +1,19 @@
-ActiveAdmin.register Artifact do     
-  index do                            
+ActiveAdmin.register Artifact do   
+  config.filters = false
+  index do
+    column :id
     column :solr_document_id
     column :created_at
+    column :requests do |artifact|
+      artifact.sponsorships.count
+    end
     default_actions                   
   end                                 
 
-  show do
+  show do |artifact|
     attributes_table do
       row :id
+      row :solr_document_id
       row :state
       row :created_at
       row :potential_sponsors do
@@ -15,6 +21,17 @@ ActiveAdmin.register Artifact do
       end
       row :sponsors do
         artifact.sponsors.collect{|s| s.to_s}.join(', ')
+      end
+    end
+
+    panel "Requests" do
+      table_for artifact.sponsorships do
+        column :email do |sponsorship|
+          link_to sponsorship.user.email, admin_user_path(sponsorship.user.id)
+        end
+        column :status do |sponsorship|
+          sponsorship.status
+        end
       end
     end
 

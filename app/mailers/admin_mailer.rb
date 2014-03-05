@@ -5,4 +5,9 @@ class AdminMailer < ActionMailer::Base
   	@user, @artifact = user, artifact
   	mail(to: "bostonlocaltv@wgbh.org", subject: 'New Digitization Request')
   end
+
+  def request_withdrawn_email(user, artifact)
+  	@user, @artifact = user, artifact
+  	mail(to: "bostonlocaltv@wgbh.org", subject: 'Digitization Request Withdrawn')
+  end
 end

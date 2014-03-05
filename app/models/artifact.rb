@@ -1,5 +1,4 @@
 class Artifact < ActiveRecord::Base
-  has_many :artifact_subscriptions
   has_many :artifact_logs
   has_many :sponsorships
   has_many :users, :through => :sponsorships
@@ -37,7 +36,7 @@ class Artifact < ActiveRecord::Base
       user = transition.args.first
       artifact.withdraw_user(user)
       Rails.logger.info('WITHDRAWN')
-      # AdminMailer.request_notification_email(user, artifact).deliver
+      AdminMailer.request_withdrawn_email(user, artifact).deliver
     end
 
     after_transition :on => :request do |artifact, transition|

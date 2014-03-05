@@ -1,16 +1,16 @@
-<h1>My Items</h1>
+<h1>My Requested Items</h1>
 
 
-<% if @user_items.nil? %>
-  <em>you currently don't have any items selected.</em>
+<% if @user.artifacts.nil? %>
+  <em>You currently don't have any items requested.</em>
 <% else %>
   <table>
-    <% @user_items.each do |user_item| %>
+    <% @user.artifacts.each do |artifact| %>
       <tr>
-        <td><%= link_to_document user_item.solr_document %></td>
-        <td><%= user_item.status %></td>
+        <td><%= link_to artifact.solr_document_id, catalog_path(artifact.solr_document_id) %></td>
+        <td><%= artifact.state %></td>
+        <td><%= link_to "Withdraw Request", digitization_path(artifact.id), method: "DELETE" %></td>
       </tr>
     <% end %>
   </table>
 <% end %>
-  

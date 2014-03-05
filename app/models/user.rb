@@ -6,7 +6,6 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :user_items
   has_many :artifact_logs
   has_many :sponsorships
   has_many :artifacts, :through => :sponsorships
@@ -31,6 +30,10 @@ class User < ActiveRecord::Base
 
   def full_name
     "#{self.first_name} #{self.last_name}"
+  end
+
+  def requested_artifact?(solr_document_id)
+    !!artifacts.find_by_solr_document_id(solr_document_id)
   end
 
   # Method added by Blacklight; Blacklight uses #to_s on your
