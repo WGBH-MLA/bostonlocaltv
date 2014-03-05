@@ -7,7 +7,7 @@
   <table>
     <% @user.artifacts.each do |artifact| %>
       <tr>
-        <td><%= link_to artifact %></td>
+        <td><%= link_to artifact.solr_document_id, catalog_path(artifact.solr_document_id) %></td>
         <td><%= artifact.state %></td>
         <td><%= link_to "Withdraw Request", digitization_path(artifact.id), method: "DELETE" %></td>
       </tr>

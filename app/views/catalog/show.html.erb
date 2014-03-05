@@ -27,7 +27,7 @@
 
     <div class="document">
       <% if current_user.requested_artifact?(@document.id) %>
-        <%= "Already Requested" %>
+        <%= "You have requested this item" %>
       <% else %>
         <%= link_to "Request", digitizations_path(:id => @document.id), method: "POST" %>
       <% end %>
