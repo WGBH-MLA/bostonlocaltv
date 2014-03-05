@@ -37,4 +37,11 @@ group :development, :test do
   gem 'rails-footnotes', '>= 3.7'
   gem 'rspec-rails'
   gem 'sqlite3'
+  gem 'net-ssh', '~> 2.7.0'
+end
+
+group :development do 
+  gem 'capistrano', '~> 2', :require => false # Cap 3 doesn't yet have all the kinks worked out
+  gem 'capistrano-multistage', :require => false
+  gem 'capistrano-gitflow', :require => false
 end
