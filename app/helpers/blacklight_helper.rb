@@ -3,7 +3,6 @@ module BlacklightHelper
   include Blacklight::BlacklightHelperBehavior
   
   def render_document_show_field_value args
-    #binding.pry
     value = args[:value]
     value ||= args[:document].get(args[:field], :sep => nil) if args[:document] and args[:field]
     
