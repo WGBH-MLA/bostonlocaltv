@@ -89,6 +89,7 @@ class Artifact < ActiveRecord::Base
 
   def withdraw_user(user, options={})
     sponsorships.where(:user_id => user).first.delete
+    user.artifacts.reload
   end
 
   def request_digitization(user)
