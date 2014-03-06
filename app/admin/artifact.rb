@@ -32,6 +32,13 @@ ActiveAdmin.register Artifact do
         column :status do |sponsorship|
           sponsorship.status
         end
+        column :actions do |sponsorship|
+          if sponsorship.confirmed?
+            link_to "Remove sponsorship", unconfirm_sponsorship_path(sponsorship), :method => :put
+          else
+            link_to "Confirm sponsorship", confirm_sponsorship_path(sponsorship), :method => :put
+          end
+        end
       end
     end
 

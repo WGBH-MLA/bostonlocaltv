@@ -29,6 +29,12 @@ Bostonlocaltv::Application.routes.draw do
 
   
   resources :digitizations
+  resources :sponsorships do
+    member do
+      put 'confirm'
+      put 'unconfirm'
+    end
+  end
   
   get 'dashboard', to: 'users#show'
 
