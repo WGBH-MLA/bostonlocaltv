@@ -63,13 +63,20 @@ describe Artifact do
 			@artifact.sponsors.should_not include(@user)
 		end
 
-		it "should remove user's potential sponsorship if artifact request is withdrawn" do
+		it "should remove user from artifact sponsors if artifact request is withdrawn" do
 			@artifact.request_digitization(@user)
 			@artifact.withdraw_request(@user)
 			@artifact.reload
 			@artifact.potential_sponsors.should_not include(@user)
 		end
 
-	end
+		it "should remove user's potential sponsorship if artifact request is withdrawn" do
+			@artifact.request_digitization(@user)
+			@user.artifacts.reload # simulates user touching/loading/caching the relationship
+			@artifact.withdraw_request(@user)
+			@user.artifacts.should == []
+		end
+
+	end	
 
 end
