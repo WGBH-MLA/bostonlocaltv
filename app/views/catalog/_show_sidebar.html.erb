@@ -10,3 +10,14 @@
     <% end -%>
   </tbody>
 </table>
+
+
+---- Debugging Output Below ----
+<br>
+<% document_show_fields.each do |solr_fname, field| %>
+  <%# if document.has?(solr_fname) && (solr_fname != 'description_s') %>
+    Solr_fname/Value: <%= solr_fname %>  <%= render_document_show_field_value :document => document, :field => solr_fname %>
+    <br>
+    <br>
+  <%# end -%>
+<% end -%>
