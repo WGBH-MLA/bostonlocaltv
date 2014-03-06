@@ -78,21 +78,21 @@ class CatalogController < ApplicationController
     config.add_show_field 'footage_length_s', :label => 'Footage Length' , :link => true
     config.add_show_field 'audio_duration_s', :label => 'Duration', :link => true
     config.add_show_field 'intended_purpose_s', :label => 'Type or Purpose', :link => true
-    config.add_show_field 'contributor_name_role_s', :label => 'Contributor/Role', :link => true
+    config.add_show_field 'contributor_name_role_s', :label => 'Contributor', :link => true
     config.add_show_field 'credit_s', :label => 'Credit', :link => true
-    #config.add_show_field 'program_s', :label => 'Program Type'
-    #config.add_show_field 'date_estimated_s', :label => 'Date Estimated'
-    #config.add_show_field 'description_s', :label => 'Description' 
-    #config.add_show_field 'related_s', :label => 'Related Records'
-    #config.add_show_field 'audio_type_s', :label => 'Audio Type'
-    #config.add_show_field 'broadcast_date_s', :label => 'Date Broadcast'
-    #config.add_show_field 'h_location_s', :label => 'Holding Institution'
-    #config.add_show_field 'p_location_s', :label => 'Physical Location'
-    #config.add_show_field 'subject_personalities_s', :label => 'Subject: Personalities'
-    #config.add_show_field 'can_number_s', :label => 'Can Number:'
-    #config.add_show_field 'format_location_s', :label => 'Location'
-    #config.add_show_field 'cross_reference_s', :label => 'Cross Reference'
-    #config.add_show_field 'language_s', :label => 'Language'
+    config.add_show_field 'program_s', :label => 'Program Type'
+    config.add_show_field 'date_estimated_s', :label => 'Date Estimated'
+    config.add_show_field 'description_s', :label => 'Description' 
+    config.add_show_field 'related_s', :label => 'Related Records'
+    config.add_show_field 'audio_type_s', :label => 'Audio Type'
+    config.add_show_field 'broadcast_date_s', :label => 'Date Broadcast'
+    config.add_show_field 'h_location_s', :label => 'Holding Institution'
+    config.add_show_field 'p_location_s', :label => 'Physical Location'
+    config.add_show_field 'subject_personalities_s', :label => 'Subject: Personalities'
+    config.add_show_field 'can_number_s', :label => 'Can Number:'
+    config.add_show_field 'format_location_s', :label => 'Location'
+    config.add_show_field 'cross_reference_s', :label => 'Cross Reference'
+    config.add_show_field 'language_s', :label => 'Language'
 
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
