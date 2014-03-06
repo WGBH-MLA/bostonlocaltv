@@ -9,6 +9,7 @@ set :application, "bostonlocaltv"
 
 set :repository,  "git@github.com:WGBH/bostonlocaltv.git"
 set :scm, :git
+set :branch, fetch(:branch, "master")
 
 set :user, "dmyers"
 set :use_sudo, false
