@@ -1,4 +1,10 @@
-<% sidebar_items << render(:partial => 'users/sidebar') %>
+<% sidebar_items << capture do %>
+  <h2><%= @user.full_name %></h2>
+  <ul>
+    <li><%= link_to('Dashboard', dashboard_path(current_user)) %></li>
+  </ul>
+<% end %>
+
 <h2>Edit your account</h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>

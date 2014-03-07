@@ -21,7 +21,7 @@
    <!--[if IE 8]><link rel="stylesheet" href="/stylesheets/compiled/ie8.css" type="text/css" media="screen,projection" /><![endif]-->
    <!--[if IE 9]><link rel="stylesheet" href="/stylesheets/compiled/ie9.css" type="text/css" media="screen,projection" /><![endif]-->
   </head>
-  <body class="<%= render_body_class.html_safe %>">
+  <body class="<%= render_body_class.html_safe %> <%= controller.controller_name %> <%= controller.action_name %> <%= @body_class %>">
 
     <div id="page_home">
       <div id="hd_home">
