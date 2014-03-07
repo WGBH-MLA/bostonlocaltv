@@ -5,11 +5,18 @@
   <em>You currently don't have any items requested.</em>
 <% else %>
   <table>
-    <% @user.artifacts.each do |artifact| %>
+    <tr>
+      <th>Item</h2>
+      <th>Digitization Status</th>
+      <th>Sponsorship Status</th>
+      <th>Actions</th>
+    </tr>
+    <% @user.sponsorships.each do |sponsorship| %>
       <tr>
-        <td><%= link_to artifact.solr_document_id, catalog_path(artifact.solr_document_id) %></td>
-        <td><%= artifact.state %></td>
-        <td><%= link_to "Withdraw Request", digitization_path(artifact.id), method: "DELETE" %></td>
+        <td><%= link_to sponsorship.artifact.solr_document_id, catalog_path(sponsorship.artifact.solr_document_id) %></td>
+        <td><%= sponsorship.artifact.state %></td>
+        <td><%= sponsorship.status %>
+        <td><%= link_to "Withdraw Request", digitization_path(sponsorship.artifact.id), method: "DELETE" %></td>
       </tr>
     <% end %>
   </table>
