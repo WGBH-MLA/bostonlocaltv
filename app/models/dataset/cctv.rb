@@ -64,8 +64,6 @@ class Dataset::Cctv < Dataset::Xml
             source = child.text.downcase
             if source.eql? "cctv"
               fields << ["collection_s", child.text]
-            else
-              fields << ["cross_reference_s", child.text]
             end
           end
         end

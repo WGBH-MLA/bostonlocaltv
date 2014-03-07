@@ -90,7 +90,6 @@ class CatalogController < ApplicationController
     config.add_show_field 'intended_purpose_s', :label => 'Type or Purpose'
     config.add_show_field 'can_number_s', :label => 'Can Number:', :link => true
     config.add_show_field 'format_location_s', :label => 'Location'
-    config.add_show_field 'cross_reference_s', :label => 'Cross Reference'
     config.add_show_field 'accession_num_s', :label => 'Accession Number'
     config.add_show_field 'language_s', :label => 'Language'
 
