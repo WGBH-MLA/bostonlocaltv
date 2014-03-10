@@ -22,6 +22,13 @@ ActiveAdmin.register Artifact do
       row :sponsors do
         artifact.sponsors.collect{|s| s.to_s}.join(', ')
       end
+      row :actions do 
+        if artifact.state == "requested" or artifact.state == "initiated"
+          link_to "Digitize", approve_digitization_admin_artifact_path(artifact), :method => :put
+        elsif artifact.state == "digitizing"
+          "Digitization has been approved and artifact is being digitized"
+        end
+      end
     end
 
     panel "Requests" do
@@ -43,5 +50,11 @@ ActiveAdmin.register Artifact do
     end
 
     active_admin_comments
+  end
+
+  member_action :approve_digitization, :method => :put do
+    artifact = Artifact.find(params[:id])
+    artifact.digitize(current_user)
+    redirect_to admin_artifact_url(artifact)
   end
 end                                   
