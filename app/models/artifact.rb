@@ -106,8 +106,8 @@ class Artifact < ActiveRecord::Base
     end
   end
 
-  def approve_digitization(admin_user)
-    digitize!(admin_user)
+  def approve_digitization(user)
+    digitize!(user)
     ArtifactLog.record(user, self, {
       event: 'digitize',
       from: 'requested',
