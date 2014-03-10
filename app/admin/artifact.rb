@@ -23,10 +23,12 @@ ActiveAdmin.register Artifact do
         artifact.sponsors.collect{|s| s.to_s}.join(', ')
       end
       row :actions do 
-        if artifact.state == "requested" or artifact.state == "initiated"
+        if artifact.state == "requested" || artifact.state == "initiated"
           link_to "Digitize", approve_digitization_admin_artifact_path(artifact), :method => :put, :class => "approve_digitization"
         elsif artifact.state == "digitizing"
           "Digitization has been approved and artifact is being digitized"
+        else
+          "Issue, please contact support"
         end
       end
     end

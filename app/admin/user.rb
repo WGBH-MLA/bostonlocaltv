@@ -13,6 +13,7 @@ ActiveAdmin.register User do
     column :requests do |user|
       user.artifacts.count
     end
+    column :admin
     default_actions
   end
 
@@ -23,6 +24,7 @@ ActiveAdmin.register User do
       row :last_name
       row :email
       row :created_at
+      row :admin
     end
     panel "Requests" do
       table_for user.artifacts do
