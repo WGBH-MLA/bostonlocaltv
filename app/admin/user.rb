@@ -27,12 +27,17 @@ ActiveAdmin.register User do
       row :admin
     end
     panel "Requests" do
-      table_for user.artifacts do
-        column :id do |artifact|
-          link_to artifact.id, admin_artifact_path(artifact)
+      table_for user.sponsorships do
+        column :id do |sponsorship|
+          link_to sponsorship.artifact.id, admin_artifact_path(sponsorship.artifact)
         end
-        column :solr_document_id
-        column :state
+        column :solr_document_id do |sponsorship|
+          sponsorship.artifact.solr_document_id
+        end
+        column :state do |sponsorship|
+          sponsorship.artifact.state
+        end
+        column :status
         column :created_at
       end
     end
