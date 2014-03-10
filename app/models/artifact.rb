@@ -82,7 +82,7 @@ class Artifact < ActiveRecord::Base
         event: 'withdraw',
         from: 'requested',
         to: 'requested',
-        description: 'User withdrew sponsorship (sponsors still available)'
+        description: 'User withdrew sponsorship (other sponsors still available)'
       })
     end
   end
@@ -104,5 +104,15 @@ class Artifact < ActiveRecord::Base
         description: 'User requested digitization on previously requested artifact'
       })
     end
+  end
+
+  def approve_digitization(admin_user)
+    digitize!(admin_user)
+    ArtifactLog.record(user, self, {
+      event: 'digitize',
+      from: 'requested',
+      to: 'digitizing',
+      description: 'Digitization approved and in process'
+    })
   end
 end
