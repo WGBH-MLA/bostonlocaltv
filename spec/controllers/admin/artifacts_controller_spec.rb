@@ -1,4 +1,5 @@
 require 'spec_helper'
+include Devise::TestHelpers
 
 describe Admin::ArtifactsController, type: feature do
 	render_views
@@ -14,8 +15,6 @@ describe Admin::ArtifactsController, type: feature do
 	describe "Artifact index" do
 	  before(:each) do
 			@artifact.request_digitization(@user1)
-			@artifact.request_digitization(@user2)
-	  	@artifact.request_digitization(@user3)
 			visit admin_artifacts_path
 	  	fill_in 'admin_user_email', :with => @admin_user.email
 	  	fill_in 'admin_user_password', :with => @admin_user.password
@@ -30,6 +29,18 @@ describe Admin::ArtifactsController, type: feature do
 			within "tr#artifact_#{@artifact.id}" do
 				expect(page).to have_content(@artifact.sponsorships.count)
 			end
+	  end
+	end
+
+	describe "Artifact show" do
+	  before(:each) do
+			@artifact.request_digitization(@user1)
+			@artifact.request_digitization(@user2)
+			@artifact.request_digitization(@user3)
+			visit admin_artifacts_path
+	  	fill_in 'admin_user_email', :with => @admin_user.email
+	  	fill_in 'admin_user_password', :with => @admin_user.password
+	  	click_button 'Login'
 	  end
 
 	  it "admin can see potential sponsors when viewing artifact in interface" do
@@ -50,5 +61,29 @@ describe Admin::ArtifactsController, type: feature do
 	  	save_and_open_page
 			expect(page).to have_content("Confirmed/Sponsor")
 	  end
+
+	  it "shows 'digitize' action link when artifact hasn't been digitized" do 
+	  	click_link "View"
+	  	within ".attributes_table" do
+	  		expect(page).to have_css(".approve_digitization")
+	  	end
+	  end
+
+	  # it "clicking 'digitze' link changes artifact state to digitizing" do
+	  # 	click_link "View"
+	  # 	within ".attributes_table" do
+	  # 		click_link("Digitize") #need to sort out issues exposed here regarding adminuser, current_user
+	  # 	end
+	  # 	@artifact.state.should be("digitizing")
+	  # end
+
+	  # it "when artifact state is 'digitizing', there should be no 'digitize' link" do
+	  # 	@artifact.approve_digitization(@admin_user)
+	  # 	click_link "View"
+	  # 	within ".attributes_table" do
+	  # 		expect(page).should_not have_css(".approve_digitization")
+	  # 	end
+	  # end
+
 	end
 end
