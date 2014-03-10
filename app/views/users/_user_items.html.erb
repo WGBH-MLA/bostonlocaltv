@@ -14,7 +14,6 @@
     <% @user.sponsorships.each do |sponsorship| %>
       <tr>
         <% solr_doc = Blacklight.solr.select(params: {q: "id:#{sponsorship.artifact.solr_document_id}"})['response']['docs'].first %>
-        <%#= debug solr_doc %>
         <td><%= link_to solr_doc['title_s'].first, catalog_path(sponsorship.artifact.solr_document_id) %></td>
         <td><%= sponsorship.artifact.state %></td>
         <td><%= sponsorship.status %>
