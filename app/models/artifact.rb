@@ -9,6 +9,12 @@ class Artifact < ActiveRecord::Base
   has_many :potential_sponsors, :through => :sponsorships, 
     :conditions => {'sponsorships.confirmed' => false},
     :source => :user
+
+  search_methods :sponsorship_user_ids_eq
+
+  scope :sponsorship_user_ids_eq, lambda { |user_id|
+    Artifact.joins(:sponsorships).where("user_id = ?", user_id)
+  }
   
   attr_accessible :solr_document_id
 

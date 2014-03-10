@@ -1,9 +1,20 @@
 ActiveAdmin.register Artifact do   
-  config.filters = false
+  config.filters = true
+
+  filter :email
+  filter :first_name
+  filter :solr_document_id
+  filter :created_at
+  filter :updated_at
+  filter :state
+  filter :sponsorship_user_ids, :as => :select, :collection => User.all.collect{|u| [u.to_s, u.id]}, :label => 'Requestor / Sponsor'
+
   index do
     column :id
     column :solr_document_id
     column :created_at
+    column :updated_at
+    column :state
     column :requests do |artifact|
       artifact.sponsorships.count
     end
