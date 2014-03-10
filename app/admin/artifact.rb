@@ -24,7 +24,7 @@ ActiveAdmin.register Artifact do
       end
       row :actions do 
         if artifact.state == "requested" or artifact.state == "initiated"
-          link_to "Digitize", approve_digitization_admin_artifact_path(artifact), :method => :put
+          link_to "Digitize", approve_digitization_admin_artifact_path(artifact), :method => :put, :class => "approve_digitization"
         elsif artifact.state == "digitizing"
           "Digitization has been approved and artifact is being digitized"
         end
