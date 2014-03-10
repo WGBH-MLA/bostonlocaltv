@@ -2,6 +2,7 @@
 require 'blacklight/catalog'
 
 class CatalogController < ApplicationController  
+  before_filter :find_artifact, :only => :show
 
   include Blacklight::Catalog
   
@@ -194,6 +195,10 @@ class CatalogController < ApplicationController
 
    def get_doc_id (id)
       id.bytes.to_s
+   end
+
+   def find_artifact
+    @artifact = Artifact.where(solr_document_id: params[:id])
    end
    
    def get_nonvideo_search_results(user_params = params || {})     
