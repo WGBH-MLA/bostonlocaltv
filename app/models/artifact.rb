@@ -20,7 +20,7 @@ class Artifact < ActiveRecord::Base
 
   state_machine :initial => :initiated do
     event :request do;    transition :initiated => :requested; end
-    event :withdraw do;   transition :requested => :initiated; end
+    event :withdraw do;   transition [:requested, :digitizing] => :initiated; end
     event :digitize do;   transition :requested => :digitizing; end
     event :deny do;       transition :requested => :denied; end
     event :available do;  transition :digitizing => :published; end
@@ -120,5 +120,9 @@ class Artifact < ActiveRecord::Base
       to: 'digitizing',
       description: 'Digitization approved and in process'
     })
+  end
+ 
+  def title
+    Blacklight.solr.select(params: {q: "id:#{solr_document_id}"})['response']['docs'].first['title_s'].first
   end
 end
