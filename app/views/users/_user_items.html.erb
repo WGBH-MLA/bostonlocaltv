@@ -8,16 +8,16 @@
     <tr>
       <th>Item</h2>
       <th>Digitization Status</th>
-      <th>Sponsorship Status</th>
+      <th>User Status</th>
       <th>Actions</th>
     </tr>
     <% @user.sponsorships.each do |sponsorship| %>
-      <tr>
-        <% solr_doc = Blacklight.solr.select(params: {q: "id:#{sponsorship.artifact.solr_document_id}"})['response']['docs'].first %>
-        <td><%= link_to solr_doc['title_s'].first, catalog_path(sponsorship.artifact.solr_document_id) %></td>
-        <td><%= sponsorship.artifact.state %></td>
-        <td><%= sponsorship.status %>
-        <td><%= link_to "Withdraw Request", digitization_path(sponsorship.artifact.id), method: "DELETE" %></td>
+      <tr id="sponsorship-<%= sponsorship.id %>">
+        <% solr_doc =  %>
+        <td><%= link_to sponsorship.artifact.title, catalog_path(sponsorship.artifact.solr_document_id) %></td>
+        <td class='state'><%= sponsorship.artifact.state %></td>
+        <td class='status'><%= sponsorship_status(sponsorship) %></td>
+        <td class='actions'><%= sponsorship_actions(sponsorship) %></td>
       </tr>
     <% end %>
   </table>
