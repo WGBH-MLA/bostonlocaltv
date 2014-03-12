@@ -22,7 +22,7 @@ class Artifact < ActiveRecord::Base
     event :request do;    transition :initiated => :requested; end
     event :withdraw do;   transition [:requested, :digitizing] => :initiated; end
     event :digitize do;   transition :requested => :digitizing; end
-    event :deny do;       transition :requested => :denied; end
+    event :block do;       transition :requested => :blocked; end
     event :available do;  transition :digitizing => :published; end
 
     before_transition any => any do |artifact, transition|
@@ -60,11 +60,11 @@ class Artifact < ActiveRecord::Base
       end
     end
 
-    after_transition :on => :deny do |artifact, transition| 
+    after_transition :on => :block do |artifact, transition| 
       user = transition.args.first
-      Rails.logger.info('DENIED')
+      Rails.logger.info('BLOCKED')
       artifact.users.each do |user| 
-        UserMailer.digitization_denial_email(user, artifact).deliver
+        UserMailer.digitization_blocked_email(user, artifact).deliver
       end
     end
 
@@ -77,6 +77,20 @@ class Artifact < ActiveRecord::Base
 
   def to_s
     "ID#{id}: SOLR_ID"
+  end
+
+  def request_digitization(user)
+    if state == 'initiated'
+      request!(user)
+    else
+      potential_sponsors << user
+      ArtifactLog.record(user, self, {
+        event: 'request',
+        from: 'requested',
+        to: 'requested',
+        description: 'User requested digitization on previously requested artifact'
+      })
+    end
   end
 
   def withdraw_request(user)
@@ -98,20 +112,6 @@ class Artifact < ActiveRecord::Base
     user.artifacts.reload
   end
 
-  def request_digitization(user)
-    if state == 'initiated'
-      request!(user)
-    else
-      potential_sponsors << user
-      ArtifactLog.record(user, self, {
-        event: 'request',
-        from: 'requested',
-        to: 'requested',
-        description: 'User requested digitization on previously requested artifact'
-      })
-    end
-  end
-
   def approve_digitization(user)
     digitize!(user)
     ArtifactLog.record(user, self, {
@@ -119,6 +119,16 @@ class Artifact < ActiveRecord::Base
       from: 'requested',
       to: 'digitizing',
       description: 'Digitization approved and in process'
+    })
+  end
+
+  def block_digitization(user)
+    block!(user)
+    ArtifactLog.record(user, self, {
+      event: 'block',
+      from: 'requested',
+      to: 'blocked',
+      description: 'Digitization has been blocked'
     })
   end
  
