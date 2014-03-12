@@ -9,7 +9,6 @@ branches:
     - master
 notifications:
   irc: "irc.freenode.org#wgbh-mla"
-
 script:
-	- "RAILS_ENV=test bundle exec rake --trace db:migrate"
-	- "bundle exec rake db:test:prepare"
+  - "RAILS_ENV=test bundle exec rake --trace db:migrate"
+  - "bundle exec rake db:test:prepare"
