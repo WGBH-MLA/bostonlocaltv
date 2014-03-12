@@ -35,7 +35,10 @@ ActiveAdmin.register Artifact do
       end
       row :actions do 
         if artifact.state == "requested" || artifact.state == "initiated"
-          link_to "Digitize", approve_digitization_admin_artifact_path(artifact), :method => :put, :class => "approve_digitization"
+          links = []
+          links << link_to("Digitize", approve_digitization_admin_artifact_path(artifact), :method => :put, :class => "approve_digitization")
+          links << link_to("Block", block_digitization_admin_artifact_path(artifact), :method => :put, :class => "block_digitization")
+          links.join(' / ').html_safe
         elsif artifact.state == "digitizing"
           "Digitization has been approved and artifact is being digitized"
         else
@@ -68,6 +71,12 @@ ActiveAdmin.register Artifact do
   member_action :approve_digitization, :method => :put do
     artifact = Artifact.find(params[:id])
     artifact.digitize(current_user)
+    redirect_to admin_artifact_url(artifact)
+  end
+
+  member_action :block_digitization, :method => :put do
+    artifact = Artifact.find(params[:id])
+    artifact.block(current_user)
     redirect_to admin_artifact_url(artifact)
   end
 end                                   
