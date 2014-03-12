@@ -48,10 +48,10 @@ describe 'User dashboard', type: feature do
   end
 
   it "shows digitization status of 'denied' when digitization has been denied" do
-    @artifact.deny(@user)
+    @artifact.block(@user)
     visit dashboard_path
     within("#sponsorship-#{@sponsorship.id} .state") do
-      expect(page).to have_content("denied")
+      expect(page).to have_content("blocked")
     end
   end
 
