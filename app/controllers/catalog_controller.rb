@@ -198,7 +198,7 @@ class CatalogController < ApplicationController
    end
 
    def find_artifact
-    @artifact = Artifact.where(solr_document_id: params[:id])
+    @artifact = Artifact.where(solr_document_id: params[:id]).first
    end
    
    def get_nonvideo_search_results(user_params = params || {})     

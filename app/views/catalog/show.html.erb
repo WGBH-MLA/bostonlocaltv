@@ -27,14 +27,8 @@
 
     <div class="document">
       <p>
-        <% if current_user && current_user.requested_artifact?(@document.id) %>
-          <%= "You have requested this item" %>
-        <% elsif current_user && !current_user.requested_artifact?(@document.id) && @artifact %>
-          <%= "Currently in the digitization process..." %>
-          <%= link_to "Track this item", digitizations_path(:id => @document.id), method: "POST" %>
-        <% else %>
-          Please <%= link_to 'log in', new_user_session_path %> or <%= link_to 'sign up', new_user_registration_path %> to request this item
-        <% end %>
+        <%#= artifact_digitization_link(@document, @artifact) %>
+        <%= artifact_digitization_link(@document, @artifact) %>
       </p>
       <%= render_document_partial @document, :show %>
     </div>
