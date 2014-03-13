@@ -18,7 +18,7 @@ module ArtifactsHelper
   end
 
   def requested_by_someone_else?(document, artifact)
-    artifact && !currently_requested?
+    artifact && !currently_requested?(document, artifact)
   end
 
   def currently_requested?(document, artifact)
