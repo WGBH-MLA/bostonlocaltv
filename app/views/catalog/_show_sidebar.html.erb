@@ -4,9 +4,15 @@
       <% if document.has?(solr_fname) && (solr_fname != 'description_s') %>
         <tr>
           <td class="field_name"><%= render_document_show_field_label :field => solr_fname %></td>
-          <td><%= render_document_show_field_value :document => document, :field => solr_fname %></td>
+          <% if solr_fname == "date_created_s" && document[:text].include?("Date Estimated") %>
+            <td><%= render_document_show_field_value :document => document, :field => solr_fname %> (estimated)</td>
+          <% else %>
+            <td><%= render_document_show_field_value :document => document, :field => solr_fname %></td>
+          <% end %>
         </tr>
       <% end -%>
     <% end -%>
   </tbody>
 </table>
+
+
