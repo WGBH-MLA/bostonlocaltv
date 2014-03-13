@@ -26,11 +26,10 @@
           <% doc_id = @document.id %>
 
     <div class="document">
-      <% if current_user.requested_artifact?(@document.id) %>
-        <%= "You have requested this item" %>
-      <% else %>
-        <%= link_to "Request", digitizations_path(:id => @document.id), method: "POST" %>
-      <% end %>
+      <p>
+        <%#= artifact_digitization_link(@document, @artifact) %>
+        <%= artifact_digitization_link(@document, @artifact) %>
+      </p>
       <%= render_document_partial @document, :show %>
     </div>
   </div>
