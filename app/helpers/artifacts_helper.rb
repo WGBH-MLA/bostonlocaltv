@@ -7,7 +7,7 @@ module ArtifactsHelper
 
   def authenticated_digitization_link(document, artifact)
     return already_requested if currently_requested?(document, artifact)
-    return track_artifact_link(document) if requested_by_someone_else?(document, artifact)
+    return track_artifact_link(document) if requested_by_someone_else?(document, artifact) && artifact.digitizing?
     return request_digitization_link(document) if !blocked_artifact?(artifact)
   end
 

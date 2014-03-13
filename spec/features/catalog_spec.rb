@@ -26,67 +26,53 @@ describe 'Catalog Show Page', type: feature do
 
     @artifact = create(:artifact)
     @artifact.request_digitization(@user)
-    @sponsorship = @user.sponsorships.first
+    
     @artifact.block(@user)
     visit "catalog/#{@artifact.solr_document_id}"
     expect(page).to have_content("We are unable to digitize this item.")
   end
 
-  it "tells the user they've already requested the artifact if they have an outstanding request on it" do
+  it "tells the user they've already requested the artifact if they have an outstanding request on it", wip: true do
     @user = create(:user, :password => 'password', :password_confirmation => 'password')
     visit new_user_session_path
     fill_in 'Email', :with => @user.email
     fill_in 'Password', :with => 'password'
     click_button 'Sign in'
-
-    @artifact = create(:artifact, solr_document_id: "V_GOMVH1RTSRIM6L6")
-    @artifact.request_digitization(@user)
-    @sponsorship = @user.sponsorships.first
-
-    visit "catalog/#{@artifact.solr_document_id}"
+    visit "catalog/V_GOMVH1RTSRIM6L6"
+    click_link 'Request digitization of this item'
     expect(page).to have_content("You have requested this item,")
   end
 
-  # it "gives user option to track artifact if it's already being digitized" do
-  #   @user1 = create(:user, :password => 'password', :password_confirmation => 'password')
+  it "gives user option to track artifact if it's already being digitized" do
+    @user1 = create(:user, :password => 'password', :password_confirmation => 'password')
+    @artifact = create(:artifact, solr_document_id: "V_GOMVH1RTSRIM6L6")
+    @artifact.request_digitization(@user1)
+    @artifact.approve_digitization(@user1)
 
-  #   @artifact = create(:artifact, solr_document_id: "V_GOMVH1RTSRIM6L6")
-  #   @artifact.request_digitization(@user1)
-  #   # @artifact.approve_digitization(@user1)
-  #   @sponsorship = @user1.sponsorships.first
+    @user2 = create(:user, :password => 'password', :password_confirmation => 'password')
+    visit new_user_session_path
+    fill_in 'Email', :with => @user2.email
+    fill_in 'Password', :with => 'password'
+    click_button 'Sign in'
+    
+    visit "catalog/#{@artifact.solr_document_id}"
 
-  #   @user2 = create(:user, :password => 'password', :password_confirmation => 'password')
-  #   visit new_user_session_path
-  #   fill_in 'Email', :with => @user2.email
-  #   fill_in 'Password', :with => 'password'
-  #   click_button 'Sign in'
+    expect(page).to have_content("Track")
+  end
 
-  #   visit "catalog/#{@artifact.solr_document_id}"
-  #   expect(page).to have_content("Track")
-  # end
+  it "displays 'request' option if artifact is not blocked and user has not requested it before" do 
+    @user = create(:user, :password => 'password', :password_confirmation => 'password')
+    visit new_user_session_path
+    fill_in 'Email', :with => @user.email
+    fill_in 'Password', :with => 'password'
+    click_button 'Sign in'
+    visit "catalog/V_GOMVH1RTSRIM6L6"
+    expect(page).to have_content("Request digitization of this item")
+  end
 
-  # it "displays 'request' option if artifact is not blocked and user has not requested it before" do 
-  #   @user3 = create(:user, :password => 'password', :password_confirmation => 'password')
-  #   visit new_user_session_path
-  #   fill_in 'Email', :with => @user2.email
-  #   fill_in 'Password', :with => 'password'
-  #   click_button 'Sign in'
-
-  #   @artifact = create(:artifact, solr_document_id: "V_GOMVH1RTSRIM6L6")
-  # end
-
-  # it "displays 'request' option if artifact is not blocked and user has not requested it before" do
-  #   @user2 = create(:user, :password => 'password', :password_confirmation => 'password')
-  #   visit new_user_session_path
-  #   fill_in 'Email', :with => @user2.email
-  #   fill_in 'Password', :with => 'password'
-  #   click_button 'Sign in'
-
-  #   @artifact = create(:artifact, solr_document_id: "V_GOMVH1RTSRIM6L6")
-  #   @artifact.request_digitization(@user1)
-  #   @sponsorship = @user1.sponsorships.first
-
-  #   visit "catalog/#{@artifact.solr_document_id}"
-  #   expect(page).to have_content("Request digitization of this item")
-  # end
+  it "shows user the log in or sign up links if they are not logged in" do
+    @user = create(:user, :password => 'password', :password_confirmation => 'password')
+    visit "catalog/V_GOMVH1RTSRIM6L6"
+    expect(page).to have_content("Please log in or sign up to request this item")
+  end
 end
