@@ -41,6 +41,8 @@ ActiveAdmin.register Artifact do
           links.join(' / ').html_safe
         elsif artifact.state == "digitizing"
           "Digitization has been approved and artifact is being digitized"
+        elsif artifact.state == "blocked"
+          "We are unable to digitize this artifact"
         else
           "Issue, please contact support"
         end

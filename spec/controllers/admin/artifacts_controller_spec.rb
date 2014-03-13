@@ -71,7 +71,7 @@ describe Admin::ArtifactsController, type: feature do
       end
     end
 
-    it "clicking 'digitze' link changes artifact state to digitizing", wip: true do
+    it "clicking 'digitze' link changes artifact state to digitizing" do
       click_link "View"
       within ".attributes_table" do
         click_link("Digitize")
@@ -89,5 +89,22 @@ describe Admin::ArtifactsController, type: feature do
       end
     end
 
+    it "clicking 'block' link changes artifact state to blocked" do
+      click_link "View"
+      within ".attributes_table" do
+        click_link("Block")
+      end
+      within ".attributes_table" do
+        expect(page).to have_content("We are unable to digitize this artifact")
+      end
+    end
+
+    it "when artifact state is 'blocked', there should be no 'block' link" do
+      @artifact.block_digitization(@admin)
+      click_link "View"
+      within ".attributes_table" do
+        expect(page).should_not have_css(".block_digitization")
+      end
+    end
   end
 end
