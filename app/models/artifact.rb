@@ -135,4 +135,8 @@ class Artifact < ActiveRecord::Base
   def title
     Blacklight.solr.select(params: {q: "id:#{solr_document_id}"})['response']['docs'].first['title_s'].first
   end
+
+  def digitizing?
+    state == 'digitizing'
+  end
 end
