@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '~> 3.2.16'
+gem 'syck'
 
 gem 'activeadmin'
 gem 'blacklight', '~>4.6.3'

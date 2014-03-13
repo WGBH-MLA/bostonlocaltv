@@ -1,15 +1,23 @@
-<h1>My Requested Items</h1>
+<h2>My Requested Items</h2>
 
 
 <% if @user.artifacts.nil? %>
   <em>You currently don't have any items requested.</em>
 <% else %>
   <table>
-    <% @user.artifacts.each do |artifact| %>
-      <tr>
-        <td><%= link_to artifact.solr_document_id, catalog_path(artifact.solr_document_id) %></td>
-        <td><%= artifact.state %></td>
-        <td><%= link_to "Withdraw Request", digitization_path(artifact.id), method: "DELETE" %></td>
+    <tr>
+      <th>Item</h2>
+      <th>Digitization Status</th>
+      <th>User Status</th>
+      <th>Actions</th>
+    </tr>
+    <% @user.sponsorships.each do |sponsorship| %>
+      <tr id="sponsorship-<%= sponsorship.id %>">
+        <% solr_doc =  %>
+        <td><%= link_to sponsorship.artifact.title, catalog_path(sponsorship.artifact.solr_document_id) %></td>
+        <td class='state'><%= sponsorship.artifact.state %></td>
+        <td class='status'><%= sponsorship_status(sponsorship) %></td>
+        <td class='actions'><%= sponsorship_actions(sponsorship) %></td>
       </tr>
     <% end %>
   </table>
