@@ -1,5 +1,4 @@
 require "bundler/capistrano"
-require 'capistrano/gitflow'
 
 set :stages, %w(production, staging)
 set :default_stage, "staging"
