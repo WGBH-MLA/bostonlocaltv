@@ -1,0 +1,951 @@
+--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+numFound: 7992
+start: 0
+maxScore: 1.0
+docs:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  intended_purpose_s:
+  - Edited Story Master
+  text:
+  - Edited Story Master
+  - 04/09/1990
+  - '7199'
+  - $2.3 billion state budget deficit
+  - Ten O'Clock News
+  - Budget
+  - Massachusetts -- Politics and government
+  - Massachusetts -- Economic conditions
+  - Budget
+  - Massachusetts -- Politics and government
+  - Massachusetts -- Economic conditions
+  - ! 's>Richard Voke announces projected budget deficit of $2.3 billion. Reps. Reinstein,
+    Miceli, DeFilippi and Barbara Gray at angry Ways & Means hearing.
+
+
+    Length: 2.30
+
+    reporter: George'
+  - ! 'Is Part Of
+
+    WGBH'
+  - George, Christy
+  - George, Christy, Reporter
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    11/26/2012
+
+    WGBH'
+  - Color
+  year_i: 1990
+  date_created_s:
+  - 04/09/1990
+  pbcoreidentifier_s:
+  - '7199'
+  id: V_GOMVH1RTSRIM6L6
+  title_s:
+  - $2.3 billion state budget deficit
+  title_t:
+  - $2.3 billion state budget deficit
+  collection_s:
+  - Ten O'Clock News
+  subject_s:
+  - Budget
+  - Massachusetts -- Politics and government
+  - Massachusetts -- Economic conditions
+  subject_facet_s:
+  - Budget
+  - Massachusetts -- Politics and government
+  - Massachusetts -- Economic conditions
+  description_s:
+  - ! 's>Richard Voke announces projected budget deficit of $2.3 billion. Reps. Reinstein,
+    Miceli, DeFilippi and Barbara Gray at angry Ways & Means hearing.
+
+
+    Length: 2.30
+
+    reporter: George'
+  description_t:
+  - ! 's>Richard Voke announces projected budget deficit of $2.3 billion. Reps. Reinstein,
+    Miceli, DeFilippi and Barbara Gray at angry Ways & Means hearing.
+
+
+    Length: 2.30
+
+    reporter: George'
+  pbcorerelation_s:
+  - ! 'Is Part Of
+
+    WGBH'
+  people_s:
+  - George, Christy
+  contributor_name_role_s:
+  - George, Christy, Reporter
+  pbcoreextension_s:
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    11/26/2012
+
+    WGBH'
+  format: 3/4 inch videotape
+  format_color_s:
+  - Color
+  timestamp: '2014-03-10T01:20:11.279Z'
+  score: 1.0
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  year_i: 1984
+  date_created_s:
+  - 08/28/1984
+  text:
+  - 08/28/1984
+  - '3112'
+  - ! '''FOOD NOT BOMBS'''
+  - Ten O'Clock News
+  - Peace movements
+  - Peace movements
+  - ! 'INTERVIEW WITH ''FOOD NOT BOMBS'' IN MISSION HILL. NATURAL FOODS STOREFRONT.
+    BREAD & CIRCUS.
+
+    reporter: Vaillancourt'
+  - ! 'Is Part Of
+
+    WGBH'
+  - Boston (Mass.)
+  - Boston (Mass.)
+  - Vaillancourt, Meg
+  - Vaillancourt, Meg, Reporter
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    11/21/2012
+
+    WGBH'
+  - Color
+  pbcoreidentifier_s:
+  - '3112'
+  id: V_E3W8X8T82PTJAZS
+  title_s:
+  - ! '''FOOD NOT BOMBS'''
+  title_t:
+  - ! '''FOOD NOT BOMBS'''
+  collection_s:
+  - Ten O'Clock News
+  subject_s:
+  - Peace movements
+  subject_facet_s:
+  - Peace movements
+  description_s:
+  - ! 'INTERVIEW WITH ''FOOD NOT BOMBS'' IN MISSION HILL. NATURAL FOODS STOREFRONT.
+    BREAD & CIRCUS.
+
+    reporter: Vaillancourt'
+  description_t:
+  - ! 'INTERVIEW WITH ''FOOD NOT BOMBS'' IN MISSION HILL. NATURAL FOODS STOREFRONT.
+    BREAD & CIRCUS.
+
+    reporter: Vaillancourt'
+  pbcorerelation_s:
+  - ! 'Is Part Of
+
+    WGBH'
+  location_s:
+  - Boston (Mass.)
+  location_facet_s:
+  - Boston (Mass.)
+  people_s:
+  - Vaillancourt, Meg
+  contributor_name_role_s:
+  - Vaillancourt, Meg, Reporter
+  pbcoreextension_s:
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    11/21/2012
+
+    WGBH'
+  format: 3/4 inch videotape
+  format_color_s:
+  - Color
+  timestamp: '2014-03-10T01:19:49.448Z'
+  score: 1.0
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  year_i: 1983
+  date_created_s:
+  - 11/30/1983
+  text:
+  - 11/30/1983
+  - '3103'
+  - ! '''GUNFIGHT USA'''
+  - Ten O'Clock News
+  - Firearms
+  - Jails
+  - Riots
+  - Firearms
+  - Jails
+  - Riots
+  - ! '''GUNFIGHT USA'' GUNS FIRED, TARGETS, RIOT FOOTAGE, HISTORY. NORFOLK PRISON'
+  - ! 'Is Part Of
+
+    WGBH'
+  - Norfolk County (Mass.)
+  - Norfolk County (Mass.)
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    6/22/2012
+
+    WGBH'
+  - Color
+  pbcoreidentifier_s:
+  - '3103'
+  id: V_SNTRDOSRK01BRQ8
+  title_s:
+  - ! '''GUNFIGHT USA'''
+  title_t:
+  - ! '''GUNFIGHT USA'''
+  collection_s:
+  - Ten O'Clock News
+  subject_s:
+  - Firearms
+  - Jails
+  - Riots
+  subject_facet_s:
+  - Firearms
+  - Jails
+  - Riots
+  description_s:
+  - ! '''GUNFIGHT USA'' GUNS FIRED, TARGETS, RIOT FOOTAGE, HISTORY. NORFOLK PRISON'
+  description_t:
+  - ! '''GUNFIGHT USA'' GUNS FIRED, TARGETS, RIOT FOOTAGE, HISTORY. NORFOLK PRISON'
+  pbcorerelation_s:
+  - ! 'Is Part Of
+
+    WGBH'
+  location_s:
+  - Norfolk County (Mass.)
+  location_facet_s:
+  - Norfolk County (Mass.)
+  pbcoreextension_s:
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    6/22/2012
+
+    WGBH'
+  format_color_s:
+  - Color
+  timestamp: '2014-03-10T01:19:49.415Z'
+  score: 1.0
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  intended_purpose_s:
+  - Edited Story Master
+  text:
+  - Edited Story Master
+  - 02/21/1989
+  - '6339'
+  - ! '''Satanic Verses'' in Cambridge bookstore'
+  - Ten O'Clock News
+  - Authors
+  - Rushdie, Salman
+  - Authors
+  - Rushdie, Salman
+  - ! 's>Owner of Wordsworth talks about threat against Salman Rushdie, author of
+    "Satanic Verses." Exterior of bookstore, display shelves, customers flip through
+    books.
+
+
+    Length: 3.17
+
+    reporter: vonMehren'
+  - ! 'Is Part Of
+
+    WGBH'
+  - von Mehren, Jan
+  - von Mehren, Jan, Reporter
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    11/21/2012
+
+    WGBH'
+  - Color
+  year_i: 1989
+  date_created_s:
+  - 02/21/1989
+  pbcoreidentifier_s:
+  - '6339'
+  id: V_DJRR5263ZR818CD
+  title_s:
+  - ! '''Satanic Verses'' in Cambridge bookstore'
+  title_t:
+  - ! '''Satanic Verses'' in Cambridge bookstore'
+  collection_s:
+  - Ten O'Clock News
+  subject_s:
+  - Authors
+  - Rushdie, Salman
+  subject_facet_s:
+  - Authors
+  - Rushdie, Salman
+  description_s:
+  - ! 's>Owner of Wordsworth talks about threat against Salman Rushdie, author of
+    "Satanic Verses." Exterior of bookstore, display shelves, customers flip through
+    books.
+
+
+    Length: 3.17
+
+    reporter: vonMehren'
+  description_t:
+  - ! 's>Owner of Wordsworth talks about threat against Salman Rushdie, author of
+    "Satanic Verses." Exterior of bookstore, display shelves, customers flip through
+    books.
+
+
+    Length: 3.17
+
+    reporter: vonMehren'
+  pbcorerelation_s:
+  - ! 'Is Part Of
+
+    WGBH'
+  people_s:
+  - von Mehren, Jan
+  contributor_name_role_s:
+  - von Mehren, Jan, Reporter
+  pbcoreextension_s:
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    11/21/2012
+
+    WGBH'
+  format: 3/4 inch videotape
+  format_color_s:
+  - Color
+  timestamp: '2014-03-10T01:20:06.164Z'
+  score: 1.0
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  year_i: 1980
+  date_created_s:
+  - 01/14/1980
+  text:
+  - 01/14/1980
+  - '1226'
+  - (3) interviews
+  - Ten O'Clock News
+  - Theater
+  - Universities and colleges
+  - Israel
+  - Afghanistan
+  - Theater
+  - Universities and colleges
+  - Israel
+  - Afghanistan
+  - ! "(3) interviews done as series \"Conversation\" taped 1/14/1980.\n1) Rev. Anthony
+    Campbell, Eliot Church in Roxbury,  interviews Boston University President John
+    Silber.\n2) Marty Linsky, Media Consultant, interviews Aln Friedberg of the National
+    Association of Theater Owners about \"Film Business\"; \n3) Anthony Lewis, New
+    York Times Columnist, interviews Arie Eliav, former Knesset member, about Israel
+    and Afghanistan."
+  - ! 'Is Part Of
+
+    WGBH'
+  - Roxbury (Boston, Mass.)
+  - Roxbury (Boston, Mass.)
+  - Lewis, Anthony, 1927-
+  - Silber, John, 1926-
+  - Eliav, Arie L., 1921-2010
+  - Lewis, Anthony, 1927- , Reporter
+  - Silber, John, 1926-, Reporter
+  - Eliav, Arie L., 1921-2010, Reporter
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    1/10/2013
+
+    WGBH'
+  - Color
+  pbcoreidentifier_s:
+  - '1226'
+  id: V_BDQ4U5BXIAKGCS5
+  title_s:
+  - (3) interviews
+  title_t:
+  - (3) interviews
+  collection_s:
+  - Ten O'Clock News
+  subject_s:
+  - Theater
+  - Universities and colleges
+  - Israel
+  - Afghanistan
+  subject_facet_s:
+  - Theater
+  - Universities and colleges
+  - Israel
+  - Afghanistan
+  description_s:
+  - ! "(3) interviews done as series \"Conversation\" taped 1/14/1980.\n1) Rev. Anthony
+    Campbell, Eliot Church in Roxbury,  interviews Boston University President John
+    Silber.\n2) Marty Linsky, Media Consultant, interviews Aln Friedberg of the National
+    Association of Theater Owners about \"Film Business\"; \n3) Anthony Lewis, New
+    York Times Columnist, interviews Arie Eliav, former Knesset member, about Israel
+    and Afghanistan."
+  description_t:
+  - ! "(3) interviews done as series \"Conversation\" taped 1/14/1980.\n1) Rev. Anthony
+    Campbell, Eliot Church in Roxbury,  interviews Boston University President John
+    Silber.\n2) Marty Linsky, Media Consultant, interviews Aln Friedberg of the National
+    Association of Theater Owners about \"Film Business\"; \n3) Anthony Lewis, New
+    York Times Columnist, interviews Arie Eliav, former Knesset member, about Israel
+    and Afghanistan."
+  pbcorerelation_s:
+  - ! 'Is Part Of
+
+    WGBH'
+  location_s:
+  - Roxbury (Boston, Mass.)
+  location_facet_s:
+  - Roxbury (Boston, Mass.)
+  people_s:
+  - Lewis, Anthony, 1927-
+  - Silber, John, 1926-
+  - Eliav, Arie L., 1921-2010
+  contributor_name_role_s:
+  - Lewis, Anthony, 1927- , Reporter
+  - Silber, John, 1926-, Reporter
+  - Eliav, Arie L., 1921-2010, Reporter
+  pbcoreextension_s:
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    1/10/2013
+
+    WGBH'
+  format: 3/4 inch videotape
+  format_color_s:
+  - Color
+  timestamp: '2014-03-10T01:20:23.126Z'
+  score: 1.0
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  year_i: 1989
+  date_created_s:
+  - 04/19/1989
+  text:
+  - 04/19/1989
+  - 6452, 6453, 6454
+  - (3) story masters
+  - Ten O'Clock News
+  - Massachusetts -- Politics and government
+  - Sports
+  - Judges
+  - Massachusetts -- Politics and government
+  - Sports
+  - Judges
+  - ! '(3) story masters: 1) Blue Laws; 2) Sportmen''s Tennis Club;  3) Retirement
+    of Massachusetts Supreme Judical Court Chief Justice Edward Hennessey.'
+  - ! 'Is Part Of
+
+    WGBH'
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    11/20/2012
+
+    WGBH'
+  - Color
+  pbcoreidentifier_s:
+  - 6452, 6453, 6454
+  id: V_HIXOOVHDC7F26TR
+  title_s:
+  - (3) story masters
+  title_t:
+  - (3) story masters
+  collection_s:
+  - Ten O'Clock News
+  subject_s:
+  - Massachusetts -- Politics and government
+  - Sports
+  - Judges
+  subject_facet_s:
+  - Massachusetts -- Politics and government
+  - Sports
+  - Judges
+  description_s:
+  - ! '(3) story masters: 1) Blue Laws; 2) Sportmen''s Tennis Club;  3) Retirement
+    of Massachusetts Supreme Judical Court Chief Justice Edward Hennessey.'
+  description_t:
+  - ! '(3) story masters: 1) Blue Laws; 2) Sportmen''s Tennis Club;  3) Retirement
+    of Massachusetts Supreme Judical Court Chief Justice Edward Hennessey.'
+  pbcorerelation_s:
+  - ! 'Is Part Of
+
+    WGBH'
+  pbcoreextension_s:
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    11/20/2012
+
+    WGBH'
+  format: 3/4 inch videotape
+  format_color_s:
+  - Color
+  timestamp: '2014-03-10T01:20:23.074Z'
+  score: 1.0
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  intended_purpose_s:
+  - Edited Story Master
+  text:
+  - Edited Story Master
+  - 04/03/1990
+  - '7185'
+  - 15% rule
+  - Ten O'Clock News
+  - Elections
+  - Political campaigns
+  - Elections
+  - Political campaigns
+  - ! 's>George Keverian and John Silber make appeal to abolish 15% rule regulating
+    which candidates'' names appear on state ballot. Rep. William Galvin and Sen.
+    Richard Kraus favor preserving it.
+
+
+    Length: 3.23
+
+    reporter: Boeri'
+  - ! 'Is Part Of
+
+    WGBH'
+  - Boeri, David
+  - Boeri, David, Reporter
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    11/7/2012
+
+    WGBH'
+  - Color
+  year_i: 1990
+  date_created_s:
+  - 04/03/1990
+  pbcoreidentifier_s:
+  - '7185'
+  id: V_D0AJLWO65F3H7IR
+  title_s:
+  - 15% rule
+  title_t:
+  - 15% rule
+  collection_s:
+  - Ten O'Clock News
+  subject_s:
+  - Elections
+  - Political campaigns
+  subject_facet_s:
+  - Elections
+  - Political campaigns
+  description_s:
+  - ! 's>George Keverian and John Silber make appeal to abolish 15% rule regulating
+    which candidates'' names appear on state ballot. Rep. William Galvin and Sen.
+    Richard Kraus favor preserving it.
+
+
+    Length: 3.23
+
+    reporter: Boeri'
+  description_t:
+  - ! 's>George Keverian and John Silber make appeal to abolish 15% rule regulating
+    which candidates'' names appear on state ballot. Rep. William Galvin and Sen.
+    Richard Kraus favor preserving it.
+
+
+    Length: 3.23
+
+    reporter: Boeri'
+  pbcorerelation_s:
+  - ! 'Is Part Of
+
+    WGBH'
+  people_s:
+  - Boeri, David
+  contributor_name_role_s:
+  - Boeri, David, Reporter
+  pbcoreextension_s:
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    11/7/2012
+
+    WGBH'
+  format: 3/4 inch videotape
+  format_color_s:
+  - Color
+  timestamp: '2014-03-10T01:20:11.133Z'
+  score: 1.0
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  year_i: 1983
+  date_created_s:
+  - 03/22/1983
+  text:
+  - 03/22/1983
+  - '3748'
+  - 150 HUNTINGTON AVENUE
+  - Ten O'Clock News
+  - Housing
+  - Housing
+  - ! 'KEVIN WHITE AT GRAND OPENING OF 150 HUNTINGTON AVENUE LUXURY APARTMENTS, VIOLINISTS
+
+    reporter: McGrath'
+  - ! 'Is Part Of
+
+    WGBH'
+  - Boston (Mass.)
+  - Boston (Mass.)
+  - McGrath, Kate
+  - McGrath, Kate, Reporter
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    10/2/2012
+
+    WGBH'
+  - Color
+  pbcoreidentifier_s:
+  - '3748'
+  id: V_0EDINA6T70C5U68
+  title_s:
+  - 150 HUNTINGTON AVENUE
+  title_t:
+  - 150 HUNTINGTON AVENUE
+  collection_s:
+  - Ten O'Clock News
+  subject_s:
+  - Housing
+  subject_facet_s:
+  - Housing
+  description_s:
+  - ! 'KEVIN WHITE AT GRAND OPENING OF 150 HUNTINGTON AVENUE LUXURY APARTMENTS, VIOLINISTS
+
+    reporter: McGrath'
+  description_t:
+  - ! 'KEVIN WHITE AT GRAND OPENING OF 150 HUNTINGTON AVENUE LUXURY APARTMENTS, VIOLINISTS
+
+    reporter: McGrath'
+  pbcorerelation_s:
+  - ! 'Is Part Of
+
+    WGBH'
+  location_s:
+  - Boston (Mass.)
+  location_facet_s:
+  - Boston (Mass.)
+  people_s:
+  - McGrath, Kate
+  contributor_name_role_s:
+  - McGrath, Kate, Reporter
+  pbcoreextension_s:
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    10/2/2012
+
+    WGBH'
+  format: 3/4 inch videotape
+  format_color_s:
+  - Color
+  timestamp: '2014-03-10T01:19:52.407Z'
+  score: 1.0
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  intended_purpose_s:
+  - Edited Story Master
+  text:
+  - Edited Story Master
+  - 03/13/1989
+  - '6381'
+  - 150th anniversary of B.U.
+  - Ten O'Clock News
+  - Universities and colleges
+  - Universities and colleges
+  - ! 's>Celebration of 150th anniversary of Boston University. John Silber.
+
+    reporter: Wetherbee'
+  - ! 'Is Part Of
+
+    WGBH'
+  - Boston (Mass.)
+  - Boston (Mass.)
+  - Wetherbee, Fritz
+  - Wetherbee, Fritz, Reporter
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    11/21/2012
+
+    WGBH'
+  - Color
+  year_i: 1989
+  date_created_s:
+  - 03/13/1989
+  pbcoreidentifier_s:
+  - '6381'
+  id: V_QXVSS30LA7MH7MJ
+  title_s:
+  - 150th anniversary of B.U.
+  title_t:
+  - 150th anniversary of B.U.
+  collection_s:
+  - Ten O'Clock News
+  subject_s:
+  - Universities and colleges
+  subject_facet_s:
+  - Universities and colleges
+  description_s:
+  - ! 's>Celebration of 150th anniversary of Boston University. John Silber.
+
+    reporter: Wetherbee'
+  description_t:
+  - ! 's>Celebration of 150th anniversary of Boston University. John Silber.
+
+    reporter: Wetherbee'
+  pbcorerelation_s:
+  - ! 'Is Part Of
+
+    WGBH'
+  location_s:
+  - Boston (Mass.)
+  location_facet_s:
+  - Boston (Mass.)
+  people_s:
+  - Wetherbee, Fritz
+  contributor_name_role_s:
+  - Wetherbee, Fritz, Reporter
+  pbcoreextension_s:
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    11/21/2012
+
+    WGBH'
+  format: 3/4 inch videotape
+  format_color_s:
+  - Color
+  timestamp: '2014-03-10T01:20:06.348Z'
+  score: 1.0
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  intended_purpose_s:
+  - Edited Story Master
+  text:
+  - Edited Story Master
+  - 06/23/1987
+  - '5281'
+  - 15th anniversary of Ms. magazine
+  - Ten O'Clock News
+  - Feminism
+  - Mass media
+  - Feminism
+  - Mass media
+  - ! 's>On 15th anniversary of Ms., opinions about change in magazine and in feminists.
+    Gloria Steinem, Marlo Thomas, Ruth Westheimer.
+
+    reporter: George'
+  - ! 'Is Part Of
+
+    WGBH'
+  - George, Christy
+  - George, Christy, Reporter
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    10/11/2012
+
+    WGBH'
+  - Color
+  year_i: 1987
+  date_created_s:
+  - 06/23/1987
+  pbcoreidentifier_s:
+  - '5281'
+  id: V_RNKW6IB07LTBCWX
+  title_s:
+  - 15th anniversary of Ms. magazine
+  title_t:
+  - 15th anniversary of Ms. magazine
+  collection_s:
+  - Ten O'Clock News
+  subject_s:
+  - Feminism
+  - Mass media
+  subject_facet_s:
+  - Feminism
+  - Mass media
+  description_s:
+  - ! 's>On 15th anniversary of Ms., opinions about change in magazine and in feminists.
+    Gloria Steinem, Marlo Thomas, Ruth Westheimer.
+
+    reporter: George'
+  description_t:
+  - ! 's>On 15th anniversary of Ms., opinions about change in magazine and in feminists.
+    Gloria Steinem, Marlo Thomas, Ruth Westheimer.
+
+    reporter: George'
+  pbcorerelation_s:
+  - ! 'Is Part Of
+
+    WGBH'
+  people_s:
+  - George, Christy
+  contributor_name_role_s:
+  - George, Christy, Reporter
+  pbcoreextension_s:
+  - ! 'DATE_CREATED
+
+    1/25/2012
+
+    WGBH
+
+
+
+    DATE_MODIFIED
+
+    10/11/2012
+
+    WGBH'
+  format: 3/4 inch videotape
+  format_color_s:
+  - Color
+  timestamp: '2014-03-10T01:20:00.103Z'
+  score: 1.0
