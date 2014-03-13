@@ -25,9 +25,7 @@ describe 'Catalog Show Page', type: feature do
   end
 
   it "visits artifact catalog page" do
-    # puts @solr_response
-    # # visit "catalog/#{@artifact.solr_document_id}"
-    # visit 'catalog'
-    # save_and_open_page
+    visit "catalog/#{@artifact.solr_document_id}"
+    save_and_open_page
   end
 end
