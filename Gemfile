@@ -26,7 +26,7 @@ gem 'therubyracer'
 gem 'uglifier'
 gem 'unicode'
 gem 'state_machine'
-gem 'blacklight_oai_provider', github: "cbeer/blacklight_oai_provider"
+gem 'blacklight_oai_provider', git: "https://github.com/cbeer/blacklight_oai_provider.git"
 
 
 group :test do
