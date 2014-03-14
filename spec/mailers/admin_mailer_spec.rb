@@ -14,7 +14,7 @@ describe AdminMailer do
 
   it "should email an admin when a request is withdrawn" do
   	@artifact.withdraw_request(@user)
-  	ActionMailer::Base.deliveries.last.subject.should == "Digitization Request Withdrawn"
+  	ActionMailer::Base.deliveries.last.subject.should == "Your request for digitization has been withdrawn"
   end
 
 end
