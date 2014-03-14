@@ -29,4 +29,10 @@ describe UserMailer do
     deliveries = ActionMailer::Base.deliveries[(ActionMailer::Base.deliveries.size - @artifact.users.count)..ActionMailer::Base.deliveries.size]
     deliveries.collect{|d| d.to}.flatten.should == [@user.email, @user2.email]
   end
+
+  it "should email a user when an artifact request is withdrawn by an admin" do
+    @artifact.request_digitization(@user)
+    @artifact.withdraw_request(@user)
+    ActionMailer::Base.deliveries.last.to.should == [@user.email]
+  end
 end
