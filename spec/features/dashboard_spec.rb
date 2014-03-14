@@ -76,4 +76,13 @@ describe 'User dashboard', type: feature do
     click_link("Unfollow")
     page.should have_no_content(@artifact.title)
   end
+
+  it "shows digitization status of 'published' when digitization has been published" do
+    @artifact.approve_digitization(@user)
+    @artifact.publish(@user)
+    visit dashboard_path
+    within("#sponsorship-#{@sponsorship.id} .state") do
+      expect(page).to have_content("published")
+    end
+  end
 end
