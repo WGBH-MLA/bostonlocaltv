@@ -64,6 +64,18 @@ describe Admin::ArtifactsController, type: feature do
       expect(page).to have_content("Confirmed/Sponsor")
     end
 
+    it "admin can withdraw a user's request" do
+      click_link "View"
+      first(:link, "Withdraw user's request").click;
+      expect(page).to have_no_content(@user1.email)
+    end
+
+    it "admin can withdraw a user's request and other requests should still be there" do
+      click_link "View"
+      first(:link, "Withdraw user's request").click;
+      expect(page).to have_content(@user2.email)
+    end
+
     it "shows 'digitize' action link when artifact hasn't been digitized" do 
       click_link "View"
       within ".attributes_table" do
