@@ -43,6 +43,7 @@ class Artifact < ActiveRecord::Base
       artifact.withdraw_user(user)
       Rails.logger.info('WITHDRAWN')
       AdminMailer.request_withdrawn_email(user, artifact).deliver
+      UserMailer.request_withdrawn_email(user, artifact).deliver
     end
 
     after_transition :on => :request do |artifact, transition|
