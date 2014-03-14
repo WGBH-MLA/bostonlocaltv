@@ -55,7 +55,12 @@ ActiveAdmin.register Artifact do
           link_to sponsorship.user.email, admin_user_path(sponsorship.user.id)
         end
         column :status do |sponsorship|
-          sponsorship.status
+          links = []
+          links << sponsorship.status
+          if sponsorship.status == "Requested"
+            links << link_to("Withdraw user's request", withdraw_request_admin_artifact_path(sponsorship), :method => :put, :class=> "withdraw_request")
+          end
+          links.join(' / ').html_safe
         end
         column :actions do |sponsorship|
           if sponsorship.confirmed?
@@ -79,6 +84,13 @@ ActiveAdmin.register Artifact do
   member_action :block_digitization, :method => :put do
     artifact = Artifact.find(params[:id])
     artifact.block(current_user)
+    redirect_to admin_artifact_url(artifact)
+  end
+
+  member_action :withdraw_request, :method => :put do
+    s = Sponsorship.find(params[:id])
+    artifact = s.artifact
+    artifact.withdraw_request(s.user)
     redirect_to admin_artifact_url(artifact)
   end
 end                                   
