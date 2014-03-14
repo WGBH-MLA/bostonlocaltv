@@ -73,6 +73,20 @@ describe 'Catalog Show Page', type: feature do
   it "shows user the log in or sign up links if they are not logged in" do
     @user = create(:user, :password => 'password', :password_confirmation => 'password')
     visit "catalog/V_GOMVH1RTSRIM6L6"
-    expect(page).to have_content("Please log in or sign up to request this item")
+    within ('.artifact_status') do
+      expect(page).to have_content("Please log in or sign up to request this item")
+    end
+  end
+
+  it "shows no message if the artifact has been published" do
+    @user = create(:user, :password => 'password', :password_confirmation => 'password')
+    @artifact = create(:artifact, solr_document_id: "V_GOMVH1RTSRIM6L6")
+    @artifact.request_digitization(@user)
+    @artifact.approve_digitization(@user)
+    @artifact.publish_digitization(@user)
+    visit "catalog/V_GOMVH1RTSRIM6L6"
+    within ('.artifact_status') do
+      expect(page).to have_no_content("item")
+    end
   end
 end
