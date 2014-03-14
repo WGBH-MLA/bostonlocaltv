@@ -111,6 +111,44 @@ describe Admin::ArtifactsController, type: feature do
       end
     end
 
+    it "clicking 'digitze' link changes makes the 'Publish' link available" do
+      click_link "View"
+      within ".attributes_table" do
+        click_link("Digitize")
+      end
+      within ".attributes_table" do
+        expect(page).to have_content("Publish This Artifact")
+      end
+    end
+
+    it "clicking 'publish' link changes artifact state to published" do
+      click_link "View"
+      within ".attributes_table" do
+        click_link("Digitize")
+      end
+      within ".attributes_table" do 
+        click_link('Publish This Artifact')
+      end
+      within ".attributes_table" do
+        expect(page).to have_content("This artifact has been published and is available.")
+      end
+    end
+
+    it "when artifact state is 'requested', there should be no 'publish' link" do
+      click_link "View"
+      within ".attributes_table" do
+        expect(page).should_not have_css(".publish_digitization")
+      end
+    end
+
+    it "when artifact state is 'blocked', there should be no 'publish' link" do
+      @artifact.block_digitization(@admin)
+      click_link "View"
+      within ".attributes_table" do
+        expect(page).should_not have_css(".publish_digitization")
+      end
+    end
+
     it "when artifact state is 'blocked', there should be no 'block' link" do
       @artifact.block_digitization(@admin)
       click_link "View"
