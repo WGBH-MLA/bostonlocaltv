@@ -77,7 +77,6 @@ ActiveAdmin.register Artifact do
       end
     end
 
-    active_admin_comments
   end
 
   member_action :approve_digitization, :method => :put do

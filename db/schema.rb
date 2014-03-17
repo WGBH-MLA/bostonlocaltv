@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140316233503) do
+ActiveRecord::Schema.define(:version => 20140317213433) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -66,8 +66,9 @@ ActiveRecord::Schema.define(:version => 20140316233503) do
     t.integer  "user_id"
     t.string   "solr_document_id"
     t.text     "comment"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at",                          :null => false
+    t.datetime "updated_at",                          :null => false
+    t.boolean  "approved",         :default => false
   end
 
   add_index "comments", ["user_id"], :name => "index_comments_on_user_id"

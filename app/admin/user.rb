@@ -41,7 +41,6 @@ ActiveAdmin.register User do
         column :created_at
       end
     end
-    active_admin_comments
   end
 
 end
