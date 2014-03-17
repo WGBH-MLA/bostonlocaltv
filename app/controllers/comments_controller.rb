@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
   def create
     @comment = current_user.comments.new(params[:comment])
     if @comment.save
-      flash[:success] = "Comment created successfully"
+      flash[:notice] = "Comment created successfully and will appear upon approval by our moderators"
     else
       flash[:error] = "Unable to save comment"
     end
