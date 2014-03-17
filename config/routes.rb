@@ -27,6 +27,7 @@ Bostonlocaltv::Application.routes.draw do
   end
 
   
+  resources :comments, :only => [:create]
   resources :digitizations
   resources :sponsorships do
     member do
