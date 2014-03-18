@@ -6,13 +6,6 @@ GIT
       blacklight (>= 3.0)
       oai
       rails (>= 3.0)
-
-GIT
-  remote: https://github.com/net-ssh/net-ssh.git
-  revision: 6fc2b4d782a45ead3cf2ca14b3c3fad1d738acc2
-  specs:
-    net-ssh (2.8.1)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -241,6 +234,7 @@ GEM
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
+    net-ssh (2.7.0)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
     nio4r (1.0.0)
@@ -387,7 +381,7 @@ DEPENDENCIES
   launchy
   meta_request
   mysql2
-  net-ssh (~> 2.8.1)!
+  net-ssh (~> 2.7.0)
   progressbar
   rails (~> 3.2.16)
   rails-footnotes (>= 3.7)
