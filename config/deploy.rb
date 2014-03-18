@@ -20,6 +20,10 @@ after "deploy:restart", "deploy:cleanup"
 after "deploy:update_code","deploy:config_symlink"
 after "deploy:update_code","deploy:symlink_jetty"
 
+# To allow interactive login to lsboslocal02
+default_run_options[:pty] = true
+set :ssh_options, { :forward_agent => true }
+
 namespace :deploy do 
   desc "Link the database/yml in to place"
   task :config_symlink do
