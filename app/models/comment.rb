@@ -3,6 +3,7 @@ class Comment < ActiveRecord::Base
   default_scope :order => 'created_at ASC'
 
   scope :approved, where(approved: true)
+  scope :pending, where(approved: false)
 
   def approve!
     update_attribute(:approved, true)
