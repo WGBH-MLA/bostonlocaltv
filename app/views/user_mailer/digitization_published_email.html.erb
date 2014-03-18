@@ -6,10 +6,11 @@
   <body>
     <h1>The item you requested is available.</h1>
     <p>
-       We are happy to inform you the item you recently requested, <%= @artifact.to_s %>, has been digitized and is available. <br/>
+       We are happy to inform you the item you recently requested, <%= link_to @artifact.title, "http://bostonlocaltv.org/catalog/#{@artifact.solr_document_id}" %>, has been digitized and is available. <br/>
     </p>
     <p>
-      To check the status of your other requests, <%= link_to "visit your dashboard anytime", dashboard_path %>. Thank you for your interest in the Boston TV News Digital Library.
+      To check the status of your other requests, <%= link_to "visit your dashboard anytime", dashboard_path %>.
     </p>
+    <p>Thank you for your interest in the Boston TV News Digital Library.</p>
   </body>
 </html>

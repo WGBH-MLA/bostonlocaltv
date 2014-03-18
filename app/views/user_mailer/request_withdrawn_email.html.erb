@@ -5,10 +5,11 @@
   </head>
   <body>
     <p>
-      You recently withdrew your request for digitization on <%= @artifact.to_s %>. No further action is required on your part. <br/>
+      You recently withdrew your request for digitization on <%= link_to @artifact.title, "http://bostonlocaltv.org/catalog/#{@artifact.solr_document_id}" %>. No further action is required on your part. <br/>
     </p>
     <p>
-      To check the status of any remaining requests, <%= link_to "visit your dashboard anytime", dashboard_path %>. Thank you for your interest in the Boston TV News Digital Library. 
+      To check the status of any remaining requests, <%= link_to "visit your dashboard anytime", dashboard_path %>.
     </p>
+    <p>Thank you for your interest in the Boston TV News Digital Library.</p>
   </body>
 </html>
