@@ -46,7 +46,7 @@ group :development, :test do
   gem 'rails-footnotes', '>= 3.7'
   gem 'rspec-rails'
   gem 'sqlite3'
-  gem 'net-ssh', '~> 2.7.0'
+  gem 'net-ssh', '~> 2.8.1', git: "https://github.com/net-ssh/net-ssh.git"
 end
 
 group :development do 
