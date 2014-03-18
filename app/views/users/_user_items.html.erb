@@ -13,7 +13,6 @@
     </tr>
     <% @user.sponsorships.each do |sponsorship| %>
       <tr id="sponsorship-<%= sponsorship.id %>">
-        <% solr_doc =  %>
         <td><%= link_to sponsorship.artifact.title, catalog_path(sponsorship.artifact.solr_document_id) %></td>
         <td class='state'><%= sponsorship.artifact.state %></td>
         <td class='status'><%= sponsorship_status(sponsorship) %></td>
