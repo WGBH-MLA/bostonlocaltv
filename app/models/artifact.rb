@@ -147,14 +147,8 @@ class Artifact < ActiveRecord::Base
     })
   end
  
-  # TODO: Evaluate for refactor? A little bit over-complex.
   def title
-    @title ||=  Blacklight.solr.select(params: {q: "id:#{solr_document_id}"}).
-      try(:[], 'response').
-      try(:[], 'docs').
-      try(:first).
-      try(:[], 'title_s').
-      try(:first)
+    Blacklight.solr.select(params: {q: "id:#{solr_document_id}"})['response']['docs'].first['title_s'].first
   end
   
   def digitizing?
