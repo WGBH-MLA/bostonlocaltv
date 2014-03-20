@@ -6,6 +6,7 @@ GIT
       blacklight (>= 3.0)
       oai
       rails (>= 3.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
