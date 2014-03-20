@@ -5,8 +5,25 @@ class CatalogController < ApplicationController
   before_filter :find_artifact, :only => :show
 
   include Blacklight::Catalog
+  include BlacklightOaiProvider::ControllerExtension
+
   
   configure_blacklight do |config|
+
+
+    config.oai = {
+      :provider => {
+        :repository_name => 'Boston Local TV News',
+        :repository_url => 'http://localhost',
+        :record_prefix => '',
+        :admin_email => 'root@localhost'
+      },
+      :document => {
+        :timestamp => 'timestamp',
+        :limit => 25
+      }
+    }
+
     config.default_solr_params = { 
       :qt => 'search',
       :per_page => 10,

@@ -8,6 +8,12 @@ gem 'blacklight', '~>4.6.3'
 gem 'blacklight_advanced_search'
 gem 'blacklight_range_limit'
 gem 'bootstrap-sass'
+
+# Need to pin sass to < 3.3 b/c of incompatibility with compass 0.12.
+# The other options was to bump compass up to 0.13.alpha, but that was triggering more dependency issues.
+# see https://github.com/chriseppstein/compass/issues/1339
+gem 'sass', '~> 3.2.13'
+
 gem 'coffee-rails'
 gem 'compass'
 gem 'devise'
@@ -20,6 +26,8 @@ gem 'therubyracer'
 gem 'uglifier'
 gem 'unicode'
 gem 'state_machine'
+gem 'blacklight_oai_provider', git: "https://github.com/cbeer/blacklight_oai_provider.git"
+
 
 group :test do
   gem 'aruba'

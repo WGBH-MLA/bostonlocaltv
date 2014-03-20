@@ -2,6 +2,8 @@
 class SolrDocument 
 
   include Blacklight::Solr::Document
+  SolrDocument.use_extension( BlacklightOaiProvider::SolrDocumentExtension )
+
 
    #unique_key = 'UID'
   
