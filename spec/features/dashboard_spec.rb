@@ -8,7 +8,7 @@ describe 'User dashboard', type: feature do
     fill_in 'Password', :with => 'password'
     click_button 'Sign in'
     @artifact = create(:artifact)
-    @artifact.stub(:title).and_return('A Test Document Title')
+    @artifact.stub(:title).and_return('Busing')
     @artifact.request_digitization(@user)
     @sponsorship = @user.sponsorships.first
     visit dashboard_path
@@ -19,7 +19,8 @@ describe 'User dashboard', type: feature do
   end
 
   it "shows artifacts they have requested" do
-    expect(page).to have_content(@artifact.solr_document_id)
+    save_and_open_page
+    expect(page).to have_content(@artifact.title)
   end
 
   it "shows digitization status of 'requested' when user has requested artifact" do
@@ -76,5 +77,14 @@ describe 'User dashboard', type: feature do
   it "clicking 'Unfollow' removes artifact from dashboard" do
     click_link("Unfollow")
     expect(page).not_to have_content(@artifact.title)
+  end
+
+  it "shows digitization status of 'published' when digitization has been published" do
+    @artifact.approve_digitization(@user)
+    @artifact.publish(@user)
+    visit dashboard_path
+    within("#sponsorship-#{@sponsorship.id} .state") do
+      expect(page).to have_content("published")
+    end
   end
 end

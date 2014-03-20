@@ -1,5 +1,6 @@
 module ArtifactsHelper
 	def artifact_digitization_link(document, artifact)
+    return nil if published_artifact?(artifact)
     return unable_to_digitize if blocked_artifact?(artifact)
     return authenticated_digitization_link(document, artifact) if current_user
     unauthenticated_digitization_link
@@ -9,6 +10,7 @@ module ArtifactsHelper
     return already_requested if currently_requested?(document, artifact)
     return track_artifact_link(document) if requested_by_someone_else?(document, artifact) && artifact.digitizing?
     return request_digitization_link(document) if !blocked_artifact?(artifact)
+    return 
   end
 
   def unauthenticated_digitization_link
@@ -32,6 +34,10 @@ module ArtifactsHelper
 
   def blocked_artifact?(artifact)
     artifact && artifact.state == "blocked"
+  end
+
+  def published_artifact?(artifact)
+    artifact && artifact.state == "published"
   end
 
   def unable_to_digitize

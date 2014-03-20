@@ -40,9 +40,14 @@ ActiveAdmin.register Artifact do
           links << link_to("Block", block_digitization_admin_artifact_path(artifact), :method => :put, :class => "block_digitization")
           links.join(' / ').html_safe
         elsif artifact.state == "digitizing"
-          "Digitization has been approved and artifact is being digitized"
+          links = []
+          links << "<em>(Digitization has been approved and artifact is being digitized)</em>"
+          links << link_to("Publish This Artifact", publish_digitization_admin_artifact_path(artifact), :method => :put, :class => "publish_digitization")
+          links.join(' / ').html_safe
         elsif artifact.state == "blocked"
           "We are unable to digitize this artifact"
+        elsif artifact.state == "published"
+          "This artifact has been published and is available."
         else
           "Issue, please contact support"
         end
@@ -55,7 +60,12 @@ ActiveAdmin.register Artifact do
           link_to sponsorship.user.email, admin_user_path(sponsorship.user.id)
         end
         column :status do |sponsorship|
-          sponsorship.status
+          links = []
+          links << sponsorship.status
+          if sponsorship.status == "Requested"
+            links << link_to("Withdraw user's request", withdraw_request_admin_artifact_path(sponsorship), :method => :put, :class=> "withdraw_request")
+          end
+          links.join(' / ').html_safe
         end
         column :actions do |sponsorship|
           if sponsorship.confirmed?
@@ -79,6 +89,19 @@ ActiveAdmin.register Artifact do
   member_action :block_digitization, :method => :put do
     artifact = Artifact.find(params[:id])
     artifact.block(current_user)
+    redirect_to admin_artifact_url(artifact)
+  end
+
+  member_action :publish_digitization, :method => :put do
+    artifact = Artifact.find(params[:id])
+    artifact.publish(current_user)
+    redirect_to admin_artifact_url(artifact)
+  end
+
+  member_action :withdraw_request, :method => :put do
+    s = Sponsorship.find(params[:id])
+    artifact = s.artifact
+    artifact.withdraw_request(s.user)
     redirect_to admin_artifact_url(artifact)
   end
 end                                   
