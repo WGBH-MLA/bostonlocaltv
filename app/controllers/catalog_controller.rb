@@ -5,8 +5,25 @@ class CatalogController < ApplicationController
   before_filter :find_artifact, :only => :show
 
   include Blacklight::Catalog
+  include BlacklightOaiProvider::ControllerExtension
+
   
   configure_blacklight do |config|
+
+
+    config.oai = {
+      :provider => {
+        :repository_name => 'Boston Local TV News',
+        :repository_url => 'http://localhost',
+        :record_prefix => '',
+        :admin_email => 'root@localhost'
+      },
+      :document => {
+        :timestamp => 'timestamp',
+        :limit => 25
+      }
+    }
+
     config.default_solr_params = { 
       :qt => 'search',
       :per_page => 10,
@@ -91,7 +108,6 @@ class CatalogController < ApplicationController
     config.add_show_field 'intended_purpose_s', :label => 'Type or Purpose'
     config.add_show_field 'can_number_s', :label => 'Can Number:', :link => true
     config.add_show_field 'format_location_s', :label => 'Location'
-    config.add_show_field 'cross_reference_s', :label => 'Cross Reference'
     config.add_show_field 'accession_num_s', :label => 'Accession Number'
     config.add_show_field 'language_s', :label => 'Language'
 

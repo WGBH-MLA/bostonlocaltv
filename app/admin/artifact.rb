@@ -7,7 +7,7 @@ ActiveAdmin.register Artifact do
   filter :created_at
   filter :updated_at
   filter :state
-  filter :sponsorship_user_ids, :as => :select, :collection => User.all.collect{|u| [u.to_s, u.id]}, :label => 'Requestor / Sponsor'
+  filter :sponsorship_user_ids, :as => :select, :collection => proc { User.all.collect{|u| [u.to_s, u.id]} }, :label => 'Requestor / Sponsor' 
 
   index do
     column :id
