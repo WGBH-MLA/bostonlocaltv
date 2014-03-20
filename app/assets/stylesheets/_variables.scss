@@ -10,24 +10,24 @@
 // Grays
 // -------------------------
 $black:                 #000;
-$grayDarker:            #222;
+$grayDarker:            darken($dark-gray, 10%);
 $grayDark:              $dark-gray;
 $gray:                  $mid-gray;
-$grayLight:             #999;
-$grayLighter:           #eee;
-$white:                 #fff;
+$grayLight:             $light-gray;
+$grayLighter:           lighten($light-gray, 10%);
+//$white:                 #fff;
 
 
 // Accent colors
 // -------------------------
-$blue:                  #049cdb;
-$blueDark:              #0064cd;
-$green:                 #46a546;
-$red:                   #9d261d;
-$yellow:                #ffc40d;
+//$blue:                  #049cdb;
+$blueDark:              darken($blue, 10%);
+//$green:                 #46a546;
+//$red:                   #9d261d;
+//$yellow:                #ffc40d;
 //$orange:                #f89406;
-$pink:                  #c3325f;
-$purple:                #7a43b6;
+$pink:                  lighten($red, 10%);
+//$purple:                #7a43b6;
 
 
 // Scaffolding
@@ -70,8 +70,8 @@ $paddingLarge:          11px 19px; // 44px
 $paddingSmall:          2px 10px;  // 26px
 $paddingMini:           0px 6px;   // 22px
 
-$baseBorderRadius:      4px;
-$borderRadiusLarge:     6px;
+$baseBorderRadius:      3px;
+$borderRadiusLarge:     3px;
 $borderRadiusSmall:     3px;
 
 
@@ -84,27 +84,27 @@ $tableBorder:                       #ddd; // table and cell border
 
 // Buttons
 // -------------------------
-$btnBackground:                     $white;
-$btnBackgroundHighlight:            darken($white, 10%);
-$btnBorder:                         #ccc;
+$btnBackground:                     $blue;
+$btnBackgroundHighlight:            $blue;
+$btnBorder:                         $white;
 
-$btnPrimaryBackground:              $linkColor;
-$btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%);
+$btnPrimaryBackground:              $orange;
+$btnPrimaryBackgroundHighlight:     $orange;
 
-$btnInfoBackground:                 #5bc0de;
-$btnInfoBackgroundHighlight:        #2f96b4;
+$btnInfoBackground:                 $purple;
+$btnInfoBackgroundHighlight:        $purple;
 
-$btnSuccessBackground:              #62c462;
-$btnSuccessBackgroundHighlight:     #51a351;
+$btnSuccessBackground:              $green;
+$btnSuccessBackgroundHighlight:     $green;
 
-$btnWarningBackground:              lighten($orange, 15%);
-$btnWarningBackgroundHighlight:     $orange;
+$btnWarningBackground:              $yellow;
+$btnWarningBackgroundHighlight:     $yellow;
 
-$btnDangerBackground:               #ee5f5b;
-$btnDangerBackgroundHighlight:      #bd362f;
+$btnDangerBackground:               $red;
+$btnDangerBackgroundHighlight:      $red;
 
-$btnInverseBackground:              #444;
-$btnInverseBackgroundHighlight:     $grayDarker;
+$btnInverseBackground:              $dark-gray;
+$btnInverseBackgroundHighlight:     $dark-gray;
 
 
 // Forms
@@ -112,7 +112,7 @@ $btnInverseBackgroundHighlight:     $grayDarker;
 $inputBackground:               $white;
 $inputBorder:                   #ccc;
 $inputBorderRadius:             $baseBorderRadius;
-$inputDisabledBackground:       $grayLighter;
+$inputDisabledBackground:       $mid-gray;
 $formActionsBackground:         #f5f5f5;
 $inputHeight:                   $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
 
@@ -230,21 +230,21 @@ $heroUnitLeadColor:               inherit;
 
 // Form states and alerts
 // -------------------------
-$warningText:             #c09853;
-$warningBackground:       #fcf8e3;
-$warningBorder:           darken(adjust-hue($warningBackground, -10), 3%);
+$warningText:             $dark-yellow;
+$warningBackground:       $yellow;
+$warningBorder:           transparent;
 
-$errorText:               #b94a48;
-$errorBackground:         #f2dede;
-$errorBorder:             darken(adjust-hue($errorBackground, -10), 3%);
+$errorText:               $red;
+$errorBackground:         $red;
+$errorBorder:             transparent;
 
-$successText:             #468847;
-$successBackground:       #dff0d8;
-$successBorder:           darken(adjust-hue($successBackground, -10), 5%);
+$successText:             $green;
+$successBackground:       $green;
+$successBorder:           transparent;
 
-$infoText:                #3a87ad;
-$infoBackground:          #d9edf7;
-$infoBorder:              darken(adjust-hue($infoBackground, -10), 7%);
+$infoText:                $purple;
+$infoBackground:          $purple;
+$infoBorder:              transparent;
 
 
 // Tooltips and popovers

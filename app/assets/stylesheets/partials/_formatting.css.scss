@@ -1,6 +1,6 @@
 body {
   background: #d3d2d0 url('blacklight/bg-5px.jpg') repeat-x top left; 
-  font: 12px Verdana, "Lucida Grande", "Lucida Sans Unicode", "Arial Unicode MS", Arial, sans-serif; 
+  font: 12px $sans-font; 
   color: #333;
   font-size: 10px;
   line-height: 13px;
@@ -24,7 +24,7 @@ em {
   font-style: italic;
 }
 h1, h2, h3, h4 {
-  font-family: serif;
+  font-family: $serif-font;
 }
 h1 {
   font-size: 2.6em;
@@ -232,7 +232,7 @@ ol,ul,dl
 
 select,input,button,textarea
 {
-	font:1em Verdana, "Lucida Grande", "Lucida Sans Unicode", "Arial Unicode MS", Arial, sans-serif;
+	font:1em $sans-font;
 }
 
 table.zebra .zebra_stripe,ul.zebra .zebra_stripe

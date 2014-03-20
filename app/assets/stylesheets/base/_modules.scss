@@ -1,0 +1,29 @@
+/**********************************************************
+*
+* Buttons, Labels & Badges
+*
+**********************************************************/
+
+.btn, .label, .badge {
+  @include box-shadow(none);
+  @include text-shadow(none);
+  border: none;
+  color: $white;
+  > a { 
+    @include text-shadow(none);
+    color: $white;
+    &:hover{ color: $light-gray; }
+    &:visited { color: $white; }
+  }
+}
+
+.label-warning, .btn-warning, .badge-warning {
+  background-color: $yellow;
+  border: none;
+  color: $dark-yellow;
+}
+
+.label-warning, .btn-warning, .badge-warning {
+  background-color: $yellow;
+  color: $dark-yellow;
+}

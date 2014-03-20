@@ -1,0 +1,89 @@
+/**********************************************************
+*
+* General
+*
+**********************************************************/
+h1 { 
+  margin: 0;
+  padding: 0;
+}
+
+/**********************************************************
+*
+* Top bar
+*
+**********************************************************/
+.navbar {
+  border: none;
+  margin-bottom: 0;
+  .navbar-inner {
+    @include border-radius(0);
+    background: $dark-gray;  
+    h1 {
+      font-family: $sans-font;
+      font-size: $bl*3;
+      font-style: normal;
+      font-weight: $sans-bold;
+      line-height: $bl*3;
+      padding-top: $bl;
+      text-shadow: none;
+      a { 
+        color: $white;
+        text-decoration: none;
+      }
+      span { 
+        clear: left;
+        color: $orange;
+        display: block;
+      }
+    }
+  }
+}
+
+/**********************************************************
+*
+* Homepage Mast
+*
+**********************************************************/
+#feature-container {
+  height: $bl*68;
+  overflow: hidden;
+  position: relative;
+  img { min-width: 100% }
+}
+
+.featured-info {
+  @include background-image(
+    linear-gradient(right top, 
+      rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)
+    )
+  );
+  padding-top: $bl*34;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  h2 { 
+    color: #fff;
+    padding-bottom: $bl*4;
+  }
+  p { 
+    color: $mid-gray; 
+    font-size: $bl*3;
+    line-height: $bl*3;
+  }
+}
+
+/**********************************************************
+*
+* Homepage Content
+*
+**********************************************************/
+#home_container {
+  padding: $bl*8;
+  .post {
+    background-color: $white;
+    border: solid 1px $mid-gray;
+    margin-bottom: $bl*8;
+  }
+}
