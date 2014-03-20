@@ -1,12 +1,11 @@
 GIT
-  remote: git://github.com/cbeer/blacklight_oai_provider.git
+  remote: https://github.com/cbeer/blacklight_oai_provider.git
   revision: 4c5a40db163e627ecb4e478847486ff4cff7db9a
   specs:
     blacklight_oai_provider (0.1.1)
       blacklight (>= 3.0)
       oai
       rails (>= 3.0)
-
 GEM
   remote: http://rubygems.org/
   specs:
