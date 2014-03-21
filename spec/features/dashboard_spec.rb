@@ -8,9 +8,11 @@ describe 'User dashboard', type: feature do
     fill_in 'Password', :with => 'password'
     click_button 'Sign in'
     @artifact = create(:artifact)
-    @artifact.stub(:title).and_return('Busing')
+    @artifact.stub(:title).and_return('Title Stub')
     @artifact.request_digitization(@user)
     @sponsorship = @user.sponsorships.first
+    @sponsorship.stub(:artifact).and_return(@artifact)
+    User.any_instance.stub(:sponsorships).and_return([@sponsorship])
     visit dashboard_path
   end
 
@@ -18,7 +20,7 @@ describe 'User dashboard', type: feature do
   	expect(page).to have_content(@user.first_name)
   end
 
-  it "shows artifacts they have requested" do
+  it "shows artifacts they have requested", wip: true do
     expect(page).to have_content(@artifact.title)
   end
 
