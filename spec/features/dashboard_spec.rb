@@ -11,17 +11,18 @@ describe 'User dashboard', type: feature do
     @artifact.stub(:title).and_return('Title Stub')
     @artifact.request_digitization(@user)
     @sponsorship = @user.sponsorships.first
+    visit dashboard_path
+  end
+
+  it "shows artifacts they have requested", wip: true do
     @sponsorship.stub(:artifact).and_return(@artifact)
     User.any_instance.stub(:sponsorships).and_return([@sponsorship])
     visit dashboard_path
+    expect(page).to have_content(@artifact.title)
   end
 
   it "shows user's name on their dashboard" do
   	expect(page).to have_content(@user.first_name)
-  end
-
-  it "shows artifacts they have requested", wip: true do
-    expect(page).to have_content(@artifact.title)
   end
 
   it "shows digitization status of 'requested' when user has requested artifact" do
