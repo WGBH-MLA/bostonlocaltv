@@ -19,7 +19,6 @@ describe 'User dashboard', type: feature do
   end
 
   it "shows artifacts they have requested" do
-    save_and_open_page
     expect(page).to have_content(@artifact.title)
   end
 
