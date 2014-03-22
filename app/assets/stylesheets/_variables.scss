@@ -48,9 +48,9 @@ $linkColorHover:        darken($linkColor, 15%);
 // $serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-$baseFontSize:          14px;
+$baseFontSize:          18px;
 $baseFontFamily:        $sans-font;
-$baseLineHeight:        20px;
+$baseLineHeight:        30px;
 $altFontFamily:         $serif-font;
 
 $headingsFontFamily:    inherit; // empty to use BS default, $baseFontFamily

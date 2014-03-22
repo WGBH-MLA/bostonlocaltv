@@ -1,29 +1,97 @@
+
+// BOOTSTRAP COMPONENTS
+
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
 /**********************************************************
 *
-* Buttons, Labels & Badges
+* Top bar
 *
 **********************************************************/
-
-.btn, .label, .badge {
-  @include box-shadow(none);
-  @include text-shadow(none);
+.navbar {
   border: none;
-  color: $white;
-  > a { 
-    @include text-shadow(none);
-    color: $white;
-    &:hover{ color: $light-gray; }
-    &:visited { color: $white; }
+  margin-bottom: 0;
+  .navbar-inner {
+    @include border-radius(0);
+    background: $dark-gray;  
+    h1 {
+      font-family: $sans-font;
+      font-size: $bl*3;
+      font-style: normal;
+      font-weight: $sans-bold;
+      line-height: $bl*3;
+      padding-top: $bl;
+      text-shadow: none;
+      a { 
+        color: $white;
+        text-decoration: none;
+      }
+      span { 
+        clear: left;
+        color: $orange;
+        display: block;
+      }
+    }
   }
 }
 
-.label-warning, .btn-warning, .badge-warning {
-  background-color: $yellow;
-  border: none;
-  color: $dark-yellow;
+
+
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+// CUSTOM MODULES
+
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+
+
+/**********************************************************
+*
+* Homepage Mast
+*
+**********************************************************/
+#feature-container {
+  height: $bl*68;
+  overflow: hidden;
+  position: relative;
+  img { min-width: 100% }
 }
 
-.label-warning, .btn-warning, .badge-warning {
-  background-color: $yellow;
-  color: $dark-yellow;
+.featured-info {
+  @include background-image(
+    linear-gradient(right top, 
+      rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)
+    )
+  );
+  padding-top: $bl*34;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  h2 { 
+    color: #fff;
+    padding-bottom: $bl*4;
+  }
+  p { 
+    color: $mid-gray; 
+    font-size: $bl*3;
+    line-height: $bl*3;
+  }
+}
+
+/**********************************************************
+*
+* Homepage Content
+*
+**********************************************************/
+#home_container {
+  padding: $bl*8;
+  .post {
+    background-color: $white;
+    border: solid 1px $mid-gray;
+    margin-bottom: $bl*8;
+  }
 }
