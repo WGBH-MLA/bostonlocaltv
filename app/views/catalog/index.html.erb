@@ -6,7 +6,9 @@
 
 	<% @page_title = application_name + " Search Results" %>
 
-  <% extra_head_content << render_opensearch_response_metadata.html_safe %>
+  <% content_for :head do%>
+    <%= render_opensearch_response_metadata.html_safe %>
+  <% end %>
 
 	
 	<%= render :partial => 'did_you_mean' %>
@@ -23,7 +25,7 @@
   
 	<%= render :partial => 'document_list' %>
 
-	<% sidebar_items << capture do %>
+	<% sidebar << capture do %>
 	  <%= render :partial=>'facets' %>
 	<% end %>
 

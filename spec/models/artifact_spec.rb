@@ -60,14 +60,14 @@ describe Artifact do
 
 		it 'should not make user a confirmed sponsor upon artifact request' do
 			@artifact.request_digitization(@user)
-			@artifact.sponsors.should_not include(@user)
+			expect(@artifact.sponsors).not_to include(@user)
 		end
 
 		it "should remove user from artifact sponsors if artifact request is withdrawn" do
 			@artifact.request_digitization(@user)
 			@artifact.withdraw_request(@user)
 			@artifact.reload
-			@artifact.potential_sponsors.should_not include(@user)
+			expect(@artifact.potential_sponsors).not_to include(@user)
 		end
 
 		it "should remove user's potential sponsorship if artifact request is withdrawn" do

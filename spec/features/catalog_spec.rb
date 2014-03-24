@@ -89,4 +89,5 @@ describe 'Catalog Show Page', type: feature do
       expect(page).to have_no_content("item")
     end
   end
+
 end

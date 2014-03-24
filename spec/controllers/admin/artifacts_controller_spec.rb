@@ -97,7 +97,7 @@ describe Admin::ArtifactsController, type: feature do
       @artifact.approve_digitization(@admin)
       click_link "View"
       within ".attributes_table" do
-        expect(page).should_not have_css(".approve_digitization")
+        expect(page).not_to have_css(".approve_digitization")
       end
     end
 
@@ -137,7 +137,7 @@ describe Admin::ArtifactsController, type: feature do
     it "when artifact state is 'requested', there should be no 'publish' link" do
       click_link "View"
       within ".attributes_table" do
-        expect(page).should_not have_css(".publish_digitization")
+        expect(page).not_to have_css(".publish_digitization")
       end
     end
 
@@ -145,7 +145,7 @@ describe Admin::ArtifactsController, type: feature do
       @artifact.block_digitization(@admin)
       click_link "View"
       within ".attributes_table" do
-        expect(page).should_not have_css(".publish_digitization")
+        expect(page).not_to have_css(".publish_digitization")
       end
     end
 
@@ -153,7 +153,7 @@ describe Admin::ArtifactsController, type: feature do
       @artifact.block_digitization(@admin)
       click_link "View"
       within ".attributes_table" do
-        expect(page).should_not have_css(".block_digitization")
+        expect(page).not_to have_css(".block_digitization")
       end
     end
   end

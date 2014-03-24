@@ -10,6 +10,8 @@ class Artifact < ActiveRecord::Base
     :conditions => {'sponsorships.confirmed' => false},
     :source => :user
 
+  validates_presence_of :solr_document_id
+
   search_methods :sponsorship_user_ids_eq
 
   scope :sponsorship_user_ids_eq, lambda { |user_id|
@@ -145,7 +147,6 @@ class Artifact < ActiveRecord::Base
     })
   end
  
-  # TODO: Evaluate for refactor? A little bit over-complex.
   def title
     @title ||=  Blacklight.solr.select(params: {q: "id:#{solr_document_id}"}).
       try(:[], 'response').
