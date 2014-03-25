@@ -181,7 +181,7 @@ class CatalogController < ApplicationController
   
     respond_to do |format|
       format.html { 
-       content_for :head do 
+       view_context.content_for :head do 
         view_context.auto_discovery_link_tag(:rss, url_for(params.merge(:format => 'rss')), :title => t('blacklight.search.rss_feed') )
         view_context.auto_discovery_link_tag(:atom, url_for(params.merge(:format => 'atom')), :title => t('blacklight.search.atom_feed') )
       end
