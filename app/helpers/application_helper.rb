@@ -1,6 +1,10 @@
 module ApplicationHelper
     require 'open-uri'
     require 'pp'
+
+    def sidebar
+      @sidebar ||= []
+    end
         
    def export_as_chicago_citation_txt (document)
     text = ''

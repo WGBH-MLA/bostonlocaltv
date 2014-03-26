@@ -10,5 +10,5 @@ branches:
 notifications:
   irc: "irc.freenode.org#wgbh-mla"
   
-script:
-  - RAILS_ENV=test bundle exec rake --trace db:migrate test
+# script:
+#  - RAILS_ENV=test bundle exec rake --trace db:test:prepare test

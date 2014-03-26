@@ -32,4 +32,8 @@ class SolrDocument
                          :language => "language_facet",
                          :format => "format"
                          )
+
+  def comments
+    Comment.where(solr_document_id: id)
+  end
 end

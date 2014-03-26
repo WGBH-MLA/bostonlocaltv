@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   has_many :artifact_logs
   has_many :sponsorships
   has_many :artifacts, :through => :sponsorships
+  has_many :comments
 
   has_many :sponsored_artifacts, :through => :sponsorships, 
     :conditions => {'sponsorships.confirmed' => true},

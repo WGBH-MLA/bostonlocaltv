@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '~> 3.2.16'
-gem 'syck'
+gem 'syck', platforms: [:ruby_20]
 
 gem 'activeadmin'
 gem 'blacklight', '~>4.6.3'
@@ -26,7 +26,7 @@ gem 'therubyracer'
 gem 'uglifier'
 gem 'unicode'
 gem 'state_machine'
-gem 'blacklight_oai_provider', github: "cbeer/blacklight_oai_provider"
+gem 'blacklight_oai_provider', git: "https://github.com/cbeer/blacklight_oai_provider.git"
 
 
 group :test do

@@ -28,6 +28,7 @@ Bostonlocaltv::Application.routes.draw do
 
   match 'styleguide' => 'styleguide#index'
   
+  resources :comments, :only => [:create]
   resources :digitizations
   resources :sponsorships do
     member do

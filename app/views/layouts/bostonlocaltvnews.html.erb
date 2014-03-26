@@ -14,9 +14,10 @@
 <%= stylesheet_link_tag  "blacklight_advanced_search", :media => 'all' %>
   <style type="text/css"><%= yield :blog_stylesheets %></style>
 <%= javascript_include_tag "application", "rails" %>
+<!--[if IE]><%= javascript_include_tag "excanvas.min" %><![endif]-->
 <link href="/assets/video-js.min.css" rel="stylesheet">
   <%= csrf_meta_tags %>
-  <%= raw(render_head_content) %>
+  <%= content_for(:head) %>
    <!--[if IE 7]><link rel="stylesheet" href="/stylesheets/compiled/ie7.css" type="text/css" media="screen,projection" /><![endif]-->
    <!--[if IE 8]><link rel="stylesheet" href="/stylesheets/compiled/ie8.css" type="text/css" media="screen,projection" /><![endif]-->
    <!--[if IE 9]><link rel="stylesheet" href="/stylesheets/compiled/ie9.css" type="text/css" media="screen,projection" /><![endif]-->
@@ -55,8 +56,8 @@
         </div>
      
         <div id="sidebar">
-          <%#= render :partial=> 'catalog/side_search_form' %>
-         <%= sidebar_items.join('').html_safe %>
+         <%#= render :partial=> 'catalog/side_search_form' %>
+          <%= sidebar.join('').html_safe %>
         </div>
 
         <div class="clear-both"/>

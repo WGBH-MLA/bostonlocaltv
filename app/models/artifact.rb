@@ -10,6 +10,8 @@ class Artifact < ActiveRecord::Base
     :conditions => {'sponsorships.confirmed' => false},
     :source => :user
 
+  validates_presence_of :solr_document_id
+
   search_methods :sponsorship_user_ids_eq
 
   scope :sponsorship_user_ids_eq, lambda { |user_id|
@@ -23,7 +25,7 @@ class Artifact < ActiveRecord::Base
     event :withdraw do;   transition [:requested, :digitizing] => :initiated; end
     event :digitize do;   transition :requested => :digitizing; end
     event :block do;       transition :requested => :blocked; end
-    event :available do;  transition :digitizing => :published; end
+    event :publish do;  transition :digitizing => :published; end
 
     before_transition any => any do |artifact, transition|
       raise ArgumentError, "Specify a user" unless transition.args.first
@@ -43,6 +45,7 @@ class Artifact < ActiveRecord::Base
       artifact.withdraw_user(user)
       Rails.logger.info('WITHDRAWN')
       AdminMailer.request_withdrawn_email(user, artifact).deliver
+      UserMailer.request_withdrawn_email(user, artifact).deliver
     end
 
     after_transition :on => :request do |artifact, transition|
@@ -68,10 +71,12 @@ class Artifact < ActiveRecord::Base
       end
     end
 
-    after_transition :on => :published do |artifact, transition| 
+    after_transition :on => :publish do |artifact, transition| 
       user = transition.args.first
       Rails.logger.info('PUBLISHED')
-      # do stuff - means we have metadata, ingested into solr and moved it into media server
+      artifact.users.each do |user|
+        UserMailer.digitization_published_email(user, artifact).deliver
+      end
     end
   end
 
@@ -131,11 +136,26 @@ class Artifact < ActiveRecord::Base
       description: 'Digitization has been blocked'
     })
   end
+
+  def publish_digitization(user)
+    publish!(user)
+    ArtifactLog.record(user, self, {
+      event: 'publish',
+      from: 'requested',
+      to: 'published',
+      description: 'Digitization has been published and is available'
+    })
+  end
  
   def title
-    Blacklight.solr.select(params: {q: "id:#{solr_document_id}"})['response']['docs'].first['title_s'].first
+    @title ||=  Blacklight.solr.select(params: {q: "id:#{solr_document_id}"}).
+      try(:[], 'response').
+      try(:[], 'docs').
+      try(:first).
+      try(:[], 'title_s').
+      try(:first)
   end
-
+  
   def digitizing?
     state == 'digitizing'
   end
