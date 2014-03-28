@@ -26,6 +26,7 @@ Bostonlocaltv::Application.routes.draw do
     end
   end
 
+  match 'styleguide' => 'styleguide#index'
   
   resources :comments, :only => [:create]
   resources :digitizations
