@@ -14,8 +14,8 @@ module ArtifactsHelper
   end
 
   def unauthenticated_digitization_link
-    login = link_to 'log in', new_user_session_path
-    signup = link_to 'sign up', new_user_registration_path
+    login = link_to 'log in', new_user_session_path, :class => "btn btn-mini btn-primary"
+    signup = link_to 'sign up', new_user_registration_path, :class => "btn btn-mini btn-primary"
     "Please #{login} or #{signup} to request this item".html_safe
   end
 
