@@ -14,8 +14,8 @@ module ArtifactsHelper
   end
 
   def unauthenticated_digitization_link
-    login = link_to 'log in', new_user_session_path
-    signup = link_to 'sign up', new_user_registration_path
+    login = link_to 'log in', new_user_session_path, :class => "btn btn-mini btn-primary"
+    signup = link_to 'sign up', new_user_registration_path, :class => "btn btn-mini btn-primary"
     "Please #{login} or #{signup} to request this item".html_safe
   end
 
@@ -28,7 +28,7 @@ module ArtifactsHelper
   end
 
   def already_requested
-    dashboard_link = link_to 'view request' , dashboard_path
+    dashboard_link = link_to 'view request' , dashboard_path, :class => "label label-info"
     "You have requested this item, #{dashboard_link}".html_safe
   end
 
@@ -41,16 +41,16 @@ module ArtifactsHelper
   end
 
   def unable_to_digitize
-    "We are unable to digitize this item."
+    "<span class='label label-inverse'>We are unable to digitize this item.</span>".html_safe
   end
 
   def track_artifact_link(document)
-   track = link_to "Track this item", digitizations_path(:id => document.id), method: "POST" 
+   track = link_to "Track this item", digitizations_path(:id => document.id), method: "POST", :class => "btn btn-mini btn-primary" 
    "Currently in the digitization process... #{track}".html_safe
   end
 
   def request_digitization_link(document)
-    link_to "Request digitization of this item", digitizations_path(:id => document.id), method: "POST"
+    link_to "Request digitization of this item", digitizations_path(:id => document.id), method: "POST", :class => "btn btn-mini btn-primary"
   end
 
 end
