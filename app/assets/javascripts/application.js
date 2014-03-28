@@ -15,6 +15,7 @@
 // Required by Blacklight
 //= require jquery-ui
 //= require blacklight/blacklight
+//= require bootstrap
 
 //= require video
 //= require video-config
