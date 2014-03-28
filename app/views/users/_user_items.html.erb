@@ -17,7 +17,7 @@
         <td class='state'><%= sponsorship.artifact.state %></td>
         <td class='status'><%= sponsorship_status(sponsorship) %></td>
         <% if sponsorship_status(sponsorship) == "Confirmed/Sponsor" %>
-          <td class='actions'><button class="btn btn-mini btn-inverse" type="button"><%= "Unfollow" %></button></td>
+          <td class='actions'><button class="btn btn-mini btn-inverse disabled" type="button"><%= "Unfollow" %></button></td>
         <% else %>
           <td class='actions'><button class="btn btn-mini btn-danger" type="button"><%= sponsorship_actions(sponsorship) %></button></td>
         <% end %>
