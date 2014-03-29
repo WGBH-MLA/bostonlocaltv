@@ -24,25 +24,22 @@
   </head>
   <body class="<%= render_body_class.html_safe %> <%= controller.controller_name %> <%= controller.action_name %> <%= @body_class %>">
 
-    <div id="page_home">
-      <div id="hd_home">
-       <div id="logo_left">
-         <%= image_tag 'blacklight/top-dates.jpg', :class=>'top-dates-logo', :size=>'122x122', :alt=>'1960 -- 2000' %>
-         </div>
-         <div id="logo_right">
-         <%= render :partial=>'catalog/top_search_form' %>
-         <%= image_tag 'blacklight/bostontvnews-logo.png', :class=>'bostontvnews-logo', :size=>'674x75' %>
-         <div id="user_info">
-           <% if current_user %>
-             <p>Welcome back&nbsp;&nbsp;<%= link_to current_user.full_name, dashboard_path %></a><br /><%= link_to "(logout)", destroy_user_session_path, method: :delete %>
-           <% else %>
-             <a href="/users/sign_in">Log in</a> | <a href="/users/sign_up">Sign up</a>
-           <% end %>
-         </div>
-        </div>
-        <div class="clear-both"/>
-        </div>
+    <nav class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <h1 class="brand"><a href="/">Boston Local TV <span>Digital Library</span></a></h1>      
+        <ul class="nav pull-right">
+          <% if current_user %>
+            <li><i class="icon-user icon-white"></i><%= link_to current_user.full_name, dashboard_path %></li>
+            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <li><i class="icon-user icon-white"></i><a href="/users/sign_in">Log in</a></li>
+            <li><a href="/users/sign_up">Sign up</a></li>
+          <% end %>
+        </ul>
       </div>
+    </nav>
+
+    <div id="page_home">
 
       <%= render :partial=>'catalog/menu_header' %>
 
