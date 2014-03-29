@@ -36,7 +36,23 @@
   }
 }
 
-
+/**********************************************************
+*
+* Tabs
+*
+**********************************************************/
+.nav-tabs, .nav-tabs.nav-stacked {
+  background-color: $light-gray;
+  .active {
+    background-color: $mid-gray;
+  }
+  > li:first-child > a, > li:last-child > a {
+    @include border-radius(0);
+  }
+  > li > a {
+    color: $dark-gray;
+  }
+}
 
 ///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////
