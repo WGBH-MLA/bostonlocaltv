@@ -3,6 +3,10 @@
 * General
 *
 **********************************************************/
+body {
+  padding-top: 0;
+}
+
 h1 { 
   margin: 0;
   padding: 0;
@@ -60,12 +64,19 @@ input[type="color"], .uneditable-input{
   @include box-shadow(none);
   color: $blue;
   border: solid 1px $blue;
+  box-sizing: inherit;
 }
 
 select { 
   color: $dark-gray;
   border: solid 1px $blue;
 }
+
+.input-append,
+.input-prepend {
+  margin-bottom: 0;
+}
+
 
 .input-append .add-on,
 .input-prepend .add-on,
@@ -78,8 +89,7 @@ select {
 .input-prepend .btn-group > .btn + .dropdown-toggle { border: solid 1px $blue; }
 .input-append .btn:nth-child(3) { 
   border-left: solid 1px $white;
-  margin-left: 0; 
-}
+  margin-left: 0;}
 
 input[disabled], 
 select[disabled], 

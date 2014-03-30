@@ -53,6 +53,17 @@
       margin: 16px -10px 0 15px;
     }
   }
+  .search_home {
+    display: inline-block;
+    float: right;
+    margin-right: 100px;
+    form {
+      margin: 4px 0 0;
+      input {
+        margin: 0;
+      }
+    }
+  }
 }
 
 /**********************************************************

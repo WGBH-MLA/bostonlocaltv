@@ -66,12 +66,13 @@ $red_link: #f4583d;
 @import 'base/units';
 @import 'variables';
 @import 'bootstrap';
-@import 'base/modules';
-//@import 'bootstrap-responsive';
 @import 'blacklight/blacklight';
+@import 'base/modules';
+@import 'base/base';
+//@import 'bootstrap-responsive';
 
 @import "partials/_catalog";
-@import "partials/_formatting";
+// @import "partials/_formatting";
 @import "partials/_header";
 @import "partials/_facets";
 @import "partials/_layout";

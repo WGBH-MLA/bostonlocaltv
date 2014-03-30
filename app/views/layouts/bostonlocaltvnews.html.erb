@@ -10,9 +10,11 @@
   <%= stylesheet_link_tag  "bostonlocaltv" %>
   <%#= stylesheet_link_tag  "wp" %>
   
-<%= stylesheet_link_tag  "blacklight_range_limit/blacklight_range_limit", :media => 'all' %>
-<%= stylesheet_link_tag  "blacklight_advanced_search", :media => 'all' %>
-  <style type="text/css"><%= yield :blog_stylesheets %></style>
+  <%= stylesheet_link_tag  "blacklight_range_limit/blacklight_range_limit", :media => 'all' %>
+  <%= stylesheet_link_tag  "blacklight_advanced_search", :media => 'all' %>
+  <style type="text/css">
+    <%= yield(:blog_stylesheets) %>
+  </style>
 <%= javascript_include_tag "application", "rails" %>
 <!--[if IE]><%= javascript_include_tag "excanvas.min" %><![endif]-->
 <link href="/assets/video-js.min.css" rel="stylesheet">
@@ -26,7 +28,7 @@
 
     <nav class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <h1 class="brand"><a href="/">Boston Local TV <span>Digital Library</span></a></h1>      
+        <h1 class="brand"><a href="/">Boston Local TV <span>Digital Library</span></a></h1>   
         <ul class="nav pull-right">
           <% if current_user %>
             <li><i class="icon-user icon-white"></i><%= link_to current_user.full_name, dashboard_path %></li>
@@ -35,7 +37,8 @@
             <li><i class="icon-user icon-white"></i><a href="/users/sign_in">Log in</a></li>
             <li><a href="/users/sign_up">Sign up</a></li>
           <% end %>
-        </ul>
+        </ul>   
+        <%= render "catalog/home_search_form" %>
       </div>
     </nav>
 
