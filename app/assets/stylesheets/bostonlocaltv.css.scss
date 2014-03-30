@@ -67,10 +67,7 @@ $red_link: #f4583d;
 @import 'variables';
 @import 'bootstrap';
 @import 'blacklight/blacklight';
-@import 'base/modules';
-@import 'base/base';
 //@import 'bootstrap-responsive';
-
 @import "partials/_catalog";
 // @import "partials/_formatting";
 @import "partials/_header";
@@ -80,3 +77,6 @@ $red_link: #f4583d;
 @import "partials/_search_history";
 @import "partials/_field_list";
 @import "dashboard";
+
+@import 'base/modules';
+@import 'base/base';

@@ -42,9 +42,10 @@
       </div>
     </nav>
 
-    <div id="page_home">
+    <%= content_for(:carousel) %> 
 
-      <%= render :partial=>'catalog/menu_header' %>
+    <div id="page_home">
+      <%#= render :partial=>'catalog/menu_header' %>
 
       <div id="bd_prod">
 

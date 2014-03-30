@@ -1,6 +1,6 @@
 <div id="search_home" class="search_home input-append">
   <%= form_tag catalog_index_path, :method => :get do %>
-    <%= text_field_tag :q, params[:q], :class => "q span4", :placeholder => "search" %>
+    <%= text_field_tag :q, params[:q], :class => "q", :placeholder => "search" %>
     <%= hidden_field_tag :search_field, 'all_fields' %>
     <%= search_as_hidden_fields(:omit_keys => [:q, :search_field, :qt, :page]).html_safe %>
     <%= button_tag("search", :alt => "search", :class => 'btn') %>
