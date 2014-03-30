@@ -70,6 +70,43 @@
 
 /**********************************************************
 *
+* Nav List
+*
+**********************************************************/
+.nav-list {
+  li {
+    font-size: 18px;
+    &.nav-header {
+      @include text-shadow(none);
+      background-color: $dark-gray;
+      color: $white;
+      margin-top: 0;
+      text-transform: none;
+    }
+    &.nav-header.blog-link {
+      padding: 0 inherit;
+      a {
+        color: $white;
+        background-color: $blue;
+      }
+      a:hover {
+        background-color: $orange;
+      }
+    }
+    &:last-child a {
+      border: none;
+    }
+    a { 
+      @include text-shadow(none);
+      color: $dark-gray; 
+      background-color: $light-gray;
+      border-bottom: solid 1px $mid-lt-gray;
+    }
+  }
+}
+
+/**********************************************************
+*
 * Tabs
 *
 **********************************************************/
@@ -100,6 +137,7 @@
 *
 **********************************************************/
 #feature-container {
+  margin-bottom: 0;
   max-height: 410px;
   min-width: 800px;
   overflow: hidden;
@@ -140,50 +178,6 @@
   }
 }
 
-/**********************************************************
-*
-* Homepage Mast
-*
-**********************************************************/
-// #feature-container {
-//   height: $bl*68;
-//   overflow: hidden;
-//   position: relative;
-//   img { min-width: 100% }
-// }
-
-// .featured-info {
-//   @include background-image(
-//     linear-gradient(right top, 
-//       rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)
-//     )
-//   );
-//   padding-top: $bl*34;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   h2 { 
-//     color: #fff;
-//     padding-bottom: $bl*4;
-//   }
-//   p { 
-//     color: $mid-gray; 
-//     font-size: $bl*3;
-//     line-height: $bl*3;
-//   }
-// }
-
-/**********************************************************
-*
-* Homepage Content
-*
-**********************************************************/
-// #home_container {
-//   padding: $bl*8;
-//   .post {
-//     background-color: $white;
-//     border: solid 1px $mid-gray;
-//     margin-bottom: $bl*8;
-//   }
-// }
+.post {
+  margin: $base-padding 0;
+}
