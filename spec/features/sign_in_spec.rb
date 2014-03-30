@@ -15,7 +15,7 @@ describe 'User sign in process', type: feature do
     fill_in 'Email', :with => user.email
     fill_in 'Password', :with => 'password'
     click_button 'Sign in'
-    expect(page).to have_content('Welcome back')
+    expect(page).to have_content('Signed in successfully')
   end
 
   it 'Allows a user to sign out' do
@@ -24,7 +24,7 @@ describe 'User sign in process', type: feature do
     fill_in 'Email', :with => user.email
     fill_in 'Password', :with => 'password'
     click_button 'Sign in'
-    click_link '(logout)'
+    click_link 'Logout'
     expect(page).to have_content('Signed out successfully')
   end
 end

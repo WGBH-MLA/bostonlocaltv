@@ -153,6 +153,11 @@ textarea[readonly],
   color: $dark-yellow;
 }
 
+.alert {
+  @include text-shadow(none);
+  @include border-radius(0);
+}
+
 //
 // CLASSES
 //
