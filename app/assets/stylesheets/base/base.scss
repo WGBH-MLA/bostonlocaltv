@@ -159,6 +159,8 @@ textarea[readonly],
 
 .container {
   background-color: $white;
+  border-left: solid 1px $light-gray;
+  border-right: solid 1px $light-gray;
 }
 
 .muted { color: $mid-gray; }

@@ -59,10 +59,16 @@
     float: right;
     margin-right: 100px;
     form {
-      margin: 4px 0 0;
+      margin: 9px 0 0;
       input {
+        font-size: 14px;
+        height:20px;
         margin: 0;
         max-width: 286px;
+      }
+      .btn { 
+        font-size: 14px;
+        line-height: 20px; 
       }
     }
   }
@@ -74,6 +80,7 @@
 *
 **********************************************************/
 .nav-list {
+  margin: $bl*2 $bl*2 0 0;
   li {
     font-size: 18px;
     &.nav-header {
@@ -178,6 +185,50 @@
   }
 }
 
+/**********************************************************
+*
+* Posts
+*
+**********************************************************/
 .post {
-  margin: $base-padding 0;
+  margin: $bl*2 0 $base-padding*2;
+  h3 {
+    float: left;
+    line-height: 32px;
+    width: 560px;
+    a { color: $white; }
+  }
+  .post-author {
+    color: $light-gray;
+    display: inline-block;
+    font-size: 14px;
+    float: left;
+  }
+  .post-head {
+    @include clearfix;
+    background-color: $dark-gray;
+    margin-bottom: $base-padding;
+    padding: $base-padding/2;
+  }
+  .post-date {
+    color: $white;
+    display: inline-block;
+    float: left;
+    font-family: $serif-font;
+    font-style: italic;
+    line-height: 22px;
+    margin-left: $base-padding/2;
+    margin-right: $base-padding;
+    overflow: visible;
+    width: 36px;
+    .month {
+      float: left;
+      font-size: 18px;
+    }
+    .day {
+      clear: left;
+      float: left;
+      font-size: 30px;
+    }
+  }
 }
