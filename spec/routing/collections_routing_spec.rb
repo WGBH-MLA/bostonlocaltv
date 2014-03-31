@@ -1,35 +1,25 @@
 require "spec_helper"
 
 describe CollectionsController do
-  describe "routing" do
-
-    it "routes to #index" do
-      get("/collections").should route_to("collections#index")
+  describe "routes to specific collection landing pages" do
+    it 'routes /wcvb and /WCVB to collections#wcvb' do
+      expect(:get => "/wcvb").to route_to 'collections#wcvb'
+      expect(:get => "/WCVB").to route_to 'collections#wcvb'
     end
 
-    it "routes to #new" do
-      get("/collections/new").should route_to("collections#new")
+    it "routes /wgbh and /WGBH to collections#wgbh" do
+      expect(:get => "/wgbh").to route_to 'collections#wgbh'
+      expect(:get => "/WGBH").to route_to 'collections#wgbh'
     end
 
-    it "routes to #show" do
-      get("/collections/1").should route_to("collections#show", :id => "1")
+    it "routes /whdh and /WHDH to collections#whdh" do
+      expect(:get => "/whdh").to route_to 'collections#whdh'
+      expect(:get => "/WHDH").to route_to 'collections#whdh'
     end
 
-    it "routes to #edit" do
-      get("/collections/1/edit").should route_to("collections#edit", :id => "1")
+    it "routes /cctv and /CCTV to collections#cctv" do
+      expect(:get => "/cctv").to route_to 'collections#cctv'
+      expect(:get => "/CCTV").to route_to 'collections#cctv'
     end
-
-    it "routes to #create" do
-      post("/collections").should route_to("collections#create")
-    end
-
-    it "routes to #update" do
-      put("/collections/1").should route_to("collections#update", :id => "1")
-    end
-
-    it "routes to #destroy" do
-      delete("/collections/1").should route_to("collections#destroy", :id => "1")
-    end
-
   end
 end
