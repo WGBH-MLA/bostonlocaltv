@@ -1,6 +1,7 @@
 module ArtifactsHelper
 	def artifact_digitization_link(document, artifact)
     return nil if published_artifact?(artifact)
+    return nil if document.has? "video_s"
     return unable_to_digitize if blocked_artifact?(artifact)
     return authenticated_digitization_link(document, artifact) if current_user
     unauthenticated_digitization_link
