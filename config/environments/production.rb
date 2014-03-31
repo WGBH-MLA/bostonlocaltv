@@ -26,8 +26,7 @@ Bostonlocaltv::Application.configure do
     'blacklight_advanced_search.css',
     'excanvas.min.js',
     'slides.min.jquery.js',
-    'video-config.js',
-    'admin_functions.js'
+    'video-config.js'
   ]
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
