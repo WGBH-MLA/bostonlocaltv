@@ -180,7 +180,7 @@ $wellBackground:                  #f5f5f5;
 $navbarCollapseWidth:             979px;
 $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
 
-$navbarHeight:                    42px;
+$navbarHeight:                    48px;
 $navbarBackgroundHighlight:       $dark-gray;
 $navbarBackground:                $dark-gray;
 $navbarBorder:                    transparent;
@@ -230,19 +230,19 @@ $heroUnitLeadColor:               inherit;
 
 // Form states and alerts
 // -------------------------
-$warningText:             $dark-yellow;
-$warningBackground:       $yellow;
+$warningText:             $white;
+$warningBackground:       $orange;
 $warningBorder:           transparent;
 
-$errorText:               $red;
+$errorText:               $white;
 $errorBackground:         $red;
 $errorBorder:             transparent;
 
-$successText:             $green;
+$successText:             $white;
 $successBackground:       $green;
 $successBorder:           transparent;
 
-$infoText:                $purple;
+$infoText:                $white;
 $infoBackground:          $purple;
 $infoBorder:              transparent;
 

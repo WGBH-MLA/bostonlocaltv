@@ -204,6 +204,10 @@ class CatalogController < ApplicationController
     end
   end
 
+    def home
+      render layout: "bostonlocaltvnews"
+    end
+
     def citation
      #doc_id = get_doc_id (params[:docid])
      @response, @document = get_solr_response_for_doc_id (params[:docid])

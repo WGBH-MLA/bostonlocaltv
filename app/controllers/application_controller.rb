@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   # Please be sure to impelement current_user and user_session. Blacklight depends on 
   # these methods in order to perform user specific actions. 
   
-  layout 'bostonlocaltvnews'
+  layout 'old_layout'
   
   protect_from_forgery
 
@@ -23,6 +23,6 @@ class ApplicationController < ActionController::Base
 
   # Overrides Blacklight::Controller#layout_name
   def layout_name
-    'bostonlocaltvnews'
+    'old_layout'
   end
 end
