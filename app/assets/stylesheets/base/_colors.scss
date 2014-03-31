@@ -1,0 +1,28 @@
+//GRAYS
+$white: #ffffff;
+$offwhite: #fcfafa;
+$dark-gray: #3e444a;
+$mid-gray: #d3d5d8;
+$mid-lt-gray: #c8cbcd;
+$light-gray: #edf1f3;
+
+//ORANGES
+$orange: #ef7024;
+
+//BLUES
+$blue: #89abc9;
+
+//GREENS
+$green: #60c980;
+
+//REDS
+$red: #d35241;
+
+//YELLOWS
+$yellow: #ecdb48;
+$dark-yellow:darken($yellow, 40%);
+
+//PURPLES
+$purple: #9a54c7;
+
+.white { background-color: $white; }

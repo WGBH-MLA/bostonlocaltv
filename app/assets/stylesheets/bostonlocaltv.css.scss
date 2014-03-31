@@ -60,6 +60,10 @@ $constraint_border_active_color: #FFD27A !default;
 /* Links and things */
 $red_link: #f4583d;
 
+p { font-size: 14px; }
+
+@import 'base/fonts';
+
 /* Include all the partials */
 @import 'bootstrap';
 //@import 'bootstrap-responsive';
@@ -73,3 +77,4 @@ $red_link: #f4583d;
 @import "partials/_print";
 @import "partials/_search_history";
 @import "partials/_field_list";
+@import 'dashboard'

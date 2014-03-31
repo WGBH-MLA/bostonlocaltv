@@ -1,0 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400italic);
+
+$sans-font: 'PT Sans', sans-serif;
+$serif-font: 'PT Serif', serif;
+
+// SANS-FONT WEIGHTS
+$sans-reg: 400;
+$sans-bold: 700;
+
+// Tighten up the kerning across the board
+$sans-kern: rem-calc(-1.75);
+h1, h2, h3 { letter-spacing: $sans-kern; }
+h4, h5, h6 { letter-spacing: rem-calc(-.75); }
+p, a, li { letter-spacing: rem-calc(-.5); }

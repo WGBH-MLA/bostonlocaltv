@@ -61,8 +61,6 @@ class Dataset::Whdh < Dataset::Xml
             source = child.text.downcase
             if source.eql? "whdh"
               fields << ["collection_s", child.text]
-            else
-              fields << ["cross_reference_s", child.text]
             end
           end
         end

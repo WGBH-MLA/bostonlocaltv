@@ -14,14 +14,28 @@ Bostonlocaltv::Application.configure do
   # Compress JavaScripts and CSS
   config.assets.compress = true
 
-  config.assets.precompile = [ /\w+\.(?!js|css).+/, ]
-  config.assets.precompile += ['application.js', 'rails.js', 'bostonlocaltv.css', 'active_admin.css', 'video.js', 'video-js.min.css', 'blacklight_range_limit/blacklight_range_limit.css', 'blacklight_advanced_search.css']
+  config.assets.precompile += [
+    'application.css',
+    'application.js',
+    'rails.js',
+    'bostonlocaltv.css',
+    'active_admin.css',
+    'video.js',
+    'video-js.min.css',
+    'blacklight_range_limit/blacklight_range_limit.css',
+    'blacklight_advanced_search.css',
+    'excanvas.min.js',
+    'slides.min.jquery.js',
+    'video-config.js'
+  ]
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = false
 
   # Generate digests for assets URLs
   config.assets.digest = true
+
+  config.action_mailer.default_url_options = { :host => "bostonlocaltv.org" }
 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH

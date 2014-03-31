@@ -4,6 +4,6 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <p><%= @user.to_s %> has withdrawn their digitization request on <%= @artifact.to_s %> </p>
+    <p><%= @user.to_s %> has withdrawn their digitization request on <%= link_to @artifact.title, "http://bostonlocaltv.org/catalog/#{@artifact.solr_document_id}" %> </p>
   </body>
 </html>

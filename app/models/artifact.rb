@@ -9,15 +9,23 @@ class Artifact < ActiveRecord::Base
   has_many :potential_sponsors, :through => :sponsorships, 
     :conditions => {'sponsorships.confirmed' => false},
     :source => :user
+
+  validates_presence_of :solr_document_id
+
+  search_methods :sponsorship_user_ids_eq
+
+  scope :sponsorship_user_ids_eq, lambda { |user_id|
+    Artifact.joins(:sponsorships).where("user_id = ?", user_id)
+  }
   
   attr_accessible :solr_document_id
 
   state_machine :initial => :initiated do
     event :request do;    transition :initiated => :requested; end
-    event :withdraw do;   transition :requested => :initiated; end
+    event :withdraw do;   transition [:requested, :digitizing] => :initiated; end
     event :digitize do;   transition :requested => :digitizing; end
-    event :deny do;       transition :requested => :denied; end
-    event :available do;  transition :digitizing => :published; end
+    event :block do;       transition :requested => :blocked; end
+    event :publish do;  transition :digitizing => :published; end
 
     before_transition any => any do |artifact, transition|
       raise ArgumentError, "Specify a user" unless transition.args.first
@@ -37,6 +45,7 @@ class Artifact < ActiveRecord::Base
       artifact.withdraw_user(user)
       Rails.logger.info('WITHDRAWN')
       AdminMailer.request_withdrawn_email(user, artifact).deliver
+      UserMailer.request_withdrawn_email(user, artifact).deliver
     end
 
     after_transition :on => :request do |artifact, transition|
@@ -54,41 +63,25 @@ class Artifact < ActiveRecord::Base
       end
     end
 
-    after_transition :on => :deny do |artifact, transition| 
+    after_transition :on => :block do |artifact, transition| 
       user = transition.args.first
-      Rails.logger.info('DENIED')
+      Rails.logger.info('BLOCKED')
       artifact.users.each do |user| 
-        UserMailer.digitization_denial_email(user, artifact).deliver
+        UserMailer.digitization_blocked_email(user, artifact).deliver
       end
     end
 
-    after_transition :on => :published do |artifact, transition| 
+    after_transition :on => :publish do |artifact, transition| 
       user = transition.args.first
       Rails.logger.info('PUBLISHED')
-      # do stuff - means we have metadata, ingested into solr and moved it into media server
+      artifact.users.each do |user|
+        UserMailer.digitization_published_email(user, artifact).deliver
+      end
     end
   end
 
   def to_s
     "ID#{id}: SOLR_ID"
-  end
-
-  def withdraw_request(user)
-    if sponsorships.size == 1
-      withdraw!(user)
-    else
-      withdraw_user(user)
-      ArtifactLog.record(user, self, {
-        event: 'withdraw',
-        from: 'requested',
-        to: 'requested',
-        description: 'User withdrew sponsorship (sponsors still available)'
-      })
-    end
-  end
-
-  def withdraw_user(user, options={})
-    sponsorships.where(:user_id => user).first.delete
   end
 
   def request_digitization(user)
@@ -103,5 +96,67 @@ class Artifact < ActiveRecord::Base
         description: 'User requested digitization on previously requested artifact'
       })
     end
+  end
+
+  def withdraw_request(user)
+    if sponsorships.size == 1
+      withdraw!(user)
+    else
+      withdraw_user(user)
+      ArtifactLog.record(user, self, {
+        event: 'withdraw',
+        from: 'requested',
+        to: 'requested',
+        description: 'User withdrew sponsorship (other sponsors still available)'
+      })
+    end
+  end
+
+  def withdraw_user(user, options={})
+    sponsorships.where(:user_id => user).first.delete
+    user.artifacts.reload
+  end
+
+  def approve_digitization(user)
+    digitize!(user)
+    ArtifactLog.record(user, self, {
+      event: 'digitize',
+      from: 'requested',
+      to: 'digitizing',
+      description: 'Digitization approved and in process'
+    })
+  end
+
+  def block_digitization(user)
+    block!(user)
+    ArtifactLog.record(user, self, {
+      event: 'block',
+      from: 'requested',
+      to: 'blocked',
+      description: 'Digitization has been blocked'
+    })
+  end
+
+  def publish_digitization(user)
+    publish!(user)
+    ArtifactLog.record(user, self, {
+      event: 'publish',
+      from: 'requested',
+      to: 'published',
+      description: 'Digitization has been published and is available'
+    })
+  end
+ 
+  def title
+    @title ||=  Blacklight.solr.select(params: {q: "id:#{solr_document_id}"}).
+      try(:[], 'response').
+      try(:[], 'docs').
+      try(:first).
+      try(:[], 'title_s').
+      try(:first)
+  end
+  
+  def digitizing?
+    state == 'digitizing'
   end
 end

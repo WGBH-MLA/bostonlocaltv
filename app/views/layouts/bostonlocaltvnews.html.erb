@@ -1,4 +1,5 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 
   <head>
 
@@ -7,62 +8,55 @@
     <title><%= h(@page_title || application_name) %></title>
     <link href="<%= opensearch_catalog_path(:format => 'xml', :only_path => false) %>" title="<%= application_name%>" type="application/opensearchdescription+xml" rel="search"/>
   <%= favicon_link_tag asset_path('favicon.ico') %>
-  <%= stylesheet_link_tag  "bostonlocaltv" %>
+  <%= stylesheet_link_tag  "application" %>
   <%#= stylesheet_link_tag  "wp" %>
   
-<%= stylesheet_link_tag  "blacklight_range_limit/blacklight_range_limit", :media => 'all' %>
-<%= stylesheet_link_tag  "blacklight_advanced_search", :media => 'all' %>
-  <style type="text/css"><%= yield :blog_stylesheets %></style>
+  <%= stylesheet_link_tag  "blacklight_range_limit/blacklight_range_limit", :media => 'all' %>
+  <%= stylesheet_link_tag  "blacklight_advanced_search", :media => 'all' %>
+  <style type="text/css">
+    <%= yield(:blog_stylesheets) %>
+  </style>
 <%= javascript_include_tag "application", "rails" %>
+<!--[if IE]><%= javascript_include_tag "excanvas.min" %><![endif]-->
 <link href="/assets/video-js.min.css" rel="stylesheet">
   <%= csrf_meta_tags %>
-  <%= raw(render_head_content) %>
+  <%= content_for(:head) %>
    <!--[if IE 7]><link rel="stylesheet" href="/stylesheets/compiled/ie7.css" type="text/css" media="screen,projection" /><![endif]-->
    <!--[if IE 8]><link rel="stylesheet" href="/stylesheets/compiled/ie8.css" type="text/css" media="screen,projection" /><![endif]-->
    <!--[if IE 9]><link rel="stylesheet" href="/stylesheets/compiled/ie9.css" type="text/css" media="screen,projection" /><![endif]-->
   </head>
-  <body class="<%= render_body_class.html_safe %>">
+  <body class="<%= render_body_class.html_safe %> <%= controller.controller_name %> <%= controller.action_name %> <%= @body_class %>">
 
-    <div id="page_home">
-      <div id="hd_home">
-       <div id="logo_left">
-         <%= image_tag 'blacklight/top-dates.jpg', :class=>'top-dates-logo', :size=>'122x122', :alt=>'1960 -- 2000' %>
-         </div>
-         <div id="logo_right">
-         <%= render :partial=>'catalog/top_search_form' %>
-         <%= image_tag 'blacklight/bostontvnews-logo.png', :class=>'bostontvnews-logo', :size=>'674x75' %>
-         <div id="user_info">
-           <% if current_user %>
-             <p>Welcome back&nbsp;&nbsp;<%= link_to current_user.full_name, dashboard_path %></a><br /><%= link_to "(logout)", destroy_user_session_path, method: :delete %>
-           <% else %>
-             <a href="/users/sign_in">Log in</a> | <a href="/users/sign_up">Sign up</a>
-           <% end %>
-         </div>
-        </div>
-        <div class="clear-both"/>
-        </div>
+    <nav class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <h1 class="brand"><a href="/">Boston Local TV <span>Digital Library</span></a></h1>   
+        <ul class="nav pull-right">
+          <% if current_user %>
+            <li><i class="icon-user icon-white"></i><%= link_to current_user.full_name, dashboard_path %></li>
+            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <li><i class="icon-user icon-white"></i><a href="/users/sign_in">Log in</a></li>
+            <li><a href="/users/sign_up">Sign up</a></li>
+          <% end %>
+        </ul>   
+        <%= render "catalog/home_search_form" %>
       </div>
+    </nav>
 
-      <%= render :partial=>'catalog/menu_header' %>
+    <%= content_for(:carousel) %> 
 
-      <div id="bd_prod">
-
-        <div id="main">
-        <div id="main_container">
+      <div class="container">
          <%= render :partial=>'layouts/flash_msg' %>
          <%= content_for?(:content) ? yield(:content) : yield %>
-         </div>
-        </div>
      
         <div id="sidebar">
-          <%#= render :partial=> 'catalog/side_search_form' %>
-         <%= sidebar_items.join('').html_safe %>
+         <%#= render :partial=> 'catalog/side_search_form' %>
+          <%= sidebar.join('').html_safe %>
         </div>
 
         <div class="clear-both"/>
         </div>
        <%= render :partial=>'catalog/footer' %>
-        </div>
    <%= render_google_analytics_code %>
       </body>
 

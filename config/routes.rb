@@ -7,7 +7,6 @@ Bostonlocaltv::Application.routes.draw do
   root :to => "catalog#home"
 
   devise_for :users
-  devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
 
@@ -27,8 +26,16 @@ Bostonlocaltv::Application.routes.draw do
     end
   end
 
+  match 'styleguide' => 'styleguide#index'
   
+  resources :comments, :only => [:create]
   resources :digitizations
+  resources :sponsorships do
+    member do
+      put 'confirm'
+      put 'unconfirm'
+    end
+  end
   
   get 'dashboard', to: 'users#show'
 

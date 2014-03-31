@@ -2,10 +2,28 @@
 require 'blacklight/catalog'
 
 class CatalogController < ApplicationController  
+  before_filter :find_artifact, :only => :show
 
   include Blacklight::Catalog
+  include BlacklightOaiProvider::ControllerExtension
+
   
   configure_blacklight do |config|
+
+
+    config.oai = {
+      :provider => {
+        :repository_name => 'Boston Local TV News',
+        :repository_url => 'http://localhost',
+        :record_prefix => '',
+        :admin_email => 'root@localhost'
+      },
+      :document => {
+        :timestamp => 'timestamp',
+        :limit => 25
+      }
+    }
+
     config.default_solr_params = { 
       :qt => 'search',
       :per_page => 10,
@@ -91,7 +109,6 @@ class CatalogController < ApplicationController
     config.add_show_field 'subject_personalities_s', :label => 'Subject: Personalities'
     config.add_show_field 'can_number_s', :label => 'Can Number:'
     config.add_show_field 'format_location_s', :label => 'Location'
-    config.add_show_field 'cross_reference_s', :label => 'Cross Reference'
     config.add_show_field 'language_s', :label => 'Language'
 
     # "fielded" search configuration. Used by pulldown among other places.
@@ -164,8 +181,10 @@ class CatalogController < ApplicationController
   
     respond_to do |format|
       format.html { 
-        extra_head_content << view_context.auto_discovery_link_tag(:rss, url_for(params.merge(:format => 'rss')), :title => t('blacklight.search.rss_feed') )
-        extra_head_content << view_context.auto_discovery_link_tag(:atom, url_for(params.merge(:format => 'atom')), :title => t('blacklight.search.atom_feed') )
+       view_context.content_for :head do 
+        view_context.auto_discovery_link_tag(:rss, url_for(params.merge(:format => 'rss')), :title => t('blacklight.search.rss_feed') )
+        view_context.auto_discovery_link_tag(:atom, url_for(params.merge(:format => 'atom')), :title => t('blacklight.search.atom_feed') )
+      end
         save_current_search_params
       }
       format.rss  { render :layout => false }
@@ -185,6 +204,10 @@ class CatalogController < ApplicationController
     end
   end
 
+    def home
+      render layout: "bostonlocaltvnews"
+    end
+
     def citation
      #doc_id = get_doc_id (params[:docid])
      @response, @document = get_solr_response_for_doc_id (params[:docid])
@@ -195,6 +218,10 @@ class CatalogController < ApplicationController
 
    def get_doc_id (id)
       id.bytes.to_s
+   end
+
+   def find_artifact
+    @artifact = Artifact.where(solr_document_id: params[:id]).first
    end
    
    def get_nonvideo_search_results(user_params = params || {})     

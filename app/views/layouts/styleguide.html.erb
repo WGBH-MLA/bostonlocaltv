@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "Styleguide" %></title>
+
+    <%= stylesheet_link_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <h1><a href="#">Boston Local TV <span>Digital Library</span></a></h1>
+      </div>
+    </nav>
+    <%= yield %>
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>
