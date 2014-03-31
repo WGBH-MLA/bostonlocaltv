@@ -27,6 +27,7 @@ Bostonlocaltv::Application.configure do
     'excanvas.min.js',
     'slides.min.jquery.js',
     'video-config.js',
+    'admin_functions.js'
   ]
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
