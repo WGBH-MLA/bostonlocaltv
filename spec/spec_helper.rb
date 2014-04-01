@@ -9,6 +9,8 @@ require 'capybara/rspec'
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 Dir[Rails.root.join("spec/features/steps/**/*.rb")].each { |f| require f }
 
+BlacklightRangeLimit.omit_inject[:excanvas] = true
+
 RSpec.configure do |config|
   # == Mock Framework
   #
@@ -20,7 +22,8 @@ RSpec.configure do |config|
   config.mock_with :rspec
   
   config.include FactoryGirl::Syntax::Methods
-  config.include CartSteps
+  config.include Devise::TestHelpers, type: :controller
+  # config.include CartSteps
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"

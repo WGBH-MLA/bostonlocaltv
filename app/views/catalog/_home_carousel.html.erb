@@ -1,57 +1,66 @@
-<div id="feature-container">
-  
-  <div id="featured" >
-  	<ul class="ui-tabs-nav">
-  	    <li class="ui-tabs-nav-item" id="nav-fragment-1">
-          <a href="#fragment-1">
-            <span>The Ten O'Clock News | 7992 items</span>
-          </a>
-        </li>
-  	    <li class="ui-tabs-nav-item" id="nav-fragment-2">
-          <a href="#fragment-2">
-            <span>CCTV | 7191 items</span>
-          </a>
-        </li>
-  	    <li class="ui-tabs-nav-item" id="nav-fragment-3">
-          <a href="#fragment-3">
-            <span>WCVB | 10542 items</span>
-          </a>
-        </li>
-  	    <li class="ui-tabs-nav-item" id="nav-fragment-4">
-          <a href="#fragment-4">
-            <span>WHDH | 23414 items</span>
-          </a>
-        </li>
-  	</ul>
-  	
-  	<!-- First Content -->
-  	<div id="fragment-1" class="ui-tabs-panel" style="">
-  		<%= link_to image_tag("sigimage-10oclock-van.jpg", :alt => "The Ten O'Clock News"), '/wgbh' %>
-  		<div class="info" >
-  		<p>WGBH’s in-depth nightly news program aired from 1974 to 1991. <a href="/wgbh" >Read more</a></p>
-  		</div>
-  	</div>
-  	<!-- Second Content -->
-  	<div id="fragment-2" class="ui-tabs-panel" style="">
-  		<%= link_to image_tag("sigimage-cctv-drummers.jpg", :alt => "CCTV"), '/CCTV' %>
-  		<div class="info" >
-  		<p>Since 1988, Cambridge Community Television has produced a variety of relevant programs about people and topics of local and national interest. <a href="#" >Read more</a></p>
-  		</div>
-  	</div>
-      <!-- Third Content -->
-      <div id="fragment-3" class="ui-tabs-panel" style="">
-  		<%= link_to image_tag("sigimage-wcvb-bruins.jpg", :alt => "WCVB News Collection"), '/wcvb' %>
-  		<div class="info" >
-  		<p>The WCVB-TV Collection at Northeast Historic Film contains over 4 million feet of daily coverage and specials filmed between 1972 and 1979. <a href="#" >Read more</a></p>
-  	    </div>
-  	</div>
-      <!-- Fourth Content -->
-      <div id="fragment-4" class="ui-tabs-panel" style="">
-  		<%= link_to image_tag("sigimage-whdh-crowd.jpg", :alt => "WHDH"), '/WHDH' %>
-  		<div class="info" >
-  		<p>The WHDH Collection at the Boston Public Library consists of some 2 million feet of news film footage recorded by WHDH from 1961 to 1972. <a href="#" >Read more</a></p>
-  	    </div>
-  	</div>
+<div id="feature-container" class="carousel slide">
+  <a class="carousel-control right" href="#feature-container" data-slide="next">&raquo;</a>
+  <div id="featured" class="carousel-inner">
+
+    <% if CarouselItem.carousel.count >= 3 %>
+      <% CarouselItem.carousel.each_with_index do |item, index| %>
+        <div id="fragment-<%= index+1 %>" class="item <%= index == 0 ? 'active' : '' %>">
+          <%= link_to image_tag(item.image, :alt => item.title), item.url %>
+          <div class="info">
+            <div class="carousel-text">
+              <h2><%= item.title %></h2>
+              <p><%= item.body %></p>
+              <p><a href="<%= item.url %>" >Read more &raquo;</a></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% else %>      
+      <div id="fragment-1" class="item active">
+        <%= link_to image_tag("sigimage-10oclock-van.jpg", :alt => "The Ten O'Clock News"), '/wgbh' %>
+        <div class="info">
+          <div class="carousel-text">
+            <h2>The Ten O'Clock News</h2>
+            <p>WGBH’s in-depth nightly news program aired from 1974 to 1991. </p>
+            <p><a href="/wgbh" >Read more &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="fragment-2" class="item">
+        <%= link_to image_tag("sigimage-cctv-drummers.jpg", :alt => "CCTV"), '/CCTV' %>
+        <div class="info">
+          <div class="carousel-text">
+            <h2>CCTV</h2>
+            <p>Since 1988, Cambridge Community Television has produced a variety of relevant programs about people and topics of local and national interest.</p>
+            <p><a href="/cctv" >Read more &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="fragment-3" class="item">
+        <%= link_to image_tag("sigimage-wcvb-bruins.jpg", :alt => "WCVB News Collection"), '/wcvb' %>
+        <div class="info">
+          <div class="carousel-text">
+            <h2>WCVB News Collection</h2>
+            <p>The WCVB-TV Collection at Northeast Historic Film contains over 4 million feet of daily coverage and specials filmed between 1972 and 1979.</p>
+            <p><a href="/wcvb" >Read more &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="fragment-4" class="item">
+        <%= link_to image_tag("sigimage-whdh-crowd.jpg", :alt => "WHDH"), '/WHDH' %>
+        <div class="info">
+          <div class="carousel-text">
+            <h2>WHDH</h2>
+            <p>The WHDH Collection at the Boston Public Library consists of some 2 million feet of news film footage recorded by WHDH from 1961 to 1972.</p>
+            <p><a href="/WHDH" >Read more &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+
+    <% end %>
   </div>
   
 </div><!-- #feature-container -->

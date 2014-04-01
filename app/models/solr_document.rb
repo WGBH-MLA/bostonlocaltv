@@ -2,6 +2,8 @@
 class SolrDocument 
 
   include Blacklight::Solr::Document
+  SolrDocument.use_extension( BlacklightOaiProvider::SolrDocumentExtension )
+
 
    #unique_key = 'UID'
   
@@ -30,4 +32,8 @@ class SolrDocument
                          :language => "language_facet",
                          :format => "format"
                          )
+
+  def comments
+    Comment.where(solr_document_id: id)
+  end
 end

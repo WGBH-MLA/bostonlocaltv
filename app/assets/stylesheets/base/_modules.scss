@@ -1,0 +1,167 @@
+
+// BOOTSTRAP COMPONENTS
+
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+@import 'modules/main_nav';
+@import 'modules/buttons';
+
+/**********************************************************
+*
+* Nav List
+*
+**********************************************************/
+.nav-list {
+  margin: $bl*2 $bl*2 0 0;
+  li {
+    font-size: 18px;
+    &.nav-header {
+      @include text-shadow(none);
+      background-color: $dark-gray;
+      color: $white;
+      margin-top: 0;
+      text-transform: none;
+    }
+    &.nav-header.blog-link {
+      padding: 0 inherit;
+      a {
+        color: $white;
+        background-color: $blue;
+      }
+      a:hover {
+        background-color: $orange;
+      }
+    }
+    &:last-child a {
+      border: none;
+    }
+    a { 
+      @include text-shadow(none);
+      color: $dark-gray; 
+      background-color: $light-gray;
+      border-bottom: solid 1px $mid-lt-gray;
+    }
+  }
+}
+
+/**********************************************************
+*
+* Tabs
+*
+**********************************************************/
+.nav-tabs.nav-stacked {
+  background-color: $light-gray;
+  .active {
+    background-color: $mid-gray;
+  }
+  > li:first-child > a, > li:last-child > a {
+    @include border-radius(0);
+  }
+  > li > a {
+    color: $dark-gray;
+  }
+}
+
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+// CUSTOM MODULES
+
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+/**********************************************************
+*
+* Carousel
+*
+**********************************************************/
+#feature-container {
+  margin-bottom: 0;
+  max-height: 410px;
+  min-width: 800px;
+  overflow: hidden;
+  position: relative;
+  img { 
+    min-width: 100%;
+  }
+  .info {
+    background-color: rgba(0, 0, 0, .6);
+    color: $white;
+    padding: 60px;
+    min-width: 40%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1001;
+    .carousel-text {
+      top: 205px;
+      padding-right: 60px;
+      position: absolute;
+      z-index: 1002;
+    }
+    p {
+      color: $light-gray;
+      font-family: $sans-font;
+      line-height: 1.3;
+      margin-bottom: 3px;
+    }
+  }
+  .carousel-control {
+    font-size: 24px;
+    padding-top: 8px;
+    position: absolute;
+    top: 205px;
+    right: 30px;
+    z-index: 1003;
+  }
+}
+
+/**********************************************************
+*
+* Posts
+*
+**********************************************************/
+.post {
+  margin: $bl*2 0 $base-padding*2;
+  h3 {
+    float: left;
+    line-height: 32px;
+    width: 560px;
+    a { color: $white; }
+  }
+  .post-author {
+    color: $light-gray;
+    display: inline-block;
+    font-size: 14px;
+    float: left;
+  }
+  .post-head {
+    @include clearfix;
+    background-color: $dark-gray;
+    margin-bottom: $base-padding;
+    padding: $base-padding/2;
+  }
+  .post-date {
+    color: $white;
+    display: inline-block;
+    float: left;
+    font-family: $serif-font;
+    font-style: italic;
+    line-height: 22px;
+    margin-left: $base-padding/2;
+    margin-right: $base-padding;
+    overflow: visible;
+    width: 36px;
+    .month {
+      float: left;
+      font-size: 18px;
+    }
+    .day {
+      clear: left;
+      float: left;
+      font-size: 30px;
+    }
+  }
+}

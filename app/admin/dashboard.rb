@@ -14,11 +14,9 @@ ActiveAdmin.register_page "Dashboard" do
     #
     columns do
       column do
-        panel "Recent Requests" do
+        panel "Recent Digitization Actions" do
           ul do
-            ShoppingCart.limit(5).pending.map do |post|
-              li link_to(post.user.full_name, admin_shopping_cart_path(post))
-            end
+            # TODO: Show 5 most recent Digitization Actions (user, type, date)
           end
         end
       end

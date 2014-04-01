@@ -1,0 +1,8 @@
+<% sidebar << capture do %>
+	<h2><%= @user.full_name %></h2>
+	<ul>
+		<li><%= link_to 'Edit Your Account', edit_user_registration_path %></li>
+	</ul>
+<% end %>
+
+<%= render partial: "user_items", user_artifacts: @user.artifacts %>

@@ -17,11 +17,3 @@ test: &test
   database: db/test.sqlite3
   pool: 5
   timeout: 5000
-
-production:
-  adapter: mysql2 
-  database: bostonlocal_app 
-  username: bostonlocal
-  password: B05^oNtv
-  pool: 5
-  timeout: 5000

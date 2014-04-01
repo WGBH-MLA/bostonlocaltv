@@ -1,0 +1,62 @@
+/**********************************************************
+*
+* General
+*
+**********************************************************/
+body {
+  padding-top: $navbarHeight;
+  min-width: 800px;
+}
+
+h1 { 
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, h5, h6 { 
+  border: none;
+  font-family: $serif-font;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1.3;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-family: $serif-font;
+}
+
+abbr[title] { border-bottom: dotted 1px $mid-gray; }
+
+blockquote { 
+  background: $light-gray;
+  padding: $bl*3;
+  small, cite { 
+    color: $dark-gray;
+  }
+}
+
+
+/* Tables */
+
+.table-striped tbody > tr:nth-child(odd) > td, 
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: $light-gray;
+}
+
+.table tbody tr.info > td, .table tbody tr.error > td {
+  color: $white;
+}
+
+//
+// CLASSES
+//
+
+.container {
+  background-color: $white;
+  border-left: solid 1px $light-gray;
+  border-right: solid 1px $light-gray;
+}
+
+.muted { color: $mid-gray; }

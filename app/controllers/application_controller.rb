@@ -4,17 +4,25 @@ class ApplicationController < ActionController::Base
   # Please be sure to impelement current_user and user_session. Blacklight depends on 
   # these methods in order to perform user specific actions. 
   
-  layout 'bostonlocaltvnews'
+  layout 'old_layout'
   
   protect_from_forgery
 
   def default_html_head
   end
 
+  def authenticate_admin_user!
+    authenticate_user!
+    unless current_user.admin?
+      flash[:alert] = "Unauthorized Access!"
+      redirect_to root_path
+    end
+  end
+
   protected
 
   # Overrides Blacklight::Controller#layout_name
   def layout_name
-    'bostonlocaltvnews'
+    'old_layout'
   end
 end

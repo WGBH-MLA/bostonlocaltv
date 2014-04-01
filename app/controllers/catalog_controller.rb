@@ -2,10 +2,28 @@
 require 'blacklight/catalog'
 
 class CatalogController < ApplicationController  
+  before_filter :find_artifact, :only => :show
 
   include Blacklight::Catalog
+  include BlacklightOaiProvider::ControllerExtension
+
   
   configure_blacklight do |config|
+
+
+    config.oai = {
+      :provider => {
+        :repository_name => 'Boston Local TV News',
+        :repository_url => 'http://localhost',
+        :record_prefix => '',
+        :admin_email => 'root@localhost'
+      },
+      :document => {
+        :timestamp => 'timestamp',
+        :limit => 25
+      }
+    }
+
     config.default_solr_params = { 
       :qt => 'search',
       :per_page => 10,
@@ -68,30 +86,29 @@ class CatalogController < ApplicationController
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display
     config.add_show_field 'collection_s', :label => 'Collection', :link => true
+    config.add_show_field 'date_created_s', :label => 'Date Created', :link => true# , :custom => '(estimated)'
+    config.add_show_field 'location_s', :label => 'Locations', :link => true
+    config.add_show_field 'subject_s', :label => 'Subjects', :link => true
+    config.add_show_field 'people_s', :label => 'Names', :link => true
+    config.add_show_field 'format', :label => 'Physical Format', :link => true
+    config.add_show_field 'audio_format_s', :label => 'Audio', :link => true
+    config.add_show_field 'format_color_s', :label => 'Color', :link => true
+    config.add_show_field 'footage_length_s', :label => 'Footage Length' , :link => true
+    config.add_show_field 'audio_duration_s', :label => 'Duration', :link => true
+    config.add_show_field 'intended_purpose_s', :label => 'Type or Purpose', :link => true
+    config.add_show_field 'contributor_name_role_s', :label => 'Contributor', :link => true
+    config.add_show_field 'credit_s', :label => 'Credit', :link => true
     config.add_show_field 'program_s', :label => 'Program Type'
-    config.add_show_field 'date_created_s', :label => 'Date Created'# , :custom => '(estimated)'
     config.add_show_field 'date_estimated_s', :label => 'Date Estimated'
     config.add_show_field 'description_s', :label => 'Description' 
-    config.add_show_field 'subject_s', :label => 'Subjects', :link => true
-    config.add_show_field 'location_s', :label => 'Locations', :link => true
     config.add_show_field 'related_s', :label => 'Related Records'
-    config.add_show_field 'format', :label => 'Physical format'
     config.add_show_field 'audio_type_s', :label => 'Audio Type'
-    config.add_show_field 'audio_format_s', :label => 'Audio Format'
-    config.add_show_field 'audio_duration_s', :label => 'Duration'
-    config.add_show_field 'format_color_s', :label => 'Color'
     config.add_show_field 'broadcast_date_s', :label => 'Date Broadcast'
-    config.add_show_field 'h_location_s', :label => 'Holding Institution', :link => true
+    config.add_show_field 'h_location_s', :label => 'Holding Institution'
     config.add_show_field 'p_location_s', :label => 'Physical Location'
-    config.add_show_field 'footage_length_s', :label => 'Footage Length' 
-    config.add_show_field 'credit_s', :label => 'Credit'
-    config.add_show_field 'contributor_name_role_s', :label => 'Contributor' 
-    config.add_show_field 'subject_personalities_s', :label => 'Personalities:'
-    config.add_show_field 'intended_purpose_s', :label => 'Type or Purpose'
-    config.add_show_field 'can_number_s', :label => 'Can Number:', :link => true
+    config.add_show_field 'subject_personalities_s', :label => 'Subject: Personalities'
+    config.add_show_field 'can_number_s', :label => 'Can Number:'
     config.add_show_field 'format_location_s', :label => 'Location'
-    config.add_show_field 'cross_reference_s', :label => 'Cross Reference'
-    config.add_show_field 'accession_num_s', :label => 'Accession Number'
     config.add_show_field 'language_s', :label => 'Language'
 
     # "fielded" search configuration. Used by pulldown among other places.
@@ -164,8 +181,10 @@ class CatalogController < ApplicationController
   
     respond_to do |format|
       format.html { 
-        extra_head_content << view_context.auto_discovery_link_tag(:rss, url_for(params.merge(:format => 'rss')), :title => t('blacklight.search.rss_feed') )
-        extra_head_content << view_context.auto_discovery_link_tag(:atom, url_for(params.merge(:format => 'atom')), :title => t('blacklight.search.atom_feed') )
+       view_context.content_for :head do 
+        view_context.auto_discovery_link_tag(:rss, url_for(params.merge(:format => 'rss')), :title => t('blacklight.search.rss_feed') )
+        view_context.auto_discovery_link_tag(:atom, url_for(params.merge(:format => 'atom')), :title => t('blacklight.search.atom_feed') )
+      end
         save_current_search_params
       }
       format.rss  { render :layout => false }
@@ -185,6 +204,10 @@ class CatalogController < ApplicationController
     end
   end
 
+    def home
+      render layout: "bostonlocaltvnews"
+    end
+
     def citation
      #doc_id = get_doc_id (params[:docid])
      @response, @document = get_solr_response_for_doc_id (params[:docid])
@@ -195,6 +218,10 @@ class CatalogController < ApplicationController
 
    def get_doc_id (id)
       id.bytes.to_s
+   end
+
+   def find_artifact
+    @artifact = Artifact.where(solr_document_id: params[:id]).first
    end
    
    def get_nonvideo_search_results(user_params = params || {})     

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>
+      Thank you for your interest in the Boston TV News Digital Library. We regret to inform you that we are unable to digitize your recently requested item <%= link_to @artifact.title, "http://bostonlocaltv.org/catalog/#{@artifact.solr_document_id}" %>, due to technical and/or legal complications. We appreciate your interest in the content and encourage you to request other materials you may be interested in. <br/>
+    </p>
+    <p>
+      To check the status of this and other requests, <%= link_to "visit your dashboard anytime", dashboard_url %>.
+    </p>
+  </body>
+</html>

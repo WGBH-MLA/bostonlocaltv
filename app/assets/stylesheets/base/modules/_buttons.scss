@@ -1,0 +1,107 @@
+/* Forms */
+
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], .uneditable-input{ 
+  @include box-shadow(none);
+  color: $blue;
+  border: solid 1px $blue;
+  box-sizing: inherit;
+}
+
+select { 
+  color: $dark-gray;
+  border: solid 1px $blue;
+}
+
+.input-append,
+.input-prepend {
+  margin-bottom: 0;
+}
+
+
+.input-append .add-on,
+.input-prepend .add-on,
+.input-append .btn,
+.input-prepend .add-on:first-child, 
+.input-prepend .btn:first-child,
+.input-append .btn-group > .btn,
+.input-prepend .btn-group > .btn,
+.input-append .btn-group > .btn + .dropdown-toggle,
+.input-prepend .btn-group > .btn + .dropdown-toggle { border: solid 1px $blue; }
+.input-append .btn:nth-child(3) { 
+  border-left: solid 1px $white;
+  margin-left: 0;}
+
+input[disabled], 
+select[disabled], 
+textarea[disabled], 
+input[readonly], 
+select[readonly], 
+textarea[readonly], 
+.uneditable-input, 
+.uneditable-textarea {
+  color: $mid-gray;
+  border: solid 1px $mid-gray;
+  font-style: italic;
+}
+
+.caret, .dropup .caret, .navbar-fixed-bottom .dropdown .caret { 
+  border-top-color: $white;
+  border-bottom-color: $white; 
+}
+.btn .caret { margin-top: 12px; }
+
+/* Buttons, Labels, and Badges */
+
+.btn, .label, .badge {
+  @include box-shadow(none);
+  @include text-shadow(none);
+  border: none;
+  color: $white;
+  &.primary {
+    background-color: $orange;
+  }
+  &.default {
+    background-color: $blue;
+  }
+  > a { 
+    @include text-shadow(none);
+    color: $white;
+    &:hover{ color: $light-gray; }
+    &:visited { color: $white; }
+  }
+}
+
+.btn-group > .btn,
+.btn-group > .btn + .dropdown-toggle {
+  border: solid 1px $white;
+}
+
+.label-warning, .btn-warning, .badge-warning {
+  background-color: $yellow;
+  border: none;
+  color: $dark-yellow;
+}
+
+.label-warning, .btn-warning, .badge-warning {
+  background-color: $yellow;
+  color: $dark-yellow;
+}
+
+.alert {
+  @include text-shadow(none);
+  @include border-radius(0);
+}

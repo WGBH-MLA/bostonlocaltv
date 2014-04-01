@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You have received a new request for digitization from <%= @user.to_s %> for artifact: <%= link_to @artifact.title, "http://bostonlocaltv.org/catalog/#{@artifact.solr_document_id}" %>.<br/>
+    </p>
+  </body>
+</html>

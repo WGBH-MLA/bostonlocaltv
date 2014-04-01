@@ -1,39 +1,36 @@
-
-<div id="home_container">
-  <div id="home_content">
+<div class="row">
+  <div class="span9">
     <% Wordpress.get_recent_posts(:count => 4).each do |post| %>
-      <div class="post">
-        <h3><a href="<%= post.url %>"><%= post.title.html_safe %></a></h3>
+      <div class="post row">
+        <div class="post-head">
+          <a class="post-date" href="<%=post.url %>">
+            <span class="month"><%= post.date.strftime('%b') %></span>
+            <span class="day"><%= post.date.strftime('%d') %></span>
+          </a>
+          <h3><a href="<%= post.url %>"><%= post.title.html_safe %></a></h3>
+          <a class="post-author" href="/blog/author/<%= post.author_slug %>"><%= post.author_name %></a>
+        </div>
         <div class="thumbnail">
           <%= image_tag post.thumbnail, :alt => '' if post.thumbnail %>
         </div>
-        <div class="meta">
-          Posted on <a href="<%=post.url %>"><%= l post.date.to_date, :format => :long %></a> 
-          By <a href="/blog/author/<%= post.author_slug %>"><%= post.author_name %></a></div>
-        <div class="body">
+        <div class="body span8">
           <%= post.excerpt.html_safe %>
         </div>
       </div>
     <% end rescue nil %>
   </div>
-</div>
-
-<div id="features_home">
-  <div>
-    <ul class="feature">
-      <li>
-      <%= image_tag("blacklight/Janine4.jpeg", :alt => "girls little league") %>
-      <p>About a month ago I pulled a few stories from the WCVB collection to digitize. One of those chosen was “Girl Little League Player” from May 24th, 1974. ... <a href="/blog/2012/05/girls-little-league/">more></a></p>
-      </li>
-    </ul>
-  </div>
-  
-  <div>
-    <ul class="feature">
-      <li>
-      <%= image_tag("blacklight/bill_mckibben.png", :alt => "Bill Mckibben Speaks at Cambridge Earth Day") %>
-      <p>There’s been a lot of debate and discussion over the Keystone Pipeline, a system that would transport crude oil from Canada to the United States for processing. Supporters of the project claim that it will create jobs and secure a nearby source of oil, while opponents cite environmental issues like an increase in greenhouse gases and the possibility of water pollution. ... <a href="blog/2012/03/bill-mckibben-speaks-at-cambridge-earth-day-1990/">more></a></p>
-      </li>
+  <div class="span3">
+    <ul class="nav nav-list">
+      <li class="nav-header">Collections</li>
+      <li><a href="/wgbh"><span class="label default">7992</span> WGBH</a></li>
+      <li><a href="/cctv"><span class="label default">7191</span> CCTV</a></li>
+      <li><a href="/wcvb"><span class="label default">10542</span> WCVB</a></li>
+      <li><a href="/whdh"><span class="label default">23414</span> WHDH</a></li>
+      <li class="nav-header">Resources</li>
+      <li><a href="http://bostonlocaltv.org/blog/resources-archivist/">Archivists</a></li>
+      <li><a href="http://bostonlocaltv.org/blog/resources-for-scholars/">Teachers</a></li>
+      <li><a href="http://bostonlocaltv.org/blog/resources-for-teachers/">Students</a></li>
+      <li class="nav-header blog-link"><a href="http://bostonlocaltv.org/blog/category/student-blogs/">Student Blog</a></li>
     </ul>
   </div>
 </div>
