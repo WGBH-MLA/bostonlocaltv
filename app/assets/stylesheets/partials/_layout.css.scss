@@ -313,7 +313,7 @@ body.blacklight-catalog-home #sidebar, body.blacklight-collections #sidebar {
       height: 25px;  
       padding-top: 12px;
       &.ui-state-highlight {
-        background: rgba(235, 235, 192, 0.61);
+        background: $orange;
       }
       &.ui-state-error {
         background: rgba(235, 192, 194, 0.61);
@@ -773,6 +773,7 @@ body.blacklight-catalog-show {
     }
     input#non_video {
       float:left;
+      margin-top: 12px;
       margin-right:5px;
     }
   }
