@@ -1,0 +1,69 @@
+/**********************************************************
+*
+* Top bar
+*
+**********************************************************/
+.navbar {
+  border: none;
+  margin-bottom: 0;
+  min-width: 800px;
+  .brand { 
+    padding: 0; 
+    margin: 0 0 0 15px;
+    min-width: 126px;
+  }
+  .navbar-inner {
+    @include border-radius(0);
+    background: $dark-gray;  
+    h1 {
+      font-family: $sans-font;
+      font-size: $bl*3;
+      font-style: normal;
+      font-weight: $sans-bold;
+      line-height: $bl*3;
+      padding-top: $bl;
+      text-shadow: none;
+      a { 
+        color: $white;
+        text-decoration: none;
+      }
+      span { 
+        clear: left;
+        color: $orange;
+        display: block;
+      }
+    }
+  }
+  .nav {
+    > li > a {
+      color: $white;
+      float: left;
+      font-size: 14px;
+      &:hover {
+        color: $orange;
+      }
+    }
+    i { 
+      float:left;
+      margin: 16px -10px 0 15px;
+    }
+  }
+  .search_home {
+    display: inline-block;
+    float: right;
+    margin-right: 100px;
+    form {
+      margin: 9px 0 0;
+      input {
+        font-size: 14px;
+        height:20px;
+        margin: 0;
+        max-width: 286px;
+      }
+      .btn { 
+        font-size: 14px;
+        line-height: 20px; 
+      }
+    }
+  }
+}
