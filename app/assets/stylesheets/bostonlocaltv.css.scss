@@ -65,9 +65,16 @@ p { font-size: 14px; }
 @import 'base/fonts';
 
 /* Include all the partials */
+@import 'base/colors';
+@import 'base/fonts';
+@import 'base/units';
+@import 'variables';
 @import 'bootstrap';
 //@import 'bootstrap-responsive';
 @import 'blacklight/blacklight';
+
+@import 'base/modules/buttons';
+@import 'base/modules/main_nav';
 
 @import "partials/_catalog";
 @import "partials/_formatting";
