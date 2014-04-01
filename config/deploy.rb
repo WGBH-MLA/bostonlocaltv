@@ -17,7 +17,7 @@ set :deploy_to, "/wgbh/http/#{application}"
 set :keep_releases, 10
 
 after "deploy:restart", "deploy:cleanup"
-after "deploy:update_code","deploy:config_symlink"
+before "deploy:assets:precompile","deploy:symlink_db"
 after "deploy:update_code","deploy:symlink_jetty"
 
 # To allow interactive login to lsboslocal02
@@ -26,7 +26,7 @@ set :ssh_options, { :forward_agent => true }
 
 namespace :deploy do 
   desc "Link the database/yml in to place"
-  task :config_symlink do
+  task :symlink_db do
     run "cp #{shared_path}/database.yml #{release_path}/config/database.yml"
   end
 
