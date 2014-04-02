@@ -22,7 +22,12 @@ module BlacklightHelper
       value = value.map { |x| y = x; link_to(x, catalog_index_url(:f => { args[:field] => [y] }) ) }
     end
 
-    render_field_value value
+    field_config = document_show_fields(args[:document])[args[:field]]
+    render_field_value value, field_config
+  end
+
+  def field_value_separator
+    "<br />".html_safe
   end
   
   def is_date_estimated? args
