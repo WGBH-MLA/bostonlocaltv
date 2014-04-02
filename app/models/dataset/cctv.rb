@@ -82,19 +82,22 @@ class Dataset::Cctv < Dataset::Xml
           fields << ["subject_facet_s", node.text]
         end
 
+        if node.attributes['subjectType'].try(:value) == "entity"
+          fields << ['entity_s', node.text]
+        end
+
       when "pbcoreContributor"
         if (node.children() == nil)
-          fields << ["people_s", node.text]
           fields << ["contributor_name_role_s", node.text]
         end
 
         node.children().each do |child|
           case child.name
           when "contributor"
-            fields << ["people_s", child.text]
             people = child.text
+
           when "contributorRole"
-            contributor_name_role = people + ", " + child.text
+            contributor_name_role = "#{people} (#{child.text})"
             fields << ["contributor_name_role_s", contributor_name_role]
           end
         end

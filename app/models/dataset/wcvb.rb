@@ -56,6 +56,21 @@ class Dataset::Wcvb < Dataset::Xml
           fields << ["#{node.name.parameterize}_s", node.text]
         end
 
+      when "pbcoreSubject"
+        if node.values()[0] == "category"
+          fields << ["subject_s", node.text]
+          fields << ["subject_facet_s", node.text]
+        end
+
+        if node.values()[0] == "entity"
+          fields << ["subject_s", node.text]
+          fields << ["subject_facet_s", node.text]
+        end
+
+        if node.attributes['subjectType'].try(:value) == "entity"
+          fields << ['entity_s', node.text]
+        end
+
       when "pbcoreRelation"
         node.children().each do |child|
           case child.name
@@ -69,6 +84,22 @@ class Dataset::Wcvb < Dataset::Xml
 
       when "pbcoreDescription"
         fields << ["description_s", node.text]
+
+      when "pbcoreContributor"
+        if (node.children() == nil)
+          fields << ["contributor_name_role_s", node.text]
+        end
+
+        node.children().each do |child|
+          case child.name
+          when "contributor"
+            people = child.text
+
+          when "contributorRole"
+            contributor_name_role = "#{people} (#{child.text})"
+            fields << ["contributor_name_role_s", contributor_name_role]
+          end
+        end
 
       when "pbcoreInstantiation"
         node.children().each do |child|

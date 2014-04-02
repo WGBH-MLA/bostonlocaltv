@@ -89,14 +89,14 @@ class CatalogController < ApplicationController
     config.add_show_field 'date_created_s', :label => 'Date Created', :link => true# , :custom => '(estimated)'
     config.add_show_field 'location_s', :label => 'Locations', :link => true
     config.add_show_field 'subject_s', :label => 'Subjects', :link => true
-    config.add_show_field 'people_s', :label => 'Names', :link => true
+    config.add_show_field 'entity_s', :label => 'Names', :link => true
     config.add_show_field 'format', :label => 'Physical Format', :link => true
     config.add_show_field 'audio_format_s', :label => 'Audio', :link => true
     config.add_show_field 'format_color_s', :label => 'Color', :link => true
     config.add_show_field 'footage_length_s', :label => 'Footage Length' , :link => true
     config.add_show_field 'audio_duration_s', :label => 'Duration', :link => true
     config.add_show_field 'intended_purpose_s', :label => 'Type or Purpose', :link => true
-    config.add_show_field 'contributor_name_role_s', :label => 'Contributor', :link => true
+    config.add_show_field 'contributor_name_role_s', :label => 'Contributors', :link => true
     config.add_show_field 'credit_s', :label => 'Credit', :link => true
     config.add_show_field 'program_s', :label => 'Program Type'
     config.add_show_field 'date_estimated_s', :label => 'Date Estimated'
