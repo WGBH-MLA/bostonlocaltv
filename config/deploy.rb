@@ -20,6 +20,7 @@ after "deploy:restart", "deploy:cleanup"
 before "deploy:assets:precompile","deploy:symlink_db"
 after "deploy:update_code","deploy:symlink_jetty"
 after "deploy:update_code", "deploy:symlink_uploads"
+after "deploy:update_code", "deploy:symlink_blog"
 
 # To allow interactive login to lsboslocal02
 default_run_options[:pty] = true
@@ -34,6 +35,11 @@ namespace :deploy do
   desc "Link the uploads directory"
   task :symlink_uploads do
     run "ln -nfs #{shared_path}/uploads #{release_path}/public/uploads"
+  end
+
+  desc "Link the blog"
+  task :symlink_blog do
+    run "ln -nfs #{shared_path}/blog #{release_path}/public/blog"
   end
 
   task :restart, :roles => :app, :except => { :no_release => true } do
