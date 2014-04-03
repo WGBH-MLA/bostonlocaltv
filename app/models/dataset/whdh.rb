@@ -79,6 +79,10 @@ class Dataset::Whdh < Dataset::Xml
           fields << ["subject_facet_s", node.text]
         end
 
+        if node.attributes['subjectType'].try(:value) == "entity"
+          fields << ['entity_s', node.text]
+        end
+
       when "pbcoreContributor"
         if (node.children() == nil)
           fields << ["contributor_name_role_s", node.text]
