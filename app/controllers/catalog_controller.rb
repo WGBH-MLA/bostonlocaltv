@@ -14,13 +14,9 @@ class CatalogController < ApplicationController
     config.oai = {
       :provider => {
         :repository_name => 'Boston Local TV News',
-        :repository_url => 'http://localhost',
+        :repository_url => 'http://bostonlocaltv.org',
         :record_prefix => '',
-        :admin_email => 'root@localhost'
-      },
-      :document => {
-        :timestamp => 'timestamp',
-        :limit => 25
+        :admin_email => 'bostonlocaltv@wgbh.org'
       }
     }
 
