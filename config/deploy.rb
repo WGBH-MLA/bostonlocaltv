@@ -1,4 +1,5 @@
 require "bundler/capistrano"
+require "dotenv/capistrano"
 
 set :stages, %w(production staging)
 set :default_stage, "staging"
@@ -16,8 +17,8 @@ set :use_sudo, false
 set :deploy_to, "/wgbh/http/#{application}"
 set :keep_releases, 10
 
-after "deploy:restart", "deploy:cleanup"
 before "deploy:assets:precompile","deploy:symlink_db"
+after "deploy:restart", "deploy:cleanup"
 after "deploy:update_code","deploy:symlink_jetty"
 after "deploy:update_code", "deploy:symlink_uploads"
 after "deploy:update_code", "deploy:symlink_blog"

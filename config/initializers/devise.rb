@@ -15,7 +15,11 @@ Devise.setup do |config|
   # available as additional gems.
   require 'devise/orm/active_record'
   
-  config.secret_key = 'b4ae199a1f83a61863a65d655ecb450c589f2f5de547ea710877e5d7194af8fdafee240694f140b33d5ecc4ef1f596636d28d26953093dac6e08cb057520b7db'
+  config.secret_key = if Rails.env.development? or Rails.env.test?
+    ('x' * 30)
+  else
+    ENV['DEVISE_SECRET_KEY']
+  end
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is
