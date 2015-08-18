@@ -29,8 +29,7 @@ gem 'uglifier'
 gem 'unicode'
 gem 'state_machine'
 gem 'blacklight_oai_provider', git: "https://github.com/cbeer/blacklight_oai_provider.git"
-gem 'dotenv-rails'
-
+gem 'dotenv-rails', '0.8.0'
 
 group :test do
   gem 'aruba'
