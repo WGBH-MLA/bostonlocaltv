@@ -21,7 +21,7 @@ gem 'devise'
 gem 'jquery-rails', '~> 3.1.3'
 gem 'jquery-ui-rails'
 gem 'kaminari'
-gem 'mysql2'
+gem 'sqlite3'
 gem 'progressbar'
 # gem 'rsolr-footnotes'
 gem 'therubyracer'
@@ -47,7 +47,6 @@ group :development, :test do
   gem 'meta_request'
   gem 'rails-footnotes', '>= 3.7'
   gem 'rspec-rails', '~> 2.99.0'
-  gem 'sqlite3'
   gem 'net-ssh', '~> 2.7.0'
 end
 

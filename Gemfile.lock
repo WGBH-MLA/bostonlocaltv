@@ -223,7 +223,6 @@ GEM
     multi_json (1.11.2)
     multi_test (0.1.2)
     multipart-post (2.0.0)
-    mysql2 (0.3.19)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
@@ -362,7 +361,6 @@ DEPENDENCIES
   kaminari
   launchy
   meta_request
-  mysql2
   net-ssh (~> 2.7.0)
   progressbar
   rails (~> 3.2.16)
@@ -375,3 +373,6 @@ DEPENDENCIES
   therubyracer
   uglifier
   unicode
+
+BUNDLED WITH
+   1.11.2
