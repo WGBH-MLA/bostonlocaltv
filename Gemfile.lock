@@ -116,7 +116,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
-    columnize (0.9.0)
     compass (0.12.7)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
@@ -132,12 +131,6 @@ GEM
     cucumber-core (1.2.0)
       gherkin (~> 2.12.0)
     database_cleaner (1.4.1)
-    debugger (1.6.8)
-      columnize (>= 0.3.1)
-      debugger-linecache (~> 1.2.0)
-      debugger-ruby_core_source (~> 1.3.5)
-    debugger-linecache (1.2.0)
-    debugger-ruby_core_source (1.3.8)
     deprecation (0.2.2)
       activesupport
     devise (3.5.2)
@@ -223,7 +216,6 @@ GEM
     multi_json (1.11.2)
     multi_test (0.1.2)
     multipart-post (2.0.0)
-    mysql2 (0.3.19)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
@@ -351,7 +343,6 @@ DEPENDENCIES
   coffee-rails
   compass
   database_cleaner
-  debugger
   devise
   dotenv-rails (= 0.8.0)
   factory_girl_rails (~> 4.0)
@@ -362,7 +353,6 @@ DEPENDENCIES
   kaminari
   launchy
   meta_request
-  mysql2
   net-ssh (~> 2.7.0)
   progressbar
   rails (~> 3.2.16)
@@ -375,3 +365,6 @@ DEPENDENCIES
   therubyracer
   uglifier
   unicode
+
+BUNDLED WITH
+   1.12.3

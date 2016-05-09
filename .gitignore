@@ -21,3 +21,4 @@ doc/
 .idea
 ./sample.xml
 
+/nbproject

@@ -1,9 +1,8 @@
 language: ruby
-rvm:
-  - 1.9.3
-  - 2.0.0
-notifications:
-  irc: "irc.freenode.org#wgbh-mla"
-  
-# script:
-#  - RAILS_ENV=test bundle exec rake --trace db:test:prepare test
+sudo: false
+cache: bundler
+script:
+  - bundle exec rake jetty:load
+  - bundle exec rake db:migrate
+  - bundle exec rake db:test:prepare
+  - bundle exec rspec
