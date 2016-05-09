@@ -6,10 +6,6 @@ Bostonlocaltv::Application.routes.draw do
 
   root :to => "catalog#home"
 
-  devise_for :users
-  ActiveAdmin.routes(self)
-
-
   match 'catalog/citation', :as => "citation_catalog"
  
   get 'wgbh' => 'collections#wgbh', :as=> 'wgbh_collection'
@@ -22,23 +18,12 @@ Bostonlocaltv::Application.routes.draw do
   get 'CCTV' => 'collections#cctv', :as=> 'cctv_collection'
   
   # I believe the constraint is to allow PID variations in the id.
-  resources :catalog, :only => [:index, :show, :update], :constraints => { :id=>/([A-Za-z0-9]|:|-|\.)*([A-Za-z0-9]|:|-){7}/ } do
+  resources :catalog, :only => [:index, :show], :constraints => { :id=>/([A-Za-z0-9]|:|-|\.)*([A-Za-z0-9]|:|-){7}/ } do
 
     # TODO: is this used anywhere
     member do
       get 'cite'
     end
   end
-  
-  resources :comments, :only => [:create]
-  resources :digitizations
-  resources :sponsorships do
-    member do
-      put 'confirm'
-      put 'unconfirm'
-    end
-  end
-  
-  get 'dashboard', to: 'users#show'
 
 end
