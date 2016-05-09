@@ -41,7 +41,7 @@ group :test do
 end
 
 group :development, :test do
-  gem 'debugger'
+  # gem 'debugger'
   # gem 'guard-rspec'
   gem 'jettywrapper'
   gem 'meta_request'
