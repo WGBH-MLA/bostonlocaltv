@@ -1,21 +1,7 @@
 <div id="feature-container" class="carousel slide">
   <a class="carousel-control right" href="#feature-container" data-slide="next">&raquo;</a>
   <div id="featured" class="carousel-inner">
-
-    <% if CarouselItem.carousel.count >= 3 %>
-      <% CarouselItem.carousel.each_with_index do |item, index| %>
-        <div id="fragment-<%= index+1 %>" class="item <%= index == 0 ? 'active' : '' %>">
-          <%= link_to image_tag(item.image, :alt => item.title), item.url %>
-          <div class="info">
-            <div class="carousel-text">
-              <h2><%= item.title %></h2>
-              <p><%= item.body %></p>
-              <p><a href="<%= item.url %>" >Read more &raquo;</a></p>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    <% else %>      
+     
       <div id="fragment-1" class="item active">
         <%= link_to image_tag("sigimage-10oclock-van.jpg", :alt => "The Ten O'Clock News"), '/wgbh' %>
         <div class="info">
@@ -60,7 +46,6 @@
         </div>
       </div>
 
-    <% end %>
   </div>
   
 </div><!-- #feature-container -->

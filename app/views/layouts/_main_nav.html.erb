@@ -1,15 +1,6 @@
 <nav class="navbar navbar-fixed-top">
   <div class="navbar-inner">
-    <h1 class="brand"><a href="/">Boston TV News <span>Digital Library</span></a></h1>   
-    <ul class="nav pull-right">
-      <% if current_user %>
-        <li><i class="icon-user icon-white"></i><%= link_to current_user.full_name, dashboard_path %></li>
-        <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-      <% else %>
-        <li><i class="icon-user icon-white"></i><a href="/users/sign_in">Log in</a></li>
-        <li><a href="/users/sign_up">Sign up</a></li>
-      <% end %>
-    </ul>   
+    <h1 class="brand"><a href="/">Boston TV News <span>Digital Library</span></a></h1>  
     <%= render "catalog/home_search_form" %>
   </div>
 </nav>
