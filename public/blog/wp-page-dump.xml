@@ -42,6 +42,1082 @@ As one of our target audiences, we value the opinions of the teachers who use ou
 </data></array></value></member>
   <member><name>wp_page_template</name><value><string>onecolumn-page.php</string></value></member>
 </struct></value>
+  <value><struct>
+  <member><name>dateCreated</name><value><dateTime.iso8601>20140328T11:22:38</dateTime.iso8601></value></member>
+  <member><name>userid</name><value><string>5</string></value></member>
+  <member><name>page_id</name><value><int>2400</int></value></member>
+  <member><name>page_status</name><value><string>publish</string></value></member>
+  <member><name>description</name><value><string>This project is a collaborative community effort to bring together historical local TV news collections in a central, accessible, online environment. We hope that researchers will find our content engaging and useful for work in their fields of study. For more on the scholarly applications of our collections, read this &lt;a href=&quot;http://bostonlocaltv.org/blog/2014/03/scholarly-use-of-the-boston-tv-news-digital-library/&quot;&gt;note&lt;/a&gt; from Film and Media Studies professor, Mark Williams.
+
+&lt;a href=&quot;#digitization&quot;&gt;Request Digitization&lt;/a&gt; | &lt;a href=&quot;#tvnews&quot;&gt;TV News Collections&lt;/a&gt; | &lt;a href=&quot;#localnews&quot;&gt;Local Boston Collections&lt;/a&gt; | &lt;a href=&quot;#feedback&quot;&gt;User Feedback&lt;/a&gt;
+&lt;div id=&quot;digitization&quot;&gt;&lt;strong&gt;Request Digitization&lt;/strong&gt;&lt;/div&gt;
+We're very excited to offer a remarkable feature that allows users to access any item in our catalog. Through our Digitization on Demand program you can select any artifact from our catalog of over 50,000 items, and help save a piece of local history by sponsoring its preservation. It's easy. If you come across an items that you're excited to see digitized and preserved, all you have to do is request it. We'll contact you about the costs of digitization, and soon the video will be streaming on our site for free public access. Read &lt;a href=&quot;http://bostonlocaltv.org/blog/2014/03/digitize-on-demand/&quot;&gt;more&lt;/a&gt; about this feature.
+&lt;div id=&quot;tvnews&quot;&gt;&lt;strong&gt;Additional TV News Collections&lt;/strong&gt;&lt;/div&gt;
+The University of Virginia
+&lt;a href=&quot;http://search.lib.virginia.edu/catalog/uva-lib:2214294&quot;&gt;WSLS-TV News Film Collection&lt;/a&gt;
+
+The University of South Carolina Moving Image Research Collection (MIRC)
+&lt;a href=&quot;http://library.sc.edu/mirc/list.html?cat=6&quot;&gt;Fox Movietone News Collection&lt;/a&gt;
+&lt;a href=&quot;http://library.sc.edu/mirc/list.html?cat=1&quot;&gt;Local Newsfilm Collection&lt;/a&gt;
+
+The University of Georgia
+&lt;a href=&quot;http://www.libs.uga.edu/media/collections/newsfilm/wsb.html&quot;&gt;WSB-TV Newsfilm Collection&lt;/a&gt;
+&lt;a href=&quot;http://www.libs.uga.edu/media/collections/peabody/index.html&quot;&gt;Peabody Awards Collection&lt;/a&gt;
+
+Vanderbilt University
+&lt;a href=&quot;http://tvnews.vanderbilt.edu/&quot;&gt;Vanderbilt Television News Collection&lt;/a&gt;
+
+San Francisco State University
+&lt;a href=&quot;http://library.sfsu.edu/sfbatv&quot;&gt;San Francisco Bay Area Television Archive&lt;/a&gt;
+
+Internet Archive
+&lt;a href=&quot;https://archive.org/details/tv&quot;&gt;TV News&lt;/a&gt;
+&lt;a href=&quot;hhttps://archive.org/details/911&quot;&gt;Understanding 9/11: A Television News Archive&lt;/a&gt;
+&lt;div id=&quot;localnews&quot;&gt;&lt;strong&gt;Additional Local Boston News Collections&lt;/strong&gt;&lt;/div&gt;
+Some may require subscriptions, which can often be obtained through public libraries
+&lt;a href=&quot;http://pqasb.pqarchiver.com/boston/advancedsearch.html&quot;&gt;Boston Globe Archives&lt;/a&gt;
+&lt;a href=&quot;http://www.bpl.org/research/microtext/news.htm&quot;&gt;Boston Public Library Microtext Department&lt;/a&gt;
+&lt;a href=&quot;http://newspapers.bc.edu/&quot;&gt;Boston College Digitized Local Newspaper Collection&lt;/a&gt;
+&lt;a href=&quot;http://www.thecrimson.com/sitemap/&quot;&gt;Harvard Crimson Archive by Date&lt;/a&gt;
+&lt;a href=&quot;http://www.thecrimson.com/search/&quot;&gt;Harvard Crimson Archive Search&lt;/a&gt;
+&lt;div id=&quot;feedback&quot;&gt;&lt;strong&gt;User Feedback Survey&lt;/strong&gt;&lt;/div&gt;
+As one of our target audiences, we value the opinions of the scholars who use our site. Our main goal is to make our content accessible in the best way possible. If you have any comments or suggestions, please take our &lt;a href=&quot;http://bostontvnewslibrary.polldaddy.com/s/boston-tv-news-digital-library-feedback&quot;&gt;user feedback survey&lt;/a&gt;.</string></value></member>
+  <member><name>title</name><value><string>Resources for Scholars</string></value></member>
+  <member><name>link</name><value><string>http://bostonlocaltv.org/blog/resources-for-scholars/</string></value></member>
+  <member><name>permaLink</name><value><string>http://bostonlocaltv.org/blog/resources-for-scholars/</string></value></member>
+  <member><name>categories</name><value><array><data>
+</data></array></value></member>
+  <member><name>excerpt</name><value><string></string></value></member>
+  <member><name>text_more</name><value><string></string></value></member>
+  <member><name>mt_allow_comments</name><value><int>1</int></value></member>
+  <member><name>mt_allow_pings</name><value><int>1</int></value></member>
+  <member><name>wp_slug</name><value><string>resources-for-scholars</string></value></member>
+  <member><name>wp_password</name><value><string></string></value></member>
+  <member><name>wp_author</name><value><string>Sadie Roosa</string></value></member>
+  <member><name>wp_page_parent_id</name><value><int>0</int></value></member>
+  <member><name>wp_page_parent_title</name><value><string></string></value></member>
+  <member><name>wp_page_order</name><value><int>0</int></value></member>
+  <member><name>wp_author_id</name><value><string>5</string></value></member>
+  <member><name>wp_author_display_name</name><value><string>Sadie Roosa</string></value></member>
+  <member><name>date_created_gmt</name><value><dateTime.iso8601>20140328T15:22:38</dateTime.iso8601></value></member>
+  <member><name>custom_fields</name><value><array><data>
+</data></array></value></member>
+  <member><name>wp_page_template</name><value><string>onecolumn-page.php</string></value></member>
+</struct></value>
+  <value><struct>
+  <member><name>dateCreated</name><value><dateTime.iso8601>20121204T12:37:25</dateTime.iso8601></value></member>
+  <member><name>userid</name><value><string>13</string></value></member>
+  <member><name>page_id</name><value><int>1325</int></value></member>
+  <member><name>page_status</name><value><string>publish</string></value></member>
+  <member><name>description</name><value><string>It's a good idea to maintain your browser (and all) software with the latest versions, but this site has been tested to work favorably with current versions of the following popular browsers:
+
+Internet Explorer 8.0 or later *
+Firefox 3.6.17 or later
+Fennec 1.0 or later (mobile Firefox)
+Safari 5.0 or later
+Safari mobile 5.0.2 (for iOS 4.2) or later
+Chrome (auto-updates)
+Midori 0.2.2 or later
+
+
+*  Minor problems were found with the following browsers:
+Internet Explorer 7.0 (javascript warnings when using strict mode)
+Opera 10 &amp; later (displayed overlapping elements)</string></value></member>
+  <member><name>title</name><value><string>Help</string></value></member>
+  <member><name>link</name><value><string>http://bostonlocaltv.org/blog/help/</string></value></member>
+  <member><name>permaLink</name><value><string>http://bostonlocaltv.org/blog/help/</string></value></member>
+  <member><name>categories</name><value><array><data>
+</data></array></value></member>
+  <member><name>excerpt</name><value><string></string></value></member>
+  <member><name>text_more</name><value><string></string></value></member>
+  <member><name>mt_allow_comments</name><value><int>0</int></value></member>
+  <member><name>mt_allow_pings</name><value><int>0</int></value></member>
+  <member><name>wp_slug</name><value><string>help</string></value></member>
+  <member><name>wp_password</name><value><string></string></value></member>
+  <member><name>wp_author</name><value><string>mbennett</string></value></member>
+  <member><name>wp_page_parent_id</name><value><int>0</int></value></member>
+  <member><name>wp_page_parent_title</name><value><string></string></value></member>
+  <member><name>wp_page_order</name><value><int>0</int></value></member>
+  <member><name>wp_author_id</name><value><string>13</string></value></member>
+  <member><name>wp_author_display_name</name><value><string>mbennett</string></value></member>
+  <member><name>date_created_gmt</name><value><dateTime.iso8601>20121204T12:37:25</dateTime.iso8601></value></member>
+  <member><name>custom_fields</name><value><array><data>
+</data></array></value></member>
+  <member><name>wp_page_template</name><value><string>onecolumn-page.php</string></value></member>
+</struct></value>
+  <value><struct>
+  <member><name>dateCreated</name><value><dateTime.iso8601>20121129T17:02:24</dateTime.iso8601></value></member>
+  <member><name>userid</name><value><string>13</string></value></member>
+  <member><name>page_id</name><value><int>1283</int></value></member>
+  <member><name>page_status</name><value><string>publish</string></value></member>
+  <member><name>description</name><value><string>&lt;strong&gt;A &amp;amp; B Rolls&lt;/strong&gt; A and B rolls [are] two rolls of negative and positive elements which are used by the filmmaker to hide splices and create fades and dissolves by alternating back and forth between the two rolls. &lt;a href=&quot;#fn11&quot;&gt;[11. Pg. 13]&lt;/a&gt;
+
+Paired production elements that are printed in succession to hide transitions or splices between shots and to produce fades or dissolves. Created by splicing negative or positive film into two rolls. Where one carried the picture, the other has black or blank leader. &lt;a href=&quot;#fn5&quot;&gt;[5. Pg. 99]&lt;/a&gt;
+
+&lt;strong&gt;Aerial (shot)&lt;/strong&gt; An extremely high angle view of a subject usually taken from a crane or a high stationary camera position, but may also refer to a shot taken from an actual airplane or helicopter. &lt;a href=&quot;#fn4&quot;&gt;[4]&lt;/a&gt;
+
+&lt;strong&gt;Air&lt;/strong&gt; The medium for radio and TV broadcasting. A station or program, when broadcast, is on the air or airing. &lt;a href=&quot;#fn8&quot;&gt;[8]&lt;/a&gt;
+
+&lt;strong&gt;Answer Print&lt;/strong&gt; An answer print is the film print that is used as a presentation copy once all the scenes have been checked for quality in the printing and the corrections have been made. &lt;a href=&quot;#fn11&quot;&gt;[11. Pg. 14]&lt;/a&gt;
+
+First positive film copy in which each scene had been corrected for brightness and color. Created to check the quality of the production, printing, or preservation elements. &lt;a href=&quot;#fn5&quot;&gt;[5. Pg. 99]&lt;/a&gt;
+
+&lt;strong&gt;Bagger&lt;/strong&gt; A fire alarm. Usually constructed as one-bagger, two-bagger, three-bagger, etc., the number representing the severity of the fire, as in a four-alarm fire. &lt;a href=&quot;#fn2&quot;&gt;[2]&lt;/a&gt;
+
+&lt;strong&gt;Core&lt;/strong&gt; Hub on which film is wound for storage. &lt;a href=&quot;#fn5&quot;&gt;[5. Pg. 101]&lt;/a&gt;
+
+&lt;strong&gt;Cuts&lt;/strong&gt; Local term used in the WHDH collection to signify outtakes – footage not used in the broadcast news item.
+
+&lt;strong&gt;Edited&lt;/strong&gt; Local term used in the WHDH collection to signify a packaged news story that was ready to air.
+
+&lt;strong&gt;ENG&lt;/strong&gt; Electronic News Gathering. Television news gathering which replaced film couriered back to the newsroom with electronic methods such as video and microwave links to the studio. &lt;a href=&quot;#fn10&quot;&gt;[10]&lt;/a&gt;
+
+&lt;strong&gt;Feature&lt;/strong&gt; A longer article or radio story, usually in greater depth and complexity than a simple news item. Features may grow from a current news event or simply be examining a timeless issue. Features which are not strongly connected to hard news events are often called soft features. In radio, features usually have a mixture of elements, including the reporter’s voice, interviews and other sounds. Longer features may be called documentaries. &lt;a href=&quot;#fn10&quot;&gt;[10]&lt;/a&gt;
+
+&lt;strong&gt;Feed&lt;/strong&gt; The transfer of information from a source to a recipient, whether raw information from reporter to studio or finished reports fed to a transmitter or another station for broadcast. &lt;a href=&quot;#fn10&quot;&gt;[10]&lt;/a&gt;
+
+&lt;strong&gt;File Footage or File&lt;/strong&gt; A completed television news story pre-prepared for a news bulletin and ready for transmission. A package will contain a written introduction for the newsreader, the reporter’s edited report complete with vision and sound and an out-cue for the end. &lt;a href=&quot;#fn10&quot;&gt;[10]&lt;/a&gt;
+
+&lt;strong&gt;Folo or Follow up&lt;/strong&gt; A story which is written to report new or more detailed information on a story which has already been published or broadcast. &lt;a href=&quot;#fn10&quot;&gt;[10]&lt;/a&gt;
+
+&lt;strong&gt;Footage length&lt;/strong&gt; Footage is the length of the film when it is unwound from the reel or core and it is measured in feet. &lt;a href=&quot;#fn11&quot;&gt;[11. Pg. 9]&lt;/a&gt;
+
+Measurement of film length in feet or frames. &lt;a href=&quot;#fn5&quot;&gt;[5. Pg. 102]&lt;/a&gt;
+
+&lt;strong&gt;Freeze Frame&lt;/strong&gt; or F.F. Optical printing effect whereby a single frame is repeated to give the illusion that all action has stopped. &lt;a href=&quot;#fn7&quot;&gt;[7]&lt;/a&gt;
+
+&lt;strong&gt;Handout film&lt;/strong&gt; Local term used in WHDH Collection and WCVB Collection Assignment Sheets. Appears to refer to footage supplied by an outside company, such as Rockwell International space station.
+
+&lt;strong&gt;Head&lt;/strong&gt; Beginning of film roll. &lt;a href=&quot;#fn5&quot;&gt;[5. Pg. 103]&lt;/a&gt;
+
+&lt;strong&gt;HFR&lt;/strong&gt; Local term used in WCVB Collection Assignment Sheets. Possibly relates to the length of the item.
+
+&lt;strong&gt;Hold or Holdover&lt;/strong&gt; Local term used in WCVB Collection Assignment Sheets. The term suggests the item was filmed on one day and held back from broadcast until a later date.
+
+&lt;strong&gt;Int. or Interview&lt;/strong&gt; A formal, usually structured conversation between a journalist and a source to get information for a story. &lt;a href=&quot;#fn10&quot;&gt;[10]&lt;/a&gt;
+
+&lt;strong&gt;Live&lt;/strong&gt; Being broadcast as it happens &lt;a href=&quot;#fn10&quot;&gt;[10]&lt;/a&gt;
+
+&lt;strong&gt;Magnetic Track&lt;/strong&gt; Magnetic tracks or ‘mag’ tracks are very thin strips of what looks like magnetic audiotape applied to the film. The magnetic track is read by a playback head in the projector during viewing. Magnetic tracks can also be found as a reel of what appears to be blank copper-colored film. The audio track can be detected when the reel is played on piece of equipment capable of playing sound film. &lt;a href=&quot;#fn11&quot;&gt;[11. Pg. 14]&lt;/a&gt;
+
+Soundtrack in which the sound information is carried by magnetic oxide. Magnetic sound track can be affixed to a print as a stripe along the film edge or exist as a separate element (full-coat mag). &lt;a href=&quot;#fn5&quot;&gt;[5. Pg. 104]&lt;/a&gt;
+
+&lt;strong&gt;Master&lt;/strong&gt; The sound and picture elements that are sufficient for printing new film copied with reuse of the original source. &lt;a href=&quot;#fn5&quot;&gt;[5. Pg. 104]&lt;/a&gt;
+
+&lt;strong&gt;MOS&lt;/strong&gt; Silent filming. Traditionally explained as Motion Omit Sound. &lt;a href=&quot;#fn4&quot;&gt;[4]&lt;/a&gt;
+
+The term MOS is used on a slate when a scene is filmed without sync sound (or any sound). &lt;a href=&quot;#fn6&quot;&gt;[6]&lt;/a&gt;
+
+&lt;strong&gt;Negative&lt;/strong&gt; The negative is the film in its original form which is a negative image. &lt;a href=&quot;#fn11&quot;&gt;[11. Pg. 13]&lt;/a&gt;
+
+Film carrying the reverse image of the subject. The negative is exposed in the camera or created from a positive in the laboratory. &lt;a href=&quot;#fn5&quot;&gt;[5. Pg. 105]&lt;/a&gt;
+
+&lt;strong&gt;n.c.&lt;/strong&gt; News Conference. Also called press conference... When reporters are gathered together to question someone in the news, usually taking it in turns to ask questions. Such gatherings are usually organized by an individual or company to deal with all the media in one session or to promote a new product or service. &lt;a href=&quot;#fn10&quot;&gt;[10]&lt;/a&gt;
+
+&lt;strong&gt;Optical Track&lt;/strong&gt; The optical track appears along the edge of the film as a wavy white line or a gray stripe that varies in shade. The sound track is exposed onto the film during printing. The optical track is read as light passes through it, thus the name ‘optical.’ &lt;a href=&quot;#fn11&quot;&gt;[11. Pg. 14]&lt;/a&gt;
+
+Photographically printed sound record carried on the film print or produced as a separate element. &lt;a href=&quot;#fn5&quot;&gt;[5. Pg. 105]&lt;/a&gt;
+
+&lt;strong&gt;Outs&lt;/strong&gt; Outtakes are pieces of film that did not make it into the final edited version. &lt;a href=&quot;#fn11&quot;&gt;[11. Pg. 14]&lt;/a&gt;
+
+Footage not used in a completed film &lt;a href=&quot;#fn5&quot;&gt;[5. Pg. 105]&lt;/a&gt;
+
+&lt;strong&gt;Package or Pkg&lt;/strong&gt; A completed television news story pre-prepared for a news bulletin and ready for transmission. A package will contain a written introduction for the newsreader, the reporter’s edited report complete with vision and sound and an out-cue for the end. &lt;a href=&quot;#fn10&quot;&gt;[10]&lt;/a&gt;
+
+&lt;strong&gt;Pix Or Pics&lt;/strong&gt; Local term used in WHDH Collection and WCVB Collection Sheets. Relates to footage filmed for news stories.
+
+&lt;strong&gt;POS&lt;/strong&gt; Local term used in the WGBH Ten O’Clock News Collection to signify “person on the street” – short interviews with the public to garner local opinions on topics of the day. Can also be known as Vox Pops, see The News manual.
+
+&lt;strong&gt;Print films&lt;/strong&gt; A print is a copy of the film made from the negative. &lt;a href=&quot;#fn11&quot;&gt;[11. Pg. 13]&lt;/a&gt;
+
+&lt;strong&gt;Reax. Or Reactions&lt;/strong&gt; Local term used in WCVB Collection Assignment Sheets to signify people’s reactions or opinions about a news story.
+
+&lt;strong&gt;R.E. or Real Estate&lt;/strong&gt; Local term used in WHDH Collection and WCVB Collection Assignment Sheets to signify location footage relating to a news story, such as Harvard Yard.
+
+&lt;strong&gt;Reel&lt;/strong&gt; Metal or plastic hub with extended sides between which film is wound for projection. &lt;a href=&quot;#fn5&quot;&gt;[5. Pg. 106]&lt;/a&gt;
+
+&lt;strong&gt;Reversal film&lt;/strong&gt; Camera reversal means that the same film that runs through the camera comes back from the lab as a positive image. This is similar to a slide in photography. There is no matching negative for the original film which makes it the only copy in existence. It cannot be reconstructed if damaged or destroyed. To identify reversal film and distinguish it from a print, look at the edge of the film. A black edge indicated reversal film while a clear edge means that it is probably a print and was produced from a negative. &lt;a href=&quot;#fn11&quot;&gt;[11. Pg. 13]&lt;/a&gt;
+
+&lt;strong&gt;SIL&lt;/strong&gt; Silent. Silent film. Film made without a sound track. &lt;a href=&quot;#fn5&quot;&gt;[5. Pg. 107]&lt;/a&gt;
+
+&lt;strong&gt;Sketches&lt;/strong&gt; Local term used in WHDH Collection and WCVB Collection Sheets. Related to artists’ rendition of people, used mainly during court proceedings.
+
+&lt;strong&gt;SOF&lt;/strong&gt; Sound on film. Optical or Magnetic track running lengthwise on film adjacent to the edges of the image frames and inside the perforations. &lt;a href=&quot;#fn3&quot;&gt;[3]&lt;/a&gt;
+
+&lt;strong&gt;Sound tracks&lt;/strong&gt; Sound films have a sound track on the film which is used by he projector to ‘read’ the sound as the film plays. Sound tracks found on films are either optical or magnetic. &lt;a href=&quot;#fn11&quot;&gt;[11. Pg. 14]&lt;/a&gt;
+
+&lt;strong&gt;SOT&lt;/strong&gt; Sound on tape. Sound and video recorded on the same machine, as distinguished from sync-sound recording with separate video and sound tape recorders. &lt;a href=&quot;#fn8&quot;&gt;[8]&lt;/a&gt;
+
+&lt;strong&gt;Spray job&lt;/strong&gt; Local term used in WCVB Collection Assignment Sheets. Spray means to get some quick footage of an event with the resulting film used to create a short v/o item read by the news presenter &lt;a href=&quot;#fn12&quot;&gt;[12]&lt;/a&gt;
+
+&lt;strong&gt;Stand up or Stupper&lt;/strong&gt; A reporter’s appearance in a TV news story. Usually a head and shoulders shot which features the reporter talking into the camera at the scene of the news event, often used as a transition, or at the beginning or ending. &lt;a href=&quot;#fn10&quot;&gt;[10]&lt;/a&gt;
+
+&lt;strong&gt;Stock&lt;/strong&gt; Stock footage shot or other footage which is germane to a given visual presentation but which was not generated for that specific film or television presentation. &lt;a href=&quot;#fn4&quot;&gt;[4 Library shot]&lt;/a&gt;
+
+&lt;strong&gt;Studio&lt;/strong&gt; Local term used in WCVB Collection Assignment Sheets to signify a news item broadcast from the news studio.
+
+&lt;strong&gt;Sync&lt;/strong&gt; Synchronization. The maintenance of one operation in step with another. Abbreviated as 'sync’.
+
+A picture record and a sound record are said to be 'in sync’ when they are placed relative to each other on a release print so that when they are projected the action will coincide precisely with the accompanying sound. When these conditions are not met they are said to be 'out of sync’.
+
+In video it usually refers to the synchronization pulses necessary to coordinate the operation of several interconnected video components. When the components are properly synchronized, they are said to be 'in sync’. &lt;a href=&quot;#fn9&quot;&gt;[9]&lt;/a&gt;
+
+&lt;strong&gt;Tail&lt;/strong&gt; End of film roll. &lt;a href=&quot;#fn5&quot;&gt;[5. Pg. 108]&lt;/a&gt;
+
+&lt;strong&gt;Track&lt;/strong&gt; A part of a reporter’s narration from outside the studio, with each track numbered to precede each section of the interview or activity, so that track 1 is the introduction, track 2 is between the first and second bites, and track 3 precedes the third bite. &lt;a href=&quot;#fn8&quot;&gt;[8]&lt;/a&gt;
+
+&lt;strong&gt;Trim(s)&lt;/strong&gt; Portions of a scene left over after the selected section has been used in final cutting. &lt;a href=&quot;#fn4&quot;&gt;[4]&lt;/a&gt;
+
+Outtakes of only a few frames. &lt;a href=&quot;#fn7&quot;&gt;[7]&lt;/a&gt;
+
+&lt;strong&gt;Voice over&lt;/strong&gt; A television technique in which a reporter or narrator speaks while vision is being shown on screen. &lt;a href=&quot;#fn10&quot;&gt;[10]&lt;/a&gt;
+
+&lt;strong&gt;VTR &lt;/strong&gt;Videotape Recorder. An electro-mechanical device designed to record and playback video and audio signals on magnetic tape wound on open reels. &lt;a href=&quot;#fn1&quot;&gt;[1]&lt;/a&gt;
+
+&lt;strong&gt;Wild sound&lt;/strong&gt; Audio elements that are not recorded synchronously with the picture. &lt;a href=&quot;#fn4&quot;&gt;[4 Wild Track]&lt;/a&gt;
+
+Non-sync sound that is recorded when the camera isn't running. &lt;a href=&quot;#fn7&quot;&gt;[7]&lt;/a&gt;
+
+&lt;strong&gt;Work Print&lt;/strong&gt; A work print is made quickly, often without any kind of correction for light or color. It is used to assemble the rough cut of a film so that the original film material is preserved while the film is edited. &lt;a href=&quot;#fn11&quot;&gt;[11. Pg. 14]&lt;/a&gt;
+
+&lt;strong&gt;Wrap or Wrap up&lt;/strong&gt; A cover; a summary; completion; a show-business term to indicate completion of a scene; also called insert, package, takeout, wrap-around, or wrapper. The wrap-up signal to end a program quickly is one hand rotating in a circular motion. Also, a news report that combines the voice of the announcer, the voice of the newsmaker, and background sound. &lt;a href=&quot;#fn8&quot;&gt;[8]&lt;/a&gt;
+
+&lt;strong&gt;Wx&lt;/strong&gt; Local term used in WCVB Collection Assignment Sheets to signify the weather
+
+References
+&lt;div id=&quot;fn1&quot;&gt;1. ACVL – Association of Cinema and Video Laboratories
+
+http://www.acvl.org/acvl_manual/video_terms7.html&lt;/div&gt;
+&lt;div id=&quot;fn2&quot;&gt;2. A Way With Words
+
+http://www.waywordradio.org/bagger/&lt;/div&gt;
+&lt;div id=&quot;fn3&quot;&gt;3. Film Forever
+
+http://filmforever.org/&lt;/div&gt;
+&lt;div id=&quot;fn4&quot;&gt;4. Filmland
+
+http://www.filmland.com/glossary/Dictionary.html&lt;/div&gt;
+&lt;div id=&quot;fn5&quot;&gt;5. The Film Preservation Guide, National Film Preservation Foundation
+
+http://www.filmpreservation.org/preservation-basics/the-film-preservation-guide&lt;/div&gt;
+&lt;div id=&quot;fn6&quot;&gt;6. FilmSound
+
+http://filmsound.org/&lt;/div&gt;
+&lt;div id=&quot;fn7&quot;&gt;7. GCM Recording Studio
+
+http://www.gcmstudio.com/video/filmvid.html&lt;/div&gt;
+&lt;div id=&quot;fn8&quot;&gt;8. Medialink Broadcasting Glossary
+
+http://www.qsl.net/n2jac/jota2k/BROADCAST%20GLOSSARY.htm&lt;/div&gt;
+&lt;div id=&quot;fn9&quot;&gt;9. National Film and Sound Archive Australia
+
+http://nfsa.gov.au/preservation/glossary/&lt;/div&gt;
+&lt;div id=&quot;fn10&quot;&gt;10. The News Manual
+
+http://www.thenewsmanual.net/Resources/glossary.html&lt;/div&gt;
+&lt;div id=&quot;fn11&quot;&gt;11. Washington State Film Preservation Manual
+
+http://www.lib.washington.edu/specialcollections/film-preservation-manual/view&lt;/div&gt;
+&lt;div id=&quot;fn12&quot;&gt;12. Definition supplied by ex-WCVB staffer.&lt;/div&gt;</string></value></member>
+  <member><name>title</name><value><string>Glossary</string></value></member>
+  <member><name>link</name><value><string>http://bostonlocaltv.org/blog/glossary/</string></value></member>
+  <member><name>permaLink</name><value><string>http://bostonlocaltv.org/blog/glossary/</string></value></member>
+  <member><name>categories</name><value><array><data>
+</data></array></value></member>
+  <member><name>excerpt</name><value><string></string></value></member>
+  <member><name>text_more</name><value><string></string></value></member>
+  <member><name>mt_allow_comments</name><value><int>0</int></value></member>
+  <member><name>mt_allow_pings</name><value><int>0</int></value></member>
+  <member><name>wp_slug</name><value><string>glossary</string></value></member>
+  <member><name>wp_password</name><value><string></string></value></member>
+  <member><name>wp_author</name><value><string>mbennett</string></value></member>
+  <member><name>wp_page_parent_id</name><value><int>0</int></value></member>
+  <member><name>wp_page_parent_title</name><value><string></string></value></member>
+  <member><name>wp_page_order</name><value><int>0</int></value></member>
+  <member><name>wp_author_id</name><value><string>13</string></value></member>
+  <member><name>wp_author_display_name</name><value><string>mbennett</string></value></member>
+  <member><name>date_created_gmt</name><value><dateTime.iso8601>20121129T17:02:24</dateTime.iso8601></value></member>
+  <member><name>custom_fields</name><value><array><data>
+</data></array></value></member>
+  <member><name>wp_page_template</name><value><string>onecolumn-page.php</string></value></member>
+</struct></value>
+  <value><struct>
+  <member><name>dateCreated</name><value><dateTime.iso8601>20121031T19:47:47</dateTime.iso8601></value></member>
+  <member><name>userid</name><value><string>1</string></value></member>
+  <member><name>page_id</name><value><int>1266</int></value></member>
+  <member><name>page_status</name><value><string>publish</string></value></member>
+  <member><name>description</name><value><string>[slideshow gallery_id=&quot;1&quot;]</string></value></member>
+  <member><name>title</name><value><string>Home Page Gallery</string></value></member>
+  <member><name>link</name><value><string>http://bostonlocaltv.org/blog/home-page-features/home-page-gallery/</string></value></member>
+  <member><name>permaLink</name><value><string>http://bostonlocaltv.org/blog/home-page-features/home-page-gallery/</string></value></member>
+  <member><name>categories</name><value><array><data>
+</data></array></value></member>
+  <member><name>excerpt</name><value><string></string></value></member>
+  <member><name>text_more</name><value><string></string></value></member>
+  <member><name>mt_allow_comments</name><value><int>1</int></value></member>
+  <member><name>mt_allow_pings</name><value><int>1</int></value></member>
+  <member><name>wp_slug</name><value><string>home-page-gallery</string></value></member>
+  <member><name>wp_password</name><value><string></string></value></member>
+  <member><name>wp_author</name><value><string>wgbhinteractive</string></value></member>
+  <member><name>wp_page_parent_id</name><value><int>1264</int></value></member>
+  <member><name>wp_page_parent_title</name><value><string>Home Page Features</string></value></member>
+  <member><name>wp_page_order</name><value><int>0</int></value></member>
+  <member><name>wp_author_id</name><value><string>1</string></value></member>
+  <member><name>wp_author_display_name</name><value><string>wgbhinteractive</string></value></member>
+  <member><name>date_created_gmt</name><value><dateTime.iso8601>20121031T19:47:47</dateTime.iso8601></value></member>
+  <member><name>custom_fields</name><value><array><data>
+</data></array></value></member>
+  <member><name>wp_page_template</name><value><string>default</string></value></member>
+</struct></value>
+  <value><struct>
+  <member><name>dateCreated</name><value><dateTime.iso8601>20121031T19:46:36</dateTime.iso8601></value></member>
+  <member><name>userid</name><value><string>1</string></value></member>
+  <member><name>page_id</name><value><int>1264</int></value></member>
+  <member><name>page_status</name><value><string>publish</string></value></member>
+  <member><name>description</name><value><string></string></value></member>
+  <member><name>title</name><value><string>Home Page Features</string></value></member>
+  <member><name>link</name><value><string>http://bostonlocaltv.org/blog/home-page-features/</string></value></member>
+  <member><name>permaLink</name><value><string>http://bostonlocaltv.org/blog/home-page-features/</string></value></member>
+  <member><name>categories</name><value><array><data>
+</data></array></value></member>
+  <member><name>excerpt</name><value><string></string></value></member>
+  <member><name>text_more</name><value><string></string></value></member>
+  <member><name>mt_allow_comments</name><value><int>1</int></value></member>
+  <member><name>mt_allow_pings</name><value><int>1</int></value></member>
+  <member><name>wp_slug</name><value><string>home-page-features</string></value></member>
+  <member><name>wp_password</name><value><string></string></value></member>
+  <member><name>wp_author</name><value><string>wgbhinteractive</string></value></member>
+  <member><name>wp_page_parent_id</name><value><int>0</int></value></member>
+  <member><name>wp_page_parent_title</name><value><string></string></value></member>
+  <member><name>wp_page_order</name><value><int>0</int></value></member>
+  <member><name>wp_author_id</name><value><string>1</string></value></member>
+  <member><name>wp_author_display_name</name><value><string>wgbhinteractive</string></value></member>
+  <member><name>date_created_gmt</name><value><dateTime.iso8601>20121031T19:46:36</dateTime.iso8601></value></member>
+  <member><name>custom_fields</name><value><array><data>
+</data></array></value></member>
+  <member><name>wp_page_template</name><value><string>default</string></value></member>
+</struct></value>
+  <value><struct>
+  <member><name>dateCreated</name><value><dateTime.iso8601>20121031T16:52:13</dateTime.iso8601></value></member>
+  <member><name>userid</name><value><string>1</string></value></member>
+  <member><name>page_id</name><value><int>1262</int></value></member>
+  <member><name>page_status</name><value><string>publish</string></value></member>
+  <member><name>description</name><value><string></string></value></member>
+  <member><name>title</name><value><string>Blog</string></value></member>
+  <member><name>link</name><value><string>http://bostonlocaltv.org/blog/blog/</string></value></member>
+  <member><name>permaLink</name><value><string>http://bostonlocaltv.org/blog/blog/</string></value></member>
+  <member><name>categories</name><value><array><data>
+</data></array></value></member>
+  <member><name>excerpt</name><value><string></string></value></member>
+  <member><name>text_more</name><value><string></string></value></member>
+  <member><name>mt_allow_comments</name><value><int>1</int></value></member>
+  <member><name>mt_allow_pings</name><value><int>1</int></value></member>
+  <member><name>wp_slug</name><value><string>blog</string></value></member>
+  <member><name>wp_password</name><value><string></string></value></member>
+  <member><name>wp_author</name><value><string>wgbhinteractive</string></value></member>
+  <member><name>wp_page_parent_id</name><value><int>0</int></value></member>
+  <member><name>wp_page_parent_title</name><value><string></string></value></member>
+  <member><name>wp_page_order</name><value><int>0</int></value></member>
+  <member><name>wp_author_id</name><value><string>1</string></value></member>
+  <member><name>wp_author_display_name</name><value><string>wgbhinteractive</string></value></member>
+  <member><name>date_created_gmt</name><value><dateTime.iso8601>20121031T16:52:13</dateTime.iso8601></value></member>
+  <member><name>custom_fields</name><value><array><data>
+</data></array></value></member>
+  <member><name>wp_page_template</name><value><string>default</string></value></member>
+</struct></value>
+  <value><struct>
+  <member><name>dateCreated</name><value><dateTime.iso8601>20121031T16:48:56</dateTime.iso8601></value></member>
+  <member><name>userid</name><value><string>1</string></value></member>
+  <member><name>page_id</name><value><int>1260</int></value></member>
+  <member><name>page_status</name><value><string>publish</string></value></member>
+  <member><name>description</name><value><string>This page intentionally left blank.</string></value></member>
+  <member><name>title</name><value><string>Home</string></value></member>
+  <member><name>link</name><value><string>http://bostonlocaltv.org/blog/home/</string></value></member>
+  <member><name>permaLink</name><value><string>http://bostonlocaltv.org/blog/home/</string></value></member>
+  <member><name>categories</name><value><array><data>
+</data></array></value></member>
+  <member><name>excerpt</name><value><string></string></value></member>
+  <member><name>text_more</name><value><string></string></value></member>
+  <member><name>mt_allow_comments</name><value><int>1</int></value></member>
+  <member><name>mt_allow_pings</name><value><int>1</int></value></member>
+  <member><name>wp_slug</name><value><string>home</string></value></member>
+  <member><name>wp_password</name><value><string></string></value></member>
+  <member><name>wp_author</name><value><string>wgbhinteractive</string></value></member>
+  <member><name>wp_page_parent_id</name><value><int>0</int></value></member>
+  <member><name>wp_page_parent_title</name><value><string></string></value></member>
+  <member><name>wp_page_order</name><value><int>0</int></value></member>
+  <member><name>wp_author_id</name><value><string>1</string></value></member>
+  <member><name>wp_author_display_name</name><value><string>wgbhinteractive</string></value></member>
+  <member><name>date_created_gmt</name><value><dateTime.iso8601>20121031T16:48:56</dateTime.iso8601></value></member>
+  <member><name>custom_fields</name><value><array><data>
+</data></array></value></member>
+  <member><name>wp_page_template</name><value><string>default</string></value></member>
+</struct></value>
+  <value><struct>
+  <member><name>dateCreated</name><value><dateTime.iso8601>20110606T14:25:54</dateTime.iso8601></value></member>
+  <member><name>userid</name><value><string>2</string></value></member>
+  <member><name>page_id</name><value><int>82</int></value></member>
+  <member><name>page_status</name><value><string>publish</string></value></member>
+  <member><name>description</name><value><string>If you have general questions about the website and collections, or want to share information on the stories you find in the collections, please send an email to:
+
+&lt;a href=&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#58;&amp;#98;&amp;#111;&amp;#115;&amp;#116;&amp;#111;&amp;#110;&amp;#108;&amp;#111;&amp;#99;&amp;#97;&amp;#108;&amp;#116;&amp;#118;&amp;#64;&amp;#119;&amp;#103;&amp;#98;&amp;#104;&amp;#46;&amp;#111;&amp;#114;&amp;#103;&gt;&amp;#98;&amp;#111;&amp;#115;&amp;#116;&amp;#111;&amp;#110;&amp;#108;&amp;#111;&amp;#99;&amp;#97;&amp;#108;&amp;#116;&amp;#118;&amp;#32;&amp;#91;&amp;#97;&amp;#116;&amp;#93;&amp;#32;&amp;#119;&amp;#103;&amp;#98;&amp;#104;&amp;#32;&amp;#91;&amp;#100;&amp;#111;&amp;#116;&amp;#93;&amp;#32;&amp;#111;&amp;#114;&amp;#103;&lt;/a&gt;
+
+If you have questions about specific collections, including how to request a story be digitized, please send an email to:
+
+CCTV Collection
+Cambridge Community Television
+&lt;a href=&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#58;&amp;#105;&amp;#110;&amp;#102;&amp;#111;&amp;#64;&amp;#99;&amp;#99;&amp;#116;&amp;#118;&amp;#99;&amp;#97;&amp;#109;&amp;#98;&amp;#114;&amp;#105;&amp;#100;&amp;#103;&amp;#101;&amp;#46;&amp;#111;&amp;#114;&amp;#103;&gt;&amp;#105;&amp;#110;&amp;#102;&amp;#111;&amp;#32;&amp;#91;&amp;#97;&amp;#116;&amp;#93;&amp;#32;&amp;#99;&amp;#99;&amp;#116;&amp;#118;&amp;#99;&amp;#97;&amp;#109;&amp;#98;&amp;#114;&amp;#105;&amp;#100;&amp;#103;&amp;#101;&amp;#32;&amp;#91;&amp;#100;&amp;#111;&amp;#116;&amp;#93;&amp;#32;&amp;#111;&amp;#114;&amp;#103;&lt;/a&gt;
+
+Ten O’Clock News Collections
+WGBH Media Library and Archives
+&lt;a href=&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#58;&amp;#97;&amp;#114;&amp;#99;&amp;#104;&amp;#105;&amp;#118;&amp;#101;&amp;#95;&amp;#114;&amp;#101;&amp;#113;&amp;#117;&amp;#101;&amp;#115;&amp;#116;&amp;#115;&amp;#64;&amp;#119;&amp;#103;&amp;#98;&amp;#104;&amp;#46;&amp;#111;&amp;#114;&amp;#103;&gt;&amp;#97;&amp;#114;&amp;#99;&amp;#104;&amp;#105;&amp;#118;&amp;#101;&amp;#95;&amp;#114;&amp;#101;&amp;#113;&amp;#117;&amp;#101;&amp;#115;&amp;#116;&amp;#115;&amp;#32;&amp;#91;&amp;#97;&amp;#116;&amp;#93;&amp;#32;&amp;#119;&amp;#103;&amp;#98;&amp;#104;&amp;#32;&amp;#91;&amp;#100;&amp;#111;&amp;#116;&amp;#93;&amp;#32;&amp;#111;&amp;#114;&amp;#103;&lt;/a&gt;
+
+WCVB Collection
+Northeast Historic Films
+&lt;a href=&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#58;&amp;#107;&amp;#99;&amp;#97;&amp;#114;&amp;#108;&amp;#115;&amp;#111;&amp;#110;&amp;#64;&amp;#111;&amp;#108;&amp;#100;&amp;#102;&amp;#105;&amp;#108;&amp;#109;&amp;#46;&amp;#111;&amp;#114;&amp;#103;&gt;&amp;#107;&amp;#99;&amp;#97;&amp;#114;&amp;#108;&amp;#115;&amp;#111;&amp;#110;&amp;#32;&amp;#91;&amp;#97;&amp;#116;&amp;#93;&amp;#32;&amp;#111;&amp;#108;&amp;#100;&amp;#102;&amp;#105;&amp;#108;&amp;#109;&amp;#32;&amp;#91;&amp;#100;&amp;#111;&amp;#116;&amp;#93;&amp;#32;&amp;#111;&amp;#114;&amp;#103;&lt;/a&gt;
+
+WHDH Collection
+Boston Public Library
+&lt;a href=&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#58;&amp;#97;&amp;#115;&amp;#107;&amp;#64;&amp;#98;&amp;#112;&amp;#108;&amp;#46;&amp;#111;&amp;#114;&amp;#103;&gt;&amp;#97;&amp;#115;&amp;#107;&amp;#32;&amp;#91;&amp;#97;&amp;#116;&amp;#93;&amp;#32;&amp;#98;&amp;#112;&amp;#108;&amp;#32;&amp;#91;&amp;#100;&amp;#111;&amp;#116;&amp;#93;&amp;#32;&amp;#111;&amp;#114;&amp;#103;&lt;/a&gt;
+&amp;nbsp;
+
+&amp;nbsp;
+
+&amp;nbsp;</string></value></member>
+  <member><name>title</name><value><string>Contact</string></value></member>
+  <member><name>link</name><value><string>http://bostonlocaltv.org/blog/contact/</string></value></member>
+  <member><name>permaLink</name><value><string>http://bostonlocaltv.org/blog/contact/</string></value></member>
+  <member><name>categories</name><value><array><data>
+</data></array></value></member>
+  <member><name>excerpt</name><value><string></string></value></member>
+  <member><name>text_more</name><value><string></string></value></member>
+  <member><name>mt_allow_comments</name><value><int>0</int></value></member>
+  <member><name>mt_allow_pings</name><value><int>0</int></value></member>
+  <member><name>wp_slug</name><value><string>contact</string></value></member>
+  <member><name>wp_password</name><value><string></string></value></member>
+  <member><name>wp_author</name><value><string>Courtney Michael</string></value></member>
+  <member><name>wp_page_parent_id</name><value><int>0</int></value></member>
+  <member><name>wp_page_parent_title</name><value><string></string></value></member>
+  <member><name>wp_page_order</name><value><int>0</int></value></member>
+  <member><name>wp_author_id</name><value><string>2</string></value></member>
+  <member><name>wp_author_display_name</name><value><string>Courtney Michael</string></value></member>
+  <member><name>date_created_gmt</name><value><dateTime.iso8601>20110606T19:25:54</dateTime.iso8601></value></member>
+  <member><name>custom_fields</name><value><array><data>
+</data></array></value></member>
+  <member><name>wp_page_template</name><value><string>onecolumn-page.php</string></value></member>
+</struct></value>
+  <value><struct>
+  <member><name>dateCreated</name><value><dateTime.iso8601>20110606T14:25:39</dateTime.iso8601></value></member>
+  <member><name>userid</name><value><string>2</string></value></member>
+  <member><name>page_id</name><value><int>80</int></value></member>
+  <member><name>page_status</name><value><string>publish</string></value></member>
+  <member><name>description</name><value><string>Thank you for visiting bostonlocaltv.org (the “Site”), owned and maintained by WGBH Educational Foundation (“WGBH”). The Boston TV News Digital Library: 1960-2000 Project (the “Project”) was created by WGBH in collaboration with the following “Project Partners”: Boston Public Library, Cambridge Community Television and Northeast Historic Film. This Site serves to document and share the progress of the Project with the public.
+
+We know you don’t want the information you provide us shared indiscriminately. Here we explain what information WGBH and our third-party vendors and Project Partners (collectively “we”) acting on our behalf to help deliver the services and operate and analyze use of the Site collect, what we do with the information, and what controls you have over the information collected. We’re committed to ensuring the privacy of your personally identifiable information, and to protecting your ability to make financial transactions (if available on this Site) and transmit your personal data with full confidence.
+
+The privacy policy set forth here refers solely to bostonlocaltv.org. Please read it carefully, and if you have any questions or concerns, please contact us. Also, note that bostonlocaltv.org links to numerous other sites, such as WGBH, the Boston Public Library, Cambridge Community Television and Northeast Historic Film. Please consult those sites to learn more about their policies and terms of use.
+
+&lt;strong&gt;1. WHAT INFORMATION DO WE COLLECT ABOUT YOU?&lt;/strong&gt;
+
+We collect two types of information from you: a) personally identifiable information, which includes personal information (such as your name, address, email address, telephone number, credit card information (if financial transactions are available on this Site) and/or other identifying information) you voluntarily supply upon request when you register for the Site, make a donation, complete a survey, register for an online discussion, enter a contest or sweepstakes, and/or comment on the Site; and b) Non-personally identifiable information, for example IP Addresses and cookies, which include tracking information collected as you navigate through our Site. Uses of this information are discussed in Section 2 below.
+
+A. Personally Identifiable Information
+
+We will not collect personally identifiable information from you, other than what you supply to us on a voluntary basis upon request.
+
+&lt;em&gt;Registration for our website: &lt;/em&gt;
+Anyone can view our Site, however some functions of the Site may require a free registration which enables full access to the information and resources offered throughout the Site. A unique email address (user name) and password must be supplied to register. By using the Site, you are agreeing to the conditions of our Terms of Use.
+
+&lt;em&gt;Support of the Site and the WGBH Media Library and Archives:&lt;/em&gt;
+On certain pages within the Site we may now or in the future offer visitors the opportunity to make a donation in support of the Site and the WGBH Media Library and Archives. If a visitor chooses to make a donation, we will collect and store your telephone number, email address, billing address and credit card information.
+
+&lt;em&gt;Feedback and Content Submissions:&lt;/em&gt;
+On certain pages within the Site you may be able to submit content to be published, such as tags, annotations, and make comments and vote. We may collect your name, address, and email addresses in connection with these activities. We will indicate which information is required and which is optional. We may contact users regarding their submissions in certain circumstances.
+
+&lt;em&gt;Your submission of others’ Personally Identifiable Information:&lt;/em&gt;
+On certain pages within the Site you may be able to submit information about other people. For example, you may submit a person’s name and email address to send an article. This information will only be used for your intended purpose.
+
+&lt;em&gt;Email and Email Newsletters:&lt;/em&gt;
+On occasion, we may collect personal information from users in connection with optional emails and email newsletters. We will indicate which information is required and which is optional. Such information will be used as indicated at the time of collection.
+
+&lt;em&gt;Marketing and Promotional Communications:&lt;/em&gt;
+On occasion, we may collect personal information from users in connection with optional marketing and promotional communications from WGBH, PBS or other entities. We will indicate which information is required and which is optional. Such information will be used as indicated at the time of collection.
+
+B. Non-personally Identifiable Information
+
+In addition to information that you provide to us, we may also collect and store certain non-personally identifiable information automatically when you use the Site. This information helps us improve the experience you and other visitors have with the Site.
+
+For example, we may collect your IP address, browser information and reference site domain, as well as related information such as the date on which you visit the Site. This information does not identify you personally and is only used in the aggregate.
+
+As is common practice among web sites, we use “cookies” and similar technologies. In general, cookies – the informational files that your web browser places on your computer when you visit a website – are used on this Site to track and analyze how you and other visitors use our Site. We use these cookies in order to improve the Site, to identify the source of visitors and what pages you use while on our site, to offer visitors interactive and/or personalized features that would not be possible without the cookies, to recall specific information to save visitors time when they return to the Site, to provide our sponsors targeted sponsorship opportunities, to provide visitors customized sponsorship messages or list of customized videos of interest, and to identify usage and statistical trends. By looking at this traffic we can better understand our community, which allows us to improve our Site and to provide you with an optimal experience and better service. Our sponsorship service vendors, which serve sponsorship messages onto our site, and third party vendors that measure and analyze the use of the Site for us, may also use their own cookies. At no time does the cookie reveal your name, address, or email address (even if you have entered these in specific areas of the Site). The Site pages cannot extract any personally identifying information about you from what we receive via a cookie and your browser.
+We also allow third-party companies, including AddThis, to collect certain anonymous information when you visit our Site. These companies may use non-personally identifiable information during your visits to this and other websites in order to provide advertisements about goods and services likely to be of greater interest to you. These companies typically use a cookie or a third party web beacon to collect this information. To learn more about this behavioral advertising practice, you can visit www.networkadvertising.org.
+
+You can set your browser preferences to refuse cookies or to alert you when cookies are being sent. However, some parts of the Site will not function properly if you do so.
+
+&lt;strong&gt;2. HOW DO WE USE INFORMATION GATHERED ON THE SITE?&lt;/strong&gt;
+
+Neither WGBH, nor our third-party vendors acting on our behalf to help deliver the services and operate the Site, will willfully disclose, sell, exchange or lend any personally identifiable information about our online users to any third party other than Project Partners without first receiving the user’s permission, unless disclosure to third party(ies) is required by law, we believe in good faith that the law or legal process requires it, we have received a valid administrative request from a law enforcement agency, or such release is necessary to protect anyone’s rights, property or safety.
+In terms of our own use of information, we may use your personally identifiable information for the activities described in the previous sections, for the activities described when you submitted the information, or for internal and marketing promotional purposes as further described in this policy.
+We will typically explain the extent of use at the time you are asked to provide personal information. If you do not want this information to be collected or used by us for these purposes, you can simply “opt out.” Under certain circumstances, opting out may prevent your participation in activities for which personal information is needed, as in contests or sweepstakes.
+
+As mentioned, in certain cases, we contract with third party vendors to provide services on our behalf. These vendors maintain customer databases with email addresses of Site visitors who have provided their email addresses to us by registering at our site, signing up for a newsletter or email, emailing us questions about the service, donors who submit online contributions, or online buyers who make a purchase. We will use these addresses to respond to the general purposes for which we collected the information, to provide services and to operate the Site, including to respond to inquiries; to process credit card payments, billing, and shipping; to process email distribution; for list processing and analysis; for promotions management; to send information about WGBH’s programs, services, or your local public broadcasting station’s membership/fundraising; or to correspond about purchase or product offers. Our third party vendors have access to your personally identifiable information as necessary to provide certain services on our behalf. They are required to maintain the privacy of all such information in their possession or control and can only use the information for the purpose that we have contracted them, for example sending you a newsletter. They are not authorized to use your information for any other purpose.
+
+Similarly, personally identifiable information provided in connection with a donation will be shared with third party vendors who perform services to process the donation.
+
+On certain pages, we may now or in the future, offer visitors the opportunity to provide comments, messages or other user-generated text, content or materials (collectively “User Materials”). Any information that you disclose when posting a message to these areas, such as your name, screen name or ID used, becomes public. In addition, we may use the information that you disclose in these areas for promotional and marketing purposes. We are not responsible for any personally identifiable information that you choose to disclose in these public areas. Further, we may use, copy, sublicense, modify, transmit, publicly perform, display, create derivative works of, host, index, cache, tag, encode, and/or adapt any User Materials, and any information contained therein, in any and all media formats or channels, whether now known or hereafter devised, including, but not limited to, the Site, public broadcasting station web sites, other third party web sites, over the air (on radio or television), and on mobile platforms.
+
+You may also have the opportunity to engage with our content on the Site, such as video, text or other offerings, via links or other integrations, on or through third-party social networking sites (e.g., Facebook, Twitter) or third-party social media plug-ins and applications. When you engage with our content on or through third party social networking sites or via third-party social media plug-ins and applications, you agree that by doing so, we will have access to certain information from your social media profile (e.g., name, email address, photo etc.) to deliver the content or as part of the operation of the application. When you provide personal information to us from your social media account, you consent to the use of this information in accordance with our privacy policy. In addition, when you provide personal information to us through an application or media plug-in on our Site or on social networking sites, other members of these sites may publicly view it and we cannot prevent further use of the information by third parties. For more information about how social networking sites handle your personal information, please refer to their privacy policies and terms of use, as we have no control over information that is submitted to, or collected by, these third parties.
+
+We may also use the services of third parties to provide us with data collection, reporting, site analytics, and/or plug-in functionality. These third parties may view, edit or set their own cookies. The use of technologies by these third parties, including, for example, social media plug-ins, are subject to their own privacy policies and is not covered by this Privacy Policy.
+
+We reserve the right to send you email relating to your account status. This includes notices of credit-card problems and notifications about major changes to our Site and/or to our Privacy Policy.
+
+WGBH, with the assistance from time to time of its third party service vendors, uses non-identifying aggregate information to analyze use of and better design the Site and to share with third parties in aggregate form only as appropriate. For example, we may tell a third party that a certain number of users accessed a particular video on our Site. However, we will not disclose any information that could be used to identify those users.
+
+&lt;strong&gt;3. SECURITY OF INFORMATION&lt;/strong&gt;
+
+WGBH has in place what we believe to be appropriate physical, electronic, and managerial procedures to safeguard and secure the information we collect online. Credit card information provided on the Site, if any, is protected against unauthorized use by Secure Sockets Layer (SSL) security features. The SSL protocol is the industry standard method for creating an encrypted, secure connection between your web browser and a web server, such as the Site’s server. You should, however, keep in mind that no Internet or email transmission is ever fully secure or error free. Because most email is not encrypted, you should take special care in deciding what information you send to us via email.
+
+&lt;strong&gt;4. CHILDREN’S GUIDELINES&lt;/strong&gt;
+
+This Site is a general audience site and does not knowingly collect or store personally identifiable information about children under the age of 13. If we become aware that a child under the age of 13 has made a request for information, we will respond to the request and any identifying information will be deleted once we have responded. Similarly, if we become aware that a child under 13 posted identifiable information on any of our websites, we will also delete that information. We take children’s privacy very seriously and encourage parents to contact us with any questions or concerns they may have. Additionally, if parents want us to delete any collected personally identifiable information about their children under the age of 13, they can also contact us at the following website address: bostonlocaltv@wgbh.org.
+
+&lt;strong&gt;5. CORRECTIONS TO PERSONAL DATA; OPTING OUT&lt;/strong&gt;
+
+Please Contact Us to a) correct or update any personal information in the WGBH database that you state is erroneous, b) opt-out of future communications from WGBH, or c) request WGBH to make reasonable efforts to remove your personal information from the WGBH online database, thereby canceling your profile, newsletter registration and other WGBH registrations. This will not necessarily remove previous public comments and other User Materials submitted for public display on the Site. You should understand that it might be impossible to delete personal information entirely because of backups and records of deletions.
+
+&lt;strong&gt;6. ACCEPTANCE OF THIS PRIVACY POLICY FOR BOSTONLOCALTV.ORG&lt;/strong&gt;
+
+By using this Site, you signify your agreement to the terms and conditions of this Privacy Policy for bostonlocaltv.org. If you do not agree to these terms and conditions, please do not use this Site. We reserve the right, at our sole discretion, to change, modify, add, or remove portions of this policy at any time. Please check this page periodically for any changes. Your continued use of bostonlocaltv.org following the posting of any changes to these terms shall mean that you have accepted those changes. If you have any questions or concerns, please contact us.
+
+&lt;strong&gt;7. CHANGES TO THIS PRIVACY POLICY&lt;/strong&gt;
+
+Whenever this Privacy Policy for our Site changes, we will post the changes to the Site, and such changes will be effective immediately upon posting. If you do not agree to the changes, please do not continue to use the Site. Under certain circumstances, we may also elect to notify you of changes or updates to our Privacy Policy by additional means, such as posting a notice on the front page of our Site or sending you email if we have your email address.
+
+&lt;strong&gt;8. TERMS OF USE&lt;/strong&gt;
+
+Please also make sure to read bostonlocaltv.org’s Terms of Use to understand the additional terms and conditions that apply to your use of our Site.</string></value></member>
+  <member><name>title</name><value><string>Privacy Policy</string></value></member>
+  <member><name>link</name><value><string>http://bostonlocaltv.org/blog/privacy/</string></value></member>
+  <member><name>permaLink</name><value><string>http://bostonlocaltv.org/blog/privacy/</string></value></member>
+  <member><name>categories</name><value><array><data>
+</data></array></value></member>
+  <member><name>excerpt</name><value><string></string></value></member>
+  <member><name>text_more</name><value><string></string></value></member>
+  <member><name>mt_allow_comments</name><value><int>0</int></value></member>
+  <member><name>mt_allow_pings</name><value><int>0</int></value></member>
+  <member><name>wp_slug</name><value><string>privacy</string></value></member>
+  <member><name>wp_password</name><value><string></string></value></member>
+  <member><name>wp_author</name><value><string>Courtney Michael</string></value></member>
+  <member><name>wp_page_parent_id</name><value><int>0</int></value></member>
+  <member><name>wp_page_parent_title</name><value><string></string></value></member>
+  <member><name>wp_page_order</name><value><int>0</int></value></member>
+  <member><name>wp_author_id</name><value><string>2</string></value></member>
+  <member><name>wp_author_display_name</name><value><string>Courtney Michael</string></value></member>
+  <member><name>date_created_gmt</name><value><dateTime.iso8601>20110606T19:25:39</dateTime.iso8601></value></member>
+  <member><name>custom_fields</name><value><array><data>
+</data></array></value></member>
+  <member><name>wp_page_template</name><value><string>onecolumn-page.php</string></value></member>
+</struct></value>
+  <value><struct>
+  <member><name>dateCreated</name><value><dateTime.iso8601>20110606T14:25:24</dateTime.iso8601></value></member>
+  <member><name>userid</name><value><string>2</string></value></member>
+  <member><name>page_id</name><value><int>78</int></value></member>
+  <member><name>page_status</name><value><string>publish</string></value></member>
+  <member><name>description</name><value><string>THE FOLLOWING TERMS AND CONDITIONS GOVERN YOUR USE OF THE SITE. PLEASE READ THESE TERMS OF USE CAREFULLY BEFORE USING THIS SITE. By using the Site, you agree to be bound by these Terms of Use and the Privacy Policy. If you do not agree to these Terms of Use and the Privacy Policy, please exit the Site and do not use the Site or any of its features.
+
+This &lt;a href=&quot;http://bostonlocaltv.org&quot;&gt;bostonlocaltv.org&lt;/a&gt; site (including all services, features, functionality and content available through the bostonlocaltv.org domain name, collectively, the “Site”) is owned and operated by the WGBH Educational Foundation (“WGBH”). The terms and conditions of use (the “Terms” or “Terms of Use”) set forth herein apply to all information, online communications, services, text, video, audio files, graphics, still images, links, or other material and content that is or becomes available on the Site or is otherwise offered through the Site (collectively, “Content”). By accessing or using the Site, you specifically agree to abide by these Terms and any modifications thereto. Any modifications, additions or deletions to these Terms of Use or the Privacy Policy shall be effective immediately upon posting. Your continued use of the Site following the posting of updated Terms of Use or an updated Privacy Policy will mean that you agree to those changes.
+
+&lt;strong&gt;A. Registration&lt;/strong&gt;
+
+Certain components, portions, features, or services available on the Site may, now or in the future, only be accessible and used after registration and creation of an account. When creating your account, you must provide true, accurate, and complete information, and maintain and promptly update this information. If you provide any information that is deceptive, untrue, inaccurate, or incomplete, or if WGBH has reasonable grounds to suspect that the information is untrue, inaccurate, or incomplete, WGBH has the right to suspend or terminate your account and access to the Site. You will provide a password and login name upon completing any required registration process. You are responsible for maintaining the confidentiality of your password and login name, and are solely responsible for all activities that occur with your password and login name. You must immediately notify WGBH of any unauthorized use of your account or any other breach of security. WGBH will not be liable for any losses (including your or third party losses) caused by any unauthorized use of your account. You are responsible for obtaining access to the Site, which access may involve third party fees (such as Internet service provider charges). In addition, you must provide and are responsible for all equipment necessary to access the Site.
+
+&lt;strong&gt;B. Restrictions on Use of Site and Content where Registration is Required&lt;/strong&gt;
+
+1. You must be at least eighteen (18) years of age, be an emancipated minor, or, if over the age of 13, have the permission of your parent(s) or legal guardian(s), to register for certain features of the Site; and/or submit any User Generated Content (defined below) or personally-identifying information on or through the Site. If you are under 13 years of age, please do not send any information about yourself, including your name, address or email address. If we become aware that we have collected any personally-identifying information from a child under the age of 13, we will remove that information as soon as possible.
+
+2. Non-commercial, Personal Use Only. This Site and the Content therein may be used for bona fide personal, educational, non-commercial purposes only. You may not use this Content in a defamatory, derogatory or offensive manner. In addition, you may not use the Content for or in any commercial or for-profit manner without the prior written consent of WGBH. For clarity, this means the Content may not be used in any commercial tie-in (i.e. use of the Content in connection with marketing merchandise or services and/or in connection with premiums or promotions, or use of the Site or Content in order to gain advertising or subscription revenue), you may not charge anyone for the Content (e.g. charge for access to the Site or Content from another site), you may not incorporate the Content into a product or production that you sell or exchange in return for consideration of any kind (e.g. selling ads on another site targeted to the Site or Content), you may not use the Content to advertise or promote a product, nor may you use the Content in any other manner that may be construed as an endorsement, express or implied, of any person, party, product, or other entity.
+
+3. You may not remove, copy, alter, reproduce, modify, create derivative works of, republish, post, publicly perform, publicly display, broadcast, download, transmit, distribute, license or commercially exploit, in whole or in part, the Content or this Site, except as expressly permitted by these Terms, the functionality of the Site, or, if applicable, by the respective content owner as indicated in any end user license agreement, if any, that accompanies such Content, provided that you include without modification all copyright and other proprietary notices contained in the Content.
+
+4. You may not circumvent, disable or otherwise interfere with security- related features of the Site or features that prevent or restrict use or copying of any Content. You further agree not to reverse engineer or jeopardize the correct functioning of the Site or attempt to gain access to secured portions of the Site to which you do not possess access rights.
+
+5. You may not collect or harvest any personally identifiable information from the Site, nor use the communications system provided by the Site (e.g. tags, annotations, comments) for any advertising, promotion or solicitation purposes, regardless of whether or not this is for commercial or non-profit purposes.
+
+6. You may not use the Site to generate unsolicited email advertisements or spam, to conduct or promote any illegal activity, for political campaigning, or soliciting support for legislative or other initiatives.
+
+7. You understand that when using the Site, you may be exposed to User Generated Content (defined below) from a variety of sources, and that WGBH is not responsible for the accuracy, usefulness, safety, or intellectual property rights of or relating to such User Generated Content. Though WGBH expects all users to adhere to our Terms and content policies, you understand and acknowledge that you may be exposed to User Generated Content that is inaccurate, offensive, indecent, or objectionable, and you agree to waive, and hereby do waive, any legal or equitable rights or remedies you have or may have against WGBH and our affiliates with respect thereto, and agree to defend, indemnify and hold WGBH, and its affiliates, and/or licensors, and their respective trustees, directors and employees, harmless to the fullest extent allowed by law regarding all matters related to your use of the Site.
+
+8. WGBH reserves all rights not expressly granted in and to the Site and the Content.
+
+&lt;strong&gt;C. User Generated Content&lt;/strong&gt;
+
+1. This Site may now or in the future permit the submission of videos, images, textual content (e.g., comments, tags, annotations) or other content submitted by you and other users (“User Generated Content”) and the hosting, sharing and/or publishing of such User Generated Content. You understand that whether or not such User Generated Content is published, WGBH does not guarantee confidentiality with respect to any such User Generated Content. You acknowledge that User Generated Content may be routed through our servers, the servers of one or more third parties on our behalf, and the Internet, and may be viewed by WGBH staff and on the Internet by the general public. You acknowledge that the Site, including its features, is for public and not private communications.
+
+2. You shall be solely responsible for your own User Generated Content and the consequences of WGBH posting, publishing or otherwise distributing them. By submitting your User Generated Content to the Site, you affirm, represent, and/or warrant that: (i) you own or have the necessary licenses, rights, consents, and permissions to upload, use and authorize WGBH to use all patent, trademark, trade secret, copyright or other proprietary rights, including privacy and publicity rights, in and to any and all User Generated Content to enable inclusion, distribution and use of the User Generated Content in the manner contemplated by the Site and these Terms; (ii) you have the written consent, release, and/or permission of each and every identifiable individual person in the User Generated Content to use the name or likeness of each and every such identifiable individual person to enable inclusion, distribution and use of the User Generated Content in the manner contemplated by the Site and these Terms; (iii) the User Generated Content is your own original work and that you own or control the necessary rights to enable inclusion, distribution and use of the User Generated Content in the manner contemplated by the Site and these Terms; (iv) the User Generated Content does not in any way violate any laws, rules or regulations, (v) the User Generated Content is not in any way derogatory, abusive, defamatory, invasive of privacy or publicity rights, harmful to children, vulgar, profane, lewd, obscene, offensive, pornographic, threatening, harassing, violent, racist, or hateful, nor does it encourage conduct that would be considered a criminal offense, or give rise to civil liability; (vi) the User Generated Content does not violate or infringe upon the rights of any person or entity whatsoever; (vii) the User Generated Content is not an endorsement, express or implied, of any party, product, or other entity and (viii) you have not received payment or consideration of any kind for submitting the User Generated Content to WGBH or the Site.
+
+3. Unless you enter into a separate written agreement with WGBH, WGBH does not claim ownership in User Generated Content you submit; however, by submitting the User Generated Content to WGBH, you hereby waive any and all moral rights in connection with the User Generated Content and you automatically grant WGBH and its licensees, a perpetual, worldwide, non-exclusive, royalty-free, and transferable license to use, reproduce, distribute, sub-license, modify, create derivative works of (including without limitation, to rename, edit, shorten, if video – split the videos into different segments, and use the entire User Generated Content or segments thereof), publish, transfer, transmit, publicly display, publicly perform, host, index, cache, tag, encode, and/or adapt the User Generated Content in any and all media formats and channels, including, but not limited to, the Site (including the advertisement and promotion thereof), third party licensee web sites, over the air (on radio or television), and on mobile platforms, without payment and without further consent or notice to you. You further grant WGBH and its licensees the right to contact you in connection with your User Generated Content and to use your name, city and state or province and other information that you have provided in connection with the User Generated Content.
+
+You also hereby grant each user of the Site a non-exclusive license to access your User Generated Content through the Site, and to use, reproduce, distribute, create derivative works of, publish, transfer, transmit, publicly display and publicly perform such User Generated Content (in whole or in part) as permitted through the functionality of the Site and under these Terms.
+
+4. In connection with your User Generated Content, you further agree that you will not upload content, or distribute anything that may be harmful to minors or that violates these Terms.
+
+5. WGBH does not endorse any User Generated Content or any opinion, recommendation, or advice expressed therein, and WGBH expressly disclaims any and all liability in connection with User Generated Content. Opinions on the Site are not to be construed as assertions of fact.
+
+6. By uploading User Generated Content, you are consenting to its display through the Site and for related promotional purposes.
+
+7. You acknowledge that WGBH reserves the right to screen, refuse to post, remove or edit User Generated Content at any time and for any or no reason in our absolute and sole discretion without prior notice, although we have no duty to do so. If we elect to screen User Generated Content, there may be a delay in the posting of such content to allow for a review process. If we have questions about your User Generated Content, we have the right, but not the duty, to contact you for further information, including, for example, to verify that you own the copyright or otherwise have the rights to post the User Generated Content.
+
+8. WGBH may terminate your access to the Site for uploading material in violation of these Terms, at any time, without prior notice and in its sole discretion.
+
+&lt;strong&gt;D. Removal of Content&lt;/strong&gt;
+
+1. WGBH does not permit the infringement of intellectual property rights, including copyright, on its Site, and WGBH will remove Content (including User Generated Content) if properly notified that such Content infringes on another’s intellectual property rights. WGBH reserves the right to remove Content, including User Generated Content without prior notice.
+
+2. WGBH reserves the right to change or discontinue temporarily or permanently any Content, or services available through the Site at any time without notice. WGBH will not be liable to you or any third party for any modification or discontinuance of the services therein.
+
+&lt;strong&gt;E. Conflicts&lt;/strong&gt;
+
+Some of the Content on the Site may now or in the future be made available under the specific terms of a license agreement. Where any matter contained in these Terms or elsewhere on this Site may be read so as to alter, amend or supersede any part of such license agreement, the license agreement shall be taken to be the definitive and over-ruling part of these Terms.
+
+&lt;strong&gt;F. Copyright&lt;/strong&gt;
+
+All rights, including copyright and database right, in this Site and its Content (including all text, images, software, illustrations, artwork, high resolution photography, video clips, audio clips, any after-sales material, and ancillary materials) are owned by or licensed to WGBH, or otherwise used by WGBH as permitted by applicable law or agreement. In the case of User Generated Content, the contents are licensed to WGBH by the user as set forth herein.
+
+&lt;strong&gt;G. Trademarks&lt;/strong&gt;
+
+All trademarks, service marks, and trade names are proprietary to WGBH, unless otherwise noted, in which case they are the trademarks, service marks, and/or trade names of the respective owner as indicated by the mark, as the case may be. All rights are reserved by the respective owners. You may not use any WGBH-provided service marks, logos or graphics, without WGBH’s prior written consent, except that you shall have the right, and obligation, to use any WGBH or other content provider service mark or logo included in, or required to be used in connection with, Content or other functionalities of the Site, subject to the requirements set forth in these Terms for the use of the Content or other functionalities of the Site.
+
+&lt;strong&gt;H. Users’ Obligation to Abide By Applicable Law&lt;/strong&gt;
+
+In connection with the use of the Site, you shall not engage in conduct or publish information which would infringe upon or injure the personal or property rights of any individual, group, or entity, including but not limited to defamation, harassment, invasion of privacy, tort, or disclosure of confidential or trade secrets. Furthermore, you shall not violate any law or treaty or intellectual property rights protected by law (such as copyright, patent and trademark rights). You acknowledge that the Content and materials available on the Site includes intellectual property that is protected under the copyright, trademark, and other intellectual property laws of the United States and/or other countries (“Intellectual Property Laws”). Such Intellectual Property Laws generally prohibit the unauthorized reproduction, distribution, or exhibition of all text, photographic and graphic (art and electronic) images, music, sound samplings, and other protected materials. The violation of applicable Intellectual Property Laws may give rise to civil and/or criminal penalties.
+
+&lt;strong&gt;I. Notification of Copyright Infringement&lt;/strong&gt;
+
+1. If you are a copyright owner or an agent of a copyright owner and believe that any content on the Site infringes upon your copyrights, you may submit a notification to WGBH’s Designated Agent pursuant to the Digital Millennium Copyright Act (“DMCA”) section 17 USC 512(c)(3). All notifications of claimed copyright infringement should be forwarded to our Designated Agent: Eric Brass, One Guest Street, Boston, MA 02135, fax: 617-300-1014, email: infringement@wgbh.org,
+
+According to Section 512(c)(3)(a), any copyright infringement notification must include
+
+i. A physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed;
+
+ii. Identification of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works at a single online site are covered by a single notification, a representative list of such works at that site;
+
+iii. Identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit the service provider to locate the material;
+
+iv. Information reasonably sufficient to permit the service provider to contact the complaining party, such as an address, telephone number, and, if available, an electronic mail address at which the complaining party may be contacted;
+
+v. A statement that the complaining party has a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law; and
+
+vi. A statement that the information in the notification is accurate, and under penalty of perjury, that the complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+
+You acknowledge that if you fail to comply with all of the above requirements, your notice may not be valid pursuant to the DMCA.
+
+2. Counter-Notice. If any of your User Generated Content has been removed or disabled because of a matter of possible copyright infringement, and you believe that your Content is not infringing or that you have the authorization from the copyright owner or the copyright owner’s agent, you may send a counter-notice containing the following information to the Designated Agent:
+
+i. A physical or electronic signature of the subscriber.
+
+ii. Identification of the material that has been removed or to which access has been disabled and the location at which the material appeared before it was removed or access to it was disabled.
+
+iii. A statement under penalty of perjury that you have a good faith belief that the material was removed or disabled as a result of mistake or misidentification of the material to be removed or disabled.
+
+iv. Your name, address, and telephone number, and a statement that you consent to the jurisdiction of the Federal District Court for Boston, Massachusetts for the resolution of any copyright or other claims arising out of your use of the Site or under the Terms, and a statement that you accept service of process from the person who provided notification of the alleged infringement.
+
+&lt;strong&gt;J. Disclosure of Online Communications&lt;/strong&gt;
+
+You are cautioned that any online communications may not be fully confidential. In addition, you should be aware that federal postal regulations do not protect electronic mail. You should be aware that some administrative personnel of WGBH may, in the course of their regular duties, have access to communications required by law.
+
+&lt;strong&gt;K. Rogue Programming and Viruses&lt;/strong&gt;
+
+WGBH is not responsible for any computer virus, trojan horse, timebomb, worm, or any other rogue programming (“Rogue Programming”) that may be contained in any of the Content (including User Generated Content), material or software contained on the Site. WGBH has no obligation to detect the presence of any Rogue Programming. Any downloading of software or other materials or any other use of the Content (including User Generated Content) on the Site is at your risk, and you are advised to take adequate precautions to minimize any loss to your system caused by Rogue Programming, including use of anti-virus programs and proper backup of files. You agree not to post, transmit, or make available in any way through the Site any software or other materials that contain Rogue Programming.
+
+&lt;strong&gt;L. Content of Information&lt;/strong&gt;
+
+You are responsible for the content of any information you put on the Site. WGBH has no obligation to, and does not in the normal course, monitor, prescreen or control any User Generated Content that is or becomes available on the Site. WGBH reserves the right to review any User Generated Content that is or becomes available on the Site. WGBH also reserves the right to refuse to post, to redact, edit or to move or remove any User Generated Content that is, in WGBH’s sole discretion, unacceptable, undesirable, or in violation of these Terms. However, WGBH has no obligation to exercise such reservations of rights by WGBH and is not responsible for any failure or delay in removing such material.
+
+&lt;strong&gt;M. Disclaimer of Warranties&lt;/strong&gt;
+
+The Site, the Content and other material on the Site are provided on an “As Is” basis without warranties of any kind, either express or implied, including without limitation warranties of title, non-infringement, or implied warranties of merchantability or fitness for a particular purpose. WGBH does not warrant that any Content is complete or accurate, that the Site will be uninterrupted or error free, or that any Content or material is free of Rogue Programming.
+
+&lt;strong&gt;N. Limitation of Damages&lt;/strong&gt;
+
+Under no circumstance, including negligence or any other legal theory, shall WGBH be liable for any direct, indirect, incidental, special, punitive, or consequential damages that may result from the use or inability to use the Site, including without limitation use of or reliance on Content available on the Site, interruptions, errors, defects, mistakes, omissions, deletions of files, delays in operation or transmission, non-delivery of Content, disclosure of communications, or any other failure of performance.
+
+&lt;strong&gt;O. Release and Indemnity&lt;/strong&gt;
+
+Though WGBH expects all users to adhere to our content policies in these Terms, you may be exposed to content that violates our policies or is otherwise offensive through the use of the Site. Your use of the Site is at your own risk. You agree that WGBH is not liable for content that is provided by others. We take no responsibility for your exposure to content on the Site whether it violates our content policies or not. You understand that the information and opinions in content uploaded by third parties represent solely the thoughts of the author and is neither endorsed by nor does it necessarily reflect WGBH’s beliefs or editorial positions. You hereby release and waive any and all claims, causes of action and/or liability against WGBH arising from or in connection with your use of the Site, the Content and/or any other material on the Site. You also agree to defend, indemnify, and hold harmless WGBH and its trustees, officers and employees from and against any and all causes of action, claims or liability, including costs and attorneys fees, arising from or in connection with your use of the Site, your provision of User Generated Content to or on the Site, or failure to abide by applicable law or these Terms.
+
+&lt;strong&gt;P. Modifications&lt;/strong&gt;
+
+These Terms and the Content may be revised, amended, or supplemented by WGBH without notice at any time for any reason. Continuing to use the Site after a change has been made will signify your acceptance of the changes. You should refer back to this page for future updates.
+
+&lt;strong&gt;Q. Privacy Policy&lt;/strong&gt;
+
+The Site’s &lt;a href=&quot;/blog/privacy&quot;&gt;Privacy Policy&lt;/a&gt; provides additional terms and conditions that apply to your use of our Site. If you do not agree to the conditions therein, please do not use the Site.
+
+&lt;strong&gt;R. Other&lt;/strong&gt;
+
+These Terms will be governed by and interpreted in the English language pursuant to the laws of the Commonwealth of Massachusetts, United States of America, without giving effect to any principles of conflicts of law. If any provision of these Terms shall be unlawful, void, or for any reason, unenforceable then that provision shall be deemed severable from these Terms and shall not effect the validity and enforceability of any remaining provisions. You expressly agree that any dispute arising under these Terms shall be brought solely and exclusively before the state or federal courts located in Massachusetts and you waive any claim that this forum is or may be inconvenient or improper.
+
+&lt;strong&gt;S. International Users&lt;/strong&gt;
+
+The Site is controlled and operated within the United States. WGBH makes no representation that Content, materials or products available on or through the Site are appropriate or available for use outside of the United States. If you access the Site from a location outside the United States, you are responsible for compliance with applicable laws, including local laws regarding online conduct and content and U.S. export laws and regulations.</string></value></member>
+  <member><name>title</name><value><string>Terms of Use</string></value></member>
+  <member><name>link</name><value><string>http://bostonlocaltv.org/blog/terms/</string></value></member>
+  <member><name>permaLink</name><value><string>http://bostonlocaltv.org/blog/terms/</string></value></member>
+  <member><name>categories</name><value><array><data>
+</data></array></value></member>
+  <member><name>excerpt</name><value><string></string></value></member>
+  <member><name>text_more</name><value><string></string></value></member>
+  <member><name>mt_allow_comments</name><value><int>0</int></value></member>
+  <member><name>mt_allow_pings</name><value><int>0</int></value></member>
+  <member><name>wp_slug</name><value><string>terms</string></value></member>
+  <member><name>wp_password</name><value><string></string></value></member>
+  <member><name>wp_author</name><value><string>Courtney Michael</string></value></member>
+  <member><name>wp_page_parent_id</name><value><int>0</int></value></member>
+  <member><name>wp_page_parent_title</name><value><string></string></value></member>
+  <member><name>wp_page_order</name><value><int>0</int></value></member>
+  <member><name>wp_author_id</name><value><string>2</string></value></member>
+  <member><name>wp_author_display_name</name><value><string>Courtney Michael</string></value></member>
+  <member><name>date_created_gmt</name><value><dateTime.iso8601>20110606T19:25:24</dateTime.iso8601></value></member>
+  <member><name>custom_fields</name><value><array><data>
+</data></array></value></member>
+  <member><name>wp_page_template</name><value><string>onecolumn-page.php</string></value></member>
+</struct></value>
+  <value><struct>
+  <member><name>dateCreated</name><value><dateTime.iso8601>20110606T14:25:11</dateTime.iso8601></value></member>
+  <member><name>userid</name><value><string>2</string></value></member>
+  <member><name>page_id</name><value><int>76</int></value></member>
+  <member><name>page_status</name><value><string>publish</string></value></member>
+  <member><name>description</name><value><string>The Boston TV News Digital Library: 1960-2000 was created by &lt;a href=&quot;http://openvault.wgbh.org&quot;&gt;WGBH&lt;/a&gt; in collaboration with the &lt;a href=&quot;http://www.bpl.org/&quot;&gt;Boston Public Library&lt;/a&gt;, &lt;a href=&quot;http://www.cctvcambridge.org/&quot;&gt;Cambridge Community Television&lt;/a&gt;, and &lt;a href=&quot;http://www.oldfilm.org/&quot;&gt;Northeast Historic Film&lt;/a&gt;.
+
+The project was made possible by grants from the Institute for Museum and Library Services and the Council on Library and Information Resources.
+
+&lt;a href=&quot;http://www.imls.gov/&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-119&quot; title=&quot;IMLS_Logo_2c&quot; alt=&quot;&quot; src=&quot;http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/imls_logo_2c.jpg?w=300&quot; width=&quot;300&quot; height=&quot;136&quot; /&gt;&lt;/a&gt;
+
+&lt;a href=&quot;http://clir.org/hiddencollections/&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-120&quot; title=&quot;clirlogo&quot; alt=&quot;&quot; src=&quot;http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/clirlogo.gif&quot; width=&quot;392&quot; height=&quot;49&quot; /&gt;&lt;/a&gt;
+&lt;h1&gt;Project Team&lt;/h1&gt;
+&lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Boston Public Library&lt;/strong&gt;
+
+Tom Blake
+&lt;small&gt;Digital Projects Manager&lt;/small&gt;
+
+Chrissy Watkins Rissmeyer
+&lt;small&gt;Digital Projects Metadata Coordinator&lt;/small&gt;
+
+Danny Pucci
+&lt;small&gt;Lead Digital Projects Librarian&lt;/small&gt;
+
+Monica Shin
+&lt;small&gt;Digital Projects Librarian&lt;/small&gt;
+
+&lt;strong&gt;Cambridge Community Television&lt;/strong&gt;
+
+Susan Fleischmann
+&lt;small&gt;Executive Director&lt;/small&gt;
+
+Sean Effel
+&lt;small&gt;Associate Director&lt;/small&gt;
+
+Marissa Acosta
+&lt;small&gt;Studio Facilities Manager&lt;/small&gt;
+
+&lt;strong&gt;Northeast Historic Film&lt;/strong&gt;
+
+David Weiss
+&lt;small&gt;Executive Director&lt;/small&gt;
+
+Karan Sheldon
+&lt;small&gt;Project Director&lt;/small&gt;
+
+Karin Carlson
+&lt;small&gt;Media Specialist&lt;/small&gt;
+
+&lt;strong&gt;WGBH&lt;/strong&gt;
+
+Karen Cariani
+&lt;small&gt;Director
+Media Library and Archives&lt;/small&gt;
+
+Karen Colbron
+&lt;small&gt;Digital Archive/Project Manager
+Media Library and Archives&lt;/small&gt;
+
+Sadie Roosa
+&lt;small&gt;Project Coordinator
+Media Library and Archives&lt;/small&gt;
+
+Lindsay Skay Whitacre
+&lt;small&gt;Information Specialist
+Media Library and Archives&lt;/small&gt;
+
+Courtney Michael
+&lt;small&gt;Project Manager
+Media Library and Archives&lt;/small&gt;
+
+Michael Muraszko
+&lt;small&gt;Digital Archive Manager
+Media Library and Archives&lt;/small&gt;
+
+Peter Higgins
+&lt;small&gt;Research Assistant
+Media Library and Archives&lt;/small&gt;
+
+Paul Plutnicki
+&lt;small&gt;Business Manager
+Media Library and Archives&lt;/small&gt;
+
+Nicholas Pollard
+&lt;small&gt;Business Manager
+Media Library and Archives&lt;/small&gt;
+
+Dani Baptista
+&lt;small&gt;Business Manager
+Media Library and Archives&lt;/small&gt;
+
+Andrew Myers
+&lt;small&gt;Supervisory Developer
+Media Library and Archives&lt;/small&gt;
+
+Josh Wilcox
+&lt;small&gt;Developer
+Media Library and Archives&lt;/small&gt;
+
+Kevin Carter
+&lt;small&gt;Programmer Analyst
+Media Library and Archives&lt;/small&gt;
+
+Peter Pinch
+&lt;small&gt;Director of Technology
+Interactive&lt;/small&gt;
+
+Kim Ducharme
+&lt;small&gt;Design Director
+Interactive&lt;/small&gt;
+
+Michael Steadman
+&lt;small&gt;Systems Administrator and Developer
+Interactive&lt;/small&gt;
+
+Chris Beer
+&lt;small&gt;Developer
+Interactive&lt;/small&gt;
+
+Mary Bennett
+&lt;small&gt;Developer
+Interactive&lt;/small&gt;
+
+Amanda Clarke
+&lt;small&gt;Designer
+Interactive&lt;/small&gt;
+
+Ted Sicker
+&lt;small&gt;Executive Producer
+PBS LearningMedia&lt;/small&gt;
+
+Christine Dietlin
+&lt;small&gt;Senior Producer
+PBS LearningMedia&lt;/small&gt;
+
+Barbara Seidl
+&lt;small&gt;Associate Producer
+PBS LearningMedia&lt;/small&gt;
+
+&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Advisors&lt;/strong&gt;
+
+Steve Cohen
+&lt;small&gt;Lecturer
+Department of Education
+Tufts University&lt;/small&gt;
+
+Mark Williams
+&lt;small&gt;Associate Professor
+Film and Television Studies
+Dartmouth College&lt;/small&gt;
+
+&lt;strong&gt;Interns&lt;/strong&gt;
+
+Jennifer Bonislawski
+
+Celia Contelmo
+
+Lindsey Danis
+
+Gemma Doyle
+
+Dallas Foster
+
+Jessica Green
+
+Laura Hayner
+
+Robert Johnston
+
+Abra Lodge
+
+Jason Ong
+
+Allison Pekel
+
+Jonathan Rzepala
+
+Jake Sadow
+
+Brian Shetler
+
+Marissa Szumowski
+
+Lisa Terrat
+
+Jared Walske
+
+Kenny Whitebloom
+
+&lt;strong&gt;Volunteers&lt;/strong&gt;
+
+Barbara Brooker
+
+&lt;strong&gt;Cyberlaw Clinic, Berkman Center for Internet &amp;amp; Society&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+Web site images courtesy of WGBH and Northeast Historic Film.</string></value></member>
+  <member><name>title</name><value><string>Credits</string></value></member>
+  <member><name>link</name><value><string>http://bostonlocaltv.org/blog/credits/</string></value></member>
+  <member><name>permaLink</name><value><string>http://bostonlocaltv.org/blog/credits/</string></value></member>
+  <member><name>categories</name><value><array><data>
+</data></array></value></member>
+  <member><name>excerpt</name><value><string></string></value></member>
+  <member><name>text_more</name><value><string></string></value></member>
+  <member><name>mt_allow_comments</name><value><int>0</int></value></member>
+  <member><name>mt_allow_pings</name><value><int>0</int></value></member>
+  <member><name>wp_slug</name><value><string>credits</string></value></member>
+  <member><name>wp_password</name><value><string></string></value></member>
+  <member><name>wp_author</name><value><string>Courtney Michael</string></value></member>
+  <member><name>wp_page_parent_id</name><value><int>0</int></value></member>
+  <member><name>wp_page_parent_title</name><value><string></string></value></member>
+  <member><name>wp_page_order</name><value><int>0</int></value></member>
+  <member><name>wp_author_id</name><value><string>2</string></value></member>
+  <member><name>wp_author_display_name</name><value><string>Courtney Michael</string></value></member>
+  <member><name>date_created_gmt</name><value><dateTime.iso8601>20110606T19:25:11</dateTime.iso8601></value></member>
+  <member><name>custom_fields</name><value><array><data>
+</data></array></value></member>
+  <member><name>wp_page_template</name><value><string>onecolumn-page.php</string></value></member>
+</struct></value>
+  <value><struct>
+  <member><name>dateCreated</name><value><dateTime.iso8601>20110606T14:15:03</dateTime.iso8601></value></member>
+  <member><name>userid</name><value><string>2</string></value></member>
+  <member><name>page_id</name><value><int>74</int></value></member>
+  <member><name>page_status</name><value><string>publish</string></value></member>
+  <member><name>description</name><value><string>This project is a collaborative community effort to build a central repository of local historical digitized news. We hope it will serve as a model for other communities to build their own archives of local news content. If you think your collection should be a part of the Boston TV News Digital Library, contact us for more information.
+
+&lt;a href=&quot;#tools&quot;&gt;Tools&lt;/a&gt; | &lt;a href=&quot;#legalguide&quot;&gt;Legal Guidelines&lt;/a&gt; | &lt;a href=&quot;#workflows&quot;&gt;Workflows&lt;/a&gt; | &lt;a href=&quot;#documentation&quot;&gt;Documentation&lt;/a&gt; | &lt;a href=&quot;#dissemination&quot;&gt;Dissemination&lt;/a&gt; | &lt;a href=&quot;#feedback&quot;&gt;User Feedback&lt;/a&gt;
+&lt;div id=&quot;tools&quot;&gt;&lt;strong&gt;Tools&lt;/strong&gt;&lt;/div&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://projectblacklight.org&quot;&gt;Blacklight&lt;/a&gt; - An open source catalog system we use to edit and publish our metadata.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.filemaker.com/&quot;&gt;Filemaker&lt;/a&gt; - Database software we use to capture the metadata we create.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://wordpress.org/&quot;&gt;Wordpress&lt;/a&gt; – Software we use to create static pages and blogs for the website.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://groups.google.com/&quot;&gt;Google Groups&lt;/a&gt; - Google's list serv and shared web space that we are using for project management across our four partners.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt; - A web-based hosting service for software development projects. You can see this project's development on our &lt;a href=&quot;https://github.com/WGBH/bostonlocaltv&quot;&gt;GitHub page&lt;/a&gt;.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.pbcore.org/&quot;&gt;PBCore&lt;/a&gt; - A metadata schema for audiovisual material that we use to store our data in xml.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&quot;legalguide&quot;&gt;&lt;strong&gt;Legal Guidelines and Resources&lt;/strong&gt;&lt;/div&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://bostonlocaltv.org/blog/wp-content/uploads/2014/03/Flowchart-5-May-18-2014-v.-2.pdf&quot;&gt;Flowchart of Legal Questions about Digitizing News Archives&lt;/a&gt;, WGBH and Harvard Law School's Cyberlaw Clinic&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.cmsimpact.org/fair-use/best-practices/code-best-practices-fair-use-academic-and-research-libraries&quot;&gt;Code of Best Practices in Fair Use for Academic and Research Libraries&lt;/a&gt;, Association of Research Libraries and American University Center for Media and Social Impact, January 2012&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://ecommons.cornell.edu/bitstream/1813/14142/2/Hirtle-Copyright_final_RGB_lowres-cover1.pdf&quot;&gt;Copyright &amp;amp; Cultural Institutions: Guidelines for Digitization for U.S. Libraries, Archives, &amp;amp; Museums&lt;/a&gt;, by Peter B. Hirtle, Emily Hudson, and Andrew T. Kenyon, Cornell University Library, 2009 (CC BYNCND 3.0)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://copyright.cornell.edu/resources/publicdomain.cfm&quot;&gt;Copyright Term and Public Domain in the United States, 1 January 2014&lt;/a&gt;, by Peter B. Hirtle, Cornell University Copyright Information Center, 2014 (CC BY 3.0)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://copyright.gov/docs/massdigitization/&quot;&gt;Legal Issues in Mass Digitization: A Preliminary Analysis and Discussion Document&lt;/a&gt;, United States Copyright Office, October 2011&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&quot;workflows&quot;&gt;&lt;strong&gt;Workflows and Guidelines&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Workflow_For_Descriptions.pdf&quot;&gt;Description Writing Workflow&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Workflow_Digitize_On_Demand.pdf&quot;&gt;Digitizing On Demand Institutional Workflow&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Guidelines_Description_Writing.pdf&quot;&gt;Guidelines for Description Writing&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Guidelines_Prepublication_Review1.pdf&quot;&gt;Guidelines for Prepublication Review&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Rules_For_Requesting_Headings.pdf&quot;&gt;Rule for Requesting Additions to Subject Authorities List&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Guidelines_Transcription_Formating_Standards.pdf&quot;&gt;Transcription Formatting Standards&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&quot;documentation&quot;&gt;&lt;strong&gt;Documentation&lt;/strong&gt;&lt;/div&gt;
+&lt;ul&gt;
+	&lt;li&gt;The project reports will be published at the end of the project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&quot;dissemination&quot;&gt;&lt;strong&gt;Dissemination&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;ul&gt;
+	&lt;li&gt;&quot;Open­ing the Archives for Access&quot; at the Association of Moving Image Archivists (AMIA) 2010. WGBH Legal’s Jay Fialkov pro­vided an overview of copy­right and Christo­pher Bavitz of Harvard’s Berk­man Cen­ter pre­sented on their work for our Boston TV News Dig­i­tal Library: 1960–2000. Chris out­lined 4 sec­tions of law that the Berk­man report will address: copy­right, trade­mark, state law (pri­vacy, defama­tion, etc.) and con­tract law. Both pan­els were well received for their prac­ti­cal bent. Download the PowerPoint Slides:
+&lt;ul&gt;
+	&lt;li&gt;Jay Fialkov — &lt;a href=&quot;http://openvault.wgbh.org/blog/wp-content/uploads/2010/11/AMIAIASA2010JF110510.ppt&quot;&gt;Under­stand­ing Copy­right Bar­ri­ers (ppt)&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Christo­pher Bavitz — &lt;a href=&quot;http://openvault.wgbh.org/blog/wp-content/uploads/2010/11/Legal-IssuesforMediaArchivists11.06.10SLIDES.ppt&quot;&gt;Legal Issues for Media Archivists (ppt)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/bostontvnewspressrelease.pdf&quot;&gt;Press Release (PDF)&lt;/a&gt; describing the Boston Local News Digital Library: 1960-2000&lt;/li&gt;
+	&lt;li&gt;Boston Globe &lt;a href=&quot;http://www.boston.com/ae/tv/articles/2011/07/09/wgbh_builds_boston_tv_news_archive&quot;&gt;article&lt;/a&gt; from 07/09/2011 with a clip reel highlighting the collections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&quot;feedback&quot;&gt;&lt;strong&gt;User Feedback Survey&lt;/strong&gt;&lt;/div&gt;
+As one of our target audiences, we value the opinions of the other archivists and librarians who use our site. Our main goal is to make our content accessible in the best way possible. If you have any comments of suggestions please take our &lt;a href=&quot;http://bostontvnewslibrary.polldaddy.com/s/boston-tv-news-digital-library-feedback&quot;&gt;user feedback survey&lt;/a&gt;.</string></value></member>
+  <member><name>title</name><value><string>Resources for Archivists</string></value></member>
+  <member><name>link</name><value><string>http://bostonlocaltv.org/blog/resources-archivist/</string></value></member>
+  <member><name>permaLink</name><value><string>http://bostonlocaltv.org/blog/resources-archivist/</string></value></member>
+  <member><name>categories</name><value><array><data>
+</data></array></value></member>
+  <member><name>excerpt</name><value><string></string></value></member>
+  <member><name>text_more</name><value><string></string></value></member>
+  <member><name>mt_allow_comments</name><value><int>0</int></value></member>
+  <member><name>mt_allow_pings</name><value><int>0</int></value></member>
+  <member><name>wp_slug</name><value><string>resources-archivist</string></value></member>
+  <member><name>wp_password</name><value><string></string></value></member>
+  <member><name>wp_author</name><value><string>Courtney Michael</string></value></member>
+  <member><name>wp_page_parent_id</name><value><int>0</int></value></member>
+  <member><name>wp_page_parent_title</name><value><string></string></value></member>
+  <member><name>wp_page_order</name><value><int>0</int></value></member>
+  <member><name>wp_author_id</name><value><string>2</string></value></member>
+  <member><name>wp_author_display_name</name><value><string>Courtney Michael</string></value></member>
+  <member><name>date_created_gmt</name><value><dateTime.iso8601>20110606T19:15:03</dateTime.iso8601></value></member>
+  <member><name>custom_fields</name><value><array><data>
+</data></array></value></member>
+  <member><name>wp_page_template</name><value><string>onecolumn-page.php</string></value></member>
+</struct></value>
+  <value><struct>
+  <member><name>dateCreated</name><value><dateTime.iso8601>20110304T21:31:54</dateTime.iso8601></value></member>
+  <member><name>userid</name><value><string>1</string></value></member>
+  <member><name>page_id</name><value><int>171</int></value></member>
+  <member><name>page_status</name><value><string>publish</string></value></member>
+  <member><name>description</name><value><string>Welcome to the Boston TV News Digital Library, funded by the Institute of Museum and Library Services and the Council on Library and Information Resources. This collaboration between the Boston Public Library, Cambridge Community television, Northeast Historic Film and WGBH Educational Foundation aims to bring to life local news stories produced in and about Boston from the early 1960’s to 2000.
+
+We’ve created an online catalog of news content from Boston Public Library’s WHDH film collection (1960- mid-1970s), Cambridge Community Television (1988 to 1999), Northeast Historic Film’s WCVB film collection (1970-1979), and WGBH-produced The Reporters (1970-1973), Evening Compass (1973-1975) and the Ten O’Clock News. That's almost 50,000 records.
+
+At the start of the project, we asked the public to browse our catalog and vote for the news content they were interested in seeing. Based on those votes and some input from scholars, we digitized over 500 film reels and tapes, which amounts to over 100 hours of historical news footage, which we have streaming for free. We'll be able to continue to digitize on-demand other news stories requested by our viewers, at the discretion of the holding institution.
+
+PBS LearningMedia has created learning objects based on materials in the Boston TV News Digital Library. Check out this collection at &lt;a href=&quot;http://www.pbslearningmedia.org/collection/bln12/&quot;&gt;http://www.pbslearningmedia.org/collection/bln12/&lt;/a&gt;.
+
+The project will also produce a primer on legal issues surrounding access to local news stories. We hope to launch the primer on the website in the near future.</string></value></member>
+  <member><name>title</name><value><string>About</string></value></member>
+  <member><name>link</name><value><string>http://bostonlocaltv.org/blog/about/</string></value></member>
+  <member><name>permaLink</name><value><string>http://bostonlocaltv.org/blog/about/</string></value></member>
+  <member><name>categories</name><value><array><data>
+</data></array></value></member>
+  <member><name>excerpt</name><value><string></string></value></member>
+  <member><name>text_more</name><value><string></string></value></member>
+  <member><name>mt_allow_comments</name><value><int>0</int></value></member>
+  <member><name>mt_allow_pings</name><value><int>0</int></value></member>
+  <member><name>wp_slug</name><value><string>about</string></value></member>
+  <member><name>wp_password</name><value><string></string></value></member>
+  <member><name>wp_author</name><value><string>wgbhinteractive</string></value></member>
+  <member><name>wp_page_parent_id</name><value><int>0</int></value></member>
+  <member><name>wp_page_parent_title</name><value><string></string></value></member>
+  <member><name>wp_page_order</name><value><int>0</int></value></member>
+  <member><name>wp_author_id</name><value><string>1</string></value></member>
+  <member><name>wp_author_display_name</name><value><string>wgbhinteractive</string></value></member>
+  <member><name>date_created_gmt</name><value><dateTime.iso8601>20110305T02:31:54</dateTime.iso8601></value></member>
+  <member><name>custom_fields</name><value><array><data>
+</data></array></value></member>
+  <member><name>wp_page_template</name><value><string>onecolumn-page.php</string></value></member>
+</struct></value>
 </data></array>
       </value>
     </param>
