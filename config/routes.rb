@@ -41,4 +41,5 @@ Bostonlocaltv::Application.routes.draw do
   
   get 'dashboard', to: 'users#show'
 
+  get 'blog/*path', to: 'blog#show'
 end
