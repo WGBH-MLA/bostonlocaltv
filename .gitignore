@@ -17,6 +17,7 @@ doc/
 *.swp
 *-
 .project
+nbproject
 .DS_Store
 .idea
 ./sample.xml
