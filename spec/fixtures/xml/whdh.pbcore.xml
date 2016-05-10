@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pbcoreCollection xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
+<pbcoreDescriptionDocument>
+<pbcoreAssetDate dateType="created">12/22/1971</pbcoreAssetDate>
+<pbcoreIdentifier source="UID">BPL_74OJ2UPG7YS47KM</pbcoreIdentifier>
+<pbcoreIdentifier source="can number">2190</pbcoreIdentifier>
+<pbcoreTitle>A.B.C.D. (Action for Boston Community Development) </pbcoreTitle>
+<pbcoreSubject subjectType="entity">Action for Boston Community Development</pbcoreSubject>
+<pbcoreDescription>Mr. Defelice</pbcoreDescription>
+<pbcoreRelation>
+<pbcoreRelationType>Is Part Of</pbcoreRelationType>
+<pbcoreRelationIdentifier>WHDH</pbcoreRelationIdentifier>
+</pbcoreRelation>
+<pbcoreContributor>
+<contributor>Collins, John F. (John Frederick), 1919-1995</contributor>
+<contributorRole/>
+</pbcoreContributor>
+<pbcoreInstantiation>
+<instantiationIdentifier source="UID - CAN_NUMBER" annotation="not in DB, but added to records during conversion to PBCore">BPL_74OJ2UPG7YS47KM-2190</instantiationIdentifier>
+<instantiationDimensions unitsOfMeasure="feet">10'</instantiationDimensions>
+<instantiationPhysical>Film: 16mm</instantiationPhysical>
+<instantiationDuration>:55</instantiationDuration>
+<instantiationTracks>MOS &amp; sync</instantiationTracks>
+</pbcoreInstantiation>
+<pbcoreExtension>
+<extensionWrap>
+<extensionElement>DATE_CREATED</extensionElement>
+<extensionValue>12/13/2011</extensionValue>
+</extensionWrap>
+</pbcoreExtension>
+<pbcoreExtension>
+<extensionWrap>
+<extensionElement>DATE_MODIFIED</extensionElement>
+<extensionValue>9/26/2013</extensionValue>
+</extensionWrap>
+</pbcoreExtension>
+</pbcoreDescriptionDocument>
+</pbcoreCollection>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pbcoreCollection xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
+<pbcoreDescriptionDocument>
+<pbcoreAssetDate dateType="created">07/08/1972</pbcoreAssetDate>
+<pbcoreIdentifier source="Accession #">2394.00139</pbcoreIdentifier>
+<pbcoreTitle>Brown INT/ Fay sworn in</pbcoreTitle>
+<pbcoreSubject>Rites and ceremonies</pbcoreSubject>
+<pbcoreDescription> (mag sound)</pbcoreDescription>
+<pbcoreRelation>
+<pbcoreRelationType>Is Part Of</pbcoreRelationType>
+<pbcoreRelationIdentifier>WCVB Collection</pbcoreRelationIdentifier>
+</pbcoreRelation>
+<pbcoreInstantiation>
+<instantiationIdentifier source="Accession # plus format code" annotation="not in DB, but added to records during conversion to PBCore">2394.00139_F16</instantiationIdentifier>
+<instantiationDimensions unitsOfMeasure="feet">900</instantiationDimensions>
+<instantiationPhysical>Film: 16mm</instantiationPhysical>
+<instantiationLocation>CKG7</instantiationLocation>
+</pbcoreInstantiation>
+<pbcoreAnnotation ref="pbcoreAssetDate">Date Estimated</pbcoreAnnotation>
+<pbcoreAnnotation source="Can Label">7/8/72</pbcoreAnnotation>
+<pbcoreExtension>
+<extensionWrap annotation="original database metadata">
+<extensionElement>DATE_CREATED</extensionElement>
+<extensionValue>10/30/2012</extensionValue>
+</extensionWrap>
+<extensionWrap annotation="original database metadata">
+<extensionElement>DATE_MODIFIED</extensionElement>
+<extensionValue>2/13/2013 11:48:27 AM</extensionValue>
+</extensionWrap>
+</pbcoreExtension>
+</pbcoreDescriptionDocument>
+</pbcoreCollection>
