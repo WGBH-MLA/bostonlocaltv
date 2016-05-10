@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+  <params>
+    <param>
+      <value>
+      <array><data>
+  <value><struct>
+  <member><name>dateCreated</name><value><dateTime.iso8601>20140328T11:26:44</dateTime.iso8601></value></member>
+  <member><name>userid</name><value><string>5</string></value></member>
+  <member><name>page_id</name><value><int>2399</int></value></member>
+  <member><name>page_status</name><value><string>publish</string></value></member>
+  <member><name>description</name><value><string>This project is a collaborative community effort to build a central repository of local historical digitized news. We hope teachers will use the video resources to enhance their lessons. In addition to the videos and descriptions available directly through our website, PBS LearningMedia has created &lt;a href=&quot;http://www.pbslearningmedia.org/collection/bln12/&quot;&gt;video resources&lt;/a&gt; from our archival collection, along with a &lt;a href=&quot;http://www.pbslearningmedia.org/resource/bln13.soc.ush.lpprimsrc/using-primary-sources-to-connect-the-past-and-present/&quot;&gt;lesson plan&lt;/a&gt;.
+
+&lt;a href=&quot;#videos&quot;&gt;Video Resources&lt;/a&gt; | &lt;a href=&quot;#studentblog&quot;&gt;Student Blog&lt;/a&gt; | &lt;a href=&quot;#digitization&quot;&gt;Request Digitization&lt;/a&gt; | &lt;a href=&quot;#feedback&quot;&gt;User Feedback&lt;/a&gt;
+&lt;div id=&quot;videos&quot;&gt;&lt;strong&gt;PBS LearningMedia Video Resources&lt;/strong&gt;&lt;/div&gt;
+We will be adding links to each video resource soon.
+&lt;div id=&quot;studentblog&quot;&gt;&lt;strong&gt;Student Blog&lt;/strong&gt;&lt;/div&gt;
+We're proud to showcase the work students have done with materials from our collection. As a final product from the PBS LearningMedia lesson plan, students can write blogs posts about their work with primary sources. These are submitted to us by the teacher, and published on our website.
+&lt;div id=&quot;digitization&quot;&gt;&lt;strong&gt;Request Digitization&lt;/strong&gt;&lt;/div&gt;
+We’re very excited to offer a remarkable feature that allows users to access any item in our catalog. Through our Digitization on Demand program you can select any artifact from our catalog of over 50,000 items, and help save a piece of local history by sponsoring its preservation. It’s easy. If you come across an items that you’re excited to see digitized and preserved, all you have to do is request it. We’ll contact you about the costs of digitization, and soon the video will be streaming on our site for free public access. Read &lt;a href=&quot;http://bostonlocaltv.org/blog/2014/03/digitize-on-demand/&quot;&gt;more&lt;/a&gt; about this feature.
+&lt;div id=&quot;feedback&quot;&gt;&lt;strong&gt;User Feedback Survey&lt;/strong&gt;&lt;/div&gt;
+As one of our target audiences, we value the opinions of the teachers who use our site. Our main goal is to make our content accessible in the best way possible. If you have any comments or suggestions, please take our &lt;a href=&quot;http://bostontvnewslibrary.polldaddy.com/s/boston-tv-news-digital-library-feedback&quot;&gt;user feedback survey&lt;/a&gt;.</string></value></member>
+  <member><name>title</name><value><string>Resources for Teachers</string></value></member>
+  <member><name>link</name><value><string>http://bostonlocaltv.org/blog/resources-for-teachers/</string></value></member>
+  <member><name>permaLink</name><value><string>http://bostonlocaltv.org/blog/resources-for-teachers/</string></value></member>
+  <member><name>categories</name><value><array><data>
+</data></array></value></member>
+  <member><name>excerpt</name><value><string></string></value></member>
+  <member><name>text_more</name><value><string></string></value></member>
+  <member><name>mt_allow_comments</name><value><int>1</int></value></member>
+  <member><name>mt_allow_pings</name><value><int>1</int></value></member>
+  <member><name>wp_slug</name><value><string>resources-for-teachers</string></value></member>
+  <member><name>wp_password</name><value><string></string></value></member>
+  <member><name>wp_author</name><value><string>Sadie Roosa</string></value></member>
+  <member><name>wp_page_parent_id</name><value><int>0</int></value></member>
+  <member><name>wp_page_parent_title</name><value><string></string></value></member>
+  <member><name>wp_page_order</name><value><int>0</int></value></member>
+  <member><name>wp_author_id</name><value><string>5</string></value></member>
+  <member><name>wp_author_display_name</name><value><string>Sadie Roosa</string></value></member>
+  <member><name>date_created_gmt</name><value><dateTime.iso8601>20140328T15:26:44</dateTime.iso8601></value></member>
+  <member><name>custom_fields</name><value><array><data>
+</data></array></value></member>
+  <member><name>wp_page_template</name><value><string>onecolumn-page.php</string></value></member>
+</struct></value>
+</data></array>
+      </value>
+    </param>
+  </params>
+</methodResponse>
