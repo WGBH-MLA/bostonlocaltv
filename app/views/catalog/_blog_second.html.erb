@@ -1,23 +1,12 @@
 <div class="row">
   <div class="span9">
-    <% Wordpress.get_recent_posts(:count => 4).each do |post| %>
-      <div class="post row">
-        <div class="post-head">
-          <a class="post-date" href="<%=post.url %>">
-            <span class="month"><%= post.date.strftime('%b') %></span>
-            <span class="day"><%= post.date.strftime('%d') %></span>
-          </a>
-          <h3><a href="<%= post.url %>"><%= post.title.html_safe %></a></h3>
-          <a class="post-author" href="/blog/author/<%= post.author_slug %>"><%= post.author_name %></a>
-        </div>
-        <div class="thumbnail">
-          <%= image_tag post.thumbnail, :alt => '' if post.thumbnail %>
-        </div>
-        <div class="body span8">
-          <%= post.excerpt.html_safe %>
-        </div>
-      </div>
-    <% end rescue nil %>
+      <br>
+      <p>
+Welcome to the Boston TV News Digital Library, funded by the Institute of Museum and Library Services and the Council on Library and Information Resources. This collaboration between the Boston Public Library, Cambridge Community television, Northeast Historic Film and WGBH Educational Foundation aims to bring to life local news stories produced in and about Boston from the early 1960’s to 2000.
+      </p>
+      <p>
+We’ve created an online catalog of news content from Boston Public Library’s WHDH film collection (1960- mid-1970s), Cambridge Community Television (1988 to 1999), Northeast Historic Film’s WCVB film collection (1970-1979), and WGBH-produced The Reporters (1970-1973), Evening Compass (1973-1975) and the Ten O’Clock News. That's almost 50,000 records.
+      </p>
   </div>
   <div class="span3">
     <ul class="nav nav-list">
@@ -27,10 +16,9 @@
       <li><a href="/wcvb"><span class="label default">10542</span> WCVB</a></li>
       <li><a href="/whdh"><span class="label default">23414</span> WHDH</a></li>
       <li class="nav-header">Resources</li>
-      <li><a href="http://bostonlocaltv.org/blog/resources-archivist/">Archivists</a></li>
-      <li><a href="http://bostonlocaltv.org/blog/resources-for-scholars/">Teachers</a></li>
-      <li><a href="http://bostonlocaltv.org/blog/resources-for-teachers/">Students</a></li>
-      <li class="nav-header blog-link"><a href="http://bostonlocaltv.org/blog/category/student-blogs/">Student Blog</a></li>
+      <li><a href="/blog/resources-archivist/">Archivists</a></li>
+      <li><a href="/blog/resources-for-scholars/">Teachers</a></li>
+      <li><a href="/blog/resources-for-teachers/">Students</a></li>
     </ul>
   </div>
 </div>
