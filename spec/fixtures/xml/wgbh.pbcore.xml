@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pbcoreCollection xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
+<pbcoreDescriptionDocument>
+<pbcoreAssetType>Original Footage</pbcoreAssetType>
+<pbcoreAssetDate dateType="created">02/15/1977</pbcoreAssetDate>
+<pbcoreIdentifier source="can number">1</pbcoreIdentifier>
+<pbcoreIdentifier source="UID">V_T4G0B5DQISU2FGC</pbcoreIdentifier>
+<pbcoreIdentifier source="Digital_Filename">barcode101634 </pbcoreIdentifier>
+<pbcoreTitle>South Boston High School</pbcoreTitle>
+<pbcoreTitle titleType="Series">Ten O'Clock News</pbcoreTitle>
+<pbcoreSubject>Students</pbcoreSubject>
+<pbcoreSubject>Police</pbcoreSubject>
+<pbcoreSubject>Police patrol</pbcoreSubject>
+<pbcoreSubject>School buildings</pbcoreSubject>
+<pbcoreSubject>Busing for school integration</pbcoreSubject>
+<pbcoreSubject subjectType="entity">Massachusetts. Dept. of State Police</pbcoreSubject>
+<pbcoreDescription>White students exit South Boston High. About 25 Massachusetts uniformed state troopers board Massachusetts State Police bus. Massachusetts State Police Cruiser exits school parking lot. Jerome Wynegar (Headmaster, South Boston High School) stands in the school yard and talks to students.</pbcoreDescription>
+<pbcoreDescription descriptionType="shot log">1:00:08: Visual: White students exit South Boston High School in small groups. Jerome Wynegar (Headmaster, South Boston High School) stands in front of the school, talking to passersby. The students walk down G Street, away from the school . Snow blankets the ground. A Massachusetts State Police bus is parked in front of the school. About 25 state police officers file onto the bus. A state police car pulls out from the front of the school, into the street. Small groups of students, police, and officials remain in front of the school.</pbcoreDescription>
+<pbcoreRelation>
+<pbcoreRelationType>Is Part Of</pbcoreRelationType>
+<pbcoreRelationIdentifier>The Ten O'Clock News Collection</pbcoreRelationIdentifier>
+</pbcoreRelation>
+<pbcoreCoverage>
+<coverage>South Boston (Boston, Mass.)</coverage>
+<coverageType>spatial</coverageType>
+</pbcoreCoverage>
+<pbcorePublisher>
+<publisher>WGBH Educational Foundation</publisher>
+<publisherRole>Publisher</publisherRole>
+</pbcorePublisher>
+<pbcoreInstantiation>
+<instantiationIdentifier source="UID - CAN_NUMBER" annotation="not in DB, but added to records during conversion to PBCore">(3/4 inch videotape) V_T4G0B5DQISU2FGC-1</instantiationIdentifier>
+<instantiationPhysical>3/4 inch videotape</instantiationPhysical>
+<instantiationPhysical>Betacam</instantiationPhysical>
+<instantiationPhysical>Digital Betacam</instantiationPhysical>
+<instantiationDuration>00:03:00;12</instantiationDuration>
+<instantiationColors>Color</instantiationColors>
+</pbcoreInstantiation>
+<pbcoreInstantiation>
+<instantiationIdentifier source="UID - CAN_NUMBER" annotation="not in DB, but added to records during conversion to PBCore">(Betacam) V_T4G0B5DQISU2FGC-1</instantiationIdentifier>
+<instantiationPhysical>3/4 inch videotape</instantiationPhysical>
+<instantiationPhysical>Betacam</instantiationPhysical>
+<instantiationPhysical>Digital Betacam</instantiationPhysical>
+<instantiationDuration>00:03:00;12</instantiationDuration>
+<instantiationColors>Color</instantiationColors>
+</pbcoreInstantiation>
+<pbcoreInstantiation>
+<instantiationIdentifier source="UID - CAN_NUMBER" annotation="not in DB, but added to records during conversion to PBCore">(Digital Betacam) V_T4G0B5DQISU2FGC-1</instantiationIdentifier>
+<instantiationPhysical>3/4 inch videotape</instantiationPhysical>
+<instantiationPhysical>Betacam</instantiationPhysical>
+<instantiationPhysical>Digital Betacam</instantiationPhysical>
+<instantiationDuration>00:03:00;12</instantiationDuration>
+<instantiationColors>Color</instantiationColors>
+</pbcoreInstantiation>
+<pbcoreExtension>
+<extensionWrap annotation="original database metadata">
+<extensionElement>DATE_CREATED</extensionElement>
+<extensionValue>1/25/2012</extensionValue>
+<extensionAuthorityUsed>WGBH</extensionAuthorityUsed>
+</extensionWrap>
+<extensionWrap annotation="original database metadata">
+<extensionElement>DATE_MODIFIED</extensionElement>
+<extensionValue>2/25/2014</extensionValue>
+<extensionAuthorityUsed>WGBH</extensionAuthorityUsed>
+</extensionWrap>
+</pbcoreExtension>
+</pbcoreDescriptionDocument>
+</pbcoreCollection>

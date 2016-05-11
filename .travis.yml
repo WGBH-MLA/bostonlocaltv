@@ -5,4 +5,5 @@ script:
   - bundle exec rake jetty:load
   - bundle exec rake db:migrate
   - bundle exec rake db:test:prepare
+  - for ORG in cctv wcvb wgbh whdh; do bundle exec rake data:$ORG file=spec/fixtures/xml/$ORG.pbcore.xml; done
   - bundle exec rspec

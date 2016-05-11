@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pbcoreCollection xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
+<pbcoreDescriptionDocument>
+<pbcoreAssetDate dateType="broadcast">4/4/2004</pbcoreAssetDate>
+<pbcoreIdentifier source="id_archive">a2396</pbcoreIdentifier>
+<pbcoreIdentifier source="id_program_prime">83</pbcoreIdentifier>
+<pbcoreTitle titleType="Program">BeLive: Amnesty International</pbcoreTitle>
+<pbcoreSubject subjectType="entity">Amnesty International USA</pbcoreSubject>
+<pbcoreDescription descriptionType="Program">2002</pbcoreDescription>
+<pbcoreRelation>
+<pbcoreRelationType>Is Part Of</pbcoreRelationType>
+<pbcoreRelationIdentifier>CCTV</pbcoreRelationIdentifier>
+</pbcoreRelation>
+<pbcoreInstantiation>
+<instantiationIdentifier source="id_archive &amp; id_program_prime" annotation="not in DB, but added to records during conversion to PBCore">a2396-83</instantiationIdentifier>
+<instantiationPhysical>LIVE: BeLive</instantiationPhysical>
+<instantiationColors annotation="value not present in db; added during conversion to PBCore">Color</instantiationColors>
+<instantiationLanguage>English (en)</instantiationLanguage>
+<instantiationAlternativeModes>English (en)</instantiationAlternativeModes>
+</pbcoreInstantiation>
+</pbcoreDescriptionDocument>
+</pbcoreCollection>
