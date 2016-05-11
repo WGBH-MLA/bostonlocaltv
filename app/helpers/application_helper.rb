@@ -161,15 +161,4 @@ module ApplicationHelper
     end
   end
 
-  def get_blog_page
-  
-      results = []
-
-      open ('http://bostonlocaltv.org') do |f|
-        f.each_line {|line| results << line}
-      end
-
-      results
-  end
-
 end
