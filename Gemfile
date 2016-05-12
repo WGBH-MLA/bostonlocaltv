@@ -25,7 +25,6 @@ gem 'therubyracer'
 gem 'uglifier'
 gem 'unicode'
 gem 'state_machine'
-gem 'blacklight_oai_provider', git: "https://github.com/cbeer/blacklight_oai_provider.git"
 gem 'dotenv-rails', '0.8.0'
 gem 'cmless', '1.0.0'
 gem 'jettywrapper', '~> 1.7'
