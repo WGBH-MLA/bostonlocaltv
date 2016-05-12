@@ -1,15 +1,119 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Name:</b>
-  <%= @collection.name %>
+<%
+  # TODO: This should really be moved into CMLess, but one thing at a time.
+  fields = {
+    cctv: {
+      title: 'Cambridge Community Television',
+      img_src: 'sigimage-cctv-drummers.jpg',
+      search: 'CCTV',
+      extra_html: '<li>
+              <a href="http://www.cctvcambridge.org/" target="_blank">Cambridge Community Television</a>
+          </li>',
+      html: <<END
+<p> 
+    Cambridge Community Television, the public access television station for the City of Cambridge, was established through and is primarily funded by the City’s cable television franchise. 
 </p>
-
 <p>
-  <b>Content:</b>
-  <%= @collection.content %>
+    Since its launch in 1988, CCTV has produced and/or collected a variety of historically relevant programs about people and topics of both local and national significance. These programs cover cultural, educational, scientific, and political subjects, as well as many others. 
 </p>
+<p>
+    CCTV invites you to browse through its collection and explore its records from 1988 through 1999.
+</p>
+END
+    },
+    wcvb: {
+      title: 'The WCVB-TV Collection',
+      img_src: 'sigimage-wcvb-bruins.jpg',
+      search: 'WCVB Collection',
+      extra_html: '<li><a href="http://www.oldfilm.org/" target="_blank">Northeast Historic Film</a></li>',
+      html: <<END
+<p> 
+The WCVB-TV Collection at NHF contains news film, documentaries and factual works, including 180 episodes of the long running news program "Chronicle,” and 4,000 cans of 16mm film containing over 4 million feet of daily coverage and specials filmed between 1972 and 1979.  
+</p>
+<p>
+The WCVB-TV collection captures mandatory school bussing and the reactions of communities in Boston (1974), the Red Sox World Series run in 1975, the Kennedy Family, the Maine Indian Land Claims Settlement, and many other events of great and small import.
+</p>
+END
+    },
+    wgbh: {
+      title: "The Ten O'Clock News",
+      img_src: 'sigimage-10oclock-van.jpg',
+      search: 'Ten+O%27Clock+News',
+      extra_html: '<li><a href="http://main.wgbh.org/ton" target="_blank">The Ten O&rsquo;Clock News Finding Aid</a></li>
+<li><a href="http://openvault.wgbh.org/" target="_blank">WGBH Open Vault</a></li>',
+      html: <<END
+<p> <i>The Ten O'Clock News</i> was a nightly news program produced and broadcast by WGBH. The Ten O'Clock News debuted on January 15, 1976 and aired until 1991. Its two immediate predecessors were The Reporters and Evening Compass that aired from 1970-3 and 1973-5, respectively. 
+</p>
+<p>
+Among the many competitors in the Boston television landscape, The Ten O'Clock News strove for a balance between local and national stories, between politics and the arts. The program featured one or more nightly in-studio interviews with political figures, analysts, professors, artists and writers who came to discuss current events and culture. Local news included coverage of Boston neighborhoods, busing, Beacon Hill politics, the arts, and culture. The collection is made up of over 7500 items, primarily shot on 3/4" videotape, including final broadcasts, edited stories, raw footage and outtakes.
+</p>
+END
+    },
+    whdh: {
+      title: 'The WHDH Collection',
+      img_src: 'sigimage-whdh-crowd.jpg',
+      search: 'WHDH',
+      extra_html: '<li><a href="http://www.bpl.org/" target="_blank">Boston Public Library</a></li>',
+      html: <<END
+<p>
+The WHDH Collection at the Boston Public Library consists of some two million feet of film footage representing the entire HDH library from 1961 until it ceased operations in 1972.
+</p><p>
+It includes news coverage and special programming relating mainly to people, events and scenes of the Boston area, including extensive coverage of school busing, local politics, peace demonstrations, fires, and gangland activities.
+</p>
+END
+    }  
+  }[params[:id].to_sym]
+%>
+
+<% content_for :content do %>
+
+  <div id="collections_container" class="one-column">
+      <div id="content" role="main">
+
+          <div class="page type-page status-publish collections_hentry">
+              <h1 class="entry-title"><%= fields[:title] %></h1>
+              <div id="tools">
+                <%= render :partial => 'catalog/show_tools' %>
+              </div>
+              <div class="wgbh_image">
+                <%= image_tag(fields[:img_src], :size => "684x300") %>
+              </div>
+              <div class="collections_entry-content">
+                <%= fields[:html].html_safe %>
+              </div><!-- .entry-content -->
+          </div><!-- #post-## -->
 
 
-<%= link_to 'Edit', edit_collection_path(@collection) %> |
-<%= link_to 'Back', collections_path %>
+
+      </div><!-- #content -->
+  </div><!-- #collections container -->
+  <div id="collections_primary" class="widget-area" role="complementary">
+      <h3 class="widget-title">Search within this collection</h3>
+      <hr />
+      <ul><li>
+              <a href='/catalog?f[collection_s][]=<%= fields[:search] %>'>All materials</a>
+          </li>
+      </ul>
+
+      <br>
+      <h3 class="widget-title">Related links</h3>
+      <hr />
+      <ul>
+          <%= fields[:extra_html].html_safe %>
+          <li>
+              <a href="http://tvnews.vanderbilt.edu" target="_blank"> Vanderbilt Television News Archive</a>
+          </li>
+          <li>
+              <a href="http://www.library.sfsu.edu/about/collections/sfbatv/index.php" target="_blank">San Francisco Bay Area News Archive
+              </a>
+          </li>
+          <li>
+              <a href="http://archive.org/details/911" target="_blank">September 11 Television Archive</a>
+          </li>
+          <li>
+              <a href="http://archive.org/details/tv" target="_blank">Internet Archive TV News Collection</a>
+          </li>
+      </ul>	
+  </div><!-- #primary .widget-area -->
+
+
+<% end %>
