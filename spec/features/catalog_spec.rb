@@ -9,6 +9,7 @@ describe 'Catalog Show Page', type: feature do
     expect(page).to have_content("Collection: Ten O'Clock News")
   end
   it 'has a working #show' do
+    visit '/catalog/V_T4G0B5DQISU2FGC'
     expect(page).to have_content('South Boston High School')
   end
 end
