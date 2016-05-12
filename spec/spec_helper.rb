@@ -22,7 +22,6 @@ RSpec.configure do |config|
   config.mock_with :rspec
   
   config.include FactoryGirl::Syntax::Methods
-  config.include Devise::TestHelpers, type: :controller
   # config.include CartSteps
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures

@@ -44,7 +44,6 @@ GEM
       contracts (~> 0.9)
       cucumber (>= 1.3.19)
       rspec-expectations (>= 2.99)
-    bcrypt (3.1.10)
     blacklight (4.6.3)
       bootstrap-sass (>= 2.2.0, < 2.4)
       deprecation
@@ -119,13 +118,6 @@ GEM
     database_cleaner (1.4.1)
     deprecation (0.2.2)
       activesupport
-    devise (3.5.2)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      responders
-      thread_safe (~> 0.1)
-      warden (~> 1.2.3)
     diff-lcs (1.2.5)
     dotenv (0.8.0)
     dotenv-rails (0.8.0)
@@ -203,7 +195,6 @@ GEM
       builder (>= 2.0.0)
       faraday
       faraday_middleware
-    orm_adapter (0.5.0)
     parslet (1.7.0)
       blankslate (>= 2.0, <= 4.0)
     polyglot (0.3.5)
@@ -241,8 +232,6 @@ GEM
       json (~> 1.4)
     redcarpet (3.3.4)
     ref (2.0.0)
-    responders (1.1.2)
-      railties (>= 3.2, < 4.2)
     rsolr (1.0.12)
       builder (>= 2.1.2)
     rspec-collection_matchers (1.1.2)
@@ -281,7 +270,6 @@ GEM
       libv8 (~> 3.16.14.0)
       ref
     thor (0.19.1)
-    thread_safe (0.3.5)
     tilt (1.4.1)
     treetop (1.4.15)
       polyglot
@@ -294,8 +282,6 @@ GEM
       unf_ext
     unf_ext (0.0.7.1)
     unicode (0.4.4.2)
-    warden (1.2.3)
-      rack (>= 1.0)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
@@ -318,7 +304,6 @@ DEPENDENCIES
   coffee-rails
   compass
   database_cleaner
-  devise
   dotenv-rails (= 0.8.0)
   factory_girl_rails (~> 4.0)
   faker

@@ -16,7 +16,6 @@ gem 'sass', '~> 3.2.13'
 
 gem 'coffee-rails'
 gem 'compass'
-gem 'devise'
 gem 'jquery-rails', '~> 3.1.3'
 gem 'jquery-ui-rails'
 gem 'kaminari'
