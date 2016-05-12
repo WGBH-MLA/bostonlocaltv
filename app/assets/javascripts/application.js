@@ -5,7 +5,6 @@
 // the compiled file.
 //
 //= require jquery
-//= require 'blacklight_advanced_search'
 // Used by blacklight_range_limit
 //= require 'flot/jquery.flot.js'
 //= require 'flot/jquery.flot.selection.js'

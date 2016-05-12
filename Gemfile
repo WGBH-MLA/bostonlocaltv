@@ -4,7 +4,6 @@ gem 'rails', '~> 3.2.16'
 gem 'syck', platforms: [:ruby_20]
 
 gem 'blacklight', '~>4.6.3'
-gem 'blacklight_advanced_search'
 gem 'blacklight_range_limit'
 gem 'bootstrap-sass'
 gem 'carrierwave'
