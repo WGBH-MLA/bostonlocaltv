@@ -14,8 +14,7 @@ class CatalogController < ApplicationController
       :provider => {
         :repository_name => 'Boston Local TV News',
         :repository_url => 'http://bostonlocaltv.org',
-        :record_prefix => '',
-        :admin_email => 'bostonlocaltv@wgbh.org'
+        :record_prefix => ''
       }
     }
 

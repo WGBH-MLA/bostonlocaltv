@@ -19,7 +19,6 @@ Bostonlocaltv::Application.configure do
     'application.js',
     'rails.js',
     'bostonlocaltv.css',
-    'active_admin.css',
     'video.js',
     'video-js.min.css',
     'blacklight_range_limit/blacklight_range_limit.css',
