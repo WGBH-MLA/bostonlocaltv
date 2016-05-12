@@ -1,8 +1,7 @@
 # -*- encoding : utf-8 -*-
 require 'blacklight/catalog'
 
-class CatalogController < ApplicationController  
-  before_filter :find_artifact, :only => :show
+class CatalogController < ApplicationController
 
   include Blacklight::Catalog
   include BlacklightOaiProvider::ControllerExtension
@@ -214,10 +213,6 @@ class CatalogController < ApplicationController
 
    def get_doc_id (id)
       id.bytes.to_s
-   end
-
-   def find_artifact
-    @artifact = Artifact.where(solr_document_id: params[:id]).first
    end
    
    def get_nonvideo_search_results(user_params = params || {})     
