@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+         xmlns:mods="http://www.loc.gov/mods/v3"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+         http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+    <responseDate><%= @response_date %></responseDate> 
+    <request verb="<%= @verb %>" metadataPrefix="<%= @metadata_prefix %>">http://openvault.wgbh.org/oai.xml</request>
+    <ListRecords>
+        <% @records.each do |record| %>
+            <record>
+                <header>
+                    <identifier><%= record.id %></identifier>
+                    <datestamp><%= record.date %></datestamp>
+                </header>
+                <metadata>
+                    <%=
+                    Nokogiri::XML::Builder.new do |x|
+                      x.mods(xmlns: 'http://www.loc.gov/mods/v3') {
+                        x.identifier('http://bostonlocaltv.org/catalog/' + record.id, type: 'uri')
+                        x.titleInfo(usage: 'primary') {
+                          x.title('TITLE')
+                        }
+                        x.name('PERSON NAME') {
+                          x.role {
+                            x.roleTerm('PRESON ROLE')
+                          }
+                        }
+                        x.typeOfResource(
+                          'TYPE'
+                        )
+                        x.physicalDescription('DESC')
+                        x.genre('GENRE')
+                        x.originInfo {
+                          x.publisher('PUBLISHER')
+                          x.dateCreated('DATE')
+                        }
+                        x.physicalDescription {
+                          x.extent('DURATION')
+                        }
+                        x.abstract('ABSTRACT')
+                        x.subject('SUBJECT')
+                        x.relatedItem(type: 'host') {
+                          x.titleInfo {
+                            x.title('Boston Local TV News')
+                          }  
+                        }
+                        x.location {
+                          x.physicalLocation('LOCATION')
+                        }
+                        x.accessCondition('Contact host institution for more information.', type: 'use and reproduction')
+                      }
+                    end.to_xml.sub('<?xml version="1.0"?>','').html_safe
+                    %>
+                </metadata>
+            </record>
+        <% end %>
+        <% if @next_resumption_token %>
+            <resumptionToken><%= @next_resumption_token %></resumptionToken>
+        <% end %>
+    </ListRecords>
+</OAI-PMH>
