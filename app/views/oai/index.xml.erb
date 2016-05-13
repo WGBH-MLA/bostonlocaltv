@@ -5,7 +5,7 @@
          xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
          http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
     <responseDate><%= @response_date %></responseDate> 
-    <request verb="<%= @verb %>" metadataPrefix="<%= @metadata_prefix %>">http://openvault.wgbh.org/oai.xml</request>
+    <request verb="<%= @verb %>" metadataPrefix="<%= @metadata_prefix %>">http://bostonlocaltv.org/oai.xml</request>
     <ListRecords>
         <% @records.each do |record| %>
             <record>
