@@ -31,6 +31,7 @@ gem 'state_machine'
 gem 'blacklight_oai_provider', git: "https://github.com/cbeer/blacklight_oai_provider.git"
 gem 'dotenv-rails', '0.8.0'
 gem 'cmless', '1.0.0'
+gem 'jettywrapper', '~> 1.7'
 
 group :test do
   gem 'aruba'
@@ -45,7 +46,6 @@ end
 group :development, :test do
   # gem 'debugger'
   # gem 'guard-rspec'
-  gem 'jettywrapper'
   gem 'meta_request'
   gem 'rails-footnotes', '>= 3.7'
   gem 'rspec-rails', '~> 2.99.0'
