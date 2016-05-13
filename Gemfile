@@ -3,9 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '~> 3.2.16'
 gem 'syck', platforms: [:ruby_20]
 
-gem 'activeadmin'
 gem 'blacklight', '~>4.6.3'
-gem 'blacklight_advanced_search'
 gem 'blacklight_range_limit'
 gem 'bootstrap-sass'
 gem 'carrierwave'
@@ -17,7 +15,6 @@ gem 'sass', '~> 3.2.13'
 
 gem 'coffee-rails'
 gem 'compass'
-gem 'devise'
 gem 'jquery-rails', '~> 3.1.3'
 gem 'jquery-ui-rails'
 gem 'kaminari'
@@ -28,7 +25,6 @@ gem 'therubyracer'
 gem 'uglifier'
 gem 'unicode'
 gem 'state_machine'
-gem 'blacklight_oai_provider', git: "https://github.com/cbeer/blacklight_oai_provider.git"
 gem 'dotenv-rails', '0.8.0'
 gem 'cmless', '1.0.0'
 gem 'jettywrapper', '~> 1.7'
@@ -50,10 +46,4 @@ group :development, :test do
   gem 'rails-footnotes', '>= 3.7'
   gem 'rspec-rails', '~> 2.99.0'
   gem 'net-ssh', '~> 2.7.0'
-end
-
-group :development do 
-  gem 'capistrano', '~> 2', :require => false # Cap 3 doesn't yet have all the kinks worked out
-  gem 'capistrano-multistage', :require => false
-  gem 'capistrano-gitflow', :require => false
 end

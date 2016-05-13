@@ -1,12 +1,3 @@
-GIT
-  remote: https://github.com/cbeer/blacklight_oai_provider.git
-  revision: f603f8c0db19baf7a9a11b8a6a682697c8d23e2f
-  specs:
-    blacklight_oai_provider (0.1.1)
-      blacklight (>= 3.0)
-      oai
-      rails (>= 3.0)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -23,18 +14,6 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
-    activeadmin (0.6.0)
-      arbre (>= 1.0.1)
-      bourbon (>= 1.0.0)
-      devise (>= 1.1.2)
-      fastercsv
-      formtastic (>= 2.0.0)
-      inherited_resources (>= 1.3.1)
-      jquery-rails (>= 1.0.0)
-      kaminari (>= 0.13.0)
-      meta_search (>= 0.9.2)
-      rails (>= 3.0.0)
-      sass (>= 3.1.0)
     activemodel (3.2.22)
       activesupport (= 3.2.22)
       builder (~> 3.0.0)
@@ -50,15 +29,12 @@ GEM
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
     addressable (2.3.8)
-    arbre (1.0.3)
-      activesupport (>= 3.0.0)
     arel (3.0.3)
     aruba (0.8.1)
       childprocess (~> 0.5.6)
       contracts (~> 0.9)
       cucumber (>= 1.3.19)
       rspec-expectations (>= 2.99)
-    bcrypt (3.1.10)
     blacklight (4.6.3)
       bootstrap-sass (>= 2.2.0, < 2.4)
       deprecation
@@ -68,33 +44,14 @@ GEM
       rails (>= 3.2.6, < 5)
       rsolr (~> 1.0.6)
       sass-rails
-    blacklight_advanced_search (2.2.0)
-      blacklight (~> 4.0)
-      parslet
     blacklight_range_limit (2.2.0)
       blacklight (~> 4.0)
       jquery-rails
       rails (>= 3.0, < 5.0)
-    blankslate (3.1.3)
     bootstrap-sass (2.3.2.2)
       sass (~> 3.2)
-    bourbon (3.2.4)
-      sass (~> 3.2)
-      thor
     builder (3.0.4)
     callsite (0.0.11)
-    capistrano (2.15.6)
-      highline
-      net-scp (>= 1.0.0)
-      net-sftp (>= 2.0.0)
-      net-ssh (>= 2.0.14)
-      net-ssh-gateway (>= 1.1.0)
-    capistrano-gitflow (1.4.3)
-      capistrano
-      stringex
-    capistrano-multistage (0.0.4)
-      capistrano (>= 2.12.0)
-      rake
     capybara (2.4.4)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -136,13 +93,6 @@ GEM
     database_cleaner (1.4.1)
     deprecation (0.2.2)
       activesupport
-    devise (3.5.2)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      responders
-      thread_safe (~> 0.1)
-      warden (~> 1.2.3)
     diff-lcs (1.2.5)
     dotenv (0.8.0)
     dotenv-rails (0.8.0)
@@ -156,29 +106,13 @@ GEM
       railties (>= 3.0.0)
     faker (1.4.3)
       i18n (~> 0.5)
-    faraday (0.9.1)
-      multipart-post (>= 1.2, < 3)
-    faraday_middleware (0.10.0)
-      faraday (>= 0.7.4, < 0.10)
-    fastercsv (1.5.5)
     ffi (1.9.10)
-    formtastic (3.1.3)
-      actionpack (>= 3.2.13)
     fssm (0.2.10)
     gherkin (2.12.2)
       multi_json (~> 1.3)
     git-version-bump (0.15.1)
-    has_scope (0.6.0)
-      actionpack (>= 3.2, < 5)
-      activesupport (>= 3.2, < 5)
-    highline (1.7.3)
     hike (1.2.3)
     i18n (0.7.0)
-    inherited_resources (1.6.0)
-      actionpack (>= 3.2, < 5)
-      has_scope (~> 0.6.0.rc)
-      railties (>= 3.2, < 5)
-      responders
     jettywrapper (1.8.3)
       activesupport (>= 3.0.0)
       childprocess
@@ -208,34 +142,13 @@ GEM
       callsite (~> 0.0, >= 0.0.11)
       rack-contrib (~> 1.1)
       railties (>= 3.0.0, < 5.0.0)
-    meta_search (1.1.3)
-      actionpack (~> 3.1)
-      activerecord (~> 3.1)
-      activesupport (~> 3.1)
-      polyamorous (~> 0.5.0)
     mime-types (1.25.1)
     mini_portile (0.6.2)
     multi_json (1.11.2)
     multi_test (0.1.2)
-    multipart-post (2.0.0)
-    net-scp (1.2.1)
-      net-ssh (>= 2.6.5)
-    net-sftp (2.1.2)
-      net-ssh (>= 2.6.5)
     net-ssh (2.7.0)
-    net-ssh-gateway (1.2.0)
-      net-ssh (>= 2.6.5)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
-    oai (0.3.1)
-      builder (>= 2.0.0)
-      faraday
-      faraday_middleware
-    orm_adapter (0.5.0)
-    parslet (1.7.0)
-      blankslate (>= 2.0, <= 4.0)
-    polyamorous (0.5.0)
-      activerecord (~> 3.0)
     polyglot (0.3.5)
     power_assert (0.2.6)
     progressbar (0.21.0)
@@ -271,8 +184,6 @@ GEM
       json (~> 1.4)
     redcarpet (3.3.4)
     ref (2.0.0)
-    responders (1.1.2)
-      railties (>= 3.2, < 4.2)
     rsolr (1.0.12)
       builder (>= 2.1.2)
     rspec-collection_matchers (1.1.2)
@@ -303,7 +214,6 @@ GEM
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.10)
     state_machine (1.2.0)
-    stringex (2.5.2)
     syck (1.0.5)
     test-unit (3.1.5)
       power_assert
@@ -311,7 +221,6 @@ GEM
       libv8 (~> 3.16.14.0)
       ref
     thor (0.19.1)
-    thread_safe (0.3.5)
     tilt (1.4.1)
     treetop (1.4.15)
       polyglot
@@ -324,8 +233,6 @@ GEM
       unf_ext
     unf_ext (0.0.7.1)
     unicode (0.4.4.2)
-    warden (1.2.3)
-      rack (>= 1.0)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
@@ -333,23 +240,16 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activeadmin
   aruba
   blacklight (~> 4.6.3)
-  blacklight_advanced_search
-  blacklight_oai_provider!
   blacklight_range_limit
   bootstrap-sass
-  capistrano (~> 2)
-  capistrano-gitflow
-  capistrano-multistage
   capybara
   carrierwave
   cmless (= 1.0.0)
   coffee-rails
   compass
   database_cleaner
-  devise
   dotenv-rails (= 0.8.0)
   factory_girl_rails (~> 4.0)
   faker

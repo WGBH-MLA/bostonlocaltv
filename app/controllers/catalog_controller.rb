@@ -4,20 +4,8 @@ require 'blacklight/catalog'
 class CatalogController < ApplicationController
 
   include Blacklight::Catalog
-  include BlacklightOaiProvider::ControllerExtension
-
   
   configure_blacklight do |config|
-
-
-    config.oai = {
-      :provider => {
-        :repository_name => 'Boston Local TV News',
-        :repository_url => 'http://bostonlocaltv.org',
-        :record_prefix => '',
-        :admin_email => 'bostonlocaltv@wgbh.org'
-      }
-    }
 
     config.default_solr_params = { 
       :qt => 'search',
