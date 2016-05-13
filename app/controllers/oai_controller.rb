@@ -1,5 +1,5 @@
 class OaiController < ApplicationController
-  Record = Struct.new(:id, :date)
+  Record = Struct.new(:id, :date, :title, :descriptions, :subjects)
   ROWS = 100
 
   def index
@@ -26,7 +26,7 @@ class OaiController < ApplicationController
              'rows' => ROWS,
              'start' => start
            })['response']['docs'].map do |d|
-        Record.new(d['id'], d['timestamp'])
+        Record.new(d['id'], d['timestamp'], d['title_s'].first, d['description_s'], d['subject_s'])
       end
 
     # Not ideal: they'll need to go past the end.
