@@ -18,6 +18,9 @@ Bostonlocaltv::Application.routes.draw do
       get 'cite'
     end
   end
+  
+  resources 'oai',
+            only: [:index]
 
   get 'blog/*path', to: 'blog#show'
 end

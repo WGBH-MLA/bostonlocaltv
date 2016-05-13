@@ -65,10 +65,6 @@ module BlacklightHelper
     link_url = catalog_index_path(p)
     link_to(query, link_url)
   end
- 
-   def has_search_parameters?
-    !params[:q].blank? or !params[:side_q].blank? or !params[:f].blank? or !params[:search_field].blank?
-  end
 
   def render_constraints_query(localized_params = params)
     # So simple don't need a view template, we can just do it here.
