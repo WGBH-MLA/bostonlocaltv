@@ -2,7 +2,9 @@ language: ruby
 sudo: false
 cache: bundler
 script:
-  - bundle exec rake jetty:load
+  - bundle exec rake jetty:clean
+  - bundle exec rake jetty:config
+  - bundle exec rake jetty:start
   - bundle exec rake db:create
   - bundle exec rake db:migrate
   - bundle exec rake db:test:prepare
