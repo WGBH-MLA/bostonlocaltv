@@ -11,8 +11,7 @@
 # how to start up solr, generally for automated testing. 
 
 production:
-  #url: http://lsboslocal.wgbh.org:8181/solr/production
-  url: http://localhost:8181/solr/blacklight-core
+  url: http://localhost:8983/solr/blacklight-core
 development:
   url: http://localhost:8983/solr/blacklight-core
 test: &test
