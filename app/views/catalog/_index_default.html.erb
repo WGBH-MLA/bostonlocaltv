@@ -2,7 +2,7 @@
   <div class="content">
   <% if document.has? "image_s" %>
     <div class="index-image-container yui-u">
-      <a href="/catalog/<%= document['id'] %>"><img src="http://mlamedia01.wgbh.org/bostonlocaltv/<%= render_document_show_field_value :document => document, :field => "image_s" %>" /></a>
+      <a href="/catalog/<%= document['id'] %>"><img src="https://s3.amazonaws.com/bostonlocaltv.org/thumb/<%= document['id'] %>.jpg" /></a>
     </div>
   <% end %>
 
