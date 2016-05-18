@@ -9,9 +9,41 @@
 <% else %>
   <div class="no_video">
     <img src="/assets/blank_video.jpg" alt="video must be requested from the vault">
-    <p class="">This asset hasn't been digitized yet.</p>
+    <p class="">
+        This asset hasn't been digitized yet.<br/>
+        <span class="btn btn-primary btn-sm" 
+            onclick="$('#request-modal').modal('show');">
+          Request Digitization</span></p>
   </div>
 <% end %>
+
+<div class="modal fade" id="request-modal" tabindex="-1" role="dialog" aria-labelledby="request-modal-title">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="request-modal-title">Digitization Requests</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+          You can contribute to the digitization of materials in the Boston TV News Digital Library. 
+          Costs and timelines vary between items, but explain your interests via 
+          <a href="mailto:sadie_roosa@wgbh.org?<%=
+            {
+              subject: 'Digitization request',
+              body: 'I am interested in http://bostonlocaltv.org/catalog/' + document['id']
+            }.to_query
+          %>">email</a>, 
+          and we will work with you to make more local Boston news content available to the world.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" 
+                onclick="$('#request-modal').modal('hide');">
+            Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <div class="field_list">
