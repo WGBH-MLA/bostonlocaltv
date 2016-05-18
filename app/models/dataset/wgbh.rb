@@ -126,6 +126,8 @@ class Dataset::Wgbh < Dataset::Xml
   end
 
   def get_wgbh_solr_doc (fields, solr_doc, physical_format)
+    format = color = wgbh_title = false
+    
     fields.each do |key, value|
       format ||= key == 'format'
       color ||= key == 'format_color_s'
@@ -138,17 +140,9 @@ class Dataset::Wgbh < Dataset::Xml
       solr_doc[key.to_sym] << value.respond_to?(:strip) ? value.strip : value
     end
  
-    if format == false
-      solr_doc ['format'] = physical_format
-    end
-  
-    if color == false
-      solr_doc ['format_color_s'] = "Color"
-    end
-  
-    if wgbh_title == false
-      solr_doc ['title_s'] = "Ten O'Clock News"
-    end
+    solr_doc ['format'] = physical_format unless format
+    solr_doc ['format_color_s'] = "Color" unless color
+    solr_doc ['title_s'] = "Ten O'Clock News" unless wgbh_title
 
     solr_doc
   end

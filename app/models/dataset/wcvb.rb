@@ -122,6 +122,8 @@ class Dataset::Wcvb < Dataset::Xml
 
 
   def get_wcvb_solr_doc (fields, solr_doc)
+    format = wcvb_title = false
+    
     fields.each do |key, value|
       format ||= key == 'format'
       description ||= key == 'description_s'
@@ -134,13 +136,8 @@ class Dataset::Wcvb < Dataset::Xml
       solr_doc[key.to_sym] << value.respond_to?(:strip) ? value.strip : value
     end
 
-    if format == false
-	   solr_doc [:format] = "Film:16mm"
-    end
-
-    if wcvb_title == false
-	    solr_doc [:title_s] = "WCVB"
-    end
+    solr_doc [:format] = "Film:16mm" unless format
+    solr_doc [:title_s] = "WCVB" unless wcvb_title
 
     solr_doc
   end
