@@ -1,0 +1,9 @@
+<h1>Blog entries</h1>
+<ul>
+  <% @blogs.group_by{|blog| blog.path[0..3]}.each do |year, blogs| %>
+    <li><strong><%= year %></strong></li>
+    <% blogs.each do |blog| %>
+      <li><a href="/blog/<%= blog.path %>"><%= blog.title %></a></li>
+    <% end %>
+  <% end %>
+</ul>
