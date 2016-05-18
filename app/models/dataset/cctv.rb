@@ -36,8 +36,9 @@ class Dataset::Cctv < Dataset::Xml
         if node.values()[0] == "id_program_prime"
           fields << ["id", node.text]
         elsif node.values()[0] == "Digital_Filename"
-          fields << ["video_s", "cctv/videos/#{node.text.strip}.mp4"]
-          fields << ["image_s", "cctv/images/#{node.text.strip}_thumbnail.jpg"]
+          # Files were renamed to match id before uploading to S3.
+          fields << ["video_b", true]
+          fields << ["image_b", true]
         else
           fields << ["#{node.name.parameterize}_s", node.text]
         end
@@ -137,41 +138,11 @@ class Dataset::Cctv < Dataset::Xml
 
 
   def get_cctv_solr_doc (fields, solr_doc)
-    date_created = false
-    date_broadcast = false
-    contributor = false
-    color = false
-    subject = false
-    language = false
-    description = false
-
     fields.each do |key, value|
-      if key == 'date_created_s'
-        date_created = true
-      end
-      if key == 'broadcast_date_s'
-        date_broadcast = true
-      end
-      if key == 'contributor_name_role_s'
-        contributor = true
-      end
-      if key == 'format_color_s'
-        color = true
-      end
-      if key == 'subject_s'
-        subject = true
-      end
-      if key == 'language_s'
-        language = true
-      end
-      if key == 'description_s'
-        description = true
-      end
-
       next if value.blank?
       key.gsub!('__', '_')
       solr_doc[key.to_sym] ||= []
-      solr_doc[key.to_sym] <<  value.strip
+      solr_doc[key.to_sym] << value.respond_to?(:strip) ? value.strip : value
     end
 
     solr_doc

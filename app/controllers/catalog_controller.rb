@@ -10,7 +10,7 @@ class CatalogController < ApplicationController
     config.default_solr_params = { 
       :qt => 'search',
       :per_page => 10,
-      :fq => ['video_s:[* TO *]']
+      :fq => ['video_b:true']
     }
 
     # solr field configuration for search results/index views
@@ -39,10 +39,6 @@ class CatalogController < ApplicationController
     # sniffing requires solr requests to be made with "echoParams=all", for
     # app code to actually have it echo'd back to see it.  
     
-    # config.add_facet_field 'video_s_query', :label => 'Videos', :query => {
-    #   :has_video => { :label => 'Has Video', :fq => "video_s:[* TO *]"},
-    #   :has_no_video => {:label => 'No Video', :fq => '-video_s:[* TO *]'}
-    # } 
     config.add_facet_field 'collection_s', :label => 'Collection'
     #config.add_facet_field 'subject_facet_s', :label => 'Subject', :limit => 5
     #config.add_facet_field 'people_s', :label => 'People', :limit => 5

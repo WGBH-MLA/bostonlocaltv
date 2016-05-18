@@ -35,8 +35,9 @@ class Dataset::Wcvb < Dataset::Xml
           end
           fields << ["id", wcvb_id]
         elsif node.values()[0] == "Digital_Filename"
-          fields << ["video_s", "wcvb/videos/#{node.text.strip}.mp4"]
-          fields << ["image_s", "wcvb/images/#{node.text.strip}_thumbnail.jpg"]
+          # Files were renamed to match id before uploading to S3.
+          fields << ["video_b", true]
+          fields << ["image_b", true]
         else
           fields << ["#{node.name.parameterize}_s", node.text]
         end
@@ -121,46 +122,22 @@ class Dataset::Wcvb < Dataset::Xml
 
 
   def get_wcvb_solr_doc (fields, solr_doc)
-    date_created = false
-    dimensions = false
-    format = false
-    description = false
-    wcvb_title = false
-
+    format = wcvb_title = false
+    
     fields.each do |key, value|
-      if key == 'date_created_s'
-        date_created = true
-      end
-      if key == 'footage_length_s'
-        dimensions = true
-      end
- 
-      if key == 'format'
-        format = true
-      end
- 
-      if key == 'description_s'
-        description = true
-      end
- 
-      if key == 'title_s'
-        wcvb_title = true
-      end
+      format ||= key == 'format'
+      description ||= key == 'description_s'
+      wcvb_title ||= key == 'title_s'
 
       next if value.blank?
  
       key.gsub!('__', '_')
       solr_doc[key.to_sym] ||= []
-      solr_doc[key.to_sym] <<  value.strip
+      solr_doc[key.to_sym] << value.respond_to?(:strip) ? value.strip : value
     end
 
-    if format == false
-	   solr_doc [:format] = "Film:16mm"
-    end
-
-    if wcvb_title == false
-	    solr_doc [:title_s] = "WCVB"
-    end
+    solr_doc [:format] = "Film:16mm" unless format
+    solr_doc [:title_s] = "WCVB" unless wcvb_title
 
     solr_doc
   end

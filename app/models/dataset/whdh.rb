@@ -33,8 +33,9 @@ class Dataset::Whdh < Dataset::Xml
         if node.values()[0] == "UID"
           fields << ["id", node.text]
         elsif node.values()[0] == "Digital_Filename"
-          fields << ["video_s", "whdh/videos/#{node.text.strip}.mp4"]
-          fields << ["image_s", "whdh/images/#{node.text.strip}_thumbnail.jpg"]
+          # Files were renamed to match id before uploading to S3.
+          fields << ["video_b", true]
+          fields << ["image_b", true]
         else
           fields << ["#{node.name.parameterize}_s", node.text]
         end
@@ -143,61 +144,11 @@ class Dataset::Whdh < Dataset::Xml
 
 
   def get_whdh_solr_doc (fields, solr_doc, date_estimated)
-    date_created = false
-    audio_format = false
-    audio_type = false
-    contributor = false
-    cross_reference = false
-    dimensions = false
-    color = false
-    duration = false
-    purpose = false
-    location = false
-    subject = false
-    description = false
-
     fields.each do |key, value|
-      if key == 'date_created_s'
-        date_created = true
-      end
-      if key == 'audio_format_s'
-        audio_format = true 	
-      end
-      if key == 'audio_type_s'
-        audio_type = true
-      end
-      if key == 'contributor_name_role_s'
-        contributor = true
-      end
-      if key == 'cross_reference_s'
-        cross_reference = true
-      end
-      if key == 'footage_length_s'
-        dimensions = true
-      end
-      if key == 'format_color_s'
-        color = true
-      end
-      if key == 'audio_duration_s'	
-        duration = true
-      end
-      if key == 'intended_purpose_s'
-        purpose = true
-      end
-      if key == 'location_s'
-        location = true
-      end
-      if key == 'subject_s'
-        subject = true
-      end
-      if key == 'description_s'
-        description = true
-      end
-
       next if value.blank?
       key.gsub!('__', '_')
       solr_doc[key.to_sym] ||= []
-      solr_doc[key.to_sym] <<  value.strip
+      solr_doc[key.to_sym] << value.respond_to?(:strip) ? value.strip : value
     end
 
     if date_estimated == true
