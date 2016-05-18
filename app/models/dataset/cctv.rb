@@ -36,8 +36,9 @@ class Dataset::Cctv < Dataset::Xml
         if node.values()[0] == "id_program_prime"
           fields << ["id", node.text]
         elsif node.values()[0] == "Digital_Filename"
-          fields << ["video_s", "cctv/videos/#{node.text.strip}.mp4"]
-          fields << ["image_s", "cctv/images/#{node.text.strip}_thumbnail.jpg"]
+          # Files were renamed to match id before uploading to S3.
+          fields << ["video_b", true]
+          fields << ["image_b", true]
         else
           fields << ["#{node.name.parameterize}_s", node.text]
         end
