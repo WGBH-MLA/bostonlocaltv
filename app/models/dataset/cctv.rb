@@ -138,41 +138,11 @@ class Dataset::Cctv < Dataset::Xml
 
 
   def get_cctv_solr_doc (fields, solr_doc)
-    date_created = false
-    date_broadcast = false
-    contributor = false
-    color = false
-    subject = false
-    language = false
-    description = false
-
     fields.each do |key, value|
-      if key == 'date_created_s'
-        date_created = true
-      end
-      if key == 'broadcast_date_s'
-        date_broadcast = true
-      end
-      if key == 'contributor_name_role_s'
-        contributor = true
-      end
-      if key == 'format_color_s'
-        color = true
-      end
-      if key == 'subject_s'
-        subject = true
-      end
-      if key == 'language_s'
-        language = true
-      end
-      if key == 'description_s'
-        description = true
-      end
-
       next if value.blank?
       key.gsub!('__', '_')
       solr_doc[key.to_sym] ||= []
-      solr_doc[key.to_sym] <<  value.strip
+      solr_doc[key.to_sym] << value.respond_to?(:strip) ? value.strip : value
     end
 
     solr_doc

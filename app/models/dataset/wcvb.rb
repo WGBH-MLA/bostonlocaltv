@@ -122,37 +122,16 @@ class Dataset::Wcvb < Dataset::Xml
 
 
   def get_wcvb_solr_doc (fields, solr_doc)
-    date_created = false
-    dimensions = false
-    format = false
-    description = false
-    wcvb_title = false
-
     fields.each do |key, value|
-      if key == 'date_created_s'
-        date_created = true
-      end
-      if key == 'footage_length_s'
-        dimensions = true
-      end
- 
-      if key == 'format'
-        format = true
-      end
- 
-      if key == 'description_s'
-        description = true
-      end
- 
-      if key == 'title_s'
-        wcvb_title = true
-      end
+      format ||= key == 'format'
+      description ||= key == 'description_s'
+      wcvb_title ||= key == 'title_s'
 
       next if value.blank?
  
       key.gsub!('__', '_')
       solr_doc[key.to_sym] ||= []
-      solr_doc[key.to_sym] <<  value.strip
+      solr_doc[key.to_sym] << value.respond_to?(:strip) ? value.strip : value
     end
 
     if format == false

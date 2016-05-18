@@ -126,51 +126,16 @@ class Dataset::Wgbh < Dataset::Xml
   end
 
   def get_wgbh_solr_doc (fields, solr_doc, physical_format)
-    date_created = false
-    contributor = false
-    format = false
-    color = false
-    duration = false
-    purpose = false
-    location = false
-    subject = false
-    wgbh_title = false
-
     fields.each do |key, value|
-      if key == 'date_created_s'
-        date_created = true
-      end
-      
-      if key == 'contributor_name_role_s'
-        contributor = true
-      end
-      if key == 'format'
-        format = true
-      end
-      if key == 'format_color_s'
-        color = true
-      end
-      if key == 'audio_duration_s'
-        duration = true
-      end
-      if key == 'intended_purpose_s'
-        purpose = true
-      end
-      if key == 'location_s'
-        location = true
-      end
-      if key == 'subject_s'
-        subject = true
-      end
-      if key == 'title_s'
-        wgbh_title = true
-      end
+      format ||= key == 'format'
+      color ||= key == 'format_color_s'
+      wgbh_title ||= key == 'title_s'
 
       next if value.blank?
   
       key.gsub!('__', '_')
       solr_doc[key.to_sym] ||= []
-      solr_doc[key.to_sym] <<  value.strip
+      solr_doc[key.to_sym] << value.respond_to?(:strip) ? value.strip : value
     end
  
     if format == false
