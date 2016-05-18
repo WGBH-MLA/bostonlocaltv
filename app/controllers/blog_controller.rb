@@ -1,6 +1,6 @@
 class BlogController < ApplicationController
   def index
-    @blogs = Blog.all
+    @blogs = Blog.all.reverse.select{|blog| blog.path =~ /^\d{4}/}
   end
   
   def show
