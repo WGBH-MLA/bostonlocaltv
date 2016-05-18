@@ -1,0 +1,8 @@
+<h1>Blog entries</h1>
+<ul>
+  <% @blogs.each do |blog| %>
+    <% if blog.path =~ /^\d{4}/ %>
+      <li><a href="/blog/<%= blog.path %>"><%= blog.title %></a></li>
+    <% end %>
+  <% end %>
+</ul>
