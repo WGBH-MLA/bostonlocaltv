@@ -142,7 +142,7 @@ class Dataset::Cctv < Dataset::Xml
       next if value.blank?
       key.gsub!('__', '_')
       solr_doc[key.to_sym] ||= []
-      solr_doc[key.to_sym] << value.respond_to?(:strip) ? value.strip : value
+      solr_doc[key.to_sym] << (value.respond_to?(:strip) ? value.strip : value)
     end
 
     solr_doc

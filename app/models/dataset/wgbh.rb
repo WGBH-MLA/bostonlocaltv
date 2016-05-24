@@ -137,7 +137,7 @@ class Dataset::Wgbh < Dataset::Xml
   
       key.gsub!('__', '_')
       solr_doc[key.to_sym] ||= []
-      solr_doc[key.to_sym] << value.respond_to?(:strip) ? value.strip : value
+      solr_doc[key.to_sym] << (value.respond_to?(:strip) ? value.strip : value)
     end
  
     solr_doc ['format'] = physical_format unless format
