@@ -1,3 +1,5 @@
+require_relative 'dataset/progress_bar_callbacks'
+
 module Dataset
 
   class Base
