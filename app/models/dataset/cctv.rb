@@ -12,22 +12,7 @@ class Dataset::Cctv < Dataset::Xml
     row.xpath("*").select { |x| !x.text.blank? }.each do |node|
       case node.name
       when "pbcoreAssetDate"
-        v = "created"
-        b = "broadcast"
-        if (node.values()[0] == v)
-          if node.text.eql? ""
-            created_year = "1970"
-            fields << ["year_i", created_year]
-          else
-            y = parse_date node.text
-            fields << ["year_i", y]
-            fields << ["date_created_s", node.text]
-          end
-        end
-
-        if (node.values()[0] == b)
-          fields << ['broadcast_date_s', node.text]
-        end
+        fields += Dataset::Xml.date_fields(node)
 
       when "pbcoreIdentifier"
         if node.values()[0] == "id_program_prime"

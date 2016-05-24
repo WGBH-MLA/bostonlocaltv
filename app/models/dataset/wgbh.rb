@@ -13,17 +13,7 @@ class Dataset::Wgbh < Dataset::Xml
     row.xpath("*").select { |x| !x.text.blank? }.each do |node|
       case node.name
       when "pbcoreAssetDate"	
-        v = "created"
-        if (node.values()[0] == v)
-          if node.text.eql? ""
-            created_year = "1970"
-            fields << ["year_i", created_year]
-          else
-            y = parse_date node.text
-            fields << ["year_i", y]
-            fields << ["date_created_s", node.text]
-          end
-        end
+        fields += Dataset::Xml.date_fields(node)
       
       when "pbcoreIdentifier"
         if node.values()[0] == "UID"

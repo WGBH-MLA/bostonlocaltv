@@ -56,9 +56,26 @@ class Dataset::Xml < Dataset::Base
     solr_doc
   end
   
-  def parse_date date
+  def self.parse_date date
     if /^.*(?<year>\d{4}).*$/ =~ date
       year
     end
+  end
+  
+  def self.date_fields(node)
+    fields = []
+    if (node.values()[0] == "created")
+      if node.text.eql? ""
+        fields << ["year_i", "1970"]
+      else
+        y = parse_date node.text
+        fields << ["year_i", y]
+        fields << ["date_created_s", node.text]
+      end
+    end
+    if (node.values()[0] == "broadcast") # TODO: only CCTV?
+      fields << ['broadcast_date_s', node.text]
+    end
+    fields
   end
 end
