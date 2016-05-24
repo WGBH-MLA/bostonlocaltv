@@ -12,10 +12,6 @@ module Dataset
       @file = file
     end
 
-    def content 
-      @content ||= File.read(file)
-    end
-
     def process! opts = {}
       # not implemented
     end

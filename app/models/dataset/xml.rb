@@ -2,8 +2,11 @@ require 'open-uri'
 require 'nokogiri'
 
 class Dataset::Xml < Dataset::Base
+
   def xml
-    @xml ||= Nokogiri::XML(content)
+    @xml ||= Nokogiri::XML(
+      File.read(file).gsub(/(<\/?[A-Za-z0-9_]+):/) { $1 }
+    )
   end
 
   def records

@@ -1,7 +1,4 @@
 class Dataset::Whdh < Dataset::Xml
-  def content
-    super.gsub(/(<\/?[A-Za-z0-9_]+):/) { $1 }
-  end
 
   protected
 
