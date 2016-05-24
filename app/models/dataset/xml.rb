@@ -78,4 +78,24 @@ class Dataset::Xml < Dataset::Base
     end
     fields
   end
+  
+  def self.title_fields(node)
+    fields = []
+    if node.values()[0] == nil || node.values()[0] == "Description" || node.values()[0] == "Program"
+      if node.text[0] == "\""
+        title = node.text.to_s.gsub(/\"(.*)\"/, '\1')
+        fields <<["title_s", title]
+      elsif node.values()[0] == "\'"
+        title = node.text.to_s.gsub(/\'(.*)\'/, '\1')
+        fields << ["title_s", title]
+      else
+        fields << ["title_s", node.text]
+      end
+    elsif node.values()[0] == "Series"
+      fields << ["collection_s", node.text]
+    else
+      fields << ["#{node.name.parameterize}_s", node.text]
+    end
+    fields
+  end
 end

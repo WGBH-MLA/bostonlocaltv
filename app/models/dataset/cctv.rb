@@ -26,19 +26,7 @@ class Dataset::Cctv < Dataset::Xml
         end
 
       when "pbcoreTitle"
-        if node.values()[0] == nil || node.values()[0] == "Description" || node.values()[0] == "Program"
-          if node.text[0] == "\""
-            title = node.text.to_s.gsub(/\"(.*)\"/, '\1')
-            fields <<["title_s", title]
-          elsif node.values()[0] == "\'"
-            title = node.text.to_s.gsub(/\'(.*)\'/, '\1')
-            fields << ["title_s", title]
-          else
-            fields << ["title_s", node.text]
-          end
-        else
-          fields << ["#{node.name.parameterize}_s", node.text]
-        end
+        fields += Dataset::Xml.title_fields(node)
 
       when "pbcoreRelation"
         node.children().each do |child|
