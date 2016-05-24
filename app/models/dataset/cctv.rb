@@ -149,10 +149,4 @@ class Dataset::Cctv < Dataset::Xml
 
   end
 
-  def parse_date date
-    if /^.*(?<year>\d{4}).*$/ =~ date
-      year
-    end
-  end
-
 end
