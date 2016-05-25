@@ -1,7 +1,4 @@
 class Dataset::Whdh < Dataset::Xml
-  def content
-    super.gsub(/(<\/?[A-Za-z0-9_]+):/) { $1 }
-  end
 
   protected
 
@@ -9,25 +6,12 @@ class Dataset::Whdh < Dataset::Xml
     solr_doc ||= {}
     fields = []
     title = false
-    date_created = false
     people = " "
-    date_estimated = false
 
     row.xpath("*").select { |x| !x.text.blank? }.each do |node|
       case node.name
       when "pbcoreAssetDate"	
-        v = "created"
-        if (node.values()[0] == v)
-          if node.text.eql? ""
-            created_year = "1970"
-            fields << ["year_i", created_year]
-          else
-            y = parse_date node.text
-            fields << ["year_i", y]
-            fields << ["date_created_s", node.text]
-            fields << ["date_estimated_s", node.text]
-          end
-        end
+        fields += Dataset::Xml.date_fields(node)
 
       when "pbcoreIdentifier"
         if node.values()[0] == "UID"
@@ -41,19 +25,7 @@ class Dataset::Whdh < Dataset::Xml
         end
 
       when "pbcoreTitle"
-        if node.values()[0] == nil || node.values()[0] == "Description" || node.values()[0] == "Program"
-          if node.text[0] == "\""
-            title = node.text.to_s.gsub(/\"(.*)\"/, '\1')
-            fields <<["title_s", title]
-          elsif node.values()[0] == "\'"
-            title = node.text.to_s.gsub(/\'(.*)\'/, '\1')
-            fields << ["title_s", title]
-          else
-            fields << ["title_s", node.text]
-          end
-        else
-          fields << ["#{node.name.parameterize}_s", node.text]
-        end
+        fields += Dataset::Xml.title_fields(node)
 
       when "pbcoreRelation"
         node.children().each do |child|
@@ -130,41 +102,34 @@ class Dataset::Whdh < Dataset::Xml
       when "pbcoreAssetType"
         fields << ["intended_purpose_s", node.text]	
 
-      when "pbcoreAnnotation"
-        date_estimated = true
+#      when "pbcoreAnnotation"
+#        is_date_estimated = true
 
       else
         fields << ["#{node.name.parameterize}_s", node.text]
       end
     end
 
-    get_whdh_solr_doc fields, solr_doc, date_estimated
+    get_whdh_solr_doc fields, solr_doc
 
   end
 
 
-  def get_whdh_solr_doc (fields, solr_doc, date_estimated)
+  def get_whdh_solr_doc (fields, solr_doc)
     fields.each do |key, value|
       next if value.blank?
       key.gsub!('__', '_')
       solr_doc[key.to_sym] ||= []
-      solr_doc[key.to_sym] << value.respond_to?(:strip) ? value.strip : value
+      solr_doc[key.to_sym] << (value.respond_to?(:strip) ? value.strip : value)
     end
 
-    if date_estimated == true
-      solr_doc[:date_created_s] = ""
-    else
-      solr_doc[:date_estimated_s] = ""
-    end
+#    if is_date_estimated == true && solr_doc[:date_created_s]
+#      solr_doc[:date_estimated_s] = solr_doc[:date_created_s]
+#      solr_doc.delete(:date_created_s)
+#    end
     
     solr_doc
 
-  end
-
-  def parse_date date
-    if /^.*(?<year>\d{4}).*$/ =~ date
-      year
-    end
   end
 
 end

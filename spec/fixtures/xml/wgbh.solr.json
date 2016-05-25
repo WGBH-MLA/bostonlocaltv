@@ -1,0 +1,67 @@
+{
+  "intended_purpose_s": [
+    "Original Footage"
+  ],
+  "year_i": [
+    "1977"
+  ],
+  "date_created_s": [
+    "02/15/1977"
+  ],
+  "pbcoreidentifier_s": [
+    "1"
+  ],
+  "id": [
+    "V_T4G0B5DQISU2FGC"
+  ],
+  "video_b": [
+    true
+  ],
+  "image_b": [
+    true
+  ],
+  "title_s": [
+    "South Boston High School"
+  ],
+  "collection_s": [
+    "Ten O'Clock News"
+  ],
+  "subject_s": [
+    "Students",
+    "Police",
+    "Police patrol",
+    "School buildings",
+    "Busing for school integration"
+  ],
+  "subject_facet_s": [
+    "Students",
+    "Police",
+    "Police patrol",
+    "School buildings",
+    "Busing for school integration"
+  ],
+  "entity_s": [
+    "Massachusetts. Dept. of State Police"
+  ],
+  "description_s": [
+    "White students exit South Boston High. About 25 Massachusetts uniformed state troopers board Massachusetts State Police bus. Massachusetts State Police Cruiser exits school parking lot. Jerome Wynegar (Headmaster, South Boston High School) stands in the school yard and talks to students.",
+    "1:00:08: Visual: White students exit South Boston High School in small groups. Jerome Wynegar (Headmaster, South Boston High School) stands in front of the school, talking to passersby. The students walk down G Street, away from the school . Snow blankets the ground. A Massachusetts State Police bus is parked in front of the school. About 25 state police officers file onto the bus. A state police car pulls out from the front of the school, into the street. Small groups of students, police, and officials remain in front of the school."
+  ],
+  "pbcorerelation_s": [
+    "Is Part Of\nThe Ten O'Clock News Collection"
+  ],
+  "location_s": [
+    "South Boston (Boston, Mass.)"
+  ],
+  "location_facet_s": [
+    "South Boston (Boston, Mass.)"
+  ],
+  "pbcorepublisher_s": [
+    "WGBH Educational Foundation\nPublisher"
+  ],
+  "pbcoreextension_s": [
+    "DATE_CREATED\n1/25/2012\nWGBH\n\n\nDATE_MODIFIED\n2/25/2014\nWGBH"
+  ],
+  "format": "3/4 inch videotape, Betacam, Digital Betacam, 3/4 inch videotape, Betacam, Digital Betacam, 3/4 inch videotape, Betacam, Digital Betacam",
+  "format_color_s": "Color"
+}

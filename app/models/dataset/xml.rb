@@ -2,8 +2,11 @@ require 'open-uri'
 require 'nokogiri'
 
 class Dataset::Xml < Dataset::Base
+
   def xml
-    @xml ||= Nokogiri::XML(content)
+    @xml ||= Nokogiri::XML(
+      File.read(file).gsub(/(<\/?[A-Za-z0-9_]+):/) { $1 }
+    )
   end
 
   def records
@@ -51,5 +54,48 @@ class Dataset::Xml < Dataset::Base
     end
 
     solr_doc
+  end
+  
+  def self.parse_date date
+    if /^.*(?<year>\d{4}).*$/ =~ date
+      year
+    end
+  end
+  
+  def self.date_fields(node)
+    fields = []
+    if (node.values()[0] == "created")
+      if node.text.eql? ""
+        fields << ["year_i", "1970"]
+      else
+        y = parse_date node.text
+        fields << ["year_i", y]
+        fields << ["date_created_s", node.text]
+      end
+    end
+    if (node.values()[0] == "broadcast") # TODO: only CCTV?
+      fields << ['broadcast_date_s', node.text]
+    end
+    fields
+  end
+  
+  def self.title_fields(node)
+    fields = []
+    if node.values()[0] == nil || node.values()[0] == "Description" || node.values()[0] == "Program"
+      if node.text[0] == "\""
+        title = node.text.to_s.gsub(/\"(.*)\"/, '\1')
+        fields <<["title_s", title]
+      elsif node.values()[0] == "\'"
+        title = node.text.to_s.gsub(/\'(.*)\'/, '\1')
+        fields << ["title_s", title]
+      else
+        fields << ["title_s", node.text]
+      end
+    elsif node.values()[0] == "Series"
+      fields << ["collection_s", node.text]
+    else
+      fields << ["#{node.name.parameterize}_s", node.text]
+    end
+    fields
   end
 end

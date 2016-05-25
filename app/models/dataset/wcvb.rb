@@ -1,7 +1,4 @@
 class Dataset::Wcvb < Dataset::Xml
-  def content
-    super.gsub(/(<\/?[A-Za-z0-9_]+):/) { $1 }
-  end
 
   protected
 
@@ -14,17 +11,7 @@ class Dataset::Wcvb < Dataset::Xml
     row.xpath("*").select { |x| !x.text.blank? }.each do |node|
       case node.name
       when "pbcoreAssetDate"	
-        v = "created"
-        if (node.values()[0] == v)
-          if node.text.eql? ""
-            created_year = "1970"
-            fields << ["year_i", created_year]
-          else
-            y = parse_date node.text
-            fields << ["year_i", y]
-            fields << ["date_created_s", node.text]
-          end
-        end
+        fields += Dataset::Xml.date_fields(node)
 
       when "pbcoreIdentifier"
         # the IDs for WCVB records are in <pbcoreIdentifier source="Accession #">
@@ -43,19 +30,7 @@ class Dataset::Wcvb < Dataset::Xml
         end
 
       when "pbcoreTitle"
-        if node.values()[0] == nil || node.values()[0] == "Description" || node.values()[0] == "Program"
-          if node.text[0] == "\""
-            title = node.text.to_s.gsub(/\"(.*)\"/, '\1')
-            fields <<["title_s", title]
-          elsif node.values()[0] == "\'"
-            title = node.text.to_s.gsub(/\'(.*)\'/, '\1')
-            fields << ["title_s", title]
-          else
-            fields << ["title_s", node.text]
-          end
-        else
-          fields << ["#{node.name.parameterize}_s", node.text]
-        end
+        fields += Dataset::Xml.title_fields(node)
 
       when "pbcoreSubject"
         if node.values()[0] == "category"
@@ -133,19 +108,13 @@ class Dataset::Wcvb < Dataset::Xml
  
       key.gsub!('__', '_')
       solr_doc[key.to_sym] ||= []
-      solr_doc[key.to_sym] << value.respond_to?(:strip) ? value.strip : value
+      solr_doc[key.to_sym] << (value.respond_to?(:strip) ? value.strip : value)
     end
 
     solr_doc [:format] = "Film:16mm" unless format
     solr_doc [:title_s] = "WCVB" unless wcvb_title
 
     solr_doc
-  end
-
-  def parse_date date
-    if /^.*(?<year>\d{4}).*$/ =~ date
-      year
-    end
   end
 
 end

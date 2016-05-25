@@ -1,3 +1,5 @@
+require_relative 'dataset/progress_bar_callbacks'
+
 module Dataset
 
   class Base
@@ -10,10 +12,6 @@ module Dataset
 
     def initialize file
       @file = file
-    end
-
-    def content 
-      @content ||= File.read(file)
     end
 
     def process! opts = {}
