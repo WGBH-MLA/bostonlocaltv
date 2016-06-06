@@ -29,6 +29,7 @@ There are four steps to get the site up from scratch:
 - Deploy the site with Capistrano.
 - Ingest the PBCore.
 
+
 ## Ingest Everything
 
 PBCore collection documents should be kept in [S3](https://console.aws.amazon.com/s3/home?region=us-east-1#&bucket=bostonlocaltv.org&prefix=pbcore/)
@@ -81,7 +82,6 @@ OV_SSH_KEY=~/.ssh/bostonlocaltv.wgbh-mla.org.pem bundle exec cap demo deploy
 ```
 
 When complete, [go to the demo site](http://demo.bostonlocaltv.wgbh-mla.org) and verify the code changes that were just deployed are what you desire.
-
 If so, now you'll want to swap the servers so the demo site becomes the public, live site.
 
 ## Swap Servers
@@ -126,8 +126,36 @@ To verify ingest completed successfully `ingest.sh` should finish with no errors
 
 There may be instances where the ingest is successful on the live site but not the demo.  This could be because code changes that are currently deployed to the live site that would allow xml to be valid have not yet been deployed to the now demo site.  In those cases, follow the Deploy Code to Demo Server instructions and re-ingest the xml.
 
-Once you've verified the ingest was 100% successful, you should spot check the records themselves on the live and sites.
+## Ingest Issues
 
+We had a couple problems with getting Solr restarted and working after we deployed new code to get ingest working.
+You may need to first kill Jetty and then clean and configure before starting then ingesting.
+```
+$ cd aws-wrapper
+$ ssh -i ~/.ssh/bostonlocaltv.wgbh-mla.org.pem ec2-user@`ruby scripts/ssh_opt.rb \
+--name demo.bostonlocaltv.wgbh-mla.org --ips_by_dns`
+$ cd /var/www/bostonlocaltv/current/
+```
+First, need to stop Jetty if it's running.
+```
+$ ps aux | grep jetty
+```
+That should list the running Jetty process.  Find the process number and then enter it after `kill` command.
+Example:
+```
+$ kill 12345
+```
+You may also need to delete the jettywrapper.log file found within current/jetty
+
+With Jetty now stopped you should clean, config and then start it again.
+```
+$ bundle exec rake jetty:clean
+$ bundle exec rake jetty:config
+$ bundle exec rake jetty:start
+```
+Now you should be ready for ingest.
+
+Once you've verified the ingest was 100% successful, you should spot check the records themselves on the live and demo sites.
 
 
 ## Old Documentation
