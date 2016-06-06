@@ -480,6 +480,10 @@
 
     <!-- format is used for facet, display, and choosing which partial to use for the show view, so it must be stored and indexed -->
     <field name="format" type="string" indexed="true" stored="true"/>
+    
+    <field name="description_s" type="text" indexed="true" stored="true" multiValued="true"/>
+    <!-- Hack to override dynamicField on this one because we have a record which is too large. 
+         https://github.com/WGBH/bostonlocaltv/issues/244#issuecomment-223971171 -->
    
     <dynamicField name="*_i"  type="int"     indexed="true"  stored="true"/>
     <dynamicField name="*_s"  type="string"  indexed="true"  stored="true" multiValued="true"/>
