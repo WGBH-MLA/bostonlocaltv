@@ -122,26 +122,7 @@ To ingest to the demo site replace the above command `--name bostonlocaltv.wgbh-
 `--name demo.bostonlocaltv.wgbh-mla.org`
 
 ## Verify Successful Ingest
-To verify ingest completed successfully you can view the most recent ingest log files on both the demo and live servers.
-View the most recent log file.  At the end of the log there should be a % complete number.  If it's `(100%) succeeded` then the ingest was successful.
-
-Verify log file on live site:
-```
-$ cd aws-wrapper
-$ ssh -i ~/.ssh/bostonlocaltv.wgbh-mla.org.pem ec2-user@`ruby scripts/ssh_opt.rb \
---name bostonlocaltv.wgbh-mla.org --ips_by_dns`
-$ cd /var/www/bostonlocaltv/current/log
-$ ls -l
-$ less ingest.2016-03-28_190938.log
-```
-
-Verify log file on demo site replace the above command 
-`--name bostonlocaltv.wgbh-mla.org` with 
-
-`--name demo.bostonlocaltv.wgbh-mla.org`
-
-
-If the ingest was not 100% on either server then you need to review the log file and determine why the failing records are failing, correct the data, then re-import those records.
+To verify ingest completed successfully `ingest.sh` should finish with no errors.  If errors are reported in your Terminal session, the ingest process will stop at the failed record.  Investigate your PBCore, fix the problem and replace the Collection on S3 and re-ingest.
 
 There may be instances where the ingest is successful on the live site but not the demo.  This could be because code changes that are currently deployed to the live site that would allow xml to be valid have not yet been deployed to the now demo site.  In those cases, follow the Deploy Code to Demo Server instructions and re-ingest the xml.
 
