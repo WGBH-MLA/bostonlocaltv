@@ -5,8 +5,7 @@ share information on the stories you find in the collections, please send an
 email
 to:
 
-<a
-href=&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#111;&#115;&#116;&#111;&#110;&#108;&#111;&#99;&#97;&#108;&#116;&#118;&#64;&#119;&#103;&#98;&#104;&#46;&#111;&#114;&#103;>&#98;&#111;&#115;&#116;&#111;&#110;&#108;&#111;&#99;&#97;&#108;&#116;&#118;&#32;&#91;&#97;&#116;&#93;&#32;&#119;&#103;&#98;&#104;&#32;&#91;&#100;&#111;&#116;&#93;&#32;&#111;&#114;&#103;</a>
+sadie_roosa@wgbh.org
 
 If you have questions about specific collections, including how to request a
 story be digitized, please send an email
