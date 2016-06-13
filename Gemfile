@@ -46,4 +46,6 @@ group :development, :test do
   gem 'rails-footnotes', '>= 3.7'
   gem 'rspec-rails', '~> 2.99.0'
   gem 'net-ssh', '~> 2.7.0'
+  gem 'aws-sdk', '~> 2'
+  gem 'curb'
 end
