@@ -41,7 +41,8 @@ def solr_to_s3()
     curl = Curl::Easy.http_get(url)
     curl.perform
     json = curl.body_str
-    chunk = JSON.parse(json)['response']['docs'].map{ |o| "curl --referer http://bostonlocaltv.org http://mlamedia01.wgbh.org/bostonlocaltv/#{o['image_s'].first} > /tmp/thumb/#{o['id']}.jpg; aws s3 mv /tmp/thumb/#{o['id']}.jpg s3://bostonlocaltv.org/thumb/#{o['id']}.jpg" }
+    #chunk = JSON.parse(json)['response']['docs'].map{ |o| "curl --referer http://bostonlocaltv.org http://mlamedia01.wgbh.org/bostonlocaltv/#{o['image_s'].first} > /tmp/thumb/#{o['id']}.jpg; aws s3 mv /tmp/thumb/#{o['id']}.jpg s3://bostonlocaltv.org/thumb/#{o['id']}.jpg" }
+    chunk = JSON.parse(json)['response']['docs'].map{ |o| "curl --referer http://bostonlocaltv.org http://mlamedia01.wgbh.org/bostonlocaltv/#{o['video_s'].first} > /tmp/video/#{o['id']}.mp4; aws s3 mv /tmp/video/#{o['id']}.mp4 s3://bostonlocaltv.org/thumb/#{o['id']}.mp4" }
     all += chunk
     break if chunk.empty?
   end
