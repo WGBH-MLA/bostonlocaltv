@@ -22,6 +22,8 @@ class Dataset::Wcvb < Dataset::Xml
           end
           fields << ["id", wcvb_id]
         elsif node.values()[0] == "Digital_Filename"
+          fields << ["video_s", "wcvb/videos/#{node.text.strip}.mp4"]
+          fields << ["image_s", "wcvb/images/#{node.text.strip}_thumbnail.jpg"]
           # Files were renamed to match id before uploading to S3.
           fields << ["video_b", true]
           fields << ["image_b", true]
