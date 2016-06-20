@@ -157,6 +157,16 @@ Now you should be ready for ingest.
 
 Once you've verified the ingest was 100% successful, you should spot check the records themselves on the live and demo sites.
 
+## Restarting Jetty After Server Stop / Start
+
+Jetty needs to be restarted on any server that has stop.rb and then start.rb ran on it.  To do this.
+```
+$ cd aws-wrapper
+$ ssh -i ~/.ssh/bostonlocaltv.wgbh-mla.org.pem ec2-user@`ruby scripts/ssh_opt.rb \
+--name demo.bostonlocaltv.wgbh-mla.org --ips_by_dns`
+$ cd /var/www/bostonlocaltv/current/
+$ bundle exec rake jetty:restart
+```
 
 ## Old Documentation
 
