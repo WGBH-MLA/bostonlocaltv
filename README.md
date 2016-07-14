@@ -168,6 +168,11 @@ $ cd /var/www/bostonlocaltv/current/
 $ bundle exec rake jetty:restart
 ```
 
+You may also need to use the following command
+```
+RAILS_ENV=production bundle exec rake jetty:restart
+```
+
 ## Old Documentation
 
 Old docs are available here: https://github.com/WGBH/bostonlocaltv/wiki.
