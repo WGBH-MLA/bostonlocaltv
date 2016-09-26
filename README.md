@@ -50,19 +50,19 @@ If you have all the required applications and dependencies, a good first test wo
 Open your Terminal application.
 ```
 $ cd aws-wrapper
-$ ruby scripts/ssh_opt.rb
+$ bundle exec scripts/ssh_opt.rb
 ```
 
 This will give you the list of arguments.  For this initial interaction, you are trying to show the ip address of the demo and live servers.
 ```
-$ ruby scripts/ssh_opt.rb --name bostonlocaltv.wgbh-mla.org --ips_by_dns
+$ bundle exec scripts/ssh_opt.rb --name bostonlocaltv.wgbh-mla.org --ips_by_dns
 ```
 
 The returned result should be the ip address of the live Boston Local TV site.
 
 To do the same for the demo site, change the `—-name` argument to `demo.bostonlocaltv.wgbh-mla.org`
 ```
-$ ruby scripts/ssh_opt.rb --name demo.bostonlocaltv.wgbh-mla.org --ips_by_dns
+$ bundle exec scripts/ssh_opt.rb --name demo.bostonlocaltv.wgbh-mla.org --ips_by_dns
 ```
 
 The returned result should be the demo server ip address, different from the previous one.
@@ -77,7 +77,7 @@ $ cd bostonlocaltv_deploy
 
 The next command you'll enter uses the `ssh_opt.rb` script from aws-wrapper to determine and use the demo ip address.  That's why it's important you verify the aws-wrapper is working.
 ```
-$ OV_HOST=`cd ../aws-wrapper && ruby scripts/ssh_opt.rb --name demo.bostonlocaltv.wgbh-mla.org --ips_by_dns` \
+$ OV_HOST=`cd ../aws-wrapper && bundle exec scripts/ssh_opt.rb --name demo.bostonlocaltv.wgbh-mla.org --ips_by_dns` \
 OV_SSH_KEY=~/.ssh/bostonlocaltv.wgbh-mla.org.pem bundle exec cap demo deploy
 ```
 
@@ -88,7 +88,7 @@ If so, now you'll want to swap the servers so the demo site becomes the public, 
 This will switch which server is the demo and which one is the live.
 ```
 $ cd aws-wrapper
-$ ruby scripts/swap.rb --name bostonlocaltv.wgbh-mla.org
+$ bundle exec scripts/swap.rb --name bostonlocaltv.wgbh-mla.org
 ```
 
 When that process completes, you can go to the [live Boston Local TV](http://bostonlocaltv.org) and verify that the new code came deploy that had previously been on the demo site is now live.  You can also visit the demo url if you wish to see if the non-updated code is still in place.
@@ -110,7 +110,7 @@ Gather all of the pbcoreCollections you've just exported, and put them in one fo
 ## Ingest to Websites
 ```
 $ cd aws-wrapper
-$ ssh -i ~/.ssh/bostonlocaltv.wgbh-mla.org.pem ec2-user@`ruby scripts/ssh_opt.rb \
+$ ssh -i ~/.ssh/bostonlocaltv.wgbh-mla.org.pem ec2-user@`bundle exec scripts/ssh_opt.rb \
 --name bostonlocaltv.wgbh-mla.org --ips_by_dns`
 $ cd /var/www/bostonlocaltv/current/script
 $ bash ./ingest.sh
@@ -132,7 +132,7 @@ We had a couple problems with getting Solr restarted and working after we deploy
 You may need to first kill Jetty and then clean and configure before starting then ingesting.
 ```
 $ cd aws-wrapper
-$ ssh -i ~/.ssh/bostonlocaltv.wgbh-mla.org.pem ec2-user@`ruby scripts/ssh_opt.rb \
+$ ssh -i ~/.ssh/bostonlocaltv.wgbh-mla.org.pem ec2-user@`bundle exec scripts/ssh_opt.rb \
 --name demo.bostonlocaltv.wgbh-mla.org --ips_by_dns`
 $ cd /var/www/bostonlocaltv/current/
 ```
@@ -162,7 +162,7 @@ Once you've verified the ingest was 100% successful, you should spot check the r
 Jetty needs to be restarted on any server that has stop.rb and then start.rb ran on it.  To do this.
 ```
 $ cd aws-wrapper
-$ ssh -i ~/.ssh/bostonlocaltv.wgbh-mla.org.pem ec2-user@`ruby scripts/ssh_opt.rb \
+$ ssh -i ~/.ssh/bostonlocaltv.wgbh-mla.org.pem ec2-user@`bundle exec scripts/ssh_opt.rb \
 --name demo.bostonlocaltv.wgbh-mla.org --ips_by_dns`
 $ cd /var/www/bostonlocaltv/current/
 $ bundle exec rake jetty:restart
