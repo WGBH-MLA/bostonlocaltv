@@ -39,7 +39,7 @@ xml.</li>
 Resources</strong></div>
 <ul>
 	<li><a
-href="http://bostonlocaltv.org/blog/wp-content/uploads/2014/03/Flowchart-5-May-18-2014-v.-2.pdf">Flowchart
+href="https://s3.amazonaws.com/bostonlocaltv.org/resources/Flowchart_Digitizing_News_Archives.pdf">Flowchart
 of Legal Questions about Digitizing News Archives</a>, WGBH and Harvard Law
 School's Cyberlaw
 Clinic</li>
@@ -70,27 +70,27 @@ Guidelines</strong></div>
 <div></div>
 <ul>
 	<li><a
-href="http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Workflow_For_Descriptions.pdf">Description
+href="https://s3.amazonaws.com/bostonlocaltv.org/resources/Description_Writing_Workflow.pdf">Description
 Writing
 Workflow</a></li>
 	<li><a
-href="http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Workflow_Digitize_On_Demand.pdf">Digitizing
+href="https://s3.amazonaws.com/bostonlocaltv.org/resources/Digitizing_On_Demand_Institutional_Workflow.pdf">Digitizing
 On Demand Institutional
 Workflow</a></li>
 	<li><a
-href="http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Guidelines_Description_Writing.pdf">Guidelines
+href="https://s3.amazonaws.com/bostonlocaltv.org/resources/Guidelines_For_Description_Writing.pdf">Guidelines
 for Description
 Writing</a></li>
 	<li><a
-href="http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Guidelines_Prepublication_Review1.pdf">Guidelines
+href="https://s3.amazonaws.com/bostonlocaltv.org/resources/Guidelines_For_Prepublication_Review.pdf">Guidelines
 for Prepublication
 Review</a></li>
 	<li><a
-href="http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Rules_For_Requesting_Headings.pdf">Rule
+href="https://s3.amazonaws.com/bostonlocaltv.org/resources/Rules_For_Requesting_Additions_To_Subject_Authorities_List.pdf">Rule
 for Requesting Additions to Subject Authorities
 List</a></li>
 	<li><a
-href="http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Guidelines_Transcription_Formating_Standards.pdf">Transcription
+href="https://s3.amazonaws.com/bostonlocaltv.org/resources/Transcription_Formatting_Standards.pdf">Transcription
 Formatting
 Standards</a></li>
 </ul>
