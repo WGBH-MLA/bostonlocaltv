@@ -55,13 +55,13 @@ class Dataset::Xml < Dataset::Base
 
     solr_doc
   end
-  
+
   def self.parse_date date
     if /^.*(?<year>\d{4}).*$/ =~ date
       year
     end
   end
-  
+
   def self.date_fields(node)
     fields = []
     if (node.values()[0] == "created")
@@ -71,14 +71,18 @@ class Dataset::Xml < Dataset::Base
         y = parse_date node.text
         fields << ["year_i", y]
         fields << ["date_created_s", node.text]
+
+        # Creates a field for sorting by date_created
+        fields << ["date_created_dt", convert_date_for_solr(node.text)]
       end
     end
     if (node.values()[0] == "broadcast") # TODO: only CCTV?
       fields << ['broadcast_date_s', node.text]
     end
+
     fields
   end
-  
+
   def self.title_fields(node)
     fields = []
     if node.values()[0] == nil || node.values()[0] == "Description" || node.values()[0] == "Program"
@@ -97,5 +101,10 @@ class Dataset::Xml < Dataset::Base
       fields << ["#{node.name.parameterize}_s", node.text]
     end
     fields
+  end
+
+  def self.convert_date_for_solr(string)
+    time = DateTime.strptime(string, '%m/%d/%Y')
+    solr_date = Time.parse(time.to_s).utc.iso8601
   end
 end
