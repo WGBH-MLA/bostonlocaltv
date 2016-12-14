@@ -143,7 +143,7 @@ class CatalogController < ApplicationController
     # except in the relevancy case).
     config.add_sort_field 'score desc, title_sort asc, id asc', :label => 'relevance'
     config.add_sort_field 'title_sort asc, id asc', :label => 'title'
-    config.add_sort_field 'year_i asc, date_dt asc, title_sort asc', :label => 'year'
+    config.add_sort_field 'year_i asc, date_created_dt asc, title_sort asc', :label => 'year'
 
     # If there are more than this many search results, no spelling ("did you
     # mean") suggestion is offered.
