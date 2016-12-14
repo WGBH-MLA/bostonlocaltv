@@ -72,7 +72,8 @@ class Dataset::Xml < Dataset::Base
         fields << ["year_i", y]
         fields << ["date_created_s", node.text]
 
-        # Creates a field for sorting by date_created
+        # Creates a field for secondary sorting by date_created.
+        # Returns nil for poorly formatted dates.
         fields << ["date_created_dt", convert_date_for_solr(node.text)]
       end
     end
@@ -104,7 +105,32 @@ class Dataset::Xml < Dataset::Base
   end
 
   def self.convert_date_for_solr(string)
-    time = DateTime.strptime(string, '%m/%d/%Y')
-    solr_date = Time.parse(time.to_s).utc.iso8601
+    if /^((0[1-9]|1[012])|[1-9])\/\d{4}$/.match(string)
+      time = safe_month_year_parse(string)
+    elsif /^(([1-9]|0[1-9])|1[012])\/([1-9]|0[1-9]|[12][0-9]|3[01])\/\d{4}$/.match(string)
+      time = safe_full_date_parse(string)
+    else
+      time = nil
+    end
+
+    solr_date = if time.present?
+      Time.parse(time.to_s).utc.iso8601
+    else
+      nil
+    end
+  end
+
+  def self.safe_month_year_parse(string, default = nil)
+    DateTime.strptime(string, '%m/%Y')
+
+    rescue ArgumentError
+      default
+  end
+
+  def self.safe_full_date_parse(string, default = nil)
+    DateTime.strptime(string, '%m/%d/%Y')
+
+    rescue ArgumentError
+      default
   end
 end
