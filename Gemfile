@@ -48,4 +48,6 @@ group :development, :test do
   gem 'net-ssh', '~> 2.7.0'
   gem 'aws-sdk', '~> 2'
   gem 'curb'
+  gem 'pry'
+  gem 'pry-nav'
 end

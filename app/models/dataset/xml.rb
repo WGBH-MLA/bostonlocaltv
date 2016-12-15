@@ -55,13 +55,13 @@ class Dataset::Xml < Dataset::Base
 
     solr_doc
   end
-  
+
   def self.parse_date date
     if /^.*(?<year>\d{4}).*$/ =~ date
       year
     end
   end
-  
+
   def self.date_fields(node)
     fields = []
     if (node.values()[0] == "created")
@@ -71,14 +71,19 @@ class Dataset::Xml < Dataset::Base
         y = parse_date node.text
         fields << ["year_i", y]
         fields << ["date_created_s", node.text]
+
+        # Creates a field for secondary sorting by date_created.
+        # Returns nil for poorly formatted dates.
+        fields << ["date_created_dt", convert_date_for_solr(node.text)]
       end
     end
     if (node.values()[0] == "broadcast") # TODO: only CCTV?
       fields << ['broadcast_date_s', node.text]
     end
+
     fields
   end
-  
+
   def self.title_fields(node)
     fields = []
     if node.values()[0] == nil || node.values()[0] == "Description" || node.values()[0] == "Program"
@@ -97,5 +102,33 @@ class Dataset::Xml < Dataset::Base
       fields << ["#{node.name.parameterize}_s", node.text]
     end
     fields
+  end
+
+  def self.convert_date_for_solr(string)
+    if /^((0[1-9]|1[012])|[1-9])\/\d{4}$/.match(string)
+      time = safe_month_year_parse(string)
+    elsif /^(([1-9]|0[1-9])|1[012])\/([1-9]|0[1-9]|[12][0-9]|3[01])\/\d{4}$/.match(string)
+      time = safe_full_date_parse(string)
+    else
+      time = nil
+    end
+
+    solr_date = if time.present?
+      Time.parse(time.to_s).utc.iso8601
+    else
+      nil
+    end
+  end
+
+  def self.safe_month_year_parse(string)
+    DateTime.strptime(string, '%m/%Y')
+  rescue ArgumentError
+    nil
+  end
+
+  def self.safe_full_date_parse(string)
+    DateTime.strptime(string, '%m/%d/%Y')
+  rescue ArgumentError
+    nil
   end
 end
