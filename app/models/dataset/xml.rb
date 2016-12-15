@@ -120,17 +120,17 @@ class Dataset::Xml < Dataset::Base
     end
   end
 
-  def self.safe_month_year_parse(string, default = nil)
+  def self.safe_month_year_parse(string)
     DateTime.strptime(string, '%m/%Y')
 
     rescue ArgumentError
-      default
+      nil
   end
 
-  def self.safe_full_date_parse(string, default = nil)
+  def self.safe_full_date_parse(string)
     DateTime.strptime(string, '%m/%d/%Y')
 
     rescue ArgumentError
-      default
+      nil
   end
 end
