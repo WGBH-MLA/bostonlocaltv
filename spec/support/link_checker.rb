@@ -20,7 +20,6 @@ class LinkChecker
   end
 
   def check?(url)
-    binding.pry
     return true if url.nil?
     url.gsub!(/#.*/, '') # Checking page content for anchor is a hassle.
     return true if url.empty?
