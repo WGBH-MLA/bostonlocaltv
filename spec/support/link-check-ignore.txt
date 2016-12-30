@@ -122,6 +122,19 @@ http://www.sierraclub.org
 http://www.srmarchivists.org/
 http://www.statearchivists.org
 
+/
+/cctv
+/wgbh
+/wcvb
+/whdh
+/blog
+/blog/glossary/
+/blog/about/
+/blog/credits/
+/blog/terms/
+/blog/privacy/
+/blog/contact/
+/blog/help/
 http://bostonlocaltv.org/blog/wp-content/uploads/2011/05/whdh_abcd1.png
 http://bostonlocaltv.org/blog/wp-content/uploads/2011/05/whdh_abcd2.png
 http://bostonlocaltv.org/blog/wp-content/uploads/2011/05/pressconf.png
@@ -388,3 +401,4 @@ http://www.cia-on-campus.org/umass.edu/trial.html
 http://www.thecrimson.com/article/1978/5/11/conspirators-plead-guilty-in-art-theft/
 http://www.ford.utexas.edu/library/speeches/760074.htm
 http://www.thecrimson.com/article/1979/4/24/bu-employees-end-strike-trustees-promise/
+http://tvnews.vanderbilt.edu/
