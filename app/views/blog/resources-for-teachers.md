@@ -33,7 +33,7 @@ piece of local history by sponsoring its preservation. It’s easy. If you come
 across an items that you’re excited to see digitized and preserved, all you
 have to do is request it. We’ll contact you about the costs of digitization,
 and soon the video will be streaming on our site for free public access. Read
-<a href="http://bostonlocaltv.org/blog/2014/03/digitize-on-demand/">more</a>
+<a href="https://s3.amazonaws.com/bostonlocaltv.org/resources/Digitizing_On_Demand_Institutional_Workflow.pdf">more</a>
 about this
 feature.
 <div id="feedback"><strong>User Feedback

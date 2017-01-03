@@ -39,7 +39,7 @@ xml.</li>
 Resources</strong></div>
 <ul>
 	<li><a
-href="http://bostonlocaltv.org/blog/wp-content/uploads/2014/03/Flowchart-5-May-18-2014-v.-2.pdf">Flowchart
+href="https://s3.amazonaws.com/bostonlocaltv.org/resources/Flowchart_Digitizing_News_Collections.pdf">Flowchart
 of Legal Questions about Digitizing News Archives</a>, WGBH and Harvard Law
 School's Cyberlaw
 Clinic</li>
@@ -70,27 +70,27 @@ Guidelines</strong></div>
 <div></div>
 <ul>
 	<li><a
-href="http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Workflow_For_Descriptions.pdf">Description
+href="https://s3.amazonaws.com/bostonlocaltv.org/resources/Description_Writing_Workflow.pdf">Description
 Writing
 Workflow</a></li>
 	<li><a
-href="http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Workflow_Digitize_On_Demand.pdf">Digitizing
+href="https://s3.amazonaws.com/bostonlocaltv.org/resources/Digitizing_On_Demand_Institutional_Workflow.pdf">Digitizing
 On Demand Institutional
 Workflow</a></li>
 	<li><a
-href="http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Guidelines_Description_Writing.pdf">Guidelines
+href="https://s3.amazonaws.com/bostonlocaltv.org/resources/Guidelines_For_Description_Writing.pdf">Guidelines
 for Description
 Writing</a></li>
 	<li><a
-href="http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Guidelines_Prepublication_Review1.pdf">Guidelines
+href="https://s3.amazonaws.com/bostonlocaltv.org/resources/Guidelines_For_Prepublication_Review.pdf">Guidelines
 for Prepublication
 Review</a></li>
 	<li><a
-href="http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Rules_For_Requesting_Headings.pdf">Rule
+href="https://s3.amazonaws.com/bostonlocaltv.org/resources/Rules_For_Requesting_Additions_To_Subject_Authorities_List.pdf">Rule
 for Requesting Additions to Subject Authorities
 List</a></li>
 	<li><a
-href="http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/Guidelines_Transcription_Formating_Standards.pdf">Transcription
+href="https://s3.amazonaws.com/bostonlocaltv.org/resources/Transcription_Formatting_Standards.pdf">Transcription
 Formatting
 Standards</a></li>
 </ul>
@@ -104,28 +104,28 @@ project.</li>
 id="dissemination"><strong>Dissemination</strong></div>
 <div></div>
 <ul>
-	<li>"Open­ing the Archives for Access" at the Association of Moving Image
-Archivists (AMIA) 2010. WGBH Legal’s Jay Fialkov pro­vided an overview of
-copy­right and Christo­pher Bavitz of Harvard’s Berk­man Cen­ter pre­sented on
-their work for our Boston TV News Dig­i­tal Library: 1960–2000. Chris
-out­lined 4 sec­tions of law that the Berk­man report will address:
-copy­right, trade­mark, state law (pri­vacy, defama­tion, etc.) and con­tract
-law. Both pan­els were well received for their prac­ti­cal bent. Download the
+	<li>"Opening the Archives for Access" at the Association of Moving Image
+Archivists (AMIA) 2010. WGBH Legal’s Jay Fialkov provided an overview of
+copyright and Christopher Bavitz of Harvard’s Berkman Center presented on
+their work for our Boston TV News Digital Library: 1960–2000. Chris
+outlined 4 sections of law that the Berkman report will address:
+copyright, trademark, state law (privacy, defamation, etc.) and con­tract
+law. Both panels were well received for their practical bent. Download the
 PowerPoint
 Slides:
 <ul>
 	<li>Jay Fialkov — <a
-href="http://openvault.wgbh.org/blog/wp-content/uploads/2010/11/AMIAIASA2010JF110510.ppt">Under­stand­ing
-Copy­right Bar­ri­ers
+href="http://openvault.wgbh.org/blog/wp-content/uploads/2010/11/AMIAIASA2010JF110510.ppt">Understanding
+Copyright Barriers
 (ppt)</a></li>
-	<li>Christo­pher Bavitz — <a
+	<li>Christopher Bavitz — <a
 href="http://openvault.wgbh.org/blog/wp-content/uploads/2010/11/Legal-IssuesforMediaArchivists11.06.10SLIDES.ppt">Legal
 Issues for Media Archivists
 (ppt)</a></li>
 </ul>
 </li>
 	<li><a
-href="http://bostonlocaltv.org/blog/wp-content/uploads/2011/06/bostontvnewspressrelease.pdf">Press
+href="https://s3.amazonaws.com/bostonlocaltv.org/resources/bostontvnewspressrelease.pdf">Press
 Release (PDF)</a> describing the Boston Local News Digital Library:
 1960-2000</li>
 	<li>Boston Globe <a
