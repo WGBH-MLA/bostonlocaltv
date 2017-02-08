@@ -9,8 +9,8 @@ describe 'OAI', type: feature do
       '<OAI-PMH', # Followed by NS
       '<request verb="ListRecords" metadataPrefix="mods">http://bostonlocaltv.org/oai.xml</request>',
       '<ListRecords>',
-      '<identifier type="uri">http://bostonlocaltv.org/catalog/83</identifier>',
-      '<title>BeLive: Amnesty International</title>'
+      '<identifier type="uri">http://bostonlocaltv.org/catalog/V_K5LZAN8YMD1MVIY</identifier>',
+      '<title>Bank headquarters and Gillette</title>'
     ].each do |s|
       expect(page.body).to match s
     end
