@@ -19,7 +19,7 @@ gem 'jquery-rails', '~> 3.1.3'
 gem 'jquery-ui-rails'
 gem 'kaminari'
 gem 'sqlite3'
-gem 'progressbar'
+gem 'progressbar', '0.21.0'
 # gem 'rsolr-footnotes'
 gem 'therubyracer'
 gem 'uglifier'
@@ -51,3 +51,6 @@ group :development, :test do
   gem 'pry'
   gem 'pry-nav'
 end
+
+
+gem 'rake', '11.1.0'
