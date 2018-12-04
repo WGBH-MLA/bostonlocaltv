@@ -173,7 +173,24 @@ You may also need to use the following command
 RAILS_ENV=production bundle exec rake jetty:restart
 ```
 
+### OAI Endpoint
+
+To access the site's OAI endpoint, send a GET request to:
+
+http://bostonlocaltv.org/oai?verb=ListRecords
+with the header 'Accept: application/xml'
+
+example: curl -H 'Accept: application/xml' http://bostonlocaltv.org/oai?verb=ListRecords
+
+The response will contain up to 100 mods records per request, as well as a resumptionToken to allow paging. For further requests, include the resumptionToken like so:
+
+http://bostonlocaltv.org/oai?verb=ListRecords&resumptionToken=<token number>
+
+example: curl -H 'Accept: application/xml' http://bostonlocaltv.org/oai?verb=ListRecords&resumptionToken=200
+
 ## Old Documentation
 
 Old docs are available here: https://github.com/WGBH/bostonlocaltv/wiki.
 I plan to replace them over time with current information here in the readme.
+
+
