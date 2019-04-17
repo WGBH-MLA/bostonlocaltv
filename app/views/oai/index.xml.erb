@@ -4,7 +4,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
          http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-    <responseDate><%= @response_date %></responseDate> 
+    <responseDate><%= @response_date %></responseDate>
     <request verb="<%= @verb %>" metadataPrefix="<%= @metadata_prefix %>">http://bostonlocaltv.org/oai.xml</request>
     <ListRecords>
         <% @records.each do |record| %>
@@ -26,9 +26,7 @@
                             #x.roleTerm('PERSON ROLE')
                           #}
                         #}
-                        #x.typeOfResource(
-                          #'TYPE'
-                        #)
+                        x.typeOfResource('moving image') if record.video
                         #x.physicalDescription('DESC')
                         #x.genre('GENRE')
                         #x.originInfo {
@@ -47,7 +45,7 @@
                         #x.relatedItem(type: 'host') {
                           #x.titleInfo {
                             #x.title('Boston Local TV News')
-                          #}  
+                          #}
                         #}
                         #x.location {
                           #x.physicalLocation('LOCATION')
