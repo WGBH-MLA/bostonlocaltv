@@ -27,7 +27,7 @@ gem 'unicode'
 gem 'state_machine'
 gem 'dotenv-rails', '0.8.0'
 gem 'cmless', '1.0.0'
-gem 'jettywrapper', '~> 1.7'
+gem 'jettywrapper'
 
 group :test do
   gem 'aruba'
