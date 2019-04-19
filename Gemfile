@@ -3,8 +3,9 @@ source 'http://rubygems.org'
 gem 'rails', '~> 3.2.16'
 gem 'syck', platforms: [:ruby_20]
 
-gem 'blacklight', '~>4.6.3'
-gem 'blacklight_range_limit'
+gem 'blacklight', '~> 4.6.3'
+ # Pinning blacklight_range_limit to 2.2.0 since we get errors with 7.0.0
+gem 'blacklight_range_limit', '~> 2.2.0'
 gem 'bootstrap-sass'
 gem 'carrierwave'
 
@@ -18,7 +19,8 @@ gem 'compass'
 gem 'jquery-rails', '~> 3.1.3'
 gem 'jquery-ui-rails'
 gem 'kaminari'
-gem 'sqlite3'
+ # Pinning sqlite3 to 1.3.6 since we get errors with 1.4.0
+gem 'sqlite3', '~> 1.3.6'
 gem 'progressbar'
 # gem 'rsolr-footnotes'
 gem 'therubyracer'
@@ -27,10 +29,11 @@ gem 'unicode'
 gem 'state_machine'
 gem 'dotenv-rails', '0.8.0'
 gem 'cmless', '1.0.0'
-gem 'jettywrapper', '~> 1.7'
+gem 'jettywrapper'
 
 group :test do
-  gem 'aruba'
+  # Pinning aruba to 0.8.1 since we get errors with latest 0.14.9
+  gem 'aruba', '~> 0.8.1'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'factory_girl_rails', '~> 4.0'
