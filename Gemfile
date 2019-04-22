@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '~> 3.2.16'
+
 gem 'syck', platforms: [:ruby_20]
 
 gem 'blacklight', '~> 4.6.3'
@@ -47,7 +48,6 @@ group :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'factory_girl_rails', '~> 4.0'
-  gem 'faker'
   gem 'launchy'
   gem 'test-unit'
 end
