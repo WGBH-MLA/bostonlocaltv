@@ -34,6 +34,9 @@ gem 'jettywrapper'
  # Pinning nokogiri to 1.6.2 since we get errors with 1.10
 gem 'nokogiri', '1.6.2'
 
+ # Pinning rake to less than 11 since we get errors with 11
+gem 'rake', '< 11.0'
+
 group :test do
   # Pinning aruba to 0.8.1 since we get errors with latest 0.14.9
   gem 'aruba', '~> 0.8.1'
