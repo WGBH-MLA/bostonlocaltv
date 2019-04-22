@@ -19,9 +19,13 @@ gem 'compass'
 gem 'jquery-rails', '~> 3.1.3'
 gem 'jquery-ui-rails'
 gem 'kaminari'
- # Pinning sqlite3 to 1.3.6 since we get errors with 1.4.0
+
+# Pinning sqlite3 to 1.3.6 since we get errors with 1.4.0
 gem 'sqlite3', '~> 1.3.6'
-gem 'progressbar'
+
+# Pinning progressbar to 0.21.0 since we get errors with 1.10.0
+gem 'progressbar', '0.21.0'
+
 # gem 'rsolr-footnotes'
 gem 'therubyracer'
 gem 'uglifier'
