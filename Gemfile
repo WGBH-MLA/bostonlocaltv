@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '~> 3.2.16'
+
 gem 'syck', platforms: [:ruby_20]
 
 gem 'blacklight', '~> 4.6.3'
@@ -19,9 +20,13 @@ gem 'compass'
 gem 'jquery-rails', '~> 3.1.3'
 gem 'jquery-ui-rails'
 gem 'kaminari'
- # Pinning sqlite3 to 1.3.6 since we get errors with 1.4.0
+
+# Pinning sqlite3 to 1.3.6 since we get errors with 1.4.0
 gem 'sqlite3', '~> 1.3.6'
-gem 'progressbar'
+
+# Pinning progressbar to 0.21.0 since we get errors with 1.10.0
+gem 'progressbar', '0.21.0'
+
 # gem 'rsolr-footnotes'
 gem 'therubyracer'
 gem 'uglifier'
@@ -31,13 +36,18 @@ gem 'dotenv-rails', '0.8.0'
 gem 'cmless', '1.0.0'
 gem 'jettywrapper'
 
+ # Pinning nokogiri to 1.6.2 since we get errors with 1.10
+gem 'nokogiri', '1.6.2'
+
+ # Pinning rake to less than 10.4.2 since we get errors with 11
+gem 'rake', '10.4.2'
+
 group :test do
   # Pinning aruba to 0.8.1 since we get errors with latest 0.14.9
   gem 'aruba', '~> 0.8.1'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'factory_girl_rails', '~> 4.0'
-  gem 'faker'
   gem 'launchy'
   gem 'test-unit'
 end
