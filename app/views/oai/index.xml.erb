@@ -28,11 +28,12 @@
                         #}
                         x.typeOfResource('moving image') if record.video
                         #x.physicalDescription('DESC')
-                        #x.genre('GENRE')
-                        #x.originInfo {
+                        # hardcoding News value here because all records in this app are News stories
+                        x.genre('News')
+                        x.originInfo {
                           #x.publisher('PUBLISHER')
-                          #x.dateCreated('DATE')
-                        #}
+                          x.dateCreated(record.date_created)
+                        } if record.date_created
                         #x.physicalDescription {
                           #x.extent('DURATION')
                         #}
@@ -42,6 +43,11 @@
                         record.subjects.each do |subject|
                           x.subject(subject)
                         end if record.subjects
+                        record.locations.each do |location|
+                          x.subject {
+                            x.geographic(location)
+                          }
+                        end if record.locations
                         #x.relatedItem(type: 'host') {
                           #x.titleInfo {
                             #x.title('Boston Local TV News')
