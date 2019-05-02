@@ -18,9 +18,11 @@
                     Nokogiri::XML::Builder.new do |x|
                       x.mods(xmlns: 'http://www.loc.gov/mods/v3') {
                         x.identifier('http://bostonlocaltv.org/catalog/' + record.id, type: 'uri')
-                        x.titleInfo(usage: 'primary') {
-                          x.title(record.title)
-                        }
+                        record.title.each do |title|
+                          x.titleInfo(usage: 'primary') {
+                            x.title(title)
+                          }
+                        end if record.title
                         #x.name('PERSON NAME') {
                           #x.role {
                             #x.roleTerm('PERSON ROLE')

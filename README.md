@@ -4,7 +4,7 @@
 
 [http://bostonlocaltv.org/]
 
-- Funded by the Institute of Museum and Library Services and the Council on Library and Information Resources. 
+- Funded by the Institute of Museum and Library Services and the Council on Library and Information Resources.
 - Collaborators:
   - Boston Public Library’s WHDH film collection (1960- mid-1970s)
   - Cambridge Community Television (1988 to 1999)
@@ -17,7 +17,7 @@
 - Start a new terminal to make the `rvm` command available.
 - Clone this repository.
 - `cd` to your copy of the repo.
-- You may see a message from RVM stating that the required Ruby version is not available. 
+- You may see a message from RVM stating that the required Ruby version is not available.
 Install it as instructed.
 - For the rest of the setup, follow the instructions in `.travis.yml`.
 
@@ -94,8 +94,8 @@ $ bundle exec scripts/swap.rb --name bostonlocaltv.wgbh-mla.org
 When that process completes, you can go to the [live Boston Local TV](http://bostonlocaltv.org) and verify that the new code came deploy that had previously been on the demo site is now live.  You can also visit the demo url if you wish to see if the non-updated code is still in place.
 
 ## Metadata Records
-Boston Local TV is built around making PBCore xml records accessible.  
-The data is collected from 4 databases. These databases can be found on the MLA Dept Server at /Volumes/dept/MLA/Boston TV News Digital Library/Databases. 
+Boston Local TV is built around making PBCore xml records accessible.
+The data is collected from 4 databases. These databases can be found on the MLA Dept Server at /Volumes/dept/MLA/Boston TV News Digital Library/Databases.
 
 To export the data for the WCVB collection from Northeast Historic Film, open  IMLS_LocalNews_Inventory_final20130211.fp7. There is no username or password required. Make sure that the found set is showing all records, and then go to Scripts and run exportXML4web. It will save a document containing a pbcoreCollection wrapping all of the pbcoreDescriptionDocuments for this collection onto your desktop.
 
@@ -105,7 +105,7 @@ To export the data for the WGBH collection, open LocalNewsDBs_Launcher.fp7. Clic
 
 To export the data for the CCTV collection, open  Programs.fp7. There is no username or password required, but it will throw up a lot of windows looking for shared tables. Hit OK or Cancel until the database opens. Click on the Program tab along the top. Make sure that the found set is showing all records, and then go to Scripts and run exportXML4web. It will save a document containing a pbcoreCollection wrapping all of the pbcoreDescriptionDocuments for this collection onto your desktop.
 
-Gather all of the pbcoreCollections you've just exported, and put them in one folder. Name it BTVDL_xml_[DATE] and add it to the folder on the server with the databases. Send a copy of the folder to the developer who will put it in the PBCore bucked on the Boston Local TV Amazon S3. 
+Gather all of the pbcoreCollections you've just exported, and put them in one folder. Name it BTVDL_xml_[DATE] and add it to the folder on the server with the databases. Send a copy of the folder to the developer who will put it in the PBCore bucked on the Boston Local TV Amazon S3.
 
 ## Ingest to Websites
 ```
@@ -173,7 +173,23 @@ You may also need to use the following command
 RAILS_ENV=production bundle exec rake jetty:restart
 ```
 
+### OAI Endpoint
+
+To access the site's OAI endpoint, send a GET request to:
+
+http://bostonlocaltv.org/oai?verb=ListRecords
+with the header 'Accept: application/xml'
+
+example: curl -H 'Accept: application/xml' http://bostonlocaltv.org/oai?verb=ListRecords
+
+The response will contain up to 100 mods records per request, as well as a resumptionToken to allow paging. For further requests, include the resumptionToken like so:
+
+http://bostonlocaltv.org/oai?verb=ListRecords&resumptionToken=<token number>
+
+example: curl -H 'Accept: application/xml' http://bostonlocaltv.org/oai?verb=ListRecords&resumptionToken=200
+
 ## Old Documentation
 
 Old docs are available here: https://github.com/WGBH/bostonlocaltv/wiki.
 I plan to replace them over time with current information here in the readme.
+
