@@ -41,8 +41,15 @@
                           x.abstract(description)
                         end if record.descriptions
                         record.subjects.each do |subject|
-                          x.subject(subject)
+                          x.subject {
+                            x.topic(subject)
+                          }
                         end if record.subjects
+                        record.names.each do |name|
+                          x.subject {
+                            x.topic(name)
+                          }
+                        end if record.names
                         record.locations.each do |location|
                           x.subject {
                             x.geographic(location)
