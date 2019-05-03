@@ -18,9 +18,11 @@
                     Nokogiri::XML::Builder.new do |x|
                       x.mods(xmlns: 'http://www.loc.gov/mods/v3') {
                         x.identifier('http://bostonlocaltv.org/catalog/' + record.id, type: 'uri')
-                        x.titleInfo(usage: 'primary') {
-                          x.title(record.title)
-                        }
+                        record.title.each do |title|
+                          x.titleInfo(usage: 'primary') {
+                            x.title(title)
+                          }
+                        end if record.title
                         #x.name('PERSON NAME') {
                           #x.role {
                             #x.roleTerm('PERSON ROLE')
@@ -28,11 +30,12 @@
                         #}
                         x.typeOfResource('moving image') if record.video
                         #x.physicalDescription('DESC')
-                        #x.genre('GENRE')
-                        #x.originInfo {
+                        # hardcoding News value here because all records in this app are News stories
+                        x.genre('News')
+                        x.originInfo {
                           #x.publisher('PUBLISHER')
-                          #x.dateCreated('DATE')
-                        #}
+                          x.dateCreated(record.date_created)
+                        } if record.date_created
                         #x.physicalDescription {
                           #x.extent('DURATION')
                         #}
@@ -40,8 +43,20 @@
                           x.abstract(description)
                         end if record.descriptions
                         record.subjects.each do |subject|
-                          x.subject(subject)
+                          x.subject {
+                            x.topic(subject)
+                          }
                         end if record.subjects
+                        record.names.each do |name|
+                          x.subject {
+                            x.topic(name)
+                          }
+                        end if record.names
+                        record.locations.each do |location|
+                          x.subject {
+                            x.geographic(location)
+                          }
+                        end if record.locations
                         #x.relatedItem(type: 'host') {
                           #x.titleInfo {
                             #x.title('Boston Local TV News')
