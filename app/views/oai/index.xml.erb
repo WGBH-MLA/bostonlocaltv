@@ -42,7 +42,7 @@
                           end if record.date_created
                           record.date_broadcast.each do |date_broadcast|
                             x.dateIssued(date_broadcast)
-                          end if record.cdate_broadcast
+                          end if record.date_broadcast
                         }
                         record.audio_duration.each do |audio_duration|
                         x.physicalDescription {
