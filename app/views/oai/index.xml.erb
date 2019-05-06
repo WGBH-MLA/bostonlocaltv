@@ -23,6 +23,7 @@
                             x.title(title)
                           }
                         end if record.title
+                        # TODO: Need to update Solr schema to store contributor name and role separately in order to map here
                         #x.name('PERSON NAME') {
                           #x.role {
                             #x.roleTerm('PERSON ROLE')
@@ -33,12 +34,13 @@
                         # hardcoding News value here because all records in this app are News stories
                         x.genre('News')
                         x.originInfo {
-                          #x.publisher('PUBLISHER')
-                          x.dateCreated(record.date_created)
-                        } if record.date_created
-                        #x.physicalDescription {
-                          #x.extent('DURATION')
-                        #}
+                          x.publisher(record.collection)
+                          x.dateCreated(record.date_created) if record.date_created
+                          x.dateIssued(record.date_broadcast) if record.date_broadcast
+                        }
+                        x.physicalDescription {
+                          x.extent(record.duration)
+                        } if record.duration
                         record.descriptions.each do |description|
                           x.abstract(description)
                         end if record.descriptions
