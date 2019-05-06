@@ -34,13 +34,21 @@
                         # hardcoding News value here because all records in this app are News stories
                         x.genre('News')
                         x.originInfo {
-                          x.publisher(record.collection)
-                          x.dateCreated(record.date_created) if record.date_created
-                          x.dateIssued(record.date_broadcast) if record.date_broadcast
+                          record.collection.each do |collection|
+                            x.publisher(collection)
+                          end if record.collection
+                          record.date_created.each do |date_created|
+                            x.dateCreated(date_created)
+                          end if record.date_created
+                          record.date_broadcast.each do |date_broadcast|
+                            x.dateIssued(date_broadcast)
+                          end if record.date_broadcast
                         }
+                        record.audio_duration.each do |audio_duration|
                         x.physicalDescription {
-                          x.extent(record.audio_duration)
-                        } if record.audio_duration
+                          x.extent(audio_duration)
+                        }
+                        end if record.audio_duration
                         record.descriptions.each do |description|
                           x.abstract(description)
                         end if record.descriptions
