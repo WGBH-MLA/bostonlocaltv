@@ -40,7 +40,7 @@
                         }
                         x.physicalDescription {
                           x.extent(record.duration)
-                        } if record.duration
+                        } if record.audio_duration
                         record.descriptions.each do |description|
                           x.abstract(description)
                         end if record.descriptions
