@@ -39,7 +39,7 @@
                           x.dateIssued(record.date_broadcast) if record.date_broadcast
                         }
                         x.physicalDescription {
-                          x.extent(record.duration)
+                          x.extent(record.audio_duration)
                         } if record.audio_duration
                         record.descriptions.each do |description|
                           x.abstract(description)
