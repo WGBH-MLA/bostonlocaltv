@@ -58,7 +58,6 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.99.0'
   gem 'net-ssh', '~> 2.7.0'
   gem 'aws-sdk', '~> 2'
-  gem 'curb'
   gem 'pry'
   gem 'pry-nav'
 end
