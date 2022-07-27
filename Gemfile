@@ -6,7 +6,6 @@ gem 'syck', platforms: [:ruby_20]
 
 gem 'blacklight', '~> 4.6.3'
  # Pinning blacklight_range_limit to 2.2.0 since we get errors with 7.0.0
-gem 'blacklight_range_limit', '~> 2.2.0'
 gem 'bootstrap-sass'
 
 # Need to pin sass to < 3.3 b/c of incompatibility with compass 0.12.

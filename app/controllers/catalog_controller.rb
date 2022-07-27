@@ -43,7 +43,7 @@ class CatalogController < ApplicationController
     #config.add_facet_field 'subject_facet_s', :label => 'Subject', :limit => 5
     #config.add_facet_field 'people_s', :label => 'People', :limit => 5
     config.add_facet_field 'location_facet_s', :label => 'Places', :limit => 5
-    config.add_facet_field 'year_i', :label => 'Date', :range => true
+    config.add_facet_field 'year_i', :label => 'Date'
 
 
     # Have BL send all facet field names to Solr, which has been the default
