@@ -8,7 +8,6 @@ gem 'blacklight', '~> 4.6.3'
  # Pinning blacklight_range_limit to 2.2.0 since we get errors with 7.0.0
 gem 'blacklight_range_limit', '~> 2.2.0'
 gem 'bootstrap-sass'
-gem 'carrierwave'
 
 # Need to pin sass to < 3.3 b/c of incompatibility with compass 0.12.
 # The other options was to bump compass up to 0.13.alpha, but that was triggering more dependency issues.
