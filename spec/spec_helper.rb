@@ -9,8 +9,6 @@ require 'capybara/rspec'
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 Dir[Rails.root.join("spec/features/steps/**/*.rb")].each { |f| require f }
 
-BlacklightRangeLimit.omit_inject[:excanvas] = true
-
 RSpec.configure do |config|
   # == Mock Framework
   #
