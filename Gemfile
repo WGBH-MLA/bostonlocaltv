@@ -5,10 +5,7 @@ gem 'rails', '~> 3.2.16'
 gem 'syck', platforms: [:ruby_20]
 
 gem 'blacklight', '~> 4.6.3'
- # Pinning blacklight_range_limit to 2.2.0 since we get errors with 7.0.0
-gem 'blacklight_range_limit', '~> 2.2.0'
 gem 'bootstrap-sass'
-gem 'carrierwave'
 
 # Need to pin sass to < 3.3 b/c of incompatibility with compass 0.12.
 # The other options was to bump compass up to 0.13.alpha, but that was triggering more dependency issues.
@@ -60,7 +57,6 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.99.0'
   gem 'net-ssh', '~> 2.7.0'
   gem 'aws-sdk', '~> 2'
-  gem 'curb'
   gem 'pry'
   gem 'pry-nav'
 end
