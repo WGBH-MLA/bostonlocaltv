@@ -13,13 +13,13 @@ Resources.
 
 <a href="http://www.imls.gov/"><img class="alignnone size-medium wp-image-119"
 title="IMLS_Logo_2c" alt=""
-src="/imls_logo_2c.jpg"
+src="/logos/imls_logo_2c.jpg"
 width="300" height="136"
 /></a>
 
 <a href="http://clir.org/hiddencollections/"><img class="alignnone size-full
 wp-image-120" title="clirlogo" alt=""
-src="clir.png"
+src="/logos/clir.png"
 width="392" height="49"
 /></a>
 <h1>Project
