@@ -2,7 +2,7 @@
 
 If you have general questions about the website and collections, or want to
 share information on the stories you find in the collections, please send an
-email to: sadie_roosa@wgbh.org
+email to: archive_requests@wgbh.org
 
 If you have questions about specific collections, including how to request a
 story be digitized, please send an email
