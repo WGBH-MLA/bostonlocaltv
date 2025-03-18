@@ -60,7 +60,29 @@ The WHDH Collection at the Boston Public Library consists of some two million fe
 It includes news coverage and special programming relating mainly to people, events and scenes of the Boston area, including extensive coverage of school busing, local politics, peace demonstrations, fires, and gangland activities.
 </p>
 END
-    }  
+    },
+      wnac: {
+      title: 'The WNAC Collection',
+      img_src: 'wnac.jpg',
+      search: 'WNAC',
+      extra_html: '<li><a href="google.com" target="_blank">google</a></li>',
+      html: <<END
+<p>
+The WNAC Collection at the University consists of a lot of tapes.
+</p>
+END
+    },
+      wbz: {
+      title: 'The WBZ Collection',
+      img_src: 'wbz.jpg',
+      search: 'WBZ',
+      extra_html: '<li><a href="google.com" target="_blank">google</a></li>',
+      html: <<END
+<p>
+The WBZ Collection at the University consists of a lot of tapes.
+</p>
+END
+    } 
   }[params[:id].to_sym]
 %>
 
