@@ -4,22 +4,9 @@ log/*.log
 tmp/
 .sass-cache/
 
-public/assets
-
 # ignore jetty
 jetty/
 
 # ignore gems installed with `bundle install --deployment`
 vendor/bundle/
 
-#Ignore other files that are not needed.
-doc/
-*.swp
-*-
-.project
-nbproject
-.DS_Store
-.idea
-./sample.xml
-
-/nbproject
