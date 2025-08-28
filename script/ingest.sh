@@ -6,3 +6,5 @@ for ORG in cctv wcvb wgbh whdh; do
   rake data:$ORG file=/tmp/$FILE
   rm /tmp/$FILE
 done
+
+# rake data:whdh file=/tmp/whdh.pbcore.xml
