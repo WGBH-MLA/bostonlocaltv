@@ -15,7 +15,7 @@
   <style type="text/css">
     <%= yield(:blog_stylesheets) %>
   </style>
-<%= javascript_include_tag "application", "rails" %>
+<%= javascript_include_tag "application", "rails", "cookie" %>
 <!--[if IE]><%= javascript_include_tag "excanvas.min" %><![endif]-->
 <link href="/assets/video-js.min.css" rel="stylesheet">
   <%= csrf_meta_tags %>
@@ -41,8 +41,9 @@
 
         <div class="clear-both"/>
         </div>
-       <%= render :partial=>'catalog/footer' %>
-   <%= render_google_analytics_code %>
+        
+        <%= render :partial=>'catalog/footer' %>
+        
+        <%= render_google_analytics_code %>
       </body>
-
     </html>

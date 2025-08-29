@@ -18,5 +18,6 @@
 
 //= require video
 //= require video-config
+//= require cookie
 
 //= require_tree .
