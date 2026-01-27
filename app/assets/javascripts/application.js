@@ -5,12 +5,7 @@
 // the compiled file.
 //
 //= require jquery
-// Used by blacklight_range_limit
-//= require 'flot/jquery.flot.js'
-//= require 'flot/jquery.flot.selection.js'
 // You can elmiminate one or both of these if you don't want their functionality
-//= require 'blacklight_range_limit/range_limit_slider'
-//= require 'blacklight_range_limit/range_limit_distro_facets'
 // Required by Blacklight
 //= require jquery-ui
 //= require blacklight/blacklight
