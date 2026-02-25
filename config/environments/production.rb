@@ -21,14 +21,13 @@ Bostonlocaltv::Application.configure do
     'bostonlocaltv.css',
     'video.js',
     'video-js.min.css',
-    'blacklight_range_limit/blacklight_range_limit.css',
     'excanvas.min.js',
     'slides.min.jquery.js',
     'video-config.js'
   ]
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Generate digests for assets URLs
   config.assets.digest = true
