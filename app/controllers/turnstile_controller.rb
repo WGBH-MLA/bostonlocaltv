@@ -3,7 +3,7 @@ require 'uri'
 require 'json'
 
 class TurnstileController < ApplicationController
-  skip_before_action :verify_authenticity_token # For simplicity, remove in production
+  skip_before_filter :verify_authenticity_token # For simplicity, remove in production
 
   def challenge
     # Renders the Turnstile challenge page
@@ -22,13 +22,14 @@ class TurnstileController < ApplicationController
 
     if result["success"]
       # Server sets the cookie in the response
-      cookies.encrypted[:turnstile_verified] = {
+      data = {
         value: true,
         expires: 2.hours.from_now,
         secure: Rails.env.production?,
         httponly: true,
         same_site: :strict
       }
+      set_encrypted_cookie(:turnstile_verified, data)
 
       render json: { success: true }, status: :ok
     else

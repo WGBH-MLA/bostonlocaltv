@@ -3,8 +3,8 @@ require 'blacklight/catalog'
 
 class CatalogController < ApplicationController
   include Blacklight::Catalog
-  before_action :reject_abusive_queries, only: [:index]
-  before_action :require_turnstile, only: [:index]
+  before_filter :reject_abusive_queries, only: [:index]
+  before_filter :require_turnstile, only: [:index]
 
   configure_blacklight do |config|
 
@@ -214,7 +214,7 @@ class CatalogController < ApplicationController
   private
   
   def require_turnstile
-    return if cookies.encrypted[:turnstile_verified] || !Rails.env.production?
+    return if get_encrypted_cookie(:turnstile_verified) || !Rails.env.production?
     redirect_to turnstile_challenge_path(return_to: request.fullpath)
   end
 
