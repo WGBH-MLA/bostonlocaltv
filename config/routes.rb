@@ -24,4 +24,7 @@ Bostonlocaltv::Application.routes.draw do
 
   get 'blog', to: 'blog#index'
   get 'blog/*path', to: 'blog#show'
+
+  get "/turnstile_challenge", to: "turnstile#challenge"
+  post "/turnstile_verify", to: "turnstile#verify"
 end

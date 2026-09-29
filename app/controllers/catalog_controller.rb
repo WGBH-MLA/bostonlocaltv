@@ -2,8 +2,9 @@
 require 'blacklight/catalog'
 
 class CatalogController < ApplicationController
-
   include Blacklight::Catalog
+  before_action :reject_abusive_queries, only: [:index]
+  before_action :require_turnstile, only: [:index]
 
   configure_blacklight do |config|
 
@@ -210,5 +211,21 @@ class CatalogController < ApplicationController
      document_list = solr_response.docs.collect{|doc| SolrDocument.new(doc, solr_response) }
      [solr_response,document_list]
    end
+  private
+  
+  def require_turnstile
+    return if cookies.encrypted[:turnstile_verified] || !Rails.env.production?
+    redirect_to turnstile_challenge_path(return_to: request.fullpath)
+  end
+
+  def reject_abusive_queries
+    query_string = request.query_string
+
+    if query_string.length > 1000 || query_string.scan(/\bOR\b/).count > 10
+      Rails.logger.warn("Rejected abusive catalog query from #{request.remote_ip}: #{query_string.truncate(200)}")
+      render plain: "Bad Request: please submit a valid query", status: :bad_request
+    end
+  end
+
 
 end
