@@ -28,7 +28,12 @@ class Dataset::Xml < Dataset::Base
           next
         end
 
-        Blacklight.solr.add solr_doc, :add_attributes => { :commitWithin => 10000 }
+
+        puts "Yes I will commit this one, yay! #{solr_doc[:id]} and #{solr_doc[:video_b]}"
+        # Blacklight.solr.add solr_doc, :add_attributes => { :commitWithin => 30000 }
+        # Blacklight.solr.add solr_doc
+        # Blacklight.solr.add solr_doc, :add_attributes => { :commitWithin => 0 }
+        Blacklight.solr.add(solr_doc, params: { commit: true })
       end
     end
   end
@@ -132,3 +137,4 @@ class Dataset::Xml < Dataset::Base
     nil
   end
 end
+

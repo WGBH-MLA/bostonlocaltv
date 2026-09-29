@@ -9,4 +9,3 @@ jetty/
 
 # ignore gems installed with `bundle install --deployment`
 vendor/bundle/
-
