@@ -14,8 +14,12 @@ class ApplicationController < ActionController::Base
   # ======================================================================
   private
 
+  def generate_key(secret, salt, iterations=65536, key_size=32)
+    OpenSSL::PKCS5.pbkdf2_hmac_sha1(secret, salt, iterations, key_size)
+  end
+
   def secret_key
-    ActiveSupport::KeyGenerator.new(ENV["LOCAL_SECRET_KEY"]).generate_key("a pinch for seasoning", 32)
+    generate_key(ENV["LOCAL_SECRET_KEY"], "a pinch for seasoning")
   end
 
   def set_encrypted_cookie(name, value)

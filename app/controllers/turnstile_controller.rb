@@ -3,6 +3,7 @@ require 'uri'
 require 'json'
 
 class TurnstileController < ApplicationController
+  layout "turnstile"
   skip_before_filter :verify_authenticity_token # For simplicity, remove in production
 
   def challenge
